@@ -32,7 +32,7 @@ float **allocate_matrix_float(int rows, int columns)
     return mat;
 }
 
-
 float random_float(int lb, int ub){
-    return rand() % (ub + 1 - lb) + lb;
+    float val = (((float)rand()) /((float)RAND_MAX))*(ub - lb) + lb;
+    return val;
 }

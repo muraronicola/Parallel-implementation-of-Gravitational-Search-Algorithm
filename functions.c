@@ -89,7 +89,7 @@ float getk_best(int pop_size, int t, float n_iter){
     return pop_size * (0.1 + (0.9 * (t/n_iter)));
 }
 
-float** update_accelearations(float* M, float** population, float** accelerations, int dim, int pop_size, int k_best){
+float** update_accelerations(float* M, float** population, float** accelerations, int dim, int pop_size, int k_best){
     float R; 
     float **Forces = allocate_matrix_float(pop_size, dim);
     float random;
@@ -211,11 +211,12 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         
 
         //Update the velocity
-        accelerations = update_accelearations(M, population, accelerations, dim, pop_size, k_best);
+        accelerations = update_accelerations(M, population, accelerations, dim, pop_size, k_best);
         velocity = update_velocity(velocity, accelerations, G, dim, pop_size);
         population = update_position(population, velocity, dim, pop_size);
     
         convergence_curve[l] = best_score;
+        printf("Iteration: %d, Best score: %f\n", l, best_score);
     }
 
     return best_agent;
