@@ -4,7 +4,7 @@
 #include "utility.h"
 
 
-float **initialize_population(float (*target_function)(float*, int), float** velocity, float lb, float ub, int dim, int pop_size, float *fitness, float *M, float* best_score)
+float **initialize_population(float (*target_function)(float*, int), float** velocity, float lb, float ub, int dim, int pop_size, float *fitness, float *M)
 {
     float** population = allocate_matrix_float(pop_size, dim);
 
@@ -15,9 +15,6 @@ float **initialize_population(float (*target_function)(float*, int), float** vel
         }
         fitness[i] = target_function(population[i], dim);
         M[i] = fitness[i];
-        if (fitness[i] < *best_score) {
-            *best_score = fitness[i];
-        }
     }
 
     return population;
@@ -171,14 +168,14 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
     float sum_m;
     float k_best;
 
+    float** population = initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M);
+
 
     //For additional information
     float* convergence_curve = allocate_vector_float(n_iter);
     float* best_agent = allocate_vector_float(dim);
     float best_score = 1e20;
 
-
-    float** population = initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M, &best_score);
 
 
     for (int l = 0; l < n_iter; l++) {
@@ -188,7 +185,9 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
             
             if (fitness[i] < best_score) {
                 best_score = fitness[i];
-                best_agent = population[i];
+                for (int j = 0; j < dim; j++){
+                    best_agent[j] = population[i][j];
+                }
             }
         }
 
