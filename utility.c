@@ -22,6 +22,8 @@ float **allocate_matrix_float(int rows, int columns)
 {
     float *continuos_chunk = (float *)malloc(rows*columns*sizeof(float));
     check_allocation(continuos_chunk);
+    for (int i=0; i<rows*columns; i++)
+        continuos_chunk[i] = 0;
 
     float **mat = (float **)malloc(rows * sizeof(float *));
     check_allocation(mat);

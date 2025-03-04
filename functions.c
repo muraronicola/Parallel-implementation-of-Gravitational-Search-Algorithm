@@ -5,14 +5,13 @@
 #include "utility.h"
 
 
-float **initialize_population(float (*target_function)(float*, int), float** velocity, float lb, float ub, int dim, int pop_size, float *fitness, float *M)
+float **initialize_population(float (*target_function)(float*, int), float lb, float ub, int dim, int pop_size, float *fitness, float *M)
 {
     float** population = allocate_matrix_float(pop_size, dim);
 
     for (int i = 0; i < pop_size; i++) {
         for (int j = 0; j < dim; j++) {
             population[i][j] = random_float(lb, ub);
-            velocity[i][j] = 0;
         }
         fitness[i] = target_function(population[i], dim);
         M[i] = fitness[i];
@@ -90,11 +89,11 @@ float getk_best(int pop_size, int t, float n_iter){
     return pop_size * (0.1 + (0.9 * (t/n_iter)));
 }
 
-float** update_accelerations(float* M, float** population, float** accelerations, int dim, int pop_size, int k_best){
+float** update_accelerations(float* M, float** population, float** accelerations, int dim, int pop_size, int k_best, int sub_pop_start_index){
     float R; 
     float **Forces = allocate_matrix_float(pop_size, dim);
     float random;
-    for (int i = 0; i < pop_size; i++){
+    for (int i = sub_pop_start_index; i < pop_size + sub_pop_start_index; i++){
         for (int j = 0; j < k_best; j++){
             if (i != j){
                 R = 0;
@@ -137,8 +136,8 @@ float ** update_velocity(float** velocity, float** accelerations, float G, int d
     return velocity;
 }
 
-float** update_position(float** population, float** velocity, int dim, int pop_size){
-    for (int i = 0; i < pop_size; i++){
+float** update_position(float** population, float** velocity, int dim, int pop_size, int sub_pop_start_index){
+    for (int i = sub_pop_start_index; i < pop_size + sub_pop_start_index; i++){
         for (int d = 0; d < dim; d++){
             population[i][d] = population[i][d] + velocity[i][d];
         }
@@ -166,17 +165,18 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
     float G0 = 100; //G0 = 100
     float G;
     float best, worst;
-    float sum_m;
+    float sum_m = 0;
+    float local_sum = 0;
     float k_best;
     float** population = NULL;
     float** sub_population = allocate_matrix_float(sub_pop_size, dim);
+    int sub_pop_start_index = my_rank * sub_pop_size;
 
     if (my_rank == 0){
-        population = initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M);
+        population = initialize_population(target_function, lb, ub, dim, pop_size, fitness, M);
     }else{
         population = allocate_matrix_float(pop_size, dim);
     }
-
     MPI_Scatter(&(population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
     //For additional information
@@ -187,20 +187,21 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
     for (int l = 0; l < n_iter; l++) {
         
         MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(population[0][0]), sub_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
-        printf("my_rank: %d; population[0][0]: %f\n", my_rank, population[0][0]);
 
-        for (int i = 0; i < pop_size; i++){
-            population[i] = clip_position_agent(population[i], lb, ub, dim);
-            fitness[i] = target_function(population[i], dim);
+        for (int i = 0; i < sub_pop_size; i++){
+            sub_population[i] = clip_position_agent(sub_population[i], lb, ub, dim);
+            fitness[i] = target_function(sub_population[i], dim);
             
             if (fitness[i] < best_score) {
                 best_score = fitness[i];
                 for (int j = 0; j < dim; j++){
-                    best_agent[j] = population[i][j];
+                    best_agent[j] = sub_population[i][j];
                 }
             }
         }
 
+        MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(population[0][0]), sub_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
+        printf("my_rank: %d; done\n", my_rank);
         sort_agents(fitness, velocity, population, M, pop_size, dim); //Sort the agents based on their fitness
         k_best = getk_best(pop_size, l, n_iter);
 
@@ -210,20 +211,25 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         worst = get_worst(fitness, pop_size);
 
         //Update the M and m vectors
-        sum_m = 0;
-        for (int i = 0; i < pop_size; i++){
+        local_sum = 0;
+        for (int i = sub_pop_start_index; i < sub_pop_size + sub_pop_start_index; i++){
             m[i] = (fitness[i] - worst) / (best - worst);
-            sum_m += m[i];
+            local_sum += m[i];
         }
+
+        MPI_Allreduce(&local_sum, &sum_m, 1, MPI_FLOAT, MPI_SUM, MPI_COMM_WORLD);
         for (int i = 0; i < pop_size; i++){
             M[i] = m[i] / sum_m;
         }
-        
 
         //Update the velocity
-        accelerations = update_accelerations(M, population, accelerations, dim, pop_size, k_best);
-        velocity = update_velocity(velocity, accelerations, G, dim, pop_size);
-        population = update_position(population, velocity, dim, pop_size);
+        printf("my_rank: %d;   pop[0][0]: %f\n", my_rank, pop_size[0][0]);
+        accelerations = update_accelerations(M, sub_population, accelerations, dim, sub_pop_size, k_best, 0);
+        printf("my_rank: %d; update_accelerations done\n", my_rank);
+        velocity = update_velocity(velocity, accelerations, G, dim, sub_pop_size);
+        printf("my_rank: %d; update_velocity done\n", my_rank);
+        population = update_position(population, velocity, dim, sub_pop_size, sub_pop_start_index);
+        printf("my_rank: %d; update_position done\n", my_rank);
     
         convergence_curve[l] = best_score;
         //printf("Iteration: %d, Best score: %f\n", l, best_score);
