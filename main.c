@@ -14,5 +14,9 @@ int main(){
     float results = sphere(vettore, dim);
     printf("Results: %f\n", results);
 
+    float* best_agent = gca(sphere, -100, 100, dim, 100, 100);
+    printf("Best agent: %f, %f\n", best_agent[0], best_agent[1]);
+    printf("Best value: %f\n", sphere(best_agent, dim));
+
     return 0;
 }
