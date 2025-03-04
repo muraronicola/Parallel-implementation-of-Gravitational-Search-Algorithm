@@ -94,7 +94,7 @@ float** update_accelerations(float* M, float** population, float** accelerations
     float **Forces = allocate_matrix_float(pop_size, dim);
     float random;
     for (int i = 0; i < pop_size; i++){
-        for (int j = 0; j < pop_size; j++){
+        for (int j = 0; j < k_best; j++){
             if (i != j){
                 R = 0;
                 for (int d = 0; d < dim; d++){

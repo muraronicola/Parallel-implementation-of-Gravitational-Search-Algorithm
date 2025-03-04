@@ -1,0 +1,15 @@
+non so se posso tenere un best globale... (aka tra le varie generazioni)
+
+
+
+Versione parallela, posso parallelizzare:
+
+
+-- in base al numero di agenti --
+
+parallelizzazione: clip position, calcolo fitness (e best globale?). sort_agents
+join before: getk_best (mando le pop "semi sortate" a tutti)
+sequenziale: ogni nodo finisce il sort, si calcola G, best e worst
+parallelo: calcolo di m[i]
+join: sul valore di sum_m
+parallelo: calcolo di M[i] (normalizzato)

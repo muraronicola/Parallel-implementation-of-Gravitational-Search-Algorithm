@@ -1,5 +1,5 @@
 # Variabili
-CC = gcc
+CC = mpicc #era: gcc
 CFLAGS = -Wall -g
 
 # Target predefinito
