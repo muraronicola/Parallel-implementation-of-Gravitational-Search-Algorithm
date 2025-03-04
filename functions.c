@@ -216,7 +216,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         population = update_position(population, velocity, dim, pop_size);
     
         convergence_curve[l] = best_score;
-        printf("Iteration: %d, Best score: %f\n", l, best_score);
+        //printf("Iteration: %d, Best score: %f\n", l, best_score);
     }
 
     return best_agent;

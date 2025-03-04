@@ -2,20 +2,27 @@
 #include "functions.h"
 #include "test_functions.h"
 #include "utility.h"
+#include <stdlib.h>
+#include <time.h>
 
-int main(){
-    printf("Hello World\n");
-    //gca();
+int main(int argc, char *argv[]){
+    srand(time(NULL));
 
-    int dim = 2;
-    float * vettore = allocate_vector_float(dim);
-    vettore[0] = 2;
-    vettore[1] = 2;
-    float results = sphere(vettore, dim);
-    printf("Results: %f\n", results);
+    int dim = atoi(argv[1]);
+    int pop_size = atoi(argv[2]);
+    int n_iter = atoi(argv[3]);
 
-    float* best_agent = gca(sphere, -100, 100, dim, 100, 100);
-    printf("Best agent: %f, %f\n", best_agent[0], best_agent[1]);
+    printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
+    printf("\n");
+
+    float* best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter);
+
+    printf("Best agent: ");
+    for (int i = 0; i < dim; i++){
+        printf("%f ", best_agent[i]);
+    }
+    printf("\n");
+
     printf("Best value: %f\n", sphere(best_agent, dim));
 
     return 0;
