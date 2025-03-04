@@ -7,7 +7,14 @@
 #include <time.h>
 
 int main(int argc, char *argv[]){
-    srand(time(NULL));
+    MPI_Init(NULL, NULL);
+
+    int comm_sz, my_rank;
+    MPI_Comm_size(MPI_COMM_WORLD, &comm_sz);
+    MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+
+    //srand(time(NULL));
+    srand(10); //Fix the seed for reproducibility (debug only)
 
     if (argc != 4){
         printf("Usage: %s <dim> <pop_size> <n_iter>\n", argv[0]);
@@ -17,18 +24,13 @@ int main(int argc, char *argv[]){
     int dim = atoi(argv[1]);
     int pop_size = atoi(argv[2]);
     int n_iter = atoi(argv[3]);
+    int pop_per_proc = (int) pop_size/comm_sz;
 
-    int comm_sz;
-    int my_rank;
-
-    MPI_Init(NULL, NULL);
-    MPI_Comm_size(MPI_COMM_WORLD, &comm_sz);
-    MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
 
     printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
     printf("\n");
 
-    float* best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter);
+    float* best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc);
 
     printf("Best agent: ");
     for (int i = 0; i < dim; i++){

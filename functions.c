@@ -1,3 +1,4 @@
+#include <mpi.h>
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -147,8 +148,8 @@ float** update_position(float** population, float** velocity, int dim, int pop_s
 
 
 
-float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, int pop_size, int n_iter) {
-    //Returns the best agent found by the algorithm
+float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, int pop_size, int n_iter, int my_rank, int sub_pop_size) {
+    // Returns the best agent found by the algorithm
     
     // target_function: the function to be optimized (x, dim)
     // lb: lower bound of the search space
@@ -167,18 +168,27 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
     float best, worst;
     float sum_m;
     float k_best;
+    float** population = NULL;
+    float** sub_population = allocate_matrix_float(sub_pop_size, dim);
 
-    float** population = initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M);
+    if (my_rank == 0){
+        population = initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M);
+    }else{
+        population = allocate_matrix_float(pop_size, dim);
+    }
 
+    MPI_Scatter(&(population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, 0, MPI_COMM_WORLD);
 
     //For additional information
     float* convergence_curve = allocate_vector_float(n_iter);
     float* best_agent = allocate_vector_float(dim);
     float best_score = 1e20;
 
-
-
     for (int l = 0; l < n_iter; l++) {
+        
+        MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(population[0][0]), sub_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
+        printf("my_rank: %d; population[0][0]: %f\n", my_rank, population[0][0]);
+
         for (int i = 0; i < pop_size; i++){
             population[i] = clip_position_agent(population[i], lb, ub, dim);
             fitness[i] = target_function(population[i], dim);

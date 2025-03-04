@@ -20,14 +20,14 @@ float *allocate_vector_float(int n)
 
 float **allocate_matrix_float(int rows, int columns)
 {
+    float *continuos_chunk = (float *)malloc(rows*columns*sizeof(float));
+    check_allocation(continuos_chunk);
+
     float **mat = (float **)malloc(rows * sizeof(float *));
     check_allocation(mat);
 
-    for (int i = 0; i < rows; i++)
-    {
-        mat[i] = (float *)malloc(columns * sizeof(float));
-        check_allocation(mat[i]);
-    }
+    for (int i=0; i<rows; i++)
+        mat[i] = &(continuos_chunk[columns*i]);
 
     return mat;
 }
