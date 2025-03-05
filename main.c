@@ -32,25 +32,29 @@ int main(int argc, char *argv[]){
     int pop_per_proc = (int) pop_size/comm_sz;
     float* best_agent;
 
-    printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
-    printf("\n");
-
-    printf("----------------------------------------\n");
-    printf("Serial GCA\n");
-    printf("----------------------------------------\n");
 
     best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter);
-    print_results(best_agent, sphere, dim);
+    
+    
+    if (my_rank == 0){
+        printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
+        printf("\n");
+    
+        printf("----------------------------------------\n");
+        printf("Serial GCA\n");
+        printf("----------------------------------------\n");
+        print_results(best_agent, sphere, dim);
+        printf("\n\n----------------------------------------\n");
+        printf("Parallel GCA\n");
+        printf("----------------------------------------\n");
+    }
 
-
-    printf("\n\n----------------------------------------\n");
-    printf("Parallel GCA\n");
-    printf("----------------------------------------\n");
 
 
     best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc);
-    print_results(best_agent, sphere, dim);
-
+    if (my_rank == 0){
+        print_results(best_agent, sphere, dim);
+    }
 
     MPI_Finalize();
     return 0;
