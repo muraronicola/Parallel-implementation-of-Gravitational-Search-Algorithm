@@ -6,7 +6,7 @@
 #include "utility.h"
 #include <stdlib.h>
 #include <time.h>
-
+#include <sys/time.h>
 
 void print_results(float* best_agent, float (*target_function)(float*, int), int dim);
 
@@ -31,12 +31,21 @@ int main(int argc, char *argv[]){
     int n_iter = atoi(argv[3]);
     int pop_per_proc = (int) pop_size/comm_sz;
     float* best_agent;
+    long seconds, microseconds;
+    double elapsed;
 
+    struct timeval begin, end;
 
+    gettimeofday(&begin, 0);
     best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter);
+    gettimeofday(&end, 0);
     
     
     if (my_rank == 0){
+        seconds = end.tv_sec - begin.tv_sec;
+        microseconds = end.tv_usec - begin.tv_usec;
+        elapsed = seconds + microseconds*1e-6;
+
         printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
         printf("\n");
     
@@ -44,16 +53,23 @@ int main(int argc, char *argv[]){
         printf("Serial GCA\n");
         printf("----------------------------------------\n");
         print_results(best_agent, sphere, dim);
+        printf("Time measured: %.3f seconds.\n", elapsed);
         printf("\n\n----------------------------------------\n");
         printf("Parallel GCA\n");
         printf("----------------------------------------\n");
     }
 
 
-
+    gettimeofday(&begin, 0);
     best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc);
+    gettimeofday(&end, 0);
+
     if (my_rank == 0){
+        seconds = end.tv_sec - begin.tv_sec;
+        microseconds = end.tv_usec - begin.tv_usec;
+        elapsed = seconds + microseconds*1e-6;
         print_results(best_agent, sphere, dim);
+        printf("Time measured: %.3f seconds.\n", elapsed);
     }
 
     MPI_Finalize();
