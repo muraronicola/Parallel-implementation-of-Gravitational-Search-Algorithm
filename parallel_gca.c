@@ -23,7 +23,8 @@ float* clip_position_agent(float* agent, float lb, float ub, int dim) { //Needed
         if (agent[i] < lb) {
             agent[i] = lb;
         }
-        else if (agent[i] > ub) {
+        
+        if (agent[i] > ub) {
             agent[i] = ub;
         }
     }
