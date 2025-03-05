@@ -170,7 +170,12 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
     float k_best;
 
     float** population = serial_initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M);
-
+    
+    /*printf("Initial population:\n");
+    for (int i = 0; i< pop_size; i++){
+        printf("population[%d][0]: %f\n", i, population[i][0]);
+    }
+    printf("-------\n");*/
 
     //For additional information
     float* convergence_curve = allocate_vector_float(n_iter);
@@ -183,7 +188,8 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
         for (int i = 0; i < pop_size; i++){
             population[i] = serial_clip_position_agent(population[i], lb, ub, dim);
             fitness[i] = target_function(population[i], dim);
-            
+            printf("Fitness: %f\n", fitness[i]);
+
             if (fitness[i] < best_score) {
                 best_score = fitness[i];
                 for (int j = 0; j < dim; j++){
@@ -191,9 +197,15 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
                 }
             }
         }
+        //return population[0];
 
         serial_sort_agents(fitness, velocity, population, M, pop_size, dim); //Sort the agents based on their fitness
         k_best = serial_getk_best(pop_size, l, n_iter);
+
+        for (int i = 0; i < pop_size; i++){
+            printf("fitness[%d]: %f\n", i, fitness[i]);
+        }
+
 
         //Update the G constant
         G = serial_get_G(G0, l, n_iter);
@@ -210,13 +222,27 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
             M[i] = m[i] / sum_m;
         }
         
+        printf("M[0]: %f\n", M[0]);
+        printf("M[1]: %f\n", M[1]);
+        printf("M[2]: %f\n", M[2]);
+
+        //return population[0];
 
         //Update the velocity
         accelerations = serial_update_accelearations(M, population, accelerations, dim, pop_size, k_best);
         velocity = serial_update_velocity(velocity, accelerations, G, dim, pop_size);
         population = serial_update_position(population, velocity, dim, pop_size);
     
+
+        printf("population[0][0]: %f\n", population[0][0]);
+        printf("population[1][0]: %f\n", population[1][0]);
+        printf("population[2][0]: %f\n", population[2][0]);
+        printf("population[3][0]: %f\n", population[3][0]);
+
         convergence_curve[l] = best_score;
+
+        return population[0];
+
     }
 
     return best_agent;

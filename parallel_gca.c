@@ -175,6 +175,11 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
 
     if (my_rank == 0){
         global_population = initialize_population(target_function, lb, ub, dim, global_pop_size);
+        /*printf("Initial population:\n");
+        for (int i = 0; i< global_pop_size; i++){
+            printf("global_population[%d][0]: %f\n", i, global_population[i][0]);
+        }
+        printf("-------\n");*/
     }else{
         global_population = allocate_matrix_float(global_pop_size, dim);
     }
@@ -185,20 +190,24 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
     float* best_agent = allocate_vector_float(dim);
     float local_best_score = 1e20;
 
+
     for (int l = 0; l < n_iter; l++) {
         //MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(global_population[0][0]), sub_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
 
         for (int i = 0; i < local_pop_size; i++){
             local_population[i] = clip_position_agent(local_population[i], lb, ub, dim);
             local_fitness[i] = target_function(local_population[i], dim);
-            
+            printf("my_rank: %d; local_fitness[%d]: %f\n", my_rank, i, local_fitness[i]);
+
             if (local_fitness[i] < local_best_score) {
                 local_best_score = local_fitness[i];
-                for (int j = 0; j < dim; j++){
+                /*for (int j = 0; j < dim; j++){
                     best_agent[j] = local_population[i][j];
-                }
+                }*/
             }
         }
+
+        //return local_population[0];
         /*printf("\n\n");
         printf("rank: %d; iteration: %d\n", my_rank, l);
 
@@ -218,6 +227,11 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
 
         sort_agents(global_fitness, global_velocity, global_population, global_M, global_pop_size, dim); //Sort the agents based on their fitness
         k_best = getk_best(global_pop_size, l, n_iter);
+
+        for (int i = 0; i < global_pop_size; i++){
+            printf("my_rank: %d; global_fitness[%d]: %f\n", my_rank, i, global_fitness[i]);
+        }
+        
 
         //Update the G constant
         G = get_G(G0, l, n_iter);
@@ -242,6 +256,12 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
 
         MPI_Allgather(local_M, local_pop_size, MPI_FLOAT, global_M, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
 
+        printf("my_rank: %d; global_M[0]: %f\n", my_rank, global_M[0]);
+        printf("my_rank: %d; global_M[1]: %f\n", my_rank, global_M[1]);
+        printf("my_rank: %d; global_M[2]: %f\n", my_rank, global_M[2]);
+
+        //return local_population[0];
+
         //Update the velocity
         //printf("my_rank: %d;   pop[0][0]: %f\n", my_rank, population[0][0]);
         //printf("my_rank: %d;   sub_population[0][0]: %f\n", my_rank, sub_population[0][0]);
@@ -263,6 +283,12 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         local_population = update_position(local_population, local_velocity, dim, local_pop_size);
     
         convergence_curve[l] = local_best_score;
+
+        printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
+        printf("my_rank: %d; local_population[1][0]: %f\n", my_rank, local_population[1][0]);
+        
+        return local_population[0];
+
         //printf("Iteration: %d, Best score: %f\n", l, best_score);
 
         //printf("my_rank: %d; Iteration: %d, Best score: %f\n\n", my_rank, l, local_best_score);

@@ -59,7 +59,7 @@ int main(int argc, char *argv[]){
         printf("----------------------------------------\n");
     }
 
-
+    srand(10);
     gettimeofday(&begin, 0);
     best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc);
     gettimeofday(&end, 0);
