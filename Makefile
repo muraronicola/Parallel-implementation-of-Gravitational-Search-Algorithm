@@ -6,15 +6,18 @@ CFLAGS = -Wall -g
 all: gca
 
 # Regole per la compilazione
-gca: main.o functions.o utility.o test_functions.o
-	$(CC) $(CFLAGS) -o gca main.o functions.o utility.o test_functions.o
+gca: main.o parallel_gca.o serial_gca.o utility.o test_functions.o 
+	$(CC) $(CFLAGS) -o gca main.o parallel_gca.o serial_gca.o utility.o test_functions.o 
 
 # Regole per compilare i file oggetto
-main.o: main.c functions.h
+main.o: main.c parallel_gca.h serial_gca.h
 	$(CC) $(CFLAGS) -c main.c
 
-functions.o: functions.c functions.h
-	$(CC) $(CFLAGS) -c functions.c
+parallel_gca.o: parallel_gca.c parallel_gca.h
+	$(CC) $(CFLAGS) -c parallel_gca.c
+
+serial_gca.o: serial_gca.c serial_gca.h
+	$(CC) $(CFLAGS) -c serial_gca.c
 
 utility.o: utility.c utility.h
 	$(CC) $(CFLAGS) -c utility.c

@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "parallel_gca.h": "c",
+        "utility.h": "c"
     }
 }

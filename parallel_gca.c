@@ -253,7 +253,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         convergence_curve[l] = local_best_score;
         //printf("Iteration: %d, Best score: %f\n", l, best_score);
 
-        printf("my_rank: %d; Iteration: %d, Best score: %f\n\n", my_rank, l, local_best_score);
+        //printf("my_rank: %d; Iteration: %d, Best score: %f\n\n", my_rank, l, local_best_score);
     }
 
     return best_agent;
