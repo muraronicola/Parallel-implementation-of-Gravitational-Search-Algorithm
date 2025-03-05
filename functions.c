@@ -202,7 +202,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_population[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
         MPI_Allgather(local_fitness, local_pop_size * dim, MPI_FLOAT, global_fitness, local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
         MPI_Allgather(&(local_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
-        printf("my_rank: %d; MPI_Allgather done\n", my_rank);
+        //printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
 
         sort_agents(global_fitness, global_velocity, global_population, global_M, global_pop_size, dim); //Sort the agents based on their fitness
         k_best = getk_best(global_pop_size, l, n_iter);
@@ -222,12 +222,13 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         }
 
         MPI_Allreduce(&local_sum, &sum_m, 1, MPI_FLOAT, MPI_SUM, MPI_COMM_WORLD);
+        //printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
 
         for (int i = 0; i < local_pop_size; i++){
             local_M[i] = m[i] / sum_m;
         }
 
-        MPI_Allgather(local_M, local_pop_size * dim, MPI_FLOAT, global_M, local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
+        MPI_Allgather(local_M, local_pop_size, MPI_FLOAT, global_M, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
 
         //Update the velocity
         //printf("my_rank: %d;   pop[0][0]: %f\n", my_rank, population[0][0]);
@@ -238,6 +239,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         //printf("my_rank: %d;   accelerations[0][0]: %f\n", my_rank, accelerations[0][0]);
         //printf("my_rank: %d;   M[0]: %f\n", my_rank, M[0]);
         //printf("my_rank: %d;   k_best: %f\n", my_rank, k_best);
+        //printf("my_rank: %d;   local_population[0][0]: %f\n", my_rank, local_population[0][0]);
 
         accelerations = update_accelerations(global_M, global_population, accelerations, dim, local_pop_size, k_best, sub_pop_start_index);
         
@@ -245,9 +247,8 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         //printf("my_rank: %d; update_accelerations done\n", my_rank);
 
         local_velocity = update_velocity(local_velocity, accelerations, G, dim, local_pop_size);
-        //printf("my_rank: %d; update_velocity done\n", my_rank);
+
         local_population = update_position(local_population, local_velocity, dim, local_pop_size);
-        //printf("my_rank: %d; update_position done\n", my_rank);
     
         convergence_curve[l] = local_best_score;
         //printf("Iteration: %d, Best score: %f\n", l, best_score);
