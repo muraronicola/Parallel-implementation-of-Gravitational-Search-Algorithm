@@ -94,22 +94,22 @@ float** serial_update_accelearations(float* M, float** population, float** accel
     float R; 
     float **Forces = allocate_matrix_float(pop_size, dim);
     float random;
-    //printf("\n\nINIZIOOO\n\n");
+    printf("\n\nINIZIOOO\n\n");
     for (int i = 0; i < pop_size; i++){
         for (int j = 0; j < k_best; j++){
             if (i != j){
-                //printf("\ni: %d; j: %d\n", i, j);
+                printf("\ni: %d; j: %d\n", i, j);
                 R = 0;
                 for (int d = 0; d < dim; d++){
                     R += (population[i][d] - population[j][d]) * (population[i][d] - population[j][d]);
                 }
                 R = sqrt(R);
-                /*printf("R: %f\n", R);
+                printf("R: %f\n", R);
                 printf("M[j]: %f\n", M[j]);
                 printf("i %d\n", i);
                 printf("population[i][0] %f\n", population[i][0]);
                 printf("population[j][0] %f\n", population[j][0]);
-                printf("Forces[i][0] %f\n", Forces[i][0]);*/
+                printf("Forces[i][0] %f\n", Forces[i][0]);
 
                 for (int d = 0; d < dim; d++){
                     //random = random_float(0, 1);
@@ -117,15 +117,15 @@ float** serial_update_accelearations(float* M, float** population, float** accel
                     //printf("random: %f\n", random);
                     Forces[i][d] = Forces[i][d] + random * M[j] * (population[j][d] - population[i][d]) / (R + 1e-20);
                 }
-                //printf("Forces[i][0] %f\n", Forces[i][0]);
+                printf("Forces[i][0] %f\n", Forces[i][0]);
             }
         }
     }
 
-    //printf("Forces[0][0]: %f\n", Forces[0][0]);
-    //printf("Forces[1][0]: %f\n", Forces[1][0]);
-    //printf("Forces[2][0]: %f\n", Forces[2][0]);
-    //printf("Forces[3][0]: %f\n", Forces[3][0]);
+    printf("Forces[0][0]: %f\n", Forces[0][0]);
+    printf("Forces[1][0]: %f\n", Forces[1][0]);
+    printf("Forces[2][0]: %f\n", Forces[2][0]);
+    printf("Forces[3][0]: %f\n", Forces[3][0]);
 
     for (int i = 0; i < pop_size; i++){
         for (int d = 0; d < dim; d++){
@@ -138,6 +138,17 @@ float** serial_update_accelearations(float* M, float** population, float** accel
             //accelerations[i][d] = Forces[i][d] / M[i];
         }
     }
+    printf("M[0]: %f\n", M[0]);
+    printf("M[1]: %f\n", M[1]);
+    printf("M[2]: %f\n", M[2]);
+    printf("M[3]: %f\n", M[3]);
+
+
+    printf("accelerations[0][0]: %f\n", accelerations[0][0]);
+    printf("accelerations[1][0]: %f\n", accelerations[1][0]);
+    printf("accelerations[2][0]: %f\n", accelerations[0][0]);
+    printf("accelerations[3][0]: %f\n", accelerations[1][0]);
+
 
     //deallocazione delle matrici
     /*for (int i = 0; i < pop_size; i++){ //It was used before
@@ -208,7 +219,7 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
 
 
     for (int l = 0; l < n_iter; l++) {
-        //printf("\n\nIteration: %d\n", l);
+        printf("\n\nIteration: %d\n", l);
         for (int i = 0; i < pop_size; i++){
             population[i] = serial_clip_position_agent(population[i], lb, ub, dim);
             fitness[i] = target_function(population[i], dim);

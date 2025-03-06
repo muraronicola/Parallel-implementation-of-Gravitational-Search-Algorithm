@@ -1,0 +1,7918 @@
+
+
+Iteration: 0
+
+
+INIZIOOO
+
+
+i: 1; j: 0
+R: 58.058392
+M[j]: 0.175919
+i 1
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.006495
+
+i: 2; j: 0
+R: 68.902237
+M[j]: 0.175919
+i 2
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.062910
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.175919
+i 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.034301
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.175919
+i 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.061848
+
+i: 5; j: 0
+R: 91.584915
+M[j]: 0.175919
+i 5
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.043868
+
+i: 6; j: 0
+R: 57.983616
+M[j]: 0.175919
+i 6
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.084375
+
+i: 7; j: 0
+R: 96.281189
+M[j]: 0.175919
+i 7
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.050971
+
+i: 8; j: 0
+R: 106.540482
+M[j]: 0.175919
+i 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.025666
+
+i: 9; j: 0
+R: 123.711937
+M[j]: 0.175919
+i 9
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.079060
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.006495
+Forces[2][0]: 0.062910
+Forces[3][0]: 0.034301
+M[0]: 0.175919
+M[1]: 0.155468
+M[2]: 0.144125
+M[3]: 0.128580
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.041780
+accelerations[2][0]: 0.000000
+accelerations[3][0]: 0.041780
+
+
+Iteration: 1
+
+
+INIZIOOO
+
+
+i: 1; j: 0
+R: 57.492622
+M[j]: 0.172417
+i 1
+population[i][0] 6.965050
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.006366
+
+i: 2; j: 0
+R: 68.291931
+M[j]: 0.172417
+i 2
+population[i][0] -37.632812
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.061658
+
+i: 3; j: 0
+R: 43.221050
+M[j]: 0.172417
+i 3
+population[i][0] -5.643998
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.033618
+
+i: 4; j: 0
+R: 66.603729
+M[j]: 0.172417
+i 4
+population[i][0] 58.042793
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.060617
+
+i: 5; j: 0
+R: 90.719543
+M[j]: 0.172417
+i 5
+population[i][0] -34.033939
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.042995
+
+i: 6; j: 0
+R: 57.034248
+M[j]: 0.172417
+i 6
+population[i][0] 65.920616
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.082695
+
+i: 7; j: 0
+R: 94.533943
+M[j]: 0.172417
+i 7
+population[i][0] 65.991653
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.049956
+
+i: 8; j: 0
+R: 104.274872
+M[j]: 0.172417
+i 8
+population[i][0] 41.637672
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.025155
+
+i: 9; j: 0
+R: 123.711937
+M[j]: 0.172417
+i 9
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.077486
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.006366
+Forces[2][0]: 0.061658
+Forces[3][0]: 0.033618
+M[0]: 0.172417
+M[1]: 0.153081
+M[2]: 0.142188
+M[3]: 0.127209
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.041587
+accelerations[2][0]: 0.000000
+accelerations[3][0]: 0.041587
+
+
+Iteration: 2
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 56.646576
+M[j]: 0.149965
+i 0
+population[i][0] 11.210644
+population[j][0] 7.027527
+Forces[i][0] 0.000000
+Forces[i][0] -0.005537
+
+i: 1; j: 0
+R: 56.646576
+M[j]: 0.167768
+i 1
+population[i][0] 7.027527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.006194
+
+i: 2; j: 0
+R: 67.380486
+M[j]: 0.167768
+i 2
+population[i][0] -36.980930
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.059995
+
+i: 2; j: 1
+R: 45.001038
+M[j]: 0.149965
+i 2
+population[i][0] -36.980930
+population[j][0] 7.027527
+Forces[i][0] 0.059995
+Forces[i][0] 0.133324
+
+i: 3; j: 0
+R: 42.201321
+M[j]: 0.167768
+i 3
+population[i][0] -5.246340
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.032712
+
+i: 3; j: 1
+R: 96.138870
+M[j]: 0.149965
+i 3
+population[i][0] -5.246340
+population[j][0] 7.027527
+Forces[i][0] 0.032712
+Forces[i][0] 0.042285
+
+i: 4; j: 0
+R: 65.441208
+M[j]: 0.167768
+i 4
+population[i][0] 57.225368
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.058983
+
+i: 4; j: 1
+R: 51.176456
+M[j]: 0.149965
+i 4
+population[i][0] 57.225368
+population[j][0] 7.027527
+Forces[i][0] -0.058983
+Forces[i][0] -0.132531
+
+i: 5; j: 0
+R: 89.437904
+M[j]: 0.167768
+i 5
+population[i][0] -33.394745
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.041835
+
+i: 5; j: 1
+R: 45.565125
+M[j]: 0.149965
+i 5
+population[i][0] -33.394745
+population[j][0] 7.027527
+Forces[i][0] 0.041835
+Forces[i][0] 0.108355
+
+i: 6; j: 0
+R: 55.632542
+M[j]: 0.167768
+i 6
+population[i][0] 64.576035
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.080465
+
+i: 6; j: 1
+R: 92.338364
+M[j]: 0.149965
+i 6
+population[i][0] 64.576035
+population[j][0] 7.027527
+Forces[i][0] -0.080465
+Forces[i][0] -0.127197
+
+i: 7; j: 0
+R: 92.069092
+M[j]: 0.167768
+i 7
+population[i][0] 64.563309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.048609
+
+i: 7; j: 1
+R: 60.449997
+M[j]: 0.149965
+i 7
+population[i][0] 64.563309
+population[j][0] 7.027527
+Forces[i][0] -0.048609
+Forces[i][0] -0.119977
+
+i: 8; j: 0
+R: 101.210579
+M[j]: 0.167768
+i 8
+population[i][0] 40.743523
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] -0.024477
+
+i: 8; j: 1
+R: 52.554630
+M[j]: 0.149965
+i 8
+population[i][0] 40.743523
+population[j][0] 7.027527
+Forces[i][0] -0.024477
+Forces[i][0] -0.072581
+
+i: 9; j: 0
+R: 123.711937
+M[j]: 0.167768
+i 9
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.075397
+
+i: 9; j: 1
+R: 107.035889
+M[j]: 0.149965
+i 9
+population[i][0] -99.984344
+population[j][0] 7.027527
+Forces[i][0] 0.075397
+Forces[i][0] 0.150362
+Forces[0][0]: -0.005537
+Forces[1][0]: 0.006194
+Forces[2][0]: 0.133324
+Forces[3][0]: 0.042285
+M[0]: 0.167768
+M[1]: 0.149965
+M[2]: 0.139689
+M[3]: 0.125477
+accelerations[0][0]: -0.033005
+accelerations[1][0]: 0.041306
+accelerations[2][0]: -0.033005
+accelerations[3][0]: 0.041306
+
+
+Iteration: 3
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 55.217255
+M[j]: 0.145166
+i 0
+population[i][0] 11.177639
+population[j][0] 7.100071
+Forces[i][0] 0.000000
+Forces[i][0] -0.005360
+
+i: 0; j: 2
+R: 65.692223
+M[j]: 0.136107
+i 0
+population[i][0] 11.177639
+population[j][0] -35.700558
+Forces[i][0] -0.005360
+Forces[i][0] -0.053923
+
+i: 1; j: 0
+R: 55.217255
+M[j]: 0.161401
+i 1
+population[i][0] 7.100071
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] 0.005959
+
+i: 1; j: 2
+R: 43.746094
+M[j]: 0.136107
+i 1
+population[i][0] 7.100071
+population[j][0] -35.700558
+Forces[i][0] 0.005959
+Forces[i][0] -0.060624
+
+i: 2; j: 0
+R: 65.692223
+M[j]: 0.161401
+i 2
+population[i][0] -35.700558
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] 0.057588
+
+i: 2; j: 1
+R: 43.746094
+M[j]: 0.145166
+i 2
+population[i][0] -35.700558
+population[j][0] 7.100071
+Forces[i][0] 0.057588
+Forces[i][0] 0.128602
+
+i: 3; j: 0
+R: 40.845005
+M[j]: 0.161401
+i 3
+population[i][0] -4.710521
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] 0.031391
+
+i: 3; j: 1
+R: 93.444077
+M[j]: 0.145166
+i 3
+population[i][0] -4.710521
+population[j][0] 7.100071
+Forces[i][0] 0.031391
+Forces[i][0] 0.040565
+
+i: 3; j: 2
+R: 89.204910
+M[j]: 0.136107
+i 3
+population[i][0] -4.710521
+population[j][0] -35.700558
+Forces[i][0] 0.040565
+Forces[i][0] 0.016923
+
+i: 4; j: 0
+R: 63.437862
+M[j]: 0.161401
+i 4
+population[i][0] 55.622013
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] -0.056538
+
+i: 4; j: 1
+R: 49.501698
+M[j]: 0.145166
+i 4
+population[i][0] 55.622013
+population[j][0] 7.100071
+Forces[i][0] -0.056538
+Forces[i][0] -0.127685
+
+i: 4; j: 2
+R: 91.325684
+M[j]: 0.136107
+i 4
+population[i][0] 55.622013
+population[j][0] -35.700558
+Forces[i][0] -0.127685
+Forces[i][0] -0.195736
+
+i: 5; j: 0
+R: 86.946297
+M[j]: 0.161401
+i 5
+population[i][0] -32.008038
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] 0.040083
+
+i: 5; j: 1
+R: 44.107361
+M[j]: 0.145166
+i 5
+population[i][0] -32.008038
+population[j][0] 7.100071
+Forces[i][0] 0.040083
+Forces[i][0] 0.104440
+
+i: 5; j: 2
+R: 29.672911
+M[j]: 0.136107
+i 5
+population[i][0] -32.008038
+population[j][0] -35.700558
+Forces[i][0] 0.104440
+Forces[i][0] 0.095971
+
+i: 6; j: 0
+R: 53.536892
+M[j]: 0.161401
+i 6
+population[i][0] 62.544559
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] -0.077429
+
+i: 6; j: 1
+R: 89.418686
+M[j]: 0.145166
+i 6
+population[i][0] 62.544559
+population[j][0] 7.100071
+Forces[i][0] -0.077429
+Forces[i][0] -0.122435
+
+i: 6; j: 2
+R: 115.699341
+M[j]: 0.136107
+i 6
+population[i][0] 62.544559
+population[j][0] -35.700558
+Forces[i][0] -0.122435
+Forces[i][0] -0.180222
+
+i: 7; j: 0
+R: 88.061523
+M[j]: 0.161401
+i 7
+population[i][0] 61.822422
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] -0.046411
+
+i: 7; j: 1
+R: 57.294651
+M[j]: 0.145166
+i 7
+population[i][0] 61.822422
+population[j][0] 7.100071
+Forces[i][0] -0.046411
+Forces[i][0] -0.115736
+
+i: 7; j: 2
+R: 100.934631
+M[j]: 0.136107
+i 7
+population[i][0] 61.822422
+population[j][0] -35.700558
+Forces[i][0] -0.115736
+Forces[i][0] -0.181489
+
+i: 8; j: 0
+R: 96.312508
+M[j]: 0.161401
+i 8
+population[i][0] 38.896385
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] -0.023226
+
+i: 8; j: 1
+R: 48.915184
+M[j]: 0.145166
+i 8
+population[i][0] 38.896385
+population[j][0] 7.100071
+Forces[i][0] -0.023226
+Forces[i][0] -0.070407
+
+i: 8; j: 2
+R: 87.753662
+M[j]: 0.136107
+i 8
+population[i][0] 38.896385
+population[j][0] -35.700558
+Forces[i][0] -0.070407
+Forces[i][0] -0.128257
+
+i: 9; j: 0
+R: 123.487503
+M[j]: 0.161401
+i 9
+population[i][0] -99.984344
+population[j][0] 11.177639
+Forces[i][0] 0.000000
+Forces[i][0] 0.072645
+
+i: 9; j: 1
+R: 107.092163
+M[j]: 0.145166
+i 9
+population[i][0] -99.984344
+population[j][0] 7.100071
+Forces[i][0] 0.072645
+Forces[i][0] 0.145223
+
+i: 9; j: 2
+R: 64.750259
+M[j]: 0.136107
+i 9
+population[i][0] -99.984344
+population[j][0] -35.700558
+Forces[i][0] 0.145223
+Forces[i][0] 0.212787
+Forces[0][0]: -0.053923
+Forces[1][0]: -0.060624
+Forces[2][0]: 0.128602
+Forces[3][0]: 0.016923
+M[0]: 0.161401
+M[1]: 0.145166
+M[2]: 0.136107
+M[3]: 0.123354
+accelerations[0][0]: -0.334096
+accelerations[1][0]: -0.417615
+accelerations[2][0]: -0.334096
+accelerations[3][0]: -0.417615
+
+
+Iteration: 4
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 53.117699
+M[j]: 0.139410
+i 0
+population[i][0] 10.827041
+population[j][0] 6.718728
+Forces[i][0] 0.000000
+Forces[i][0] -0.005391
+
+i: 0; j: 2
+R: 63.201069
+M[j]: 0.131564
+i 0
+population[i][0] 10.827041
+population[j][0] -34.115513
+Forces[i][0] -0.005391
+Forces[i][0] -0.052169
+
+i: 0; j: 3
+R: 39.099358
+M[j]: 0.121222
+i 0
+population[i][0] 10.827041
+population[j][0] -4.305418
+Forces[i][0] -0.052169
+Forces[i][0] -0.075627
+
+i: 1; j: 0
+R: 53.117699
+M[j]: 0.154132
+i 1
+population[i][0] 6.718728
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] 0.005961
+
+i: 1; j: 2
+R: 41.714180
+M[j]: 0.131564
+i 1
+population[i][0] 6.718728
+population[j][0] -34.115513
+Forces[i][0] 0.005961
+Forces[i][0] -0.058434
+
+i: 1; j: 3
+R: 89.690971
+M[j]: 0.121222
+i 1
+population[i][0] 6.718728
+population[j][0] -4.305418
+Forces[i][0] -0.058434
+Forces[i][0] -0.065884
+
+i: 2; j: 0
+R: 63.201069
+M[j]: 0.154132
+i 2
+population[i][0] -34.115513
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] 0.054802
+
+i: 2; j: 1
+R: 41.714180
+M[j]: 0.139410
+i 2
+population[i][0] -34.115513
+population[j][0] 6.718728
+Forces[i][0] 0.054802
+Forces[i][0] 0.123037
+
+i: 2; j: 3
+R: 85.831108
+M[j]: 0.121222
+i 2
+population[i][0] -34.115513
+population[j][0] -4.305418
+Forces[i][0] 0.123037
+Forces[i][0] 0.144088
+
+i: 3; j: 0
+R: 39.099358
+M[j]: 0.154132
+i 3
+population[i][0] -4.305418
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] 0.029827
+
+i: 3; j: 1
+R: 89.690971
+M[j]: 0.139410
+i 3
+population[i][0] -4.305418
+population[j][0] 6.718728
+Forces[i][0] 0.029827
+Forces[i][0] 0.038394
+
+i: 3; j: 2
+R: 85.831108
+M[j]: 0.131564
+i 3
+population[i][0] -4.305418
+population[j][0] -34.115513
+Forces[i][0] 0.038394
+Forces[i][0] 0.015547
+
+i: 4; j: 0
+R: 60.616482
+M[j]: 0.154132
+i 4
+population[i][0] 53.039860
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] -0.053668
+
+i: 4; j: 1
+R: 47.276543
+M[j]: 0.139410
+i 4
+population[i][0] 53.039860
+population[j][0] 6.718728
+Forces[i][0] -0.053668
+Forces[i][0] -0.121965
+
+i: 4; j: 2
+R: 87.160370
+M[j]: 0.131564
+i 4
+population[i][0] 53.039860
+population[j][0] -34.115513
+Forces[i][0] -0.121965
+Forces[i][0] -0.187743
+
+i: 4; j: 3
+R: 98.068291
+M[j]: 0.121222
+i 4
+population[i][0] 53.039860
+population[j][0] -4.305418
+Forces[i][0] -0.187743
+Forces[i][0] -0.223185
+
+i: 5; j: 0
+R: 82.959976
+M[j]: 0.154132
+i 5
+population[i][0] -30.371063
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] 0.038271
+
+i: 5; j: 1
+R: 41.695469
+M[j]: 0.139410
+i 5
+population[i][0] -30.371063
+population[j][0] 6.718728
+Forces[i][0] 0.038271
+Forces[i][0] 0.100277
+
+i: 5; j: 2
+R: 27.824738
+M[j]: 0.131564
+i 5
+population[i][0] -30.371063
+population[j][0] -34.115513
+Forces[i][0] 0.100277
+Forces[i][0] 0.091424
+
+i: 5; j: 3
+R: 111.159019
+M[j]: 0.121222
+i 5
+population[i][0] -30.371063
+population[j][0] -4.305418
+Forces[i][0] 0.091424
+Forces[i][0] 0.105637
+
+i: 6; j: 0
+R: 50.850105
+M[j]: 0.154132
+i 6
+population[i][0] 59.626514
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] -0.073958
+
+i: 6; j: 1
+R: 85.570251
+M[j]: 0.139410
+i 6
+population[i][0] 59.626514
+population[j][0] 6.718728
+Forces[i][0] -0.073958
+Forces[i][0] -0.117057
+
+i: 6; j: 2
+R: 110.620377
+M[j]: 0.131564
+i 6
+population[i][0] 59.626514
+population[j][0] -34.115513
+Forces[i][0] -0.117057
+Forces[i][0] -0.172802
+
+i: 6; j: 3
+R: 67.532776
+M[j]: 0.121222
+i 6
+population[i][0] 59.626514
+population[j][0] -4.305418
+Forces[i][0] -0.172802
+Forces[i][0] -0.230181
+
+i: 7; j: 0
+R: 82.772171
+M[j]: 0.154132
+i 7
+population[i][0] 57.711021
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] -0.043652
+
+i: 7; j: 1
+R: 53.225334
+M[j]: 0.139410
+i 7
+population[i][0] 57.711021
+population[j][0] 6.718728
+Forces[i][0] -0.043652
+Forces[i][0] -0.110433
+
+i: 7; j: 2
+R: 94.855186
+M[j]: 0.131564
+i 7
+population[i][0] 57.711021
+population[j][0] -34.115513
+Forces[i][0] -0.110433
+Forces[i][0] -0.174114
+
+i: 7; j: 3
+R: 121.315559
+M[j]: 0.121222
+i 7
+population[i][0] 57.711021
+population[j][0] -4.305418
+Forces[i][0] -0.174114
+Forces[i][0] -0.205099
+
+i: 8; j: 0
+R: 90.025055
+M[j]: 0.154132
+i 8
+population[i][0] 35.883270
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] -0.021449
+
+i: 8; j: 1
+R: 44.423458
+M[j]: 0.139410
+i 8
+population[i][0] 35.883270
+population[j][0] 6.718728
+Forces[i][0] -0.021449
+Forces[i][0] -0.067212
+
+i: 8; j: 2
+R: 81.648781
+M[j]: 0.131564
+i 8
+population[i][0] 35.883270
+population[j][0] -34.115513
+Forces[i][0] -0.067212
+Forces[i][0] -0.123608
+
+i: 8; j: 3
+R: 128.943115
+M[j]: 0.121222
+i 8
+population[i][0] 35.883270
+population[j][0] -4.305418
+Forces[i][0] -0.123608
+Forces[i][0] -0.142499
+
+i: 9; j: 0
+R: 122.752991
+M[j]: 0.154132
+i 9
+population[i][0] -99.984344
+population[j][0] 10.827041
+Forces[i][0] 0.000000
+Forces[i][0] 0.069569
+
+i: 9; j: 1
+R: 106.703171
+M[j]: 0.139410
+i 9
+population[i][0] -99.984344
+population[j][0] 6.718728
+Forces[i][0] 0.069569
+Forces[i][0] 0.139274
+
+i: 9; j: 2
+R: 66.399307
+M[j]: 0.131564
+i 9
+population[i][0] -99.984344
+population[j][0] -34.115513
+Forces[i][0] 0.139274
+Forces[i][0] 0.204531
+
+i: 9; j: 3
+R: 130.580872
+M[j]: 0.121222
+i 9
+population[i][0] -99.984344
+population[j][0] -4.305418
+Forces[i][0] 0.204531
+Forces[i][0] 0.248942
+Forces[0][0]: -0.075627
+Forces[1][0]: -0.065884
+Forces[2][0]: 0.144088
+Forces[3][0]: 0.015547
+M[0]: 0.154132
+M[1]: 0.139410
+M[2]: 0.131564
+M[3]: 0.121222
+accelerations[0][0]: -0.490667
+accelerations[1][0]: -0.472589
+accelerations[2][0]: -0.490667
+accelerations[3][0]: -0.472589
+
+
+Iteration: 5
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 50.604065
+M[j]: 0.133782
+i 0
+population[i][0] 10.161075
+population[j][0] 6.055467
+Forces[i][0] 0.000000
+Forces[i][0] -0.005427
+
+i: 0; j: 2
+R: 60.039299
+M[j]: 0.127089
+i 0
+population[i][0] 10.161075
+population[j][0] -32.227802
+Forces[i][0] -0.005427
+Forces[i][0] -0.050291
+
+i: 0; j: 3
+R: 36.809418
+M[j]: 0.118824
+i 0
+population[i][0] 10.161075
+population[j][0] -3.974613
+Forces[i][0] -0.050291
+Forces[i][0] -0.073106
+
+i: 0; j: 4
+R: 57.256935
+M[j]: 0.108859
+i 0
+population[i][0] 10.161075
+population[j][0] 49.704388
+Forces[i][0] -0.073106
+Forces[i][0] -0.035516
+
+i: 1; j: 0
+R: 50.604065
+M[j]: 0.146572
+i 1
+population[i][0] 6.055467
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] 0.005946
+
+i: 1; j: 2
+R: 39.093487
+M[j]: 0.127089
+i 1
+population[i][0] 6.055467
+population[j][0] -32.227802
+Forces[i][0] 0.005946
+Forces[i][0] -0.056282
+
+i: 1; j: 3
+R: 85.017960
+M[j]: 0.118824
+i 1
+population[i][0] 6.055467
+population[j][0] -3.974613
+Forces[i][0] -0.056282
+Forces[i][0] -0.063291
+
+i: 1; j: 4
+R: 44.572887
+M[j]: 0.108859
+i 1
+population[i][0] 6.055467
+population[j][0] 49.704388
+Forces[i][0] -0.063291
+Forces[i][0] -0.009990
+
+i: 2; j: 0
+R: 60.039299
+M[j]: 0.146572
+i 2
+population[i][0] -32.227802
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] 0.051741
+
+i: 2; j: 1
+R: 39.093487
+M[j]: 0.133782
+i 2
+population[i][0] -32.227802
+population[j][0] 6.055467
+Forces[i][0] 0.051741
+Forces[i][0] 0.117246
+
+i: 2; j: 3
+R: 81.556557
+M[j]: 0.118824
+i 2
+population[i][0] -32.227802
+population[j][0] -3.974613
+Forces[i][0] 0.117246
+Forces[i][0] 0.137828
+
+i: 2; j: 4
+R: 81.939720
+M[j]: 0.108859
+i 2
+population[i][0] -32.227802
+population[j][0] 49.704388
+Forces[i][0] 0.137828
+Forces[i][0] 0.192252
+
+i: 3; j: 0
+R: 36.809418
+M[j]: 0.146572
+i 3
+population[i][0] -3.974613
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] 0.028144
+
+i: 3; j: 1
+R: 85.017960
+M[j]: 0.133782
+i 3
+population[i][0] -3.974613
+population[j][0] 6.055467
+Forces[i][0] 0.028144
+Forces[i][0] 0.036035
+
+i: 3; j: 2
+R: 81.556557
+M[j]: 0.127089
+i 3
+population[i][0] -3.974613
+population[j][0] -32.227802
+Forces[i][0] 0.036035
+Forces[i][0] 0.014022
+
+i: 3; j: 4
+R: 92.552422
+M[j]: 0.108859
+i 3
+population[i][0] -3.974613
+population[j][0] 49.704388
+Forces[i][0] 0.014022
+Forces[i][0] 0.045590
+
+i: 4; j: 0
+R: 57.256935
+M[j]: 0.146572
+i 4
+population[i][0] 49.704388
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] -0.050613
+
+i: 4; j: 1
+R: 44.572887
+M[j]: 0.133782
+i 4
+population[i][0] 49.704388
+population[j][0] 6.055467
+Forces[i][0] -0.050613
+Forces[i][0] -0.116118
+
+i: 4; j: 2
+R: 81.939720
+M[j]: 0.127089
+i 4
+population[i][0] 49.704388
+population[j][0] -32.227802
+Forces[i][0] -0.116118
+Forces[i][0] -0.179657
+
+i: 4; j: 3
+R: 92.552422
+M[j]: 0.118824
+i 4
+population[i][0] 49.704388
+population[j][0] -3.974613
+Forces[i][0] -0.179657
+Forces[i][0] -0.214115
+
+i: 5; j: 0
+R: 77.980492
+M[j]: 0.146572
+i 5
+population[i][0] -28.519077
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] 0.036352
+
+i: 5; j: 1
+R: 38.649551
+M[j]: 0.133782
+i 5
+population[i][0] -28.519077
+population[j][0] 6.055467
+Forces[i][0] 0.036352
+Forces[i][0] 0.096190
+
+i: 5; j: 2
+R: 25.463297
+M[j]: 0.127089
+i 5
+population[i][0] -28.519077
+population[j][0] -32.227802
+Forces[i][0] 0.096190
+Forces[i][0] 0.086935
+
+i: 5; j: 3
+R: 104.618103
+M[j]: 0.118824
+i 5
+population[i][0] -28.519077
+population[j][0] -3.974613
+Forces[i][0] 0.086935
+Forces[i][0] 0.100873
+
+i: 5; j: 4
+R: 82.527138
+M[j]: 0.108859
+i 5
+population[i][0] -28.519077
+population[j][0] 49.704388
+Forces[i][0] 0.100873
+Forces[i][0] 0.152465
+
+i: 6; j: 0
+R: 47.534889
+M[j]: 0.146572
+i 6
+population[i][0] 55.786648
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] -0.070342
+
+i: 6; j: 1
+R: 80.872314
+M[j]: 0.133782
+i 6
+population[i][0] 55.786648
+population[j][0] 6.055467
+Forces[i][0] -0.070342
+Forces[i][0] -0.111476
+
+i: 6; j: 2
+R: 104.242363
+M[j]: 0.127089
+i 6
+population[i][0] 55.786648
+population[j][0] -32.227802
+Forces[i][0] -0.111476
+Forces[i][0] -0.165128
+
+i: 6; j: 3
+R: 63.228432
+M[j]: 0.118824
+i 6
+population[i][0] 55.786648
+population[j][0] -3.974613
+Forces[i][0] -0.165128
+Forces[i][0] -0.221282
+
+i: 6; j: 4
+R: 55.082462
+M[j]: 0.108859
+i 6
+population[i][0] 55.786648
+population[j][0] 49.704388
+Forces[i][0] -0.221282
+Forces[i][0] -0.227293
+
+i: 7; j: 0
+R: 76.839577
+M[j]: 0.146572
+i 7
+population[i][0] 52.891579
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] -0.040754
+
+i: 7; j: 1
+R: 48.722279
+M[j]: 0.133782
+i 7
+population[i][0] 52.891579
+population[j][0] 6.055467
+Forces[i][0] -0.040754
+Forces[i][0] -0.105056
+
+i: 7; j: 2
+R: 87.754425
+M[j]: 0.127089
+i 7
+population[i][0] 52.891579
+population[j][0] -32.227802
+Forces[i][0] -0.105056
+Forces[i][0] -0.166692
+
+i: 7; j: 3
+R: 113.173737
+M[j]: 0.118824
+i 7
+population[i][0] 52.891579
+population[j][0] -3.974613
+Forces[i][0] -0.166692
+Forces[i][0] -0.196545
+
+i: 7; j: 4
+R: 22.678890
+M[j]: 0.108859
+i 7
+population[i][0] 52.891579
+population[j][0] 49.704388
+Forces[i][0] -0.196545
+Forces[i][0] -0.204194
+
+i: 8; j: 0
+R: 83.163857
+M[j]: 0.146572
+i 8
+population[i][0] 32.380859
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] -0.019581
+
+i: 8; j: 1
+R: 39.690212
+M[j]: 0.133782
+i 8
+population[i][0] 32.380859
+population[j][0] 6.055467
+Forces[i][0] -0.019581
+Forces[i][0] -0.063947
+
+i: 8; j: 2
+R: 74.763824
+M[j]: 0.127089
+i 8
+population[i][0] 32.380859
+population[j][0] -32.227802
+Forces[i][0] -0.063947
+Forces[i][0] -0.118861
+
+i: 8; j: 3
+R: 119.778198
+M[j]: 0.118824
+i 8
+population[i][0] 32.380859
+population[j][0] -3.974613
+Forces[i][0] -0.118861
+Forces[i][0] -0.136894
+
+i: 8; j: 4
+R: 42.429459
+M[j]: 0.108859
+i 8
+population[i][0] 32.380859
+population[j][0] 49.704388
+Forces[i][0] -0.136894
+Forces[i][0] -0.114671
+
+i: 9; j: 0
+R: 121.777786
+M[j]: 0.146572
+i 9
+population[i][0] -99.984344
+population[j][0] 10.161075
+Forces[i][0] 0.000000
+Forces[i][0] 0.066285
+
+i: 9; j: 1
+R: 106.050468
+M[j]: 0.133782
+i 9
+population[i][0] -99.984344
+population[j][0] 6.055467
+Forces[i][0] 0.066285
+Forces[i][0] 0.133170
+
+i: 9; j: 2
+R: 68.408386
+M[j]: 0.127089
+i 9
+population[i][0] -99.984344
+population[j][0] -32.227802
+Forces[i][0] 0.133170
+Forces[i][0] 0.196109
+
+i: 9; j: 3
+R: 128.846436
+M[j]: 0.118824
+i 9
+population[i][0] -99.984344
+population[j][0] -3.974613
+Forces[i][0] 0.196109
+Forces[i][0] 0.240380
+
+i: 9; j: 4
+R: 150.058777
+M[j]: 0.108859
+i 9
+population[i][0] -99.984344
+population[j][0] 49.704388
+Forces[i][0] 0.240380
+Forces[i][0] 0.294675
+Forces[0][0]: -0.035516
+Forces[1][0]: -0.009990
+Forces[2][0]: 0.192252
+Forces[3][0]: 0.045590
+M[0]: 0.146572
+M[1]: 0.133782
+M[2]: 0.127089
+M[3]: 0.118824
+accelerations[0][0]: -0.242309
+accelerations[1][0]: -0.074670
+accelerations[2][0]: -0.242309
+accelerations[3][0]: -0.074670
+
+
+Iteration: 6
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 47.518120
+M[j]: 0.128675
+i 0
+population[i][0] 9.585783
+population[j][0] 5.649167
+Forces[i][0] 0.000000
+Forces[i][0] -0.005330
+
+i: 0; j: 2
+R: 56.229080
+M[j]: 0.123318
+i 0
+population[i][0] 9.585783
+population[j][0] -29.771210
+Forces[i][0] -0.005330
+Forces[i][0] -0.048488
+
+i: 0; j: 3
+R: 34.180573
+M[j]: 0.116888
+i 0
+population[i][0] 9.585783
+population[j][0] -3.425535
+Forces[i][0] -0.048488
+Forces[i][0] -0.070735
+
+i: 0; j: 4
+R: 53.336803
+M[j]: 0.108549
+i 0
+population[i][0] 9.585783
+population[j][0] 46.069759
+Forces[i][0] -0.070735
+Forces[i][0] -0.033610
+
+i: 0; j: 5
+R: 72.121239
+M[j]: 0.104628
+i 0
+population[i][0] 9.585783
+population[j][0] -26.116274
+Forces[i][0] -0.033610
+Forces[i][0] -0.059507
+
+i: 1; j: 0
+R: 47.518120
+M[j]: 0.139560
+i 1
+population[i][0] 5.649167
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] 0.005781
+
+i: 1; j: 2
+R: 36.143932
+M[j]: 0.123318
+i 1
+population[i][0] 5.649167
+population[j][0] -29.771210
+Forces[i][0] 0.005781
+Forces[i][0] -0.054644
+
+i: 1; j: 3
+R: 79.481750
+M[j]: 0.116888
+i 1
+population[i][0] 5.649167
+population[j][0] -3.425535
+Forces[i][0] -0.054644
+Forces[i][0] -0.061317
+
+i: 1; j: 4
+R: 41.293991
+M[j]: 0.108549
+i 1
+population[i][0] 5.649167
+population[j][0] 46.069759
+Forces[i][0] -0.061317
+Forces[i][0] -0.008190
+
+i: 1; j: 5
+R: 35.262302
+M[j]: 0.104628
+i 1
+population[i][0] 5.649167
+population[j][0] -26.116274
+Forces[i][0] -0.008190
+Forces[i][0] -0.055316
+
+i: 2; j: 0
+R: 56.229080
+M[j]: 0.139560
+i 2
+population[i][0] -29.771210
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] 0.048842
+
+i: 2; j: 1
+R: 36.143932
+M[j]: 0.128675
+i 2
+population[i][0] -29.771210
+population[j][0] 5.649167
+Forces[i][0] 0.048842
+Forces[i][0] 0.111891
+
+i: 2; j: 3
+R: 76.449142
+M[j]: 0.116888
+i 2
+population[i][0] -29.771210
+population[j][0] -3.425535
+Forces[i][0] 0.111891
+Forces[i][0] 0.132032
+
+i: 2; j: 4
+R: 75.851311
+M[j]: 0.108549
+i 2
+population[i][0] -29.771210
+population[j][0] 46.069759
+Forces[i][0] 0.132032
+Forces[i][0] 0.186299
+
+i: 2; j: 5
+R: 22.800434
+M[j]: 0.104628
+i 2
+population[i][0] -29.771210
+population[j][0] -26.116274
+Forces[i][0] 0.186299
+Forces[i][0] 0.194685
+
+i: 3; j: 0
+R: 34.180573
+M[j]: 0.139560
+i 3
+population[i][0] -3.425535
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] 0.026563
+
+i: 3; j: 1
+R: 79.481750
+M[j]: 0.128675
+i 3
+population[i][0] -3.425535
+population[j][0] 5.649167
+Forces[i][0] 0.026563
+Forces[i][0] 0.033908
+
+i: 3; j: 2
+R: 76.449142
+M[j]: 0.123318
+i 3
+population[i][0] -3.425535
+population[j][0] -29.771210
+Forces[i][0] 0.033908
+Forces[i][0] 0.012660
+
+i: 3; j: 4
+R: 86.151054
+M[j]: 0.108549
+i 3
+population[i][0] -3.425535
+population[j][0] 46.069759
+Forces[i][0] 0.012660
+Forces[i][0] 0.043841
+
+i: 3; j: 5
+R: 96.964043
+M[j]: 0.104628
+i 3
+population[i][0] -3.425535
+population[j][0] -26.116274
+Forces[i][0] 0.043841
+Forces[i][0] 0.031599
+
+i: 4; j: 0
+R: 53.336803
+M[j]: 0.139560
+i 4
+population[i][0] 46.069759
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] -0.047731
+
+i: 4; j: 1
+R: 41.293991
+M[j]: 0.128675
+i 4
+population[i][0] 46.069759
+population[j][0] 5.649167
+Forces[i][0] -0.047731
+Forces[i][0] -0.110708
+
+i: 4; j: 2
+R: 75.851311
+M[j]: 0.123318
+i 4
+population[i][0] 46.069759
+population[j][0] -29.771210
+Forces[i][0] -0.110708
+Forces[i][0] -0.172359
+
+i: 4; j: 3
+R: 86.151054
+M[j]: 0.116888
+i 4
+population[i][0] 46.069759
+population[j][0] -3.425535
+Forces[i][0] -0.172359
+Forces[i][0] -0.205936
+
+i: 4; j: 5
+R: 75.995094
+M[j]: 0.104628
+i 4
+population[i][0] 46.069759
+population[j][0] -26.116274
+Forces[i][0] -0.205936
+Forces[i][0] -0.255628
+
+i: 5; j: 0
+R: 72.121239
+M[j]: 0.139560
+i 5
+population[i][0] -26.116274
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] 0.034543
+
+i: 5; j: 1
+R: 35.262302
+M[j]: 0.128675
+i 5
+population[i][0] -26.116274
+population[j][0] 5.649167
+Forces[i][0] 0.034543
+Forces[i][0] 0.092500
+
+i: 5; j: 2
+R: 22.800434
+M[j]: 0.123318
+i 5
+population[i][0] -26.116274
+population[j][0] -29.771210
+Forces[i][0] 0.092500
+Forces[i][0] 0.082616
+
+i: 5; j: 3
+R: 96.964043
+M[j]: 0.116888
+i 5
+population[i][0] -26.116274
+population[j][0] -3.425535
+Forces[i][0] 0.082616
+Forces[i][0] 0.096293
+
+i: 5; j: 4
+R: 75.995094
+M[j]: 0.108549
+i 5
+population[i][0] -26.116274
+population[j][0] 46.069759
+Forces[i][0] 0.096293
+Forces[i][0] 0.147847
+
+i: 6; j: 0
+R: 43.685707
+M[j]: 0.139560
+i 6
+population[i][0] 51.568707
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] -0.067060
+
+i: 6; j: 1
+R: 75.105553
+M[j]: 0.128675
+i 6
+population[i][0] 51.568707
+population[j][0] 5.649167
+Forces[i][0] -0.067060
+Forces[i][0] -0.106396
+
+i: 6; j: 2
+R: 96.668831
+M[j]: 0.123318
+i 6
+population[i][0] 51.568707
+population[j][0] -29.771210
+Forces[i][0] -0.106396
+Forces[i][0] -0.158277
+
+i: 6; j: 3
+R: 58.358910
+M[j]: 0.116888
+i 6
+population[i][0] 51.568707
+population[j][0] -3.425535
+Forces[i][0] -0.158277
+Forces[i][0] -0.213352
+
+i: 6; j: 4
+R: 51.280296
+M[j]: 0.108549
+i 6
+population[i][0] 51.568707
+population[j][0] 46.069759
+Forces[i][0] -0.213352
+Forces[i][0] -0.219172
+
+i: 6; j: 5
+R: 107.802483
+M[j]: 0.104628
+i 6
+population[i][0] 51.568707
+population[j][0] -26.116274
+Forces[i][0] -0.219172
+Forces[i][0] -0.256871
+
+i: 7; j: 0
+R: 70.059418
+M[j]: 0.139560
+i 7
+population[i][0] 47.993759
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] -0.038255
+
+i: 7; j: 1
+R: 43.810547
+M[j]: 0.128675
+i 7
+population[i][0] 47.993759
+population[j][0] 5.649167
+Forces[i][0] -0.038255
+Forces[i][0] -0.100439
+
+i: 7; j: 2
+R: 79.920021
+M[j]: 0.123318
+i 7
+population[i][0] 47.993759
+population[j][0] -29.771210
+Forces[i][0] -0.100439
+Forces[i][0] -0.160436
+
+i: 7; j: 3
+R: 103.826973
+M[j]: 0.116888
+i 7
+population[i][0] 47.993759
+population[j][0] -3.425535
+Forces[i][0] -0.160436
+Forces[i][0] -0.189379
+
+i: 7; j: 4
+R: 19.780144
+M[j]: 0.108549
+i 7
+population[i][0] 47.993759
+population[j][0] 46.069759
+Forces[i][0] -0.189379
+Forces[i][0] -0.194659
+
+i: 7; j: 5
+R: 74.221786
+M[j]: 0.104628
+i 7
+population[i][0] 47.993759
+population[j][0] -26.116274
+Forces[i][0] -0.194659
+Forces[i][0] -0.246894
+
+i: 8; j: 0
+R: 75.697586
+M[j]: 0.139560
+i 8
+population[i][0] 29.207949
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] -0.018088
+
+i: 8; j: 1
+R: 34.904957
+M[j]: 0.128675
+i 8
+population[i][0] 29.207949
+population[j][0] 5.649167
+Forces[i][0] -0.018088
+Forces[i][0] -0.061512
+
+i: 8; j: 2
+R: 67.559799
+M[j]: 0.123318
+i 8
+population[i][0] 29.207949
+population[j][0] -29.771210
+Forces[i][0] -0.061512
+Forces[i][0] -0.115340
+
+i: 8; j: 3
+R: 109.684441
+M[j]: 0.116888
+i 8
+population[i][0] 29.207949
+population[j][0] -3.425535
+Forces[i][0] -0.115340
+Forces[i][0] -0.132728
+
+i: 8; j: 4
+R: 38.133904
+M[j]: 0.108549
+i 8
+population[i][0] 29.207949
+population[j][0] 46.069759
+Forces[i][0] -0.132728
+Forces[i][0] -0.108729
+
+i: 8; j: 5
+R: 56.301704
+M[j]: 0.104628
+i 8
+population[i][0] 29.207949
+population[j][0] -26.116274
+Forces[i][0] -0.108729
+Forces[i][0] -0.160135
+
+i: 9; j: 0
+R: 120.793953
+M[j]: 0.139560
+i 9
+population[i][0] -99.984344
+population[j][0] 9.585783
+Forces[i][0] 0.000000
+Forces[i][0] 0.063296
+
+i: 9; j: 1
+R: 105.691277
+M[j]: 0.128675
+i 9
+population[i][0] -99.984344
+population[j][0] 5.649167
+Forces[i][0] 0.063296
+Forces[i][0] 0.127598
+
+i: 9; j: 2
+R: 71.022186
+M[j]: 0.123318
+i 9
+population[i][0] -99.984344
+population[j][0] -29.771210
+Forces[i][0] 0.127598
+Forces[i][0] 0.188555
+
+i: 9; j: 3
+R: 126.974579
+M[j]: 0.116888
+i 9
+population[i][0] -99.984344
+population[j][0] -3.425535
+Forces[i][0] 0.188555
+Forces[i][0] 0.232999
+
+i: 9; j: 4
+R: 146.541489
+M[j]: 0.108549
+i 9
+population[i][0] -99.984344
+population[j][0] 46.069759
+Forces[i][0] 0.232999
+Forces[i][0] 0.287093
+
+i: 9; j: 5
+R: 74.807152
+M[j]: 0.104628
+i 9
+population[i][0] -99.984344
+population[j][0] -26.116274
+Forces[i][0] 0.287093
+Forces[i][0] 0.338750
+Forces[0][0]: -0.059507
+Forces[1][0]: -0.055316
+Forces[2][0]: 0.194685
+Forces[3][0]: 0.031599
+M[0]: 0.139560
+M[1]: 0.128675
+M[2]: 0.123318
+M[3]: 0.116888
+accelerations[0][0]: -0.426389
+accelerations[1][0]: -0.429892
+accelerations[2][0]: -0.426389
+accelerations[3][0]: -0.429892
+
+
+Iteration: 7
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 43.988903
+M[j]: 0.124140
+i 0
+population[i][0] 8.871748
+population[j][0] 5.016124
+Forces[i][0] 0.000000
+Forces[i][0] -0.005440
+
+i: 0; j: 2
+R: 51.976673
+M[j]: 0.119918
+i 0
+population[i][0] 8.871748
+population[j][0] -26.964191
+Forces[i][0] -0.005440
+Forces[i][0] -0.046780
+
+i: 0; j: 3
+R: 31.295725
+M[j]: 0.115651
+i 0
+population[i][0] 8.871748
+population[j][0] -2.880659
+Forces[i][0] -0.046780
+Forces[i][0] -0.068495
+
+i: 0; j: 4
+R: 48.876217
+M[j]: 0.108529
+i 0
+population[i][0] 8.871748
+population[j][0] 41.897495
+Forces[i][0] -0.068495
+Forces[i][0] -0.031828
+
+i: 0; j: 5
+R: 65.561104
+M[j]: 0.105776
+i 0
+population[i][0] 8.871748
+population[j][0] -23.501802
+Forces[i][0] -0.031828
+Forces[i][0] -0.057944
+
+i: 0; j: 6
+R: 39.530071
+M[j]: 0.103483
+i 0
+population[i][0] 8.871748
+population[j][0] 46.919685
+Forces[i][0] -0.057944
+Forces[i][0] -0.008142
+
+i: 1; j: 0
+R: 43.988903
+M[j]: 0.133517
+i 1
+population[i][0] 5.016124
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] 0.005851
+
+i: 1; j: 2
+R: 32.570404
+M[j]: 0.119918
+i 1
+population[i][0] 5.016124
+population[j][0] -26.964191
+Forces[i][0] 0.005851
+Forces[i][0] -0.053021
+
+i: 1; j: 3
+R: 73.251724
+M[j]: 0.115651
+i 1
+population[i][0] 5.016124
+population[j][0] -2.880659
+Forces[i][0] -0.053021
+Forces[i][0] -0.059255
+
+i: 1; j: 4
+R: 37.694935
+M[j]: 0.108529
+i 1
+population[i][0] 5.016124
+population[j][0] 41.897495
+Forces[i][0] -0.059255
+Forces[i][0] -0.006162
+
+i: 1; j: 5
+R: 31.420937
+M[j]: 0.105776
+i 1
+population[i][0] 5.016124
+population[j][0] -23.501802
+Forces[i][0] -0.006162
+Forces[i][0] -0.054163
+
+i: 1; j: 6
+R: 68.780777
+M[j]: 0.103483
+i 1
+population[i][0] 5.016124
+population[j][0] 46.919685
+Forces[i][0] -0.054163
+Forces[i][0] -0.022640
+
+i: 2; j: 0
+R: 51.976673
+M[j]: 0.133517
+i 2
+population[i][0] -26.964191
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] 0.046028
+
+i: 2; j: 1
+R: 32.570404
+M[j]: 0.124140
+i 2
+population[i][0] -26.964191
+population[j][0] 5.016124
+Forces[i][0] 0.046028
+Forces[i][0] 0.106973
+
+i: 2; j: 3
+R: 70.870644
+M[j]: 0.115651
+i 2
+population[i][0] -26.964191
+population[j][0] -2.880659
+Forces[i][0] 0.106973
+Forces[i][0] 0.126623
+
+i: 2; j: 4
+R: 68.880684
+M[j]: 0.108529
+i 2
+population[i][0] -26.964191
+population[j][0] 41.897495
+Forces[i][0] 0.126623
+Forces[i][0] 0.180873
+
+i: 2; j: 5
+R: 19.669918
+M[j]: 0.105776
+i 2
+population[i][0] -26.964191
+population[j][0] -23.501802
+Forces[i][0] 0.180873
+Forces[i][0] 0.190183
+
+i: 2; j: 6
+R: 88.309448
+M[j]: 0.103483
+i 2
+population[i][0] -26.964191
+population[j][0] 46.919685
+Forces[i][0] 0.190183
+Forces[i][0] 0.233472
+
+i: 3; j: 0
+R: 31.295725
+M[j]: 0.133517
+i 3
+population[i][0] -2.880659
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] 0.025070
+
+i: 3; j: 1
+R: 73.251724
+M[j]: 0.124140
+i 3
+population[i][0] -2.880659
+population[j][0] 5.016124
+Forces[i][0] 0.025070
+Forces[i][0] 0.031761
+
+i: 3; j: 2
+R: 70.870644
+M[j]: 0.119918
+i 3
+population[i][0] -2.880659
+population[j][0] -26.964191
+Forces[i][0] 0.031761
+Forces[i][0] 0.011386
+
+i: 3; j: 4
+R: 78.960152
+M[j]: 0.108529
+i 3
+population[i][0] -2.880659
+population[j][0] 41.897495
+Forces[i][0] 0.011386
+Forces[i][0] 0.042159
+
+i: 3; j: 5
+R: 88.453140
+M[j]: 0.105776
+i 3
+population[i][0] -2.880659
+population[j][0] -23.501802
+Forces[i][0] 0.042159
+Forces[i][0] 0.029829
+
+i: 3; j: 6
+R: 53.050137
+M[j]: 0.103483
+i 3
+population[i][0] -2.880659
+population[j][0] 46.919685
+Forces[i][0] 0.029829
+Forces[i][0] 0.078401
+
+i: 4; j: 0
+R: 48.876217
+M[j]: 0.133517
+i 4
+population[i][0] 41.897495
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] -0.045109
+
+i: 4; j: 1
+R: 37.694935
+M[j]: 0.124140
+i 4
+population[i][0] 41.897495
+population[j][0] 5.016124
+Forces[i][0] -0.045109
+Forces[i][0] -0.105839
+
+i: 4; j: 2
+R: 68.880684
+M[j]: 0.119918
+i 4
+population[i][0] 41.897495
+population[j][0] -26.964191
+Forces[i][0] -0.105839
+Forces[i][0] -0.165782
+
+i: 4; j: 3
+R: 78.960152
+M[j]: 0.115651
+i 4
+population[i][0] 41.897495
+population[j][0] -2.880659
+Forces[i][0] -0.165782
+Forces[i][0] -0.198574
+
+i: 4; j: 5
+R: 68.682175
+M[j]: 0.105776
+i 4
+population[i][0] 41.897495
+population[j][0] -23.501802
+Forces[i][0] -0.198574
+Forces[i][0] -0.248934
+
+i: 4; j: 6
+R: 47.022221
+M[j]: 0.103483
+i 4
+population[i][0] 41.897495
+population[j][0] 46.919685
+Forces[i][0] -0.248934
+Forces[i][0] -0.243408
+
+i: 5; j: 0
+R: 65.561104
+M[j]: 0.133517
+i 5
+population[i][0] -23.501802
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] 0.032965
+
+i: 5; j: 1
+R: 31.420937
+M[j]: 0.124140
+i 5
+population[i][0] -23.501802
+population[j][0] 5.016124
+Forces[i][0] 0.032965
+Forces[i][0] 0.089300
+
+i: 5; j: 2
+R: 19.669918
+M[j]: 0.119918
+i 5
+population[i][0] -23.501802
+population[j][0] -26.964191
+Forces[i][0] 0.089300
+Forces[i][0] 0.078746
+
+i: 5; j: 3
+R: 88.453140
+M[j]: 0.115651
+i 5
+population[i][0] -23.501802
+population[j][0] -2.880659
+Forces[i][0] 0.078746
+Forces[i][0] 0.092227
+
+i: 5; j: 4
+R: 68.682175
+M[j]: 0.108529
+i 5
+population[i][0] -23.501802
+population[j][0] 41.897495
+Forces[i][0] 0.092227
+Forces[i][0] 0.143898
+
+i: 5; j: 6
+R: 97.708847
+M[j]: 0.103483
+i 5
+population[i][0] -23.501802
+population[j][0] 46.919685
+Forces[i][0] 0.143898
+Forces[i][0] 0.181189
+
+i: 6; j: 0
+R: 39.530071
+M[j]: 0.133517
+i 6
+population[i][0] 46.919685
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] -0.064256
+
+i: 6; j: 1
+R: 68.780777
+M[j]: 0.124140
+i 6
+population[i][0] 46.919685
+population[j][0] 5.016124
+Forces[i][0] -0.064256
+Forces[i][0] -0.102071
+
+i: 6; j: 2
+R: 88.309448
+M[j]: 0.119918
+i 6
+population[i][0] 46.919685
+population[j][0] -26.964191
+Forces[i][0] -0.102071
+Forces[i][0] -0.152235
+
+i: 6; j: 3
+R: 53.050137
+M[j]: 0.115651
+i 6
+population[i][0] 46.919685
+population[j][0] -2.880659
+Forces[i][0] -0.152235
+Forces[i][0] -0.206518
+
+i: 6; j: 4
+R: 47.022221
+M[j]: 0.108529
+i 6
+population[i][0] 46.919685
+population[j][0] 41.897495
+Forces[i][0] -0.206518
+Forces[i][0] -0.212314
+
+i: 6; j: 5
+R: 97.708847
+M[j]: 0.105776
+i 6
+population[i][0] 46.919685
+population[j][0] -23.501802
+Forces[i][0] -0.212314
+Forces[i][0] -0.250432
+
+i: 7; j: 0
+R: 62.757687
+M[j]: 0.133517
+i 7
+population[i][0] 42.770412
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] -0.036060
+
+i: 7; j: 1
+R: 38.811089
+M[j]: 0.124140
+i 7
+population[i][0] 42.770412
+population[j][0] 5.016124
+Forces[i][0] -0.036060
+Forces[i][0] -0.096440
+
+i: 7; j: 2
+R: 71.364929
+M[j]: 0.119918
+i 7
+population[i][0] 42.770412
+population[j][0] -26.964191
+Forces[i][0] -0.096440
+Forces[i][0] -0.155029
+
+i: 7; j: 3
+R: 93.693886
+M[j]: 0.115651
+i 7
+population[i][0] 42.770412
+population[j][0] -2.880659
+Forces[i][0] -0.155029
+Forces[i][0] -0.183203
+
+i: 7; j: 4
+R: 16.807199
+M[j]: 0.108529
+i 7
+population[i][0] 42.770412
+population[j][0] 41.897495
+Forces[i][0] -0.183203
+Forces[i][0] -0.186022
+
+i: 7; j: 5
+R: 66.404907
+M[j]: 0.105776
+i 7
+population[i][0] 42.770412
+population[j][0] -23.501802
+Forces[i][0] -0.186022
+Forces[i][0] -0.238804
+
+i: 7; j: 6
+R: 63.673107
+M[j]: 0.103483
+i 7
+population[i][0] 42.770412
+population[j][0] 46.919685
+Forces[i][0] -0.238804
+Forces[i][0] -0.235432
+
+i: 8; j: 0
+R: 67.810966
+M[j]: 0.133517
+i 8
+population[i][0] 25.807255
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] -0.016673
+
+i: 8; j: 1
+R: 30.155716
+M[j]: 0.124140
+i 8
+population[i][0] 25.807255
+population[j][0] 5.016124
+Forces[i][0] -0.016673
+Forces[i][0] -0.059467
+
+i: 8; j: 2
+R: 59.746346
+M[j]: 0.119918
+i 8
+population[i][0] 25.807255
+population[j][0] -26.964191
+Forces[i][0] -0.059467
+Forces[i][0] -0.112427
+
+i: 8; j: 3
+R: 98.918678
+M[j]: 0.115651
+i 8
+population[i][0] 25.807255
+population[j][0] -2.880659
+Forces[i][0] -0.112427
+Forces[i][0] -0.129197
+
+i: 8; j: 4
+R: 33.718533
+M[j]: 0.108529
+i 8
+population[i][0] 25.807255
+population[j][0] 41.897495
+Forces[i][0] -0.129197
+Forces[i][0] -0.103302
+
+i: 8; j: 5
+R: 50.062279
+M[j]: 0.105776
+i 8
+population[i][0] 25.807255
+population[j][0] -23.501802
+Forces[i][0] -0.103302
+Forces[i][0] -0.155394
+
+i: 8; j: 6
+R: 79.249046
+M[j]: 0.103483
+i 8
+population[i][0] 25.807255
+population[j][0] 46.919685
+Forces[i][0] -0.155394
+Forces[i][0] -0.141610
+
+i: 9; j: 0
+R: 119.501740
+M[j]: 0.133517
+i 9
+population[i][0] -99.984344
+population[j][0] 8.871748
+Forces[i][0] 0.000000
+Forces[i][0] 0.060812
+
+i: 9; j: 1
+R: 105.143669
+M[j]: 0.124140
+i 9
+population[i][0] -99.984344
+population[j][0] 5.016124
+Forces[i][0] 0.060812
+Forces[i][0] 0.122797
+
+i: 9; j: 2
+R: 73.944847
+M[j]: 0.119918
+i 9
+population[i][0] -99.984344
+population[j][0] -26.964191
+Forces[i][0] 0.122797
+Forces[i][0] 0.182006
+
+i: 9; j: 3
+R: 124.746414
+M[j]: 0.115651
+i 9
+population[i][0] -99.984344
+population[j][0] -2.880659
+Forces[i][0] 0.182006
+Forces[i][0] 0.227018
+
+i: 9; j: 4
+R: 142.501511
+M[j]: 0.108529
+i 9
+population[i][0] -99.984344
+population[j][0] 41.897495
+Forces[i][0] 0.227018
+Forces[i][0] 0.281046
+
+i: 9; j: 5
+R: 76.869705
+M[j]: 0.105776
+i 9
+population[i][0] -99.984344
+population[j][0] -23.501802
+Forces[i][0] 0.281046
+Forces[i][0] 0.333668
+
+i: 9; j: 6
+R: 158.695251
+M[j]: 0.103483
+i 9
+population[i][0] -99.984344
+population[j][0] 46.919685
+Forces[i][0] 0.333668
+Forces[i][0] 0.381565
+Forces[0][0]: -0.008142
+Forces[1][0]: -0.022640
+Forces[2][0]: 0.233472
+Forces[3][0]: 0.078401
+M[0]: 0.133517
+M[1]: 0.124140
+M[2]: 0.119918
+M[3]: 0.115651
+accelerations[0][0]: -0.060982
+accelerations[1][0]: -0.182379
+accelerations[2][0]: -0.060982
+accelerations[3][0]: -0.182379
+
+
+Iteration: 8
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 39.988033
+M[j]: 0.120398
+i 0
+population[i][0] 8.453748
+population[j][0] 4.517224
+Forces[i][0] 0.000000
+Forces[i][0] -0.005926
+
+i: 0; j: 2
+R: 47.391769
+M[j]: 0.117231
+i 0
+population[i][0] 8.453748
+population[j][0] -23.613745
+Forces[i][0] -0.005926
+Forces[i][0] -0.045588
+
+i: 0; j: 3
+R: 28.079256
+M[j]: 0.114797
+i 0
+population[i][0] 8.453748
+population[j][0] -1.930309
+Forces[i][0] -0.045588
+Forces[i][0] -0.066815
+
+i: 0; j: 4
+R: 43.693512
+M[j]: 0.108659
+i 0
+population[i][0] 8.453748
+population[j][0] 37.568569
+Forces[i][0] -0.066815
+Forces[i][0] -0.030613
+
+i: 0; j: 5
+R: 58.529873
+M[j]: 0.107004
+i 0
+population[i][0] 8.453748
+population[j][0] -20.481615
+Forces[i][0] -0.030613
+Forces[i][0] -0.057063
+
+i: 0; j: 6
+R: 34.985718
+M[j]: 0.105354
+i 0
+population[i][0] 8.453748
+population[j][0] 42.175152
+Forces[i][0] -0.057063
+Forces[i][0] -0.006289
+
+i: 0; j: 7
+R: 54.923382
+M[j]: 0.099345
+i 0
+population[i][0] 8.453748
+population[j][0] 37.673626
+Forces[i][0] -0.006289
+Forces[i][0] 0.020137
+
+i: 1; j: 0
+R: 39.988033
+M[j]: 0.128226
+i 1
+population[i][0] 4.517224
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] 0.006311
+
+i: 1; j: 2
+R: 28.554340
+M[j]: 0.117231
+i 1
+population[i][0] 4.517224
+population[j][0] -23.613745
+Forces[i][0] 0.006311
+Forces[i][0] -0.051435
+
+i: 1; j: 3
+R: 66.197159
+M[j]: 0.114797
+i 1
+population[i][0] 4.517224
+population[j][0] -1.930309
+Forces[i][0] -0.051435
+Forces[i][0] -0.057026
+
+i: 1; j: 4
+R: 33.829453
+M[j]: 0.108659
+i 1
+population[i][0] 4.517224
+population[j][0] 37.568569
+Forces[i][0] -0.057026
+Forces[i][0] -0.003946
+
+i: 1; j: 5
+R: 27.345638
+M[j]: 0.107004
+i 1
+population[i][0] 4.517224
+population[j][0] -20.481615
+Forces[i][0] -0.003946
+Forces[i][0] -0.052856
+
+i: 1; j: 6
+R: 61.889503
+M[j]: 0.105354
+i 1
+population[i][0] 4.517224
+population[j][0] 42.175152
+Forces[i][0] -0.052856
+Forces[i][0] -0.020804
+
+i: 1; j: 7
+R: 33.828926
+M[j]: 0.099345
+i 1
+population[i][0] 4.517224
+population[j][0] 37.673626
+Forces[i][0] -0.020804
+Forces[i][0] 0.027881
+
+i: 2; j: 0
+R: 47.391769
+M[j]: 0.128226
+i 2
+population[i][0] -23.613745
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] 0.043382
+
+i: 2; j: 1
+R: 28.554340
+M[j]: 0.120398
+i 2
+population[i][0] -23.613745
+population[j][0] 4.517224
+Forces[i][0] 0.043382
+Forces[i][0] 0.102688
+
+i: 2; j: 3
+R: 64.723755
+M[j]: 0.114797
+i 2
+population[i][0] -23.613745
+population[j][0] -1.930309
+Forces[i][0] 0.102688
+Forces[i][0] 0.121918
+
+i: 2; j: 4
+R: 61.226097
+M[j]: 0.108659
+i 2
+population[i][0] -23.613745
+population[j][0] 37.568569
+Forces[i][0] 0.121918
+Forces[i][0] 0.176208
+
+i: 2; j: 5
+R: 16.286303
+M[j]: 0.107004
+i 2
+population[i][0] -23.613745
+population[j][0] -20.481615
+Forces[i][0] 0.176208
+Forces[i][0] 0.186498
+
+i: 2; j: 6
+R: 79.266396
+M[j]: 0.105354
+i 2
+population[i][0] -23.613745
+population[j][0] 42.175152
+Forces[i][0] 0.186498
+Forces[i][0] 0.230218
+
+i: 2; j: 7
+R: 62.377487
+M[j]: 0.099345
+i 2
+population[i][0] -23.613745
+population[j][0] 37.673626
+Forces[i][0] 0.230218
+Forces[i][0] 0.279023
+
+i: 3; j: 0
+R: 28.079256
+M[j]: 0.128226
+i 3
+population[i][0] -1.930309
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] 0.023710
+
+i: 3; j: 1
+R: 66.197159
+M[j]: 0.120398
+i 3
+population[i][0] -1.930309
+population[j][0] 4.517224
+Forces[i][0] 0.023710
+Forces[i][0] 0.029573
+
+i: 3; j: 2
+R: 64.723755
+M[j]: 0.117231
+i 3
+population[i][0] -1.930309
+population[j][0] -23.613745
+Forces[i][0] 0.029573
+Forces[i][0] 0.009936
+
+i: 3; j: 4
+R: 70.725929
+M[j]: 0.108659
+i 3
+population[i][0] -1.930309
+population[j][0] 37.568569
+Forces[i][0] 0.009936
+Forces[i][0] 0.040278
+
+i: 3; j: 5
+R: 79.170013
+M[j]: 0.107004
+i 3
+population[i][0] -1.930309
+population[j][0] -20.481615
+Forces[i][0] 0.040278
+Forces[i][0] 0.027741
+
+i: 3; j: 6
+R: 47.185478
+M[j]: 0.105354
+i 3
+population[i][0] -1.930309
+population[j][0] 42.175152
+Forces[i][0] 0.027741
+Forces[i][0] 0.076980
+
+i: 3; j: 7
+R: 82.694626
+M[j]: 0.099345
+i 3
+population[i][0] -1.930309
+population[j][0] 37.673626
+Forces[i][0] 0.076980
+Forces[i][0] 0.100769
+
+i: 4; j: 0
+R: 43.693512
+M[j]: 0.128226
+i 4
+population[i][0] 37.568569
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] -0.042721
+
+i: 4; j: 1
+R: 33.829453
+M[j]: 0.120398
+i 4
+population[i][0] 37.568569
+population[j][0] 4.517224
+Forces[i][0] -0.042721
+Forces[i][0] -0.101536
+
+i: 4; j: 2
+R: 61.226097
+M[j]: 0.117231
+i 4
+population[i][0] 37.568569
+population[j][0] -23.613745
+Forces[i][0] -0.101536
+Forces[i][0] -0.160109
+
+i: 4; j: 3
+R: 70.725929
+M[j]: 0.114797
+i 4
+population[i][0] 37.568569
+population[j][0] -1.930309
+Forces[i][0] -0.160109
+Forces[i][0] -0.192165
+
+i: 4; j: 5
+R: 60.865555
+M[j]: 0.107004
+i 4
+population[i][0] 37.568569
+population[j][0] -20.481615
+Forces[i][0] -0.192165
+Forces[i][0] -0.243193
+
+i: 4; j: 6
+R: 42.152634
+M[j]: 0.105354
+i 4
+population[i][0] 37.568569
+population[j][0] 42.175152
+Forces[i][0] -0.243193
+Forces[i][0] -0.237436
+
+i: 4; j: 7
+R: 13.926151
+M[j]: 0.099345
+i 4
+population[i][0] 37.568569
+population[j][0] 37.673626
+Forces[i][0] -0.237436
+Forces[i][0] -0.237061
+
+i: 5; j: 0
+R: 58.529873
+M[j]: 0.128226
+i 5
+population[i][0] -20.481615
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] 0.031696
+
+i: 5; j: 1
+R: 27.345638
+M[j]: 0.120398
+i 5
+population[i][0] -20.481615
+population[j][0] 4.517224
+Forces[i][0] 0.031696
+Forces[i][0] 0.086728
+
+i: 5; j: 2
+R: 16.286303
+M[j]: 0.117231
+i 5
+population[i][0] -20.481615
+population[j][0] -23.613745
+Forces[i][0] 0.086728
+Forces[i][0] 0.075456
+
+i: 5; j: 3
+R: 79.170013
+M[j]: 0.114797
+i 5
+population[i][0] -20.481615
+population[j][0] -1.930309
+Forces[i][0] 0.075456
+Forces[i][0] 0.088905
+
+i: 5; j: 4
+R: 60.865555
+M[j]: 0.108659
+i 5
+population[i][0] -20.481615
+population[j][0] 37.568569
+Forces[i][0] 0.088905
+Forces[i][0] 0.140722
+
+i: 5; j: 6
+R: 86.888474
+M[j]: 0.105354
+i 5
+population[i][0] -20.481615
+population[j][0] 42.175152
+Forces[i][0] 0.140722
+Forces[i][0] 0.178708
+
+i: 5; j: 7
+R: 58.319317
+M[j]: 0.099345
+i 5
+population[i][0] -20.481615
+population[j][0] 37.673626
+Forces[i][0] 0.178708
+Forces[i][0] 0.228241
+
+i: 6; j: 0
+R: 34.985718
+M[j]: 0.128226
+i 6
+population[i][0] 42.175152
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] -0.061796
+
+i: 6; j: 1
+R: 61.889503
+M[j]: 0.120398
+i 6
+population[i][0] 42.175152
+population[j][0] 4.517224
+Forces[i][0] -0.061796
+Forces[i][0] -0.098426
+
+i: 6; j: 2
+R: 79.266396
+M[j]: 0.117231
+i 6
+population[i][0] 42.175152
+population[j][0] -23.613745
+Forces[i][0] -0.098426
+Forces[i][0] -0.147075
+
+i: 6; j: 3
+R: 47.185478
+M[j]: 0.114797
+i 6
+population[i][0] 42.175152
+population[j][0] -1.930309
+Forces[i][0] -0.147075
+Forces[i][0] -0.200727
+
+i: 6; j: 4
+R: 42.152634
+M[j]: 0.108659
+i 6
+population[i][0] 42.175152
+population[j][0] 37.568569
+Forces[i][0] -0.200727
+Forces[i][0] -0.206664
+
+i: 6; j: 5
+R: 86.888474
+M[j]: 0.107004
+i 6
+population[i][0] 42.175152
+population[j][0] -20.481615
+Forces[i][0] -0.206664
+Forces[i][0] -0.245245
+
+i: 6; j: 7
+R: 56.007118
+M[j]: 0.099345
+i 6
+population[i][0] 42.175152
+population[j][0] 37.673626
+Forces[i][0] -0.245245
+Forces[i][0] -0.249238
+
+i: 7; j: 0
+R: 54.923382
+M[j]: 0.128226
+i 7
+population[i][0] 37.673626
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] -0.034109
+
+i: 7; j: 1
+R: 33.828926
+M[j]: 0.120398
+i 7
+population[i][0] 37.673626
+population[j][0] 4.517224
+Forces[i][0] -0.034109
+Forces[i][0] -0.093111
+
+i: 7; j: 2
+R: 62.377487
+M[j]: 0.117231
+i 7
+population[i][0] 37.673626
+population[j][0] -23.613745
+Forces[i][0] -0.093111
+Forces[i][0] -0.150702
+
+i: 7; j: 3
+R: 82.694626
+M[j]: 0.114797
+i 7
+population[i][0] 37.673626
+population[j][0] -1.930309
+Forces[i][0] -0.150702
+Forces[i][0] -0.178192
+
+i: 7; j: 4
+R: 13.926151
+M[j]: 0.108659
+i 7
+population[i][0] 37.673626
+population[j][0] 37.568569
+Forces[i][0] -0.178192
+Forces[i][0] -0.178601
+
+i: 7; j: 5
+R: 58.319317
+M[j]: 0.107004
+i 7
+population[i][0] 37.673626
+population[j][0] -20.481615
+Forces[i][0] -0.178601
+Forces[i][0] -0.231953
+
+i: 7; j: 6
+R: 56.007118
+M[j]: 0.105354
+i 7
+population[i][0] 37.673626
+population[j][0] 42.175152
+Forces[i][0] -0.231953
+Forces[i][0] -0.227719
+
+i: 8; j: 0
+R: 59.537815
+M[j]: 0.128226
+i 8
+population[i][0] 22.604395
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] -0.015238
+
+i: 8; j: 1
+R: 25.544336
+M[j]: 0.120398
+i 8
+population[i][0] 22.604395
+population[j][0] 4.517224
+Forces[i][0] -0.015238
+Forces[i][0] -0.057863
+
+i: 8; j: 2
+R: 51.596645
+M[j]: 0.117231
+i 8
+population[i][0] 22.604395
+population[j][0] -23.613745
+Forces[i][0] -0.057863
+Forces[i][0] -0.110369
+
+i: 8; j: 3
+R: 87.433281
+M[j]: 0.114797
+i 8
+population[i][0] 22.604395
+population[j][0] -1.930309
+Forces[i][0] -0.110369
+Forces[i][0] -0.126475
+
+i: 8; j: 4
+R: 29.352715
+M[j]: 0.108659
+i 8
+population[i][0] 22.604395
+population[j][0] 37.568569
+Forces[i][0] -0.126475
+Forces[i][0] -0.098778
+
+i: 8; j: 5
+R: 43.643669
+M[j]: 0.107004
+i 8
+population[i][0] 22.604395
+population[j][0] -20.481615
+Forces[i][0] -0.098778
+Forces[i][0] -0.151596
+
+i: 8; j: 6
+R: 69.945740
+M[j]: 0.105354
+i 8
+population[i][0] 22.604395
+population[j][0] 42.175152
+Forces[i][0] -0.151596
+Forces[i][0] -0.136857
+
+i: 8; j: 7
+R: 18.851046
+M[j]: 0.099345
+i 8
+population[i][0] 22.604395
+population[j][0] 37.673626
+Forces[i][0] -0.136857
+Forces[i][0] -0.097150
+
+i: 9; j: 0
+R: 118.428581
+M[j]: 0.128226
+i 9
+population[i][0] -99.984344
+population[j][0] 8.453748
+Forces[i][0] 0.000000
+Forces[i][0] 0.058705
+
+i: 9; j: 1
+R: 104.793312
+M[j]: 0.120398
+i 9
+population[i][0] -99.984344
+population[j][0] 4.517224
+Forces[i][0] 0.058705
+Forces[i][0] 0.118736
+
+i: 9; j: 2
+R: 77.421486
+M[j]: 0.117231
+i 9
+population[i][0] -99.984344
+population[j][0] -23.613745
+Forces[i][0] 0.118736
+Forces[i][0] 0.176556
+
+i: 9; j: 3
+R: 122.661179
+M[j]: 0.114797
+i 9
+population[i][0] -99.984344
+population[j][0] -1.930309
+Forces[i][0] 0.176556
+Forces[i][0] 0.222440
+
+i: 9; j: 4
+R: 138.371399
+M[j]: 0.108659
+i 9
+population[i][0] -99.984344
+population[j][0] 37.568569
+Forces[i][0] 0.222440
+Forces[i][0] 0.276448
+
+i: 9; j: 5
+R: 79.569923
+M[j]: 0.107004
+i 9
+population[i][0] -99.984344
+population[j][0] -20.481615
+Forces[i][0] 0.276448
+Forces[i][0] 0.329905
+
+i: 9; j: 6
+R: 153.134369
+M[j]: 0.105354
+i 9
+population[i][0] -99.984344
+population[j][0] 42.175152
+Forces[i][0] 0.329905
+Forces[i][0] 0.378807
+
+i: 9; j: 7
+R: 137.662384
+M[j]: 0.099345
+i 9
+population[i][0] -99.984344
+population[j][0] 37.673626
+Forces[i][0] 0.378807
+Forces[i][0] 0.428478
+Forces[0][0]: 0.020137
+Forces[1][0]: 0.027881
+Forces[2][0]: 0.279023
+Forces[3][0]: 0.100769
+M[0]: 0.128226
+M[1]: 0.120398
+M[2]: 0.117231
+M[3]: 0.114797
+accelerations[0][0]: 0.157042
+accelerations[1][0]: 0.231574
+accelerations[2][0]: 0.157042
+accelerations[3][0]: 0.231574
+
+
+Iteration: 9
+
+
+INIZIOOO
+
+
+i: 0; j: 1
+R: 35.441940
+M[j]: 0.117326
+i 0
+population[i][0] 8.401790
+population[j][0] 4.499348
+Forces[i][0] 0.000000
+Forces[i][0] -0.006459
+
+i: 0; j: 2
+R: 42.280975
+M[j]: 0.115258
+i 0
+population[i][0] 8.401790
+population[j][0] -19.558414
+Forces[i][0] -0.006459
+Forces[i][0] -0.044569
+
+i: 0; j: 3
+R: 24.695156
+M[j]: 0.114410
+i 0
+population[i][0] 8.401790
+population[j][0] -0.577338
+Forces[i][0] -0.044569
+Forces[i][0] -0.065369
+
+i: 0; j: 4
+R: 38.136002
+M[j]: 0.108626
+i 0
+population[i][0] 8.401790
+population[j][0] 33.222408
+Forces[i][0] -0.065369
+Forces[i][0] -0.030020
+
+i: 0; j: 5
+R: 50.889549
+M[j]: 0.108254
+i 0
+population[i][0] 8.401790
+population[j][0] -16.838520
+Forces[i][0] -0.030020
+Forces[i][0] -0.056866
+
+i: 0; j: 6
+R: 30.074514
+M[j]: 0.106970
+i 0
+population[i][0] 8.401790
+population[j][0] 37.437164
+Forces[i][0] -0.056866
+Forces[i][0] -0.005229
+
+i: 0; j: 7
+R: 46.655453
+M[j]: 0.102761
+i 0
+population[i][0] 8.401790
+population[j][0] 32.833031
+Forces[i][0] -0.005229
+Forces[i][0] 0.021677
+
+i: 0; j: 8
+R: 50.730984
+M[j]: 0.102575
+i 0
+population[i][0] 8.401790
+population[j][0] 20.021503
+Forces[i][0] 0.021677
+Forces[i][0] 0.033424
+
+i: 1; j: 0
+R: 35.441940
+M[j]: 0.123819
+i 1
+population[i][0] 4.499348
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] 0.006817
+
+i: 1; j: 2
+R: 24.312523
+M[j]: 0.115258
+i 1
+population[i][0] 4.499348
+population[j][0] -19.558414
+Forces[i][0] 0.006817
+Forces[i][0] -0.050209
+
+i: 1; j: 3
+R: 58.452232
+M[j]: 0.114410
+i 1
+population[i][0] 4.499348
+population[j][0] -0.577338
+Forces[i][0] -0.050209
+Forces[i][0] -0.055177
+
+i: 1; j: 4
+R: 29.400118
+M[j]: 0.108626
+i 1
+population[i][0] 4.499348
+population[j][0] 33.222408
+Forces[i][0] -0.055177
+Forces[i][0] -0.002115
+
+i: 1; j: 5
+R: 23.143749
+M[j]: 0.108254
+i 1
+population[i][0] 4.499348
+population[j][0] -16.838520
+Forces[i][0] -0.002115
+Forces[i][0] -0.052018
+
+i: 1; j: 6
+R: 54.216110
+M[j]: 0.106970
+i 1
+population[i][0] 4.499348
+population[j][0] 37.437164
+Forces[i][0] -0.052018
+Forces[i][0] -0.019525
+
+i: 1; j: 7
+R: 28.692083
+M[j]: 0.102761
+i 1
+population[i][0] 4.499348
+population[j][0] 32.833031
+Forces[i][0] -0.019525
+Forces[i][0] 0.031214
+
+i: 1; j: 8
+R: 21.007778
+M[j]: 0.102575
+i 1
+population[i][0] 4.499348
+population[j][0] 20.021503
+Forces[i][0] 0.031214
+Forces[i][0] 0.069109
+
+i: 2; j: 0
+R: 42.280975
+M[j]: 0.123819
+i 2
+population[i][0] -19.558414
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] 0.040941
+
+i: 2; j: 1
+R: 24.312523
+M[j]: 0.117326
+i 2
+population[i][0] -19.558414
+population[j][0] 4.499348
+Forces[i][0] 0.040941
+Forces[i][0] 0.098989
+
+i: 2; j: 3
+R: 57.919476
+M[j]: 0.114410
+i 2
+population[i][0] -19.558414
+population[j][0] -0.577338
+Forces[i][0] 0.098989
+Forces[i][0] 0.117736
+
+i: 2; j: 4
+R: 52.853081
+M[j]: 0.108626
+i 2
+population[i][0] -19.558414
+population[j][0] 33.222408
+Forces[i][0] 0.117736
+Forces[i][0] 0.171975
+
+i: 2; j: 5
+R: 12.766112
+M[j]: 0.108254
+i 2
+population[i][0] -19.558414
+population[j][0] -16.838520
+Forces[i][0] 0.171975
+Forces[i][0] 0.183507
+
+i: 2; j: 6
+R: 69.375534
+M[j]: 0.106970
+i 2
+population[i][0] -19.558414
+population[j][0] 37.437164
+Forces[i][0] 0.183507
+Forces[i][0] 0.227447
+
+i: 2; j: 7
+R: 53.003433
+M[j]: 0.102761
+i 2
+population[i][0] -19.558414
+population[j][0] 32.833031
+Forces[i][0] 0.227447
+Forces[i][0] 0.278235
+
+i: 2; j: 8
+R: 43.343597
+M[j]: 0.102575
+i 2
+population[i][0] -19.558414
+population[j][0] 20.021503
+Forces[i][0] 0.278235
+Forces[i][0] 0.325069
+
+i: 3; j: 0
+R: 24.695156
+M[j]: 0.123819
+i 3
+population[i][0] -0.577338
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] 0.022510
+
+i: 3; j: 1
+R: 58.452232
+M[j]: 0.117326
+i 3
+population[i][0] -0.577338
+population[j][0] 4.499348
+Forces[i][0] 0.022510
+Forces[i][0] 0.027605
+
+i: 3; j: 2
+R: 57.919476
+M[j]: 0.115258
+i 3
+population[i][0] -0.577338
+population[j][0] -19.558414
+Forces[i][0] 0.027605
+Forces[i][0] 0.008719
+
+i: 3; j: 4
+R: 61.984478
+M[j]: 0.108626
+i 3
+population[i][0] -0.577338
+population[j][0] 33.222408
+Forces[i][0] 0.008719
+Forces[i][0] 0.038336
+
+i: 3; j: 5
+R: 69.133606
+M[j]: 0.108254
+i 3
+population[i][0] -0.577338
+population[j][0] -16.838520
+Forces[i][0] 0.038336
+Forces[i][0] 0.025604
+
+i: 3; j: 6
+R: 40.928699
+M[j]: 0.106970
+i 3
+population[i][0] -0.577338
+population[j][0] 37.437164
+Forces[i][0] 0.025604
+Forces[i][0] 0.075281
+
+i: 3; j: 7
+R: 71.092125
+M[j]: 0.102761
+i 3
+population[i][0] -0.577338
+population[j][0] 32.833031
+Forces[i][0] 0.075281
+Forces[i][0] 0.099428
+
+i: 3; j: 8
+R: 75.261055
+M[j]: 0.102575
+i 3
+population[i][0] -0.577338
+population[j][0] 20.021503
+Forces[i][0] 0.099428
+Forces[i][0] 0.113465
+
+i: 4; j: 0
+R: 38.136002
+M[j]: 0.123819
+i 4
+population[i][0] 33.222408
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] -0.040294
+
+i: 4; j: 1
+R: 29.400118
+M[j]: 0.117326
+i 4
+population[i][0] 33.222408
+population[j][0] 4.499348
+Forces[i][0] -0.040294
+Forces[i][0] -0.097606
+
+i: 4; j: 2
+R: 52.853081
+M[j]: 0.115258
+i 4
+population[i][0] 33.222408
+population[j][0] -19.558414
+Forces[i][0] -0.097606
+Forces[i][0] -0.155156
+
+i: 4; j: 3
+R: 61.984478
+M[j]: 0.114410
+i 4
+population[i][0] 33.222408
+population[j][0] -0.577338
+Forces[i][0] -0.155156
+Forces[i][0] -0.186350
+
+i: 4; j: 5
+R: 52.328060
+M[j]: 0.108254
+i 4
+population[i][0] 33.222408
+population[j][0] -16.838520
+Forces[i][0] -0.186350
+Forces[i][0] -0.238132
+
+i: 4; j: 6
+R: 37.031216
+M[j]: 0.106970
+i 4
+population[i][0] 33.222408
+population[j][0] 37.437164
+Forces[i][0] -0.238132
+Forces[i][0] -0.232044
+
+i: 4; j: 7
+R: 10.801031
+M[j]: 0.102761
+i 4
+population[i][0] 33.222408
+population[j][0] 32.833031
+Forces[i][0] -0.232044
+Forces[i][0] -0.233897
+
+i: 4; j: 8
+R: 24.323050
+M[j]: 0.102575
+i 4
+population[i][0] 33.222408
+population[j][0] 20.021503
+Forces[i][0] -0.233897
+Forces[i][0] -0.261732
+
+i: 5; j: 0
+R: 50.889549
+M[j]: 0.123819
+i 5
+population[i][0] -16.838520
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] 0.030706
+
+i: 5; j: 1
+R: 23.143749
+M[j]: 0.117326
+i 5
+population[i][0] -16.838520
+population[j][0] 4.499348
+Forces[i][0] 0.030706
+Forces[i][0] 0.084792
+
+i: 5; j: 2
+R: 12.766112
+M[j]: 0.115258
+i 5
+population[i][0] -16.838520
+population[j][0] -19.558414
+Forces[i][0] 0.084792
+Forces[i][0] 0.072513
+
+i: 5; j: 3
+R: 69.133606
+M[j]: 0.114410
+i 5
+population[i][0] -16.838520
+population[j][0] -0.577338
+Forces[i][0] 0.072513
+Forces[i][0] 0.085969
+
+i: 5; j: 4
+R: 52.328060
+M[j]: 0.108626
+i 5
+population[i][0] -16.838520
+population[j][0] 33.222408
+Forces[i][0] 0.085969
+Forces[i][0] 0.137929
+
+i: 5; j: 6
+R: 75.183731
+M[j]: 0.106970
+i 5
+population[i][0] -16.838520
+population[j][0] 37.437164
+Forces[i][0] 0.137929
+Forces[i][0] 0.176540
+
+i: 5; j: 7
+R: 49.869755
+M[j]: 0.102761
+i 5
+population[i][0] -16.838520
+population[j][0] 32.833031
+Forces[i][0] 0.176540
+Forces[i][0] 0.227716
+
+i: 5; j: 8
+R: 37.224072
+M[j]: 0.102575
+i 5
+population[i][0] -16.838520
+population[j][0] 20.021503
+Forces[i][0] 0.227716
+Forces[i][0] 0.278502
+
+i: 6; j: 0
+R: 30.074514
+M[j]: 0.123819
+i 6
+population[i][0] 37.437164
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] -0.059771
+
+i: 6; j: 1
+R: 54.216110
+M[j]: 0.117326
+i 6
+population[i][0] 37.437164
+population[j][0] 4.499348
+Forces[i][0] -0.059771
+Forces[i][0] -0.095410
+
+i: 6; j: 2
+R: 69.375534
+M[j]: 0.115258
+i 6
+population[i][0] 37.437164
+population[j][0] -19.558414
+Forces[i][0] -0.095410
+Forces[i][0] -0.142755
+
+i: 6; j: 3
+R: 40.928699
+M[j]: 0.114410
+i 6
+population[i][0] 37.437164
+population[j][0] -0.577338
+Forces[i][0] -0.142755
+Forces[i][0] -0.195887
+
+i: 6; j: 4
+R: 37.031216
+M[j]: 0.108626
+i 6
+population[i][0] 37.437164
+population[j][0] 33.222408
+Forces[i][0] -0.195887
+Forces[i][0] -0.202069
+
+i: 6; j: 5
+R: 75.183731
+M[j]: 0.108254
+i 6
+population[i][0] 37.437164
+population[j][0] -16.838520
+Forces[i][0] -0.202069
+Forces[i][0] -0.241144
+
+i: 6; j: 7
+R: 47.806812
+M[j]: 0.102761
+i 6
+population[i][0] 37.437164
+population[j][0] 32.833031
+Forces[i][0] -0.241144
+Forces[i][0] -0.246092
+
+i: 6; j: 8
+R: 59.811317
+M[j]: 0.102575
+i 6
+population[i][0] 37.437164
+population[j][0] 20.021503
+Forces[i][0] -0.246092
+Forces[i][0] -0.261026
+
+i: 7; j: 0
+R: 46.655453
+M[j]: 0.123819
+i 7
+population[i][0] 32.833031
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] -0.032419
+
+i: 7; j: 1
+R: 28.692083
+M[j]: 0.117326
+i 7
+population[i][0] 32.833031
+population[j][0] 4.499348
+Forces[i][0] -0.032419
+Forces[i][0] -0.090349
+
+i: 7; j: 2
+R: 53.003433
+M[j]: 0.115258
+i 7
+population[i][0] 32.833031
+population[j][0] -19.558414
+Forces[i][0] -0.090349
+Forces[i][0] -0.147313
+
+i: 7; j: 3
+R: 71.092125
+M[j]: 0.114410
+i 7
+population[i][0] 32.833031
+population[j][0] -0.577338
+Forces[i][0] -0.147313
+Forces[i][0] -0.174197
+
+i: 7; j: 4
+R: 10.801031
+M[j]: 0.108626
+i 7
+population[i][0] 32.833031
+population[j][0] 33.222408
+Forces[i][0] -0.174197
+Forces[i][0] -0.172239
+
+i: 7; j: 5
+R: 49.869755
+M[j]: 0.108254
+i 7
+population[i][0] 32.833031
+population[j][0] -16.838520
+Forces[i][0] -0.172239
+Forces[i][0] -0.226151
+
+i: 7; j: 6
+R: 47.806812
+M[j]: 0.106970
+i 7
+population[i][0] 32.833031
+population[j][0] 37.437164
+Forces[i][0] -0.226151
+Forces[i][0] -0.221000
+
+i: 7; j: 8
+R: 16.030272
+M[j]: 0.102575
+i 7
+population[i][0] 32.833031
+population[j][0] 20.021503
+Forces[i][0] -0.221000
+Forces[i][0] -0.261990
+
+i: 8; j: 0
+R: 50.730984
+M[j]: 0.123819
+i 8
+population[i][0] 20.021503
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] -0.014180
+
+i: 8; j: 1
+R: 21.007778
+M[j]: 0.117326
+i 8
+population[i][0] 20.021503
+population[j][0] 4.499348
+Forces[i][0] -0.014180
+Forces[i][0] -0.057525
+
+i: 8; j: 2
+R: 43.343597
+M[j]: 0.115258
+i 8
+population[i][0] 20.021503
+population[j][0] -19.558414
+Forces[i][0] -0.057525
+Forces[i][0] -0.110150
+
+i: 8; j: 3
+R: 75.261055
+M[j]: 0.114410
+i 8
+population[i][0] 20.021503
+population[j][0] -0.577338
+Forces[i][0] -0.110150
+Forces[i][0] -0.125807
+
+i: 8; j: 4
+R: 24.323050
+M[j]: 0.108626
+i 8
+population[i][0] 20.021503
+population[j][0] 33.222408
+Forces[i][0] -0.125807
+Forces[i][0] -0.096329
+
+i: 8; j: 5
+R: 37.224072
+M[j]: 0.108254
+i 8
+population[i][0] 20.021503
+population[j][0] -16.838520
+Forces[i][0] -0.096329
+Forces[i][0] -0.149927
+
+i: 8; j: 6
+R: 59.811317
+M[j]: 0.106970
+i 8
+population[i][0] 20.021503
+population[j][0] 37.437164
+Forces[i][0] -0.149927
+Forces[i][0] -0.134354
+
+i: 8; j: 7
+R: 16.030272
+M[j]: 0.102761
+i 8
+population[i][0] 20.021503
+population[j][0] 32.833031
+Forces[i][0] -0.134354
+Forces[i][0] -0.093290
+
+i: 9; j: 0
+R: 117.539108
+M[j]: 0.123819
+i 9
+population[i][0] -99.984344
+population[j][0] 8.401790
+Forces[i][0] 0.000000
+Forces[i][0] 0.057089
+
+i: 9; j: 1
+R: 104.985023
+M[j]: 0.117326
+i 9
+population[i][0] -99.984344
+population[j][0] 4.499348
+Forces[i][0] 0.057089
+Forces[i][0] 0.115472
+
+i: 9; j: 2
+R: 81.594200
+M[j]: 0.115258
+i 9
+population[i][0] -99.984344
+population[j][0] -19.558414
+Forces[i][0] 0.115472
+Forces[i][0] 0.172276
+
+i: 9; j: 3
+R: 120.710899
+M[j]: 0.114410
+i 9
+population[i][0] -99.984344
+population[j][0] -0.577338
+Forces[i][0] 0.172276
+Forces[i][0] 0.219385
+
+i: 9; j: 4
+R: 134.227325
+M[j]: 0.108626
+i 9
+population[i][0] -99.984344
+population[j][0] 33.222408
+Forces[i][0] 0.219385
+Forces[i][0] 0.273285
+
+i: 9; j: 5
+R: 83.155754
+M[j]: 0.108254
+i 9
+population[i][0] -99.984344
+population[j][0] -16.838520
+Forces[i][0] 0.273285
+Forces[i][0] 0.327405
+
+i: 9; j: 6
+R: 147.400040
+M[j]: 0.106970
+i 9
+population[i][0] -99.984344
+population[j][0] 37.437164
+Forces[i][0] 0.327405
+Forces[i][0] 0.377269
+
+i: 9; j: 7
+R: 132.940781
+M[j]: 0.102761
+i 9
+population[i][0] -99.984344
+population[j][0] 32.833031
+Forces[i][0] 0.377269
+Forces[i][0] 0.428602
+
+i: 9; j: 8
+R: 120.069466
+M[j]: 0.102575
+i 9
+population[i][0] -99.984344
+population[j][0] 20.021503
+Forces[i][0] 0.428602
+Forces[i][0] 0.479863
+Forces[0][0]: 0.033424
+Forces[1][0]: 0.069109
+Forces[2][0]: 0.325069
+Forces[3][0]: 0.113465
+M[0]: 0.123819
+M[1]: 0.117326
+M[2]: 0.115258
+M[3]: 0.114410
+accelerations[0][0]: 0.269941
+accelerations[1][0]: 0.589035
+accelerations[2][0]: 0.269941
+accelerations[3][0]: 0.589035
+Configuration: dim = 2, pop_size = 10, n_iter = 10
+
+----------------------------------------
+Serial GCA
+----------------------------------------
+Best agent: 8.401790 8.549623 
+Best value: 143.686111
+Time measured: 0.002 seconds.
+
+
+----------------------------------------
+Parallel GCA
+----------------------------------------
+
+
+Iteration: 0; my_rank: 0
+
+
+Iteration: 0; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 57.983616
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 1; my_rank: 0
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 1; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 58.058392
+M[j]: 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 2; my_rank: 0
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 2; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 46.035576
+M[j]: 0.000000
+indice 6
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.000000
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+indice 2
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 56.460426
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 3; my_rank: 0
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 95.431114
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 3; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 109.358215
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 68.902237
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 46.035576
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 46.035576
+M[j]: 0.000000
+indice 7
+R: 46.631638
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 31.433113
+M[j]: 0.000000
+indice 2
+population[i][0] 6.923270
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 56.460426
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 96.684326
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+population[i][0] -34.465527
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 95.431114
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 123.164856
+M[j]: 0.000000
+indice 9
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+population[i][0] 66.831299
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 4; my_rank: 0
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 4; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 109.358215
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 133.451080
+M[j]: 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 139.474045
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+indice 0
+population[i][0] -99.984344
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 46.035576
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 68.902237
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 94.241776
+M[j]: 0.000000
+indice 6
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 43.905136
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+population[i][0] -38.069309
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 46.035576
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -38.069309
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 31.433113
+M[j]: 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 99.163071
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 56.460426
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 123.166817
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+indice 8
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 96.684326
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 3
+R: 150.275955
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 94.241776
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 95.431114
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 123.164856
+M[j]: 0.000000
+indice 9
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+population[i][0] 66.831299
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 76.613106
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 109.386055
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 5; my_rank: 1
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 5; my_rank: 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 109.358215
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 139.474045
+M[j]: 0.000000
+indice 5
+R: 133.451080
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 158.702652
+population[i][0] 67.004158
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 31.689737
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 68.902237
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 46.035576
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 94.241776
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] -5.910766
+
+i: 1; j: 3
+R: 43.905136
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 67.385948
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 96.662415
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 58.058392
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.000000
+indice 2
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 46.035576
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 31.433113
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 99.163071
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 123.166817
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 52.625557
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+
+i: 2; j: 4
+R: 98.234680
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 56.460426
+M[j]: 0.000000
+indice 8
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 96.684326
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.000000
+indice 3
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 3
+R: 150.275955
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 109.386055
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 56.394623
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 95.431114
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 109.386055
+M[j]: 0.000000
+indice 4
+R: 123.164856
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+population[i][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+i: 4; j: 3
+R: 76.613106
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 4
+R: 64.824333
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 58.592808
+
+
+Iteration: 6; my_rank: 0
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 6; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 133.451080
+M[j]: 0.000000
+indice 0
+
+i: 0; j: 2
+R: 109.358215
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+population[i][0] -99.984344
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 158.702652
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 58.592808
+R: 139.474045
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 31.689737
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 70.182617
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 101.473801
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -34.465527
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 68.902237
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 46.035576
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 94.241776
+M[j]: 0.000000
+indice 6
+R: 43.905136
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+population[i][0] -38.069309
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 96.662415
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 67.385948
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 5
+R: 31.433113
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+
+i: 1; j: 5
+R: 91.584915
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 46.035576
+M[j]: 0.000000
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.000000
+indice 2
+indice 7
+population[i][0] 6.923270
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 99.163071
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 31.433113
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -38.069309
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 52.625557
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 123.166817
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 5
+R: 46.631638
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+
+i: 2; j: 4
+R: 98.234680
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 56.460426
+M[j]: 0.000000
+indice 8
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 96.684326
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 3
+R: 150.275955
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 109.386055
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 56.394623
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 79.999985
+M[j]: 0.000000
+R: 123.166817
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 95.431114
+M[j]: 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 123.164856
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 76.613106
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 109.386055
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+R: 98.234680
+M[j]: 0.000000
+indice 4
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 4
+R: 64.824333
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+R: 139.399414
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+population[i][0] 58.592808
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 7; my_rank: 0
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 7; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 109.358215
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 139.474045
+M[j]: 0.000000
+
+i: 0; j: 3
+R: 133.451080
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 158.702652
+indice 5
+population[i][0] 67.004158
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 31.689737
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 70.182617
+M[j]: 0.000000
+indice 0
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 101.473801
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 6
+population[i][0] -99.984344
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 6
+R: 181.143799
+R: 94.851891
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 46.035576
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 94.241776
+R: 68.902237
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 43.905136
+M[j]: 0.000000
+indice 1
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 96.662415
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 5
+R: 31.433113
+population[i][0] 11.210644
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 67.385948
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 5
+R: 91.584915
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 6
+R: 123.164856
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 66.831299
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 6
+R: 57.983616
+M[j]: 0.000000
+indice 1
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+population[i][0] 11.210644
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 46.035576
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -38.069309
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 99.163071
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+R: 31.433113
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 123.166817
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 52.625557
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 5
+R: 46.631638
+M[j]: 0.000000
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 98.234680
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 6
+R: 95.431114
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+Forces[i][0] 0.000000
+
+i: 2; j: 6
+R: 139.399414
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 43.905136
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 56.460426
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 96.684326
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.000000
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 3
+indice 3
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 109.386055
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+R: 150.275955
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 56.394623
+M[j]: 0.000000
+indice 8
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 123.166817
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+population[i][0] 42.298771
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 79.999985
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+Forces[i][0] 0.000000
+
+i: 3; j: 6
+R: 76.613106
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 6
+R: 120.805305
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 95.431114
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 123.164856
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 76.613106
+M[j]: 0.000000
+indice 9
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 109.386055
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+R: 98.234680
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 6
+R: 64.824333
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 8; my_rank: 0
+population[i][0] 66.831299
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 4
+R: 64.824333
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+R: 139.399414
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 8; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 109.358215
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 139.474045
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 133.451080
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 158.702652
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 70.182617
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 6
+R: 181.143799
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 7
+R: 168.739075
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 68.902237
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 43.905136
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 31.689737
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 101.473801
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 6
+R: 94.851891
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 46.035576
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 94.241776
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 96.662415
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 5
+R: 31.433113
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 6
+R: 123.164856
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 7
+R: 109.358215
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 46.035576
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 99.163071
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 52.625557
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 5
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 67.385948
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 5
+R: 91.584915
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 6
+R: 57.983616
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 7
+R: 96.281189
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 31.433113
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 123.166817
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 98.234680
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 6
+R: 139.399414
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 7
+R: 101.473801
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 109.386055
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 123.166817
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 6
+R: 76.613106
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 7
+R: 139.474045
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 46.631638
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 6
+R: 95.431114
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 7
+R: 63.503864
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 56.460426
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 96.684326
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 3
+R: 150.275955
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 56.394623
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 79.999985
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 6
+R: 120.805305
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 7
+R: 34.053188
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 95.431114
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 123.164856
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 76.613106
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 4
+R: 64.824333
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+R: 139.399414
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 7
+R: 94.851891
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 9; my_rank: 1
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 96.281189
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 63.503864
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 109.358215
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 109.386055
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+R: 98.234680
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 6
+R: 64.824333
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 7
+R: 31.689737
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 9; my_rank: 0
+
+
+INIZIOOO
+
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 3
+R: 133.451080
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 158.702652
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 70.182617
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 6
+R: 181.143799
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 7
+R: 168.739075
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 8
+R: 150.059296
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 68.902237
+
+i: 0; j: 3
+R: 139.474045
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 4
+R: 31.689737
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 5
+R: 101.473801
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 6
+R: 94.851891
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 8
+R: 34.053188
+M[j]: 0.000000
+indice 5
+population[i][0] 67.004158
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 68.902237
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 1
+R: 46.035576
+M[j]: 0.000000
+indice 6
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 43.905136
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 67.385948
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 3
+R: 94.241776
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 4
+R: 96.662415
+M[j]: 0.000000
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 5
+R: 91.584915
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 5
+R: 31.433113
+M[j]: 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 6
+R: 57.983616
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 7
+indice 6
+population[i][0] -38.069309
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 6
+R: 123.164856
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+R: 96.281189
+M[j]: 0.000000
+indice 1
+population[i][0] 11.210644
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 8
+R: 106.540482
+M[j]: 0.000000
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 7
+R: 109.358215
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 67.004158
+indice 1
+population[i][0] 11.210644
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 1; j: 8
+R: 96.684326
+M[j]: 0.000000
+indice 6
+population[i][0] -38.069309
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 6.923270
+
+i: 2; j: 0
+R: 58.058392
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 46.035576
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 2
+R: 31.433113
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 3
+R: 99.163071
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+R: 123.166817
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 98.234680
+M[j]: 0.000000
+indice 2
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 4
+R: 52.625557
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+population[i][0] -34.465527
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 6
+R: 139.399414
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+
+i: 2; j: 5
+R: 46.631638
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 6
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 7
+R: 101.473801
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+R: 95.431114
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 7
+R: 63.503864
+M[j]: 0.000000
+
+i: 2; j: 8
+R: 79.999985
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 2; j: 8
+R: 56.460426
+M[j]: 0.000000
+indice 7
+population[i][0] 6.923270
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 106.540482
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 56.460426
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.000000
+indice 3
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 2
+R: 96.684326
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 109.386055
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 123.166817
+M[j]: 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 3
+R: 150.275955
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 4
+R: 56.394623
+indice 3
+population[i][0] -5.910766
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 6
+R: 76.613106
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 5
+R: 79.999985
+M[j]: 0.000000
+indice 8
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 7
+R: 139.474045
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 8
+population[i][0] 42.298771
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 6
+R: 120.805305
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+R: 150.275955
+M[j]: 0.000000
+indice 3
+population[i][0] -5.910766
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.000000
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 3; j: 7
+R: 34.053188
+M[j]: 0.000000
+indice 8
+population[i][0] 42.298771
+population[j][0] 67.004158
+indice 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.000000
+indice 4
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 57.983616
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 95.431114
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 2
+R: 123.164856
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 109.386055
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -38.069309
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 3
+R: 76.613106
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+R: 98.234680
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 6
+R: 64.824333
+M[j]: 0.000000
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 4
+R: 64.824333
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 58.592808
+Forces[i][0] 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 66.831299
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 7
+R: 31.689737
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+Forces[i][0] 0.000000
+
+i: 4; j: 5
+R: 139.399414
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] -34.465527
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 8
+R: 56.394623
+M[j]: 0.000000
+indice 4
+population[i][0] 58.592808
+population[j][0] 42.298771
+
+i: 4; j: 7
+R: 94.851891
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 67.004158
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 4; j: 8
+R: 120.805305
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.175919
+local_M[1]: 0.155468
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+M[j]: 0.000000
+indice 9
+population[i][0] 66.831299
+population[j][0] 42.298771
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.101644
+local_M[1]: 0.092650
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+Best agent: 11.210644 17.300261 
+Best value: 424.977539
+Time measured: 0.003 seconds.

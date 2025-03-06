@@ -3,7 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include "utility.h"
-
+#include <stdbool.h> 
 
 float **initialize_population(float (*target_function)(float*, int), float lb, float ub, int dim, int pop_size)
 {
@@ -88,56 +88,68 @@ float getk_best(int pop_size, int t, float n_iter){
     return pop_size * (0.1 + (0.9 * (t/n_iter)));
 }
 
-float** update_accelerations(float* M, float** population, float** accelerations, int dim, int pop_size, int k_best, int sub_pop_start_index){
+bool check_different_element(float* individual1, float* individual2, int dim){
+    for (int i = 0; i < dim; i++){
+        if (individual1[i] != individual2[i]){
+            return true;
+        }
+    }
+    return false;
+}
+
+float** update_accelerations(float* global_M, float* local_M, float** global_population, float** local_population, float** accelerations, int dim, int pop_size, int k_best, int sub_pop_start_index){
     float R; 
     float **Forces = allocate_matrix_float(pop_size, dim);
     float random;
     int indice;
-    //printf("\n\nINIZIOOO\n\n");
+    printf("\n\nINIZIOOO\n\n");
 
 
-    for (int i = sub_pop_start_index; i < pop_size + sub_pop_start_index; i++){
-        indice = i - sub_pop_start_index;
+    for (int i = 0; i < pop_size; i++){
         for (int j = 0; j < k_best; j++){
-            if (i != j){
-
-                //printf("\ni: %d; j: %d\n", i, j);
+            if (check_different_element(local_population[i], global_population[j], dim)){
+                indice = i + sub_pop_start_index;
+                printf("\ni: %d; j: %d\n", i, j);
                 R = 0;
                 for (int d = 0; d < dim; d++){
-                    R += (population[i][d] - population[j][d]) * (population[i][d] - population[j][d]);
+                    R += (local_population[i][d] - global_population[j][d]) * (local_population[i][d] - global_population[j][d]);
                 }
                 R = sqrt(R);
-                /*printf("R: %f\n", R);
-                printf("M[j]: %f\n", M[j]);
+                printf("R: %f\n", R);
+                printf("M[j]: %f\n", global_M[j]);
                 printf("indice %d\n", indice);
-                printf("population[i][0] %f\n", population[i][0]);
-                printf("population[j][0] %f\n", population[j][0]);
-                printf("Forces[indice][0] %f\n", Forces[indice][0]);*/
+                printf("population[i][0] %f\n", local_population[i][0]);
+                printf("population[j][0] %f\n", global_population[j][0]);
+                printf("Forces[i][0] %f\n", Forces[i][0]);
 
                 for (int d = 0; d < dim; d++){
                     //random = random_float(0, 1);
                     random = 0.5;
                     //printf("random: %f\n", random);
-                    Forces[indice][d] = Forces[indice][d] + random * M[j] * (population[j][d] - population[i][d]) / (R + 1e-20);
+                    Forces[i][d] = Forces[i][d] + random * global_M[j] * (global_population[j][d] - local_population[i][d]) / (R + 1e-20);
                 }
-                //printf("Forces[indice][0] %f\n", Forces[indice][0]);
+                printf("Forces[i][0] %f\n", Forces[i][0]);
             }
         }
     }
-    //printf("Forces[0][0]: %f\n", Forces[0][0]);
-    //printf("Forces[1][0]: %f\n", Forces[1][0]);
+    printf("Forces[0][0]: %f\n", Forces[0][0]);
+    printf("Forces[1][0]: %f\n", Forces[1][0]);
 
     for (int i = 0; i < pop_size; i++){
-        indice = i + sub_pop_start_index;
         for (int d = 0; d < dim; d++){
-            if (M[indice] > 0){ //Mia aggiunta
-                accelerations[i][d] = Forces[i][d] / M[indice];
+            if (local_M[i] > 0){ //Mia aggiunta
+                accelerations[i][d] = Forces[i][d] / local_M[i];
             }
             else{
                 accelerations[i][d] = 0;
             }
         }
     }
+    printf("local_M[0]: %f\n", local_M[0]);
+    printf("local_M[1]: %f\n", local_M[1]);
+    printf("accelerations[0][0]: %f\n", accelerations[0][0]);
+    printf("accelerations[1][0]: %f\n", accelerations[1][0]);
+
     //deallocazione delle matrici
     free(Forces);
 
@@ -228,7 +240,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
 
     for (int l = 0; l < n_iter; l++) {
         //MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(global_population[0][0]), sub_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
-        //printf("\n\nIteration: %d; my_rank: %d\n", l, my_rank);
+        printf("\n\nIteration: %d; my_rank: %d\n", l, my_rank);
 
         for (int i = 0; i < local_pop_size; i++){
             local_population[i] = clip_position_agent(local_population[i], lb, ub, dim);
@@ -268,7 +280,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         printf("my_rank: %d; global_fitness[2]: %f\n", my_rank, global_fitness[2]);
         printf("my_rank: %d; global_fitness[3]: %f\n", my_rank, global_fitness[3]);*/
 
-        local_population = get_local_population(local_population, global_population, sub_pop_start_index, local_pop_size, global_pop_size, dim);
+        //local_population = get_local_population(local_population, global_population, sub_pop_start_index, local_pop_size, global_pop_size, dim);
 
         //printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
         //printf("my_rank: %d; local_population[1][0]: %f\n", my_rank, local_population[1][0]);
@@ -302,7 +314,14 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
             local_M[i] = m[i] / sum_m;
         }
 
+        /*printf("Before sending local_M: \n");
+        printf("%f\n", local_M[0]);
+        printf("%f\n", local_M[1]);
         MPI_Allgather(local_M, local_pop_size, MPI_FLOAT, global_M, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
+
+        printf("After sending local_M: \n");
+        printf("%f\n", local_M[0]);
+        printf("%f\n", local_M[1]);*/
 
         /*printf("\n\n\nmy_rank: %d; local_M[0]: %f\n", my_rank, local_M[0]);
         printf("my_rank: %d; local_M[0]: %f\n", my_rank, local_M[1]);
@@ -313,7 +332,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         printf("my_rank: %d; global_M[2]: %f\n", my_rank, global_M[2]);
         printf("my_rank: %d; global_M[3]: %f\n", my_rank, global_M[3]);*/
 
-        accelerations = update_accelerations(global_M, global_population, accelerations, dim, local_pop_size, k_best, sub_pop_start_index);
+        accelerations = update_accelerations(global_M, local_M, global_population, local_population, accelerations, dim, local_pop_size, k_best, sub_pop_start_index);
 
         /*printf("\n\nmy_rank: %d; local_accelerations[0][0]: %f\n", my_rank, accelerations[0][0]);
         printf("my_rank: %d; local_accelerations[1][0]: %f\n", my_rank, accelerations[1][0]);*/

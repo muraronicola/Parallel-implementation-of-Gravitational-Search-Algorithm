@@ -1,408 +1,113 @@
 
-
 ----------------------------------------
 Parallel GCA
 ----------------------------------------
-Scatter done
-my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 11.210644
 
 
 Iteration: 0; my_rank: 0
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 424.977539
-Scatter done
-my_rank: 1; local_population[0][0]: -34.465527
-my_rank: 1; local_population[1][0]: -5.910766
 
 
 Iteration: 0; my_rank: 1
-my_rank: 1; local_fitness[0]: 5042.000977
-my_rank: 1; local_fitness[1]: 3367.624756
 
 
+INIZIOOO
 
-my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_velocity[0][0]: 0.000000
-
-my_rank: 0; local_population[1][0]: 11.210644
-my_rank: 0; local_fitness[1]: 424.977539
-my_rank: 0; local_velocity[1][0]: 0.000000
-
-SOORTT:
-
-my_rank: 0; global_population[0][0]: 11.210644
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -34.465527
-my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 424.977539
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 5042.000977
-my_rank: 0; global_fitness[3]: 11360.282227
-
-
-
-my_rank: 1; local_population[0][0]: -34.465527
-my_rank: 1; local_fitness[0]: 5042.000977
-my_rank: 1; local_velocity[0][0]: 0.000000
-
-my_rank: 1; local_population[1][0]: -5.910766
-my_rank: 1; local_fitness[1]: 3367.624756
-my_rank: 1; local_velocity[1][0]: 0.000000
-
-SOORTT:
-
-my_rank: 1; global_population[0][0]: 11.210644
-my_rank: 1; global_population[1][0]: -5.910766
-my_rank: 1; global_population[2][0]: -34.465527
-my_rank: 1; global_population[3][0]: -99.984344
-my_rank: 1; global_fitness[0]: 424.977539
-my_rank: 1; global_fitness[1]: 3367.624756
-my_rank: 1; global_fitness[2]: 5042.000977
-my_rank: 1; global_fitness[3]: 11360.282227
-my_rank: 1; local_population[0][0]: -34.465527
-my_rank: 1; local_population[1][0]: -99.984344
-my_rank: 0; local_population[0][0]: 11.210644
-my_rank: 0; local_population[1][0]: -5.910766
-
-
-
-my_rank: 0; local_M[0]: 0.433146
-my_rank: 0; local_M[0]: 0.316588
-
-my_rank: 0; global_M[0]: 0.433146
-my_rank: 0; global_M[1]: 0.316588
-my_rank: 0; global_M[2]: 0.250266
-my_rank: 0; global_M[3]: 0.000000
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
-
-
-my_rank: 0; local_accelerations[0][0]: 0.000000
-my_rank: 0; local_accelerations[1][0]: 0.000000
-
-
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: 0.000000
-
-
-
-my_rank: 1; local_M[0]: 0.250266
-my_rank: 1; local_M[0]: 0.000000
-
-my_rank: 1; global_M[0]: 0.433146
-my_rank: 1; global_M[1]: 0.316588
-my_rank: 1; global_M[2]: 0.250266
-my_rank: 1; global_M[3]: 0.000000
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
-
-
-my_rank: 1; local_accelerations[0][0]: 0.000000
-my_rank: 1; local_accelerations[1][0]: 0.000000
-
-
-my_rank: 1; local_velocity[0][0]: 0.000000
-my_rank: 1; local_velocity[1][0]: 0.000000
-my_rank: 1; local_population[0][0]: -34.465527
-my_rank: 1; local_population[1][0]: -99.984344
-
-
-Iteration: 1; my_rank: 1
-my_rank: 1; local_fitness[0]: 5042.000977
-my_rank: 0; local_population[0][0]: 11.210644
-my_rank: 0; local_population[1][0]: -5.910766
+local_M[0]: 0.433146
+local_M[1]: 0.316588
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
 
 
 Iteration: 1; my_rank: 0
-my_rank: 0; local_fitness[0]: 424.977539
-my_rank: 0; local_fitness[1]: 3367.624756
-my_rank: 1; local_fitness[1]: 11360.282227
 
 
-
-my_rank: 0; local_population[0][0]: 11.210644
-my_rank: 0; local_fitness[0]: 424.977539
-my_rank: 0; local_velocity[0][0]: 0.000000
-
-my_rank: 0; local_population[1][0]: -5.910766
-my_rank: 0; local_fitness[1]: 3367.624756
-my_rank: 0; local_velocity[1][0]: 0.000000
-
-SOORTT:
+INIZIOOO
 
 
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.000000
+indice 0
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 133.451080
+M[j]: 0.000000
 
 
-my_rank: 1; local_population[0][0]: -34.465527
-my_rank: 1; local_fitness[0]: 5042.000977
-my_rank: 1; local_velocity[0][0]: 0.000000
+INIZIOOO
 
-my_rank: 1; local_population[1][0]: -99.984344
-my_rank: 1; local_fitness[1]: 11360.282227
-my_rank: 1; local_velocity[1][0]: 0.000000
-
-SOORTT:
-
-my_rank: 0; global_population[0][0]: 11.210644
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -34.465527
-my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 424.977539
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 5042.000977
-my_rank: 0; global_fitness[3]: 11360.282227
-my_rank: 0; local_population[0][0]: 11.210644
-my_rank: 0; local_population[1][0]: -5.910766
-my_rank: 1; global_population[0][0]: 11.210644
-my_rank: 1; global_population[1][0]: -5.910766
-my_rank: 1; global_population[2][0]: -34.465527
-my_rank: 1; global_population[3][0]: -99.984344
-my_rank: 1; global_fitness[0]: 424.977539
-my_rank: 1; global_fitness[1]: 3367.624756
-my_rank: 1; global_fitness[2]: 5042.000977
-my_rank: 1; global_fitness[3]: 11360.282227
-my_rank: 1; local_population[0][0]: -34.465527
-my_rank: 1; local_population[1][0]: -99.984344
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.250266
+local_M[1]: 0.000000
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
 
 
+Iteration: 1; my_rank: 1
 
-my_rank: 0; local_M[0]: 0.433146
-my_rank: 0; local_M[0]: 0.316588
 
-my_rank: 0; global_M[0]: 0.433146
-my_rank: 0; global_M[1]: 0.316588
-my_rank: 0; global_M[2]: 0.250266
-my_rank: 0; global_M[3]: 0.000000
+INIZIOOO
+
+
+i: 0; j: 0
+R: 91.584915
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 123.166817
+M[j]: 0.000000
+indice 2
+population[i][0] -34.465527
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
 
 i: 1; j: 0
 R: 43.905136
-M[j]: 0.433146
-
-
-
-my_rank: 1; local_M[0]: 0.250266
-my_rank: 1; local_M[0]: 0.000000
-
-my_rank: 1; global_M[0]: 0.433146
-my_rank: 1; global_M[1]: 0.316588
-my_rank: 1; global_M[2]: 0.250266
-my_rank: 1; global_M[3]: 0.000000
-
-i: 2; j: 0
-R: 91.584915
-M[j]: 0.433146
-indice 0
-population[i][0] -34.465527
-population[j][0] 11.210644
-Forces[indice][0] 0.000000
-Forces[indice][0] 0.108011
-
-i: 3; j: 0
-indice 1
+M[j]: 0.000000
+indice 3
 population[i][0] -5.910766
 population[j][0] 11.210644
-Forces[indice][0] 0.000000
-Forces[indice][0] 0.084456
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
 Forces[0][0]: 0.000000
-Forces[1][0]: 0.084456
-
-
-my_rank: 0; local_accelerations[0][0]: 0.000000
-my_rank: 0; local_accelerations[1][0]: 0.266768
-
-
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: 0.266768
-my_rank: 0; local_population[0][0]: 11.210644
-my_rank: 0; local_population[1][0]: -5.643998
-
-
-Iteration: 2; my_rank: 0
-my_rank: 0; local_fitness[0]: 424.977539
-my_rank: 0; local_fitness[1]: 3292.208740
-R: 123.711937
-M[j]: 0.433146
-indice 1
+Forces[1][0]: 0.000000
+local_M[0]: 0.250266
+local_M[1]: 0.000000
+accelerations[0][0]: 0.000000
+indice 0
 population[i][0] -99.984344
-population[j][0] 11.210644
-Forces[indice][0] 0.000000
-Forces[indice][0] 0.194660
-Forces[0][0]: 0.108011
-Forces[1][0]: 0.194660
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
 
-
-my_rank: 1; local_accelerations[0][0]: 0.249365
-my_rank: 1; local_accelerations[1][0]: 0.614870
-
-
-my_rank: 1; local_velocity[0][0]: 0.249365
-my_rank: 1; local_velocity[1][0]: 0.614870
-my_rank: 1; local_population[0][0]: -34.216160
-my_rank: 1; local_population[1][0]: -99.369476
-
-
-Iteration: 2; my_rank: 1
-my_rank: 1; local_fitness[0]: 4971.251953
-my_rank: 1; local_fitness[1]: 11215.653320
-
-
-
-my_rank: 0; local_population[0][0]: 11.210644
-my_rank: 0; local_fitness[0]: 424.977539
-my_rank: 0; local_velocity[0][0]: 0.000000
-
-my_rank: 0; local_population[1][0]: -5.643998
-my_rank: 0; local_fitness[1]: 3292.208740
-my_rank: 0; local_velocity[1][0]: 0.266768
-
-SOORTT:
-
-my_rank: 0; global_population[0][0]: 11.210644
-my_rank: 0; global_population[1][0]: -5.643998
-my_rank: 0; global_population[2][0]: -34.216160
-my_rank: 0; global_population[3][0]: -99.369476
-
-
-
-my_rank: 1; local_population[0][0]: -34.216160
-my_rank: 1; local_fitness[0]: 4971.251953
-my_rank: 1; local_velocity[0][0]: 0.249365
-
-my_rank: 1; local_population[1][0]: -99.369476
-my_rank: 1; local_fitness[1]: 11215.653320
-my_rank: 1; local_velocity[1][0]: 0.614870
-
-SOORTT:
-
-my_rank: 1; global_population[0][0]: 11.210644
-my_rank: 1; global_population[1][0]: -5.643998
-my_rank: 1; global_population[2][0]: -34.216160
-my_rank: 1; global_population[3][0]: -99.369476
-my_rank: 1; global_fitness[0]: 424.977539
-my_rank: 1; global_fitness[1]: 3292.208740
-my_rank: 1; global_fitness[2]: 4971.251953
-my_rank: 0; global_fitness[0]: 424.977539
-my_rank: 0; global_fitness[1]: 3292.208740
-my_rank: 0; global_fitness[2]: 4971.251953
-my_rank: 0; global_fitness[3]: 11215.653320
-my_rank: 0; local_population[0][0]: 11.210644
-my_rank: 0; local_population[1][0]: -5.643998
-
-
-
-my_rank: 0; local_M[0]: 0.432344
-my_rank: 0; local_M[0]: 0.317465
-
-my_rank: 0; global_M[0]: 0.432344
-my_rank: 0; global_M[1]: 0.317465
-my_rank: 0; global_M[2]: 0.250191
-my_rank: 0; global_M[3]: 0.000000
-
-i: 0; j: 1
-R: 43.221050
-M[j]: 0.317465
-indice 0
+i: 1; j: 1
+R: 43.905136
+M[j]: 0.000000
+indice 1
 population[i][0] 11.210644
-population[j][0] -5.643998
-Forces[indice][0] 0.000000
-Forces[indice][0] -0.061900
-
-i: 1; j: 0
-R: 43.221050
-M[j]: 0.432344
-indice 1
-population[i][0] -5.643998
-population[j][0] 11.210644
-Forces[indice][0] 0.000000
-Forces[indice][0] 0.084299
-Forces[0][0]: -0.061900
-Forces[1][0]: 0.084299
-
-
-my_rank: 0; local_accelerations[0][0]: -0.143172
-my_rank: 0; local_accelerations[1][0]: 0.265539
-
-
-my_rank: 0; local_velocity[0][0]: -0.143172
-my_rank: 0; local_velocity[1][0]: 0.398923
-my_rank: 0; local_population[0][0]: 11.067472
-my_rank: 0; local_population[1][0]: -5.245075
-my_rank: 1; global_fitness[3]: 11215.653320
-my_rank: 1; local_population[0][0]: -34.216160
-my_rank: 1; local_population[1][0]: -99.369476
-
-
-
-my_rank: 1; local_M[0]: 0.250191
-my_rank: 1; local_M[0]: 0.000000
-
-my_rank: 1; global_M[0]: 0.432344
-my_rank: 1; global_M[1]: 0.317465
-my_rank: 1; global_M[2]: 0.250191
-my_rank: 1; global_M[3]: 0.000000
-
-i: 2; j: 0
-R: 91.084915
-M[j]: 0.432344
-indice 0
-population[i][0] -34.216160
-population[j][0] 11.210644
-Forces[indice][0] 0.000000
-Forces[indice][0] 0.107812
-
-i: 2; j: 1
-R: 122.136803
-M[j]: 0.317465
-indice 0
-population[i][0] -34.216160
-population[j][0] -5.643998
-Forces[indice][0] 0.107812
-Forces[indice][0] 0.144945
-
-i: 3; j: 0
-R: 123.027855
-M[j]: 0.432344
-indice 1
-population[i][0] -99.369476
-population[j][0] 11.210644
-Forces[indice][0] 0.000000
-Forces[indice][0] 0.194300
-
-i: 3; j: 1
-R: 132.546860
-M[j]: 0.317465
-indice 1
-population[i][0] -99.369476
-population[j][0] -5.643998
-Forces[indice][0] 0.194300
-Forces[indice][0] 0.306542
-Forces[0][0]: 0.144945
-Forces[1][0]: 0.306542
-
-
-my_rank: 1; local_accelerations[0][0]: 0.335253
-my_rank: 1; local_accelerations[1][0]: 0.965594
-
-
-my_rank: 1; local_velocity[0][0]: 0.459936
-my_rank: 1; local_velocity[1][0]: 1.273029
-my_rank: 1; local_population[0][0]: -33.756226
-my_rank: 1; local_population[1][0]: -98.096451
-
----------- DONE ----------
-my_rank: 1; global_fitness[0]: 433.599823
-my_rank: 1; global_fitness[1]: 3181.178223
-my_rank: 1; global_fitness[2]: 4816.840820
-my_rank: 1; global_fitness[3]: 10906.175781
-
----------- DONE ----------
-my_rank: 0; global_fitness[0]: 433.599823
-my_rank: 0; global_fitness[1]: 3181.178223
-my_rank: 0; global_fitness[2]: 4816.840820
-my_rank: 0; global_fitness[3]: 10906.175781
-Best agent: 11.067472 17.638336 
-Best value: 433.599823
+population[j][0] -5.910766
+Forces[i][0] 0.000000
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.433146
+local_M[1]: 0.316588
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+Best agent: 11.210644 17.300261 
+accelerations[1][0]: 0.000000
+Best value: 424.977539
 Time measured: 0.000 seconds.
-➜  project git:(main) ✗ 
