@@ -1,4 +1,5 @@
 
+
 ----------------------------------------
 Parallel GCA
 ----------------------------------------
@@ -8,43 +9,21 @@ Iteration: 0; my_rank: 0
 
 
 Iteration: 0; my_rank: 1
-
-
-
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
 my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[0]: 0.433146
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.000000
-my_rank: 0; global_M[2]: 0.000000
-my_rank: 0; global_M[3]: 0.000000
-
-
-
-my_rank: 1; local_M[0]: 0.250266
-my_rank: 1; local_M[0]: 0.316588
-
-my_rank: 1; global_M[0]: 0.000000
-my_rank: 1; global_M[1]: 0.000000
-my_rank: 1; global_M[2]: 0.000000
-my_rank: 1; global_M[3]: 0.000000
-
-
-INIZIOOO
-
-
-
-INIZIOOO
-
+my_rank: 0; local_M[1]: 0.433146
+local_population[0][0]: -99.984344
+local_population[1][0]: 11.210644
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 local_M[0]: 0.000000
-local_M[1]: 0.433146
-accelerations[0][0]: 0.000000
-accelerations[1][0]: 0.000000
-
-
-Iteration: 1; my_rank: 0
+my_rank: 1; local_pop[0][0]: -34.465527
+my_rank: 1; local_pop[0][1]: -62.081627
+my_rank: 1; local_M[0]: 0.250266
+my_rank: 1; local_M[1]: 0.316588
+local_population[0][0]: -34.465527
+local_population[1][0]: -5.910766
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 local_M[0]: 0.250266
@@ -54,70 +33,29 @@ accelerations[1][0]: 0.000000
 
 
 Iteration: 1; my_rank: 1
-
-
-
-my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[0]: 0.433146
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.000000
-
-
-
-my_rank: 1; local_M[0]: 0.250266
-my_rank: 1; local_M[0]: 0.316588
-
-my_rank: 1; global_M[0]: 0.000000
-my_rank: 1; global_M[1]: 0.000000
-my_rank: 1; global_M[2]: 0.000000
-my_rank: 1; global_M[3]: 0.000000
-my_rank: 0; global_M[2]: 0.000000
-my_rank: 0; global_M[3]: 0.000000
-
-
-INIZIOOO
-
-
-i: 0; j: 0
-R: 123.711937
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] 11.210644
-
-
-INIZIOOO
-
-
-i: 0; j: 0
-R: 91.584915
-M[j]: 0.000000
-indice 2
-population[i][0] -34.465527
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
-local_M[0]: 0.000000
 local_M[1]: 0.433146
 accelerations[0][0]: 0.000000
 accelerations[1][0]: 0.000000
 
 
-Iteration: 2; my_rank: 0
-
-i: 1; j: 0
-R: 43.905136
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
+Iteration: 1; my_rank: 0
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.433146
+my_rank: 1; local_pop[0][0]: -34.465527
+my_rank: 1; local_pop[0][1]: -62.081627
+my_rank: 1; local_M[0]: 0.250266
+my_rank: 1; local_M[1]: 0.316588
+local_population[0][0]: -99.984344
+local_population[1][0]: 11.210644
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.000000
+local_M[1]: 0.433146
+accelerations[0][0]: 0.000000
+local_population[0][0]: -34.465527
+local_population[1][0]: -5.910766
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 local_M[0]: 0.250266
@@ -127,97 +65,31 @@ accelerations[1][0]: 0.000000
 
 
 Iteration: 2; my_rank: 1
+accelerations[1][0]: 0.000000
 
 
-
+Iteration: 2; my_rank: 0
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
 my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[0]: 0.433146
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.000000
-my_rank: 0; global_M[2]: 0.000000
-
-
-
-my_rank: 1; local_M[0]: 0.250266
-my_rank: 1; local_M[0]: 0.316588
-
-my_rank: 1; global_M[0]: 0.000000
-my_rank: 1; global_M[1]: 0.000000
-my_rank: 1; global_M[2]: 0.000000
-my_rank: 1; global_M[3]: 0.000000
-
-
-INIZIOOO
-
-
-i: 0; j: 0
-my_rank: 0; global_M[3]: 0.000000
-
-
-INIZIOOO
-
-
-i: 0; j: 0
-R: 123.711937
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 91.584915
-M[j]: 0.000000
-indice 2
-population[i][0] -34.465527
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 123.166817
-M[j]: 0.000000
-indice 2
-population[i][0] -34.465527
-population[j][0] -5.910766
-R: 133.451080
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 1; j: 1
-R: 43.905136
-M[j]: 0.000000
-indice 1
-population[i][0] 11.210644
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
+my_rank: 0; local_M[1]: 0.433146
+local_population[0][0]: -99.984344
+local_population[1][0]: 11.210644
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 local_M[0]: 0.000000
-local_M[1]: 0.433146
-accelerations[0][0]: 0.000000
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 43.905136
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
+my_rank: 1; local_pop[0][0]: -34.465527
+my_rank: 1; local_pop[0][1]: -62.081627
+my_rank: 1; local_M[0]: 0.250266
+my_rank: 1; local_M[1]: 0.316588
+local_population[0][0]: -34.465527
+local_population[1][0]: -5.910766
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 local_M[0]: 0.250266
 local_M[1]: 0.316588
+accelerations[0][0]: 0.000000
+local_M[1]: 0.433146
 accelerations[0][0]: 0.000000
 accelerations[1][0]: 0.000000
 
@@ -227,127 +99,210 @@ accelerations[1][0]: 0.000000
 
 
 Iteration: 3; my_rank: 1
-
-
-
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
 my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[0]: 0.433146
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.000000
-my_rank: 0; global_M[2]: 0.000000
-
-
-
+my_rank: 0; local_M[1]: 0.433146
+local_population[0][0]: -99.984344
+local_population[1][0]: 11.210644
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.000000
+my_rank: 1; local_pop[0][0]: -34.465527
+my_rank: 1; local_pop[0][1]: -62.081627
 my_rank: 1; local_M[0]: 0.250266
-my_rank: 1; local_M[0]: 0.316588
-
-my_rank: 1; global_M[0]: 0.000000
-my_rank: 1; global_M[1]: 0.000000
-my_rank: 1; global_M[2]: 0.000000
-my_rank: 1; global_M[3]: 0.000000
-
-
-INIZIOOO
-
-
-i: 0; j: 0
-my_rank: 0; global_M[3]: 0.000000
-
-
-INIZIOOO
-
-
-i: 0; j: 0
-R: 123.711937
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 133.451080
-R: 91.584915
-M[j]: 0.000000
-indice 2
-population[i][0] -34.465527
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 0; j: 2
-R: 70.182617
-M[j]: 0.000000
-indice 0
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 123.166817
-M[j]: 0.000000
-indice 2
-population[i][0] -34.465527
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-population[i][0] -99.984344
-population[j][0] -34.465527
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 1; j: 1
-R: 43.905136
-M[j]: 0.000000
-indice 1
-population[i][0] 11.210644
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-R: 43.905136
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-
-i: 1; j: 2
-R: 123.166817
-M[j]: 0.000000
-Forces[i][0] 0.000000
-
-i: 1; j: 2
-R: 91.584915
-M[j]: 0.000000
-indice 1
-population[i][0] 11.210644
-population[j][0] -34.465527
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] -34.465527
-Forces[i][0] 0.000000
-Forces[i][0] 0.000000
+my_rank: 1; local_M[1]: 0.316588
+local_population[0][0]: -34.465527
+local_population[1][0]: -5.910766
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 local_M[0]: 0.250266
 local_M[1]: 0.316588
 accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+local_M[1]: 0.433146
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+
+
+Iteration: 4; my_rank: 0
+
+
+Iteration: 4; my_rank: 1
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.433146
+local_population[0][0]: -99.984344
+my_rank: 1; local_pop[0][0]: -34.465527
+my_rank: 1; local_pop[0][1]: -62.081627
+my_rank: 1; local_M[0]: 0.250266
+my_rank: 1; local_M[1]: 0.316588
+local_population[0][0]: -34.465527
+local_population[1][0]: -5.910766
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+local_M[0]: 0.250266
+local_population[1][0]: 11.210644
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 local_M[0]: 0.000000
 local_M[1]: 0.433146
 accelerations[0][0]: 0.000000
 accelerations[1][0]: 0.000000
+
+
+Iteration: 5; my_rank: 0
+local_M[1]: 0.316588
+accelerations[0][0]: 0.000000
 accelerations[1][0]: 0.000000
-Best agent: 11.210644 17.300261 
-Best value: 424.977539
-Time measured: 0.000 seconds.
+
+
+Iteration: 5; my_rank: 1
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.433146
+local_population[0][0]: -99.984344
+local_population[1][0]: 11.210644
+Forces[0][0]: 0.152669
+my_rank: 1; local_pop[0][0]: -34.465527
+my_rank: 1; local_pop[0][1]: -62.081627
+my_rank: 1; local_M[0]: 0.250266
+my_rank: 1; local_M[1]: 0.316588
+local_population[0][0]: -34.465527
+local_population[1][0]: -5.910766
+Forces[0][0]: 0.050210
+Forces[1][0]: 0.000000
+local_M[0]: 0.250266
+local_M[1]: 0.316588
+accelerations[0][0]: 0.200626
+accelerations[1][0]: 0.000000
+
+
+Iteration: 6; my_rank: 1
+Forces[1][0]: -0.084456
+local_M[0]: 0.000000
+local_M[1]: 0.433146
+accelerations[0][0]: 0.000000
+accelerations[1][0]: -0.194982
+
+
+Iteration: 6; my_rank: 0
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.430873
+local_population[0][0]: -99.984344
+my_rank: 1; local_pop[0][0]: -34.264900
+my_rank: 1; local_pop[0][1]: -61.239834
+my_rank: 1; local_M[0]: 0.253861
+my_rank: 1; local_M[1]: 0.315267
+local_population[0][0]: -34.264900
+local_population[1][0]: -5.910766
+Forces[0][0]: 0.049946
+Forces[1][0]: 0.000000
+local_population[1][0]: 11.015662
+Forces[0][0]: 0.151867
+Forces[1][0]: -0.084012
+local_M[0]: 0.000000
+local_M[1]: 0.430873
+accelerations[0][0]: 0.000000
+accelerations[1][0]: -0.194982
+
+
+Iteration: 7; my_rank: 0
+local_M[0]: 0.253861
+local_M[1]: 0.315267
+accelerations[0][0]: 0.196747
+accelerations[1][0]: 0.000000
+
+
+Iteration: 7; my_rank: 1
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.427561
+my_rank: 1; local_pop[0][0]: -33.967842
+my_rank: 1; local_pop[0][1]: -59.993420
+my_rank: 1; local_M[0]: 0.259060
+my_rank: 1; local_M[1]: 0.313379
+local_population[0][0]: -99.984344
+local_population[1][0]: 10.723189
+Forces[0][0]: 0.150700
+Forces[1][0]: -0.083367
+local_M[0]: 0.000000
+local_M[1]: 0.427561
+local_population[0][0]: -33.967842
+local_population[1][0]: -5.910766
+Forces[0][0]: 0.049562
+Forces[1][0]: 0.000000
+local_M[0]: 0.259060
+local_M[1]: 0.313379
+accelerations[0][0]: 0.191317
+accelerations[1][0]: 0.000000
+
+
+Iteration: 8; my_rank: 1
+accelerations[0][0]: 0.000000
+accelerations[1][0]: -0.194982
+
+
+Iteration: 8; my_rank: 0
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.423846
+my_rank: 1; local_pop[0][0]: -33.627995
+my_rank: 1; local_pop[0][1]: -58.567478
+my_rank: 1; local_M[0]: 0.264836
+my_rank: 1; local_M[1]: 0.311318
+local_population[0][0]: -33.627995
+local_population[0][0]: -99.984344
+local_population[1][0]: 10.381971
+Forces[0][0]: 0.275282
+Forces[1][0]: -0.147824
+local_M[0]: 0.000000
+local_M[1]: 0.423846
+accelerations[0][0]: 0.000000
+accelerations[1][0]: -0.348769
+local_population[1][0]: -5.910766
+Forces[0][0]: 0.049132
+Forces[1][0]: -0.030700
+local_M[0]: 0.264836
+local_M[1]: 0.311318
+accelerations[0][0]: 0.185518
+accelerations[1][0]: -0.098611
+
+
+Iteration: 9; my_rank: 1
+
+
+Iteration: 9; my_rank: 0
+my_rank: 0; local_pop[0][0]: -99.984344
+my_rank: 0; local_pop[0][1]: -36.924423
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.419595
+my_rank: 1; local_pop[0][0]: -33.272552
+my_rank: 1; local_pop[0][1]: -57.076103
+my_rank: 1; local_M[0]: 0.270060
+my_rank: 1; local_M[1]: 0.310345
+local_population[0][0]: -99.984344
+local_population[1][0]: 9.862593
+Forces[0][0]: 0.277401
+Forces[1][0]: -0.147878
+local_M[0]: 0.000000
+local_M[1]: 0.419595
+local_population[0][0]: -33.272552
+local_population[1][0]: -6.009377
+Forces[0][0]: 0.048639
+Forces[1][0]: -0.031305
+local_M[0]: 0.270060
+local_M[1]: 0.310345
+accelerations[0][0]: 0.180105
+accelerations[1][0]: -0.100872
+accelerations[0][0]: 0.000000
+accelerations[1][0]: -0.352430
+Best agent: 9.250474 20.323723 
+Best value: 498.624969
+Time measured: 0.001 seconds.

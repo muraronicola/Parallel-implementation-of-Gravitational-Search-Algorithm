@@ -94,22 +94,31 @@ float** serial_update_accelearations(float* M, float** population, float** accel
     float R; 
     float **Forces = allocate_matrix_float(pop_size, dim);
     float random;
-    printf("\n\nINIZIOOO\n\n");
+    printf("population[0][0]: %f\n", population[0][0]);
+    printf("population[1][0]: %f\n", population[1][0]);
+    printf("population[2][0]: %f\n", population[2][0]);
+    printf("population[3][0]: %f\n", population[3][0]);
+
+    printf("M[0]: %f\n", M[0]);
+    printf("M[1]: %f\n", M[1]);
+    printf("M[2]: %f\n", M[2]);
+    printf("M[3]: %f\n", M[3]);
+    //printf("\n\nINIZIOOO\n\n");
     for (int i = 0; i < pop_size; i++){
         for (int j = 0; j < k_best; j++){
             if (i != j){
-                printf("\ni: %d; j: %d\n", i, j);
+                //printf("\ni: %d; j: %d\n", i, j);
                 R = 0;
                 for (int d = 0; d < dim; d++){
                     R += (population[i][d] - population[j][d]) * (population[i][d] - population[j][d]);
                 }
                 R = sqrt(R);
-                printf("R: %f\n", R);
+                /*printf("R: %f\n", R);
                 printf("M[j]: %f\n", M[j]);
                 printf("i %d\n", i);
                 printf("population[i][0] %f\n", population[i][0]);
                 printf("population[j][0] %f\n", population[j][0]);
-                printf("Forces[i][0] %f\n", Forces[i][0]);
+                printf("Forces[i][0] %f\n", Forces[i][0]);*/
 
                 for (int d = 0; d < dim; d++){
                     //random = random_float(0, 1);
@@ -117,7 +126,7 @@ float** serial_update_accelearations(float* M, float** population, float** accel
                     //printf("random: %f\n", random);
                     Forces[i][d] = Forces[i][d] + random * M[j] * (population[j][d] - population[i][d]) / (R + 1e-20);
                 }
-                printf("Forces[i][0] %f\n", Forces[i][0]);
+                //printf("Forces[i][0] %f\n", Forces[i][0]);
             }
         }
     }

@@ -1,10 +1,14 @@
 
 
 Iteration: 0
-
-
-INIZIOOO
-
+population[0][0]: 11.210644
+population[1][0]: -5.910766
+population[2][0]: -34.465527
+population[3][0]: -99.984344
+M[0]: 0.433146
+M[1]: 0.316588
+M[2]: 0.250266
+M[3]: 0.000000
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.000000
 Forces[2][0]: 0.000000
@@ -20,37 +24,37 @@ accelerations[3][0]: 0.000000
 
 
 Iteration: 1
+population[0][0]: 11.210644
+population[1][0]: -5.910766
+population[2][0]: -34.465527
+population[3][0]: -99.984344
+M[0]: 0.433146
+M[1]: 0.316588
+M[2]: 0.250266
+M[3]: 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+Forces[2][0]: 0.000000
+Forces[3][0]: 0.000000
+M[0]: 0.433146
+M[1]: 0.316588
+M[2]: 0.250266
+M[3]: 0.000000
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+accelerations[2][0]: 0.000000
+accelerations[3][0]: 0.000000
 
 
-INIZIOOO
-
-
-i: 1; j: 0
-R: 43.905136
-M[j]: 0.433146
-i 1
-population[i][0] -5.910766
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.084456
-
-i: 2; j: 0
-R: 91.584915
-M[j]: 0.433146
-i 2
-population[i][0] -34.465527
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.108011
-
-i: 3; j: 0
-R: 123.711937
-M[j]: 0.433146
-i 3
-population[i][0] -99.984344
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.194660
+Iteration: 2
+population[0][0]: 11.210644
+population[1][0]: -5.910766
+population[2][0]: -34.465527
+population[3][0]: -99.984344
+M[0]: 0.433146
+M[1]: 0.316588
+M[2]: 0.250266
+M[3]: 0.000000
 Forces[0][0]: 0.000000
 Forces[1][0]: 0.084456
 Forces[2][0]: 0.108011
@@ -65,178 +69,166 @@ accelerations[2][0]: 0.000000
 accelerations[3][0]: 0.266768
 
 
-Iteration: 2
-
-
-INIZIOOO
-
-
-i: 0; j: 1
-R: 43.221050
-M[j]: 0.317094
-i 0
-population[i][0] 11.210644
-population[j][0] -5.643998
-Forces[i][0] 0.000000
-Forces[i][0] -0.061828
-
-i: 1; j: 0
-R: 43.221050
-M[j]: 0.429783
-i 1
-population[i][0] -5.643998
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.083800
-
-i: 2; j: 0
-R: 90.719543
-M[j]: 0.429783
-i 2
-population[i][0] -34.033939
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.107173
-
-i: 2; j: 1
-R: 121.786324
-M[j]: 0.317094
-i 2
-population[i][0] -34.033939
-population[j][0] -5.643998
-Forces[i][0] 0.107173
-Forces[i][0] 0.144132
-
-i: 3; j: 0
-R: 123.711937
-M[j]: 0.429783
-i 3
-population[i][0] -99.984344
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[i][0] 0.193149
-
-i: 3; j: 1
-R: 133.193848
-M[j]: 0.317094
-i 3
-population[i][0] -99.984344
-population[j][0] -5.643998
-Forces[i][0] 0.193149
-Forces[i][0] 0.305447
-Forces[0][0]: -0.061828
-Forces[1][0]: 0.083800
-Forces[2][0]: 0.144132
-Forces[3][0]: 0.305447
+Iteration: 3
+population[0][0]: 11.210644
+population[1][0]: -5.643998
+population[2][0]: -34.033939
+population[3][0]: -99.984344
 M[0]: 0.429783
 M[1]: 0.317094
 M[2]: 0.253123
 M[3]: 0.000000
-accelerations[0][0]: -0.143858
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.083800
+Forces[2][0]: 0.107173
+Forces[3][0]: 0.193149
+M[0]: 0.429783
+M[1]: 0.317094
+M[2]: 0.253123
+M[3]: 0.000000
+accelerations[0][0]: 0.000000
 accelerations[1][0]: 0.264275
-accelerations[2][0]: -0.143858
+accelerations[2][0]: 0.000000
 accelerations[3][0]: 0.264275
 
 
-Iteration: 3
-
-
-INIZIOOO
-
-
-i: 0; j: 1
-R: 41.832417
-M[j]: 0.316924
-i 0
-population[i][0] 11.066786
-population[j][0] -5.246340
-Forces[i][0] 0.000000
-Forces[i][0] -0.061794
-
-i: 0; j: 2
-R: 89.059891
-M[j]: 0.259672
-i 0
-population[i][0] 11.066786
-population[j][0] -33.248730
-Forces[i][0] -0.061794
-Forces[i][0] -0.126400
-
-i: 1; j: 0
-R: 41.832417
-M[j]: 0.423404
-i 1
-population[i][0] -5.246340
-population[j][0] 11.066786
-Forces[i][0] 0.000000
-Forces[i][0] 0.082556
-
-i: 1; j: 2
-R: 119.110504
-M[j]: 0.259672
-i 1
-population[i][0] -5.246340
-population[j][0] -33.248730
-Forces[i][0] 0.082556
-Forces[i][0] 0.052032
-
-i: 2; j: 0
-R: 89.059891
-M[j]: 0.423404
-i 2
-population[i][0] -33.248730
-population[j][0] 11.066786
-Forces[i][0] 0.000000
-Forces[i][0] 0.105341
-
-i: 2; j: 1
-R: 119.110504
-M[j]: 0.316924
-i 2
-population[i][0] -33.248730
-population[j][0] -5.246340
-Forces[i][0] 0.105341
-Forces[i][0] 0.142595
-
-i: 3; j: 0
-R: 123.732071
-M[j]: 0.423404
-i 3
-population[i][0] -99.984344
-population[j][0] 11.066786
-Forces[i][0] 0.000000
-Forces[i][0] 0.190005
-
-i: 3; j: 1
-R: 132.816010
-M[j]: 0.316924
-i 3
-population[i][0] -99.984344
-population[j][0] -5.246340
-Forces[i][0] 0.190005
-Forces[i][0] 0.303037
-
-i: 3; j: 2
-R: 70.486511
-M[j]: 0.259672
-i 3
-population[i][0] -99.984344
-population[j][0] -33.248730
-Forces[i][0] 0.303037
-Forces[i][0] 0.425963
-Forces[0][0]: -0.126400
-Forces[1][0]: 0.052032
-Forces[2][0]: 0.142595
-Forces[3][0]: 0.425963
-M[0]: 0.423404
-M[1]: 0.316924
-M[2]: 0.259672
+Iteration: 4
+population[0][0]: 11.210644
+population[1][0]: -5.246340
+population[2][0]: -33.394745
+population[3][0]: -99.984344
+M[0]: 0.424959
+M[1]: 0.317836
+M[2]: 0.257205
 M[3]: 0.000000
-accelerations[0][0]: -0.298532
-accelerations[1][0]: 0.164179
-accelerations[2][0]: -0.298532
-accelerations[3][0]: 0.164179
-Configuration: dim = 2, pop_size = 4, n_iter = 4
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.082859
+Forces[2][0]: 0.105970
+Forces[3][0]: 0.190981
+M[0]: 0.424959
+M[1]: 0.317836
+M[2]: 0.257205
+M[3]: 0.000000
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.260698
+accelerations[2][0]: 0.000000
+accelerations[3][0]: 0.260698
+
+
+Iteration: 5
+population[0][0]: 11.210644
+population[1][0]: -4.786812
+population[2][0]: -32.663139
+population[3][0]: -99.984344
+M[0]: 0.419656
+M[1]: 0.318679
+M[2]: 0.261665
+M[3]: 0.000000
+Forces[0][0]: -0.062137
+Forces[1][0]: 0.081825
+Forces[2][0]: 0.142488
+Forces[3][0]: 0.303176
+M[0]: 0.419656
+M[1]: 0.318679
+M[2]: 0.261665
+M[3]: 0.000000
+accelerations[0][0]: -0.148066
+accelerations[1][0]: 0.256764
+accelerations[2][0]: -0.148066
+accelerations[3][0]: 0.256764
+
+
+Iteration: 6
+population[0][0]: 11.062578
+population[1][0]: -4.300284
+population[2][0]: -31.752792
+population[3][0]: -99.984344
+M[0]: 0.412939
+M[1]: 0.318734
+M[2]: 0.268328
+M[3]: 0.000000
+Forces[0][0]: -0.062147
+Forces[1][0]: 0.080516
+Forces[2][0]: 0.140973
+Forces[3][0]: 0.300871
+M[0]: 0.412939
+M[1]: 0.318734
+M[2]: 0.268328
+M[3]: 0.000000
+accelerations[0][0]: -0.150500
+accelerations[1][0]: 0.252611
+accelerations[2][0]: -0.150500
+accelerations[3][0]: 0.252611
+
+
+Iteration: 7
+population[0][0]: 10.838045
+population[1][0]: -3.804410
+population[2][0]: -30.772243
+population[3][0]: -99.984344
+M[0]: 0.405920
+M[1]: 0.318517
+M[2]: 0.275563
+M[3]: 0.000000
+Forces[0][0]: -0.062105
+Forces[1][0]: 0.079147
+Forces[2][0]: 0.139230
+Forces[3][0]: 0.298213
+M[0]: 0.405920
+M[1]: 0.318517
+M[2]: 0.275563
+M[3]: 0.000000
+accelerations[0][0]: -0.152998
+accelerations[1][0]: 0.248486
+accelerations[2][0]: -0.152998
+accelerations[3][0]: 0.248486
+
+
+Iteration: 8
+population[0][0]: 10.572781
+population[1][0]: -3.307986
+population[2][0]: -29.776712
+population[3][0]: -99.984344
+M[0]: 0.399096
+M[1]: 0.318274
+M[2]: 0.282630
+M[3]: 0.000000
+Forces[0][0]: -0.131639
+Forces[1][0]: 0.042994
+Forces[2][0]: 0.137468
+Forces[3][0]: 0.433518
+M[0]: 0.399096
+M[1]: 0.318274
+M[2]: 0.282630
+M[3]: 0.000000
+accelerations[0][0]: -0.329843
+accelerations[1][0]: 0.135085
+accelerations[2][0]: -0.329843
+accelerations[3][0]: 0.135085
+
+
+Iteration: 9
+population[0][0]: 10.110306
+population[1][0]: -2.924690
+population[2][0]: -28.792557
+population[3][0]: -99.984344
+M[0]: 0.392391
+M[1]: 0.318978
+M[2]: 0.288631
+M[3]: 0.000000
+Forces[0][0]: -0.132719
+Forces[1][0]: 0.040368
+Forces[2][0]: 0.135818
+Forces[3][0]: 0.435489
+M[0]: 0.392391
+M[1]: 0.318978
+M[2]: 0.288631
+M[3]: 0.000000
+accelerations[0][0]: -0.338233
+accelerations[1][0]: 0.126555
+accelerations[2][0]: -0.338233
+accelerations[3][0]: 0.126555
+Configuration: dim = 2, pop_size = 4, n_iter = 10
 
 ----------------------------------------
 Serial GCA
@@ -244,4 +236,3 @@ Serial GCA
 Best agent: 11.210644 17.300261 
 Best value: 424.977539
 Time measured: 0.000 seconds.
-
