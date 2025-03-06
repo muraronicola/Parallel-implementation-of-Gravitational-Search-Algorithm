@@ -299,8 +299,7 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         local_sum = 0;
         indice = 0;
         for (int i = 0; i < local_pop_size; i++){
-            indice = i + sub_pop_start_index;
-            m[i] = (global_fitness[indice] - worst) / (best - worst);
+            m[i] = (local_fitness[i] - worst) / (best - worst);
             if (m[i] <= 0){ //Mia aggiunta
                 m[i] = 0;
             }
@@ -331,6 +330,9 @@ float* gca(float (*target_function)(float*, int), float lb, float ub, int dim, i
         printf("my_rank: %d; global_M[1]: %f\n", my_rank, global_M[1]);
         printf("my_rank: %d; global_M[2]: %f\n", my_rank, global_M[2]);
         printf("my_rank: %d; global_M[3]: %f\n", my_rank, global_M[3]);*/
+
+        MPI_Allgather(local_M, local_pop_size, MPI_FLOAT, global_M, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
+
 
         accelerations = update_accelerations(global_M, local_M, global_population, local_population, accelerations, dim, local_pop_size, k_best, sub_pop_start_index);
 
