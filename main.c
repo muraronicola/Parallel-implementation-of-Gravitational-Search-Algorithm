@@ -36,12 +36,12 @@ int main(int argc, char *argv[]){
 
     struct timeval begin, end;
 
-    gettimeofday(&begin, 0);
-    best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter);
-    gettimeofday(&end, 0);
-    
     
     if (my_rank == 0){
+        gettimeofday(&begin, 0);
+        best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter);
+        gettimeofday(&end, 0);
+
         seconds = end.tv_sec - begin.tv_sec;
         microseconds = end.tv_usec - begin.tv_usec;
         elapsed = seconds + microseconds*1e-6;
