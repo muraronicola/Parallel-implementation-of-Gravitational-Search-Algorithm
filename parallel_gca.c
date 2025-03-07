@@ -285,10 +285,6 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
 
     float *best_agents = allocate_vector_float(dim);
     float best_score_best_agent = 1e20;
-    /*for (int i = 0; i < global_pop_size; i++)
-    {
-        translation_index[i] = i;
-    }*/
 
     if (my_rank == 0)
     {
@@ -358,6 +354,7 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
         if (my_rank == 0 && best_score_best_agent > global_fitness[0])
         {
             best_score_best_agent = global_fitness[0];
+            //printf("Best score: %f\n", best_score_best_agent);
             for (int i = 0; i < dim; i++)
             {
                 best_agents[i] = global_population[0][i];

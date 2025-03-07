@@ -34,7 +34,7 @@ int main(int argc, char *argv[]){
     float* best_agent;
     long seconds, microseconds;
     double elapsed;
-    bool debug = false;
+    bool debug = true;
 
     struct timeval begin, end;
 

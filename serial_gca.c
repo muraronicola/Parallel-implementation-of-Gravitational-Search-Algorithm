@@ -284,6 +284,7 @@ float *serial_gca(float (*target_function)(float *, int), float lb, float ub, in
             }
             if (fitness[i] < best_score)
             {
+                //printf("Best score: %f\n", fitness[i]);
                 best_score = fitness[i];
                 for (int j = 0; j < dim; j++)
                 {
