@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <sys/time.h>
+#include <stdbool.h>
 
 void print_results(float* best_agent, float (*target_function)(float*, int), int dim);
 
@@ -33,13 +34,14 @@ int main(int argc, char *argv[]){
     float* best_agent;
     long seconds, microseconds;
     double elapsed;
+    bool debug = false;
 
     struct timeval begin, end;
 
     
     if (my_rank == 0){
         gettimeofday(&begin, 0);
-        best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter);
+        best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter, debug);
         gettimeofday(&end, 0);
 
         seconds = end.tv_sec - begin.tv_sec;
@@ -61,7 +63,7 @@ int main(int argc, char *argv[]){
 
     srand(10);
     gettimeofday(&begin, 0);
-    best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc);
+    best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc, debug);
     gettimeofday(&end, 0);
 
     if (my_rank == 0){
