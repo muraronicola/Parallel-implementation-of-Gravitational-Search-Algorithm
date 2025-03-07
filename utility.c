@@ -18,6 +18,14 @@ float *allocate_vector_float(int n)
     return ptr;
 }
 
+int *allocate_vector_int(int n)
+{
+    int *ptr = (int *)malloc(sizeof(int) * n);
+    check_allocation(ptr);
+
+    return ptr;
+}
+
 float **allocate_matrix_float(int rows, int columns)
 {
     float *continuos_chunk = (float *)malloc(rows*columns*sizeof(float));

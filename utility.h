@@ -5,5 +5,6 @@ void check_allocation(void *ptr);
 float *allocate_vector_float(int n);
 float **allocate_matrix_float(int rows, int columns);
 float random_float(int lb, int ub);
+int *allocate_vector_int(int n);
 
 #endif

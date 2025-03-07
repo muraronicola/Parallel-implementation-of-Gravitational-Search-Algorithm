@@ -94,7 +94,8 @@ float** serial_update_accelearations(float* M, float** population, float** accel
     float R; 
     float **Forces = allocate_matrix_float(pop_size, dim);
     float random;
-    printf("population[0][0]: %f\n", population[0][0]);
+    printf("Update accelerations\n");
+    /*printf("population[0][0]: %f\n", population[0][0]);
     printf("population[1][0]: %f\n", population[1][0]);
     printf("population[2][0]: %f\n", population[2][0]);
     printf("population[3][0]: %f\n", population[3][0]);
@@ -102,23 +103,23 @@ float** serial_update_accelearations(float* M, float** population, float** accel
     printf("M[0]: %f\n", M[0]);
     printf("M[1]: %f\n", M[1]);
     printf("M[2]: %f\n", M[2]);
-    printf("M[3]: %f\n", M[3]);
+    printf("M[3]: %f\n", M[3]);*/
     //printf("\n\nINIZIOOO\n\n");
     for (int i = 0; i < pop_size; i++){
         for (int j = 0; j < k_best; j++){
             if (i != j){
-                //printf("\ni: %d; j: %d\n", i, j);
+                printf("\ni: %d; j: %d\n", i, j);
                 R = 0;
                 for (int d = 0; d < dim; d++){
                     R += (population[i][d] - population[j][d]) * (population[i][d] - population[j][d]);
                 }
                 R = sqrt(R);
-                /*printf("R: %f\n", R);
+                printf("R: %f\n", R);
                 printf("M[j]: %f\n", M[j]);
                 printf("i %d\n", i);
                 printf("population[i][0] %f\n", population[i][0]);
                 printf("population[j][0] %f\n", population[j][0]);
-                printf("Forces[i][0] %f\n", Forces[i][0]);*/
+                printf("Forces[i][0] %f\n", Forces[i][0]);
 
                 for (int d = 0; d < dim; d++){
                     //random = random_float(0, 1);
@@ -147,7 +148,7 @@ float** serial_update_accelearations(float* M, float** population, float** accel
             //accelerations[i][d] = Forces[i][d] / M[i];
         }
     }
-    printf("M[0]: %f\n", M[0]);
+    /*printf("M[0]: %f\n", M[0]);
     printf("M[1]: %f\n", M[1]);
     printf("M[2]: %f\n", M[2]);
     printf("M[3]: %f\n", M[3]);
@@ -156,7 +157,7 @@ float** serial_update_accelearations(float* M, float** population, float** accel
     printf("accelerations[0][0]: %f\n", accelerations[0][0]);
     printf("accelerations[1][0]: %f\n", accelerations[1][0]);
     printf("accelerations[2][0]: %f\n", accelerations[0][0]);
-    printf("accelerations[3][0]: %f\n", accelerations[1][0]);
+    printf("accelerations[3][0]: %f\n", accelerations[1][0]);*/
 
 
     //deallocazione delle matrici
@@ -228,11 +229,11 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
 
 
     for (int l = 0; l < n_iter; l++) {
-        printf("\n\nIteration: %d\n", l);
+        printf("\n\n\nIteration: %d\n", l);
         for (int i = 0; i < pop_size; i++){
             population[i] = serial_clip_position_agent(population[i], lb, ub, dim);
             fitness[i] = target_function(population[i], dim);
-            //printf("Fitness: %f\n", fitness[i]);
+            printf("fitness[%d]: %f\n", i, fitness[i]);
 
             if (fitness[i] < best_score) {
                 best_score = fitness[i];
@@ -243,11 +244,31 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
         }
         //return population[0];
 
+
+        printf("\n\n");
+        for (int k = 0; k < pop_size; k++){
+            printf("population[%d][0]: %f\n", k, population[k][0]);
+        }
+        
+        for (int k = 0; k < pop_size; k++){
+            printf("fitness[%d]: %f\n", k, fitness[k]);
+        }
+
+        for (int k = 0; k < pop_size; k++){
+            printf("valocity[%d][0]: %f\n", k, velocity[k][0]);
+        }
+
         serial_sort_agents(fitness, velocity, population, M, pop_size, dim); //Sort the agents based on their fitness
         k_best = serial_getk_best(pop_size, l, n_iter);
         //printf("Sort fitness:");
-        for (int i = 0; i < pop_size; i++){
-            //printf("fitness[%d]: %f\n", i, fitness[i]);
+
+        printf("\nSOORTT:\n");
+        for (int k = 0; k < pop_size; k++){
+            printf("population[%d][0]: %f\n", k, population[k][0]);
+        }
+        
+        for (int k = 0; k < pop_size; k++){
+            printf("fitness[%d]: %f\n", k, fitness[k]);
         }
 
 
@@ -274,35 +295,35 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
             M[i] = m[i] / sum_m;
         }
         
-        /*printf("\nM[0]: %f\n", M[0]);
+        printf("\nM[0]: %f\n", M[0]);
         printf("M[1]: %f\n", M[1]);
         printf("M[2]: %f\n", M[2]);
-        printf("M[3]: %f\n", M[3]);*/
+        printf("M[3]: %f\n", M[3]);
 
         //return population[0];
 
         //Update the velocity
         accelerations = serial_update_accelearations(M, population, accelerations, dim, pop_size, k_best);
-        /*printf("\naccelerations[0][0]: %f\n", accelerations[0][0]);
+        printf("\naccelerations[0][0]: %f\n", accelerations[0][0]);
         printf("accelerations[1][0]: %f\n", accelerations[1][0]);
         printf("accelerations[2][0]: %f\n", accelerations[2][0]);
-        printf("accelerations[3][0]: %f\n", accelerations[3][0]);*/
+        printf("accelerations[3][0]: %f\n", accelerations[3][0]);
 
         velocity = serial_update_velocity(velocity, accelerations, G, dim, pop_size);
         
-        /*printf("\nvelocity[0][0]: %f\n", velocity[0][0]);
+        printf("\nvelocity[0][0]: %f\n", velocity[0][0]);
         printf("velocity[1][0]: %f\n", velocity[1][0]);
         printf("velocity[2][0]: %f\n", velocity[2][0]);
-        printf("velocity[3][0]: %f\n", velocity[3][0]);*/
+        printf("velocity[3][0]: %f\n", velocity[3][0]);
         
         
         population = serial_update_position(population, velocity, dim, pop_size);
     
 
-        /*printf("\npopulation[0][0]: %f\n", population[0][0]);
+        printf("\npopulation[0][0]: %f\n", population[0][0]);
         printf("population[1][0]: %f\n", population[1][0]);
         printf("population[2][0]: %f\n", population[2][0]);
-        printf("population[3][0]: %f\n", population[3][0]);*/
+        printf("population[3][0]: %f\n", population[3][0]);
 
         convergence_curve[l] = best_score;
 
