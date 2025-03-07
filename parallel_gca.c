@@ -70,34 +70,40 @@ float get_worst(float *fitness, int pop_size)
 
 void sort_agents(float *fitness, float **velocity, float **population, float *M, int pop_size, int dim, int *translation_index)
 {
-    float temp;
+    float tmp_float;
+    int tmp_int;
+    for (int i = 0; i < pop_size; i++)
+    {
+        translation_index[i] = i;
+    }
+
     for (int i = 0; i < pop_size; i++)
     {
         for (int j = i + 1; j < pop_size; j++)
         {
             if (fitness[i] > fitness[j])
             {
-                temp = fitness[i];
+                tmp_float = fitness[i];
                 fitness[i] = fitness[j];
-                fitness[j] = temp;
+                fitness[j] = tmp_float;
 
-                temp = translation_index[i];
+                tmp_int = translation_index[i];
                 translation_index[i] = translation_index[j];
-                translation_index[j] = temp;
+                translation_index[j] = tmp_int;
 
-                temp = M[i];
+                tmp_float = M[i];
                 M[i] = M[j];
-                M[j] = temp;
+                M[j] = tmp_float;
 
                 for (int k = 0; k < dim; k++)
                 {
-                    temp = velocity[i][k];
+                    tmp_float = velocity[i][k];
                     velocity[i][k] = velocity[j][k];
-                    velocity[j][k] = temp;
+                    velocity[j][k] = tmp_float;
 
-                    temp = population[i][k];
+                    tmp_float = population[i][k];
                     population[i][k] = population[j][k];
-                    population[j][k] = temp;
+                    population[j][k] = tmp_float;
                 }
             }
         }
@@ -151,6 +157,7 @@ float **update_accelerations(float *global_M, float *local_M, float **global_pop
                 printf("indice %d\n", indice);
                 printf("population[i][0] %f\n", local_population[i][0]);
                 printf("population[j][0] %f\n", global_population[j][0]);
+                printf("translation_index[j] %d\n", translation_index[j]);
                 printf("Forces[i][0] %f\n", Forces[i][0]);
 
                 for (int d = 0; d < dim; d++)
@@ -262,6 +269,13 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
     int sub_pop_start_index = my_rank * local_pop_size;
     int indice;
 
+    float* best_agents = allocate_vector_float(dim);
+    float best_score_best_agent = 1e20;
+    /*for (int i = 0; i < global_pop_size; i++)
+    {
+        translation_index[i] = i;
+    }*/
+
     if (my_rank == 0)
     {
         global_population = initialize_population(target_function, lb, ub, dim, global_pop_size);
@@ -326,6 +340,15 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
 
         sort_agents(global_fitness, global_velocity, global_population, global_M, global_pop_size, dim, translation_index); // Sort the agents based on their fitness
         k_best = getk_best(global_pop_size, l, n_iter);
+
+        if (my_rank == 0 && best_score_best_agent > global_fitness[0])
+        {
+            best_score_best_agent = global_fitness[0];
+            for (int i = 0; i < dim; i++)
+            {
+                best_agents[i] = global_population[0][i];
+            }
+        }
 
         if (my_rank == 0)
         {
@@ -470,15 +493,37 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
     MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_population[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
     MPI_Allgather(local_fitness, local_pop_size, MPI_FLOAT, global_fitness, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
     MPI_Allgather(&(local_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
-    // printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
+
+    if (my_rank == 0)
+    {
+        printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
+        printf("my_rank: %d; local_population[0][1]: %f\n", my_rank, local_population[0][1]);
+    }
 
     sort_agents(global_fitness, global_velocity, global_population, global_M, global_pop_size, dim, translation_index); // Sort the agents based on their fitness
+    
+    if (my_rank == 0 && best_score_best_agent > global_fitness[0])
+    {
+        best_score_best_agent = global_fitness[0];
+        for (int i = 0; i < dim; i++)
+        {
+            best_agents[i] = global_population[0][i];
+        }
+    }
 
-    /*printf("\n---------- DONE ----------\n");
-    for (int i = 0; i < global_pop_size; i++){
-        printf("my_rank: %d; global_fitness[%d]: %f\n", my_rank, i, global_fitness[i]);
-    }*/
-
-    best_agent = global_population[0];
-    return best_agent;
+    if (my_rank == 0)
+    {
+        printf("\n---------- DONE ----------\n");
+        for (int i = 0; i < global_pop_size; i++)
+        {
+            printf("my_rank: %d; global_population[%d][0]: %f   global_population[%d][1]: %f \n", my_rank, i, global_population[i][0], i, global_population[i][1]);
+        }
+        for (int i = 0; i < global_pop_size; i++)
+        {
+            printf("my_rank: %d; global_fitness[%d]: %f\n", my_rank, i, global_fitness[i]);
+        }
+    }
+    
+    //best_agent = global_population[0];
+    return best_agents;
 }

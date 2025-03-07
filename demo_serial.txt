@@ -93,63 +93,6 @@ M[1]: 0.316588
 M[2]: 0.250266
 M[3]: 0.000000
 Update accelerations
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
-Forces[2][0]: 0.000000
-Forces[3][0]: 0.000000
-
-accelerations[0][0]: 0.000000
-accelerations[1][0]: 0.000000
-accelerations[2][0]: 0.000000
-accelerations[3][0]: 0.000000
-
-velocity[0][0]: 0.000000
-velocity[1][0]: 0.000000
-velocity[2][0]: 0.000000
-velocity[3][0]: 0.000000
-
-population[0][0]: 11.210644
-population[1][0]: -5.910766
-population[2][0]: -34.465527
-population[3][0]: -99.984344
-
-
-
-Iteration: 2
-fitness[0]: 424.977539
-fitness[1]: 3367.624756
-fitness[2]: 5042.000977
-fitness[3]: 11360.282227
-
-
-population[0][0]: 11.210644
-population[1][0]: -5.910766
-population[2][0]: -34.465527
-population[3][0]: -99.984344
-fitness[0]: 424.977539
-fitness[1]: 3367.624756
-fitness[2]: 5042.000977
-fitness[3]: 11360.282227
-valocity[0][0]: 0.000000
-valocity[1][0]: 0.000000
-valocity[2][0]: 0.000000
-valocity[3][0]: 0.000000
-
-SOORTT:
-population[0][0]: 11.210644
-population[1][0]: -5.910766
-population[2][0]: -34.465527
-population[3][0]: -99.984344
-fitness[0]: 424.977539
-fitness[1]: 3367.624756
-fitness[2]: 5042.000977
-fitness[3]: 11360.282227
-
-M[0]: 0.433146
-M[1]: 0.316588
-M[2]: 0.250266
-M[3]: 0.000000
-Update accelerations
 
 i: 1; j: 0
 R: 43.905136
@@ -196,7 +139,7 @@ population[3][0]: -99.984344
 
 
 
-Iteration: 3
+Iteration: 2
 fitness[0]: 424.977539
 fitness[1]: 3292.208740
 fitness[2]: 4919.869629
@@ -277,7 +220,7 @@ population[3][0]: -99.984344
 
 
 
-Iteration: 4
+Iteration: 3
 fitness[0]: 424.977539
 fitness[1]: 3181.527100
 fitness[2]: 4741.740234
@@ -313,6 +256,14 @@ M[2]: 0.257205
 M[3]: 0.000000
 Update accelerations
 
+i: 0; j: 1
+R: 42.201321
+M[j]: 0.317836
+i 0
+population[i][0] 11.210644
+population[j][0] -5.246340
+Forces[i][0] 0.000000
+
 i: 1; j: 0
 R: 42.201321
 M[j]: 0.424959
@@ -329,6 +280,14 @@ population[i][0] -33.394745
 population[j][0] 11.210644
 Forces[i][0] 0.000000
 
+i: 2; j: 1
+R: 119.736855
+M[j]: 0.317836
+i 2
+population[i][0] -33.394745
+population[j][0] -5.246340
+Forces[i][0] 0.105970
+
 i: 3; j: 0
 R: 123.711937
 M[j]: 0.424959
@@ -336,604 +295,180 @@ i 3
 population[i][0] -99.984344
 population[j][0] 11.210644
 Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.082859
-Forces[2][0]: 0.105970
-Forces[3][0]: 0.190981
 
-accelerations[0][0]: 0.000000
+i: 3; j: 1
+R: 132.816010
+M[j]: 0.317836
+i 3
+population[i][0] -99.984344
+population[j][0] -5.246340
+Forces[i][0] 0.190981
+Forces[0][0]: -0.061972
+Forces[1][0]: 0.082859
+Forces[2][0]: 0.143329
+Forces[3][0]: 0.304338
+
+accelerations[0][0]: -0.145831
 accelerations[1][0]: 0.260698
-accelerations[2][0]: 0.412007
+accelerations[2][0]: 0.557258
 accelerations[3][0]: 0.000000
 
-velocity[0][0]: 0.000000
+velocity[0][0]: -0.145831
 velocity[1][0]: 0.459527
-velocity[2][0]: 0.731604
+velocity[2][0]: 0.876856
 velocity[3][0]: 0.000000
 
-population[0][0]: 11.210644
+population[0][0]: 11.064813
 population[1][0]: -4.786812
-population[2][0]: -32.663139
+population[2][0]: -32.517891
 population[3][0]: -99.984344
 
 
 
-Iteration: 5
-fitness[0]: 424.977539
+Iteration: 4
+fitness[0]: 433.762512
 fitness[1]: 3056.215088
-fitness[2]: 4541.890137
+fitness[2]: 4461.979492
 fitness[3]: 11360.282227
 
 
-population[0][0]: 11.210644
+population[0][0]: 11.064813
 population[1][0]: -4.786812
-population[2][0]: -32.663139
+population[2][0]: -32.517891
 population[3][0]: -99.984344
-fitness[0]: 424.977539
+fitness[0]: 433.762512
 fitness[1]: 3056.215088
-fitness[2]: 4541.890137
+fitness[2]: 4461.979492
 fitness[3]: 11360.282227
-valocity[0][0]: 0.000000
+valocity[0][0]: -0.145831
 valocity[1][0]: 0.459527
-valocity[2][0]: 0.731604
+valocity[2][0]: 0.876856
 valocity[3][0]: 0.000000
 
 SOORTT:
-population[0][0]: 11.210644
+population[0][0]: 11.064813
 population[1][0]: -4.786812
-population[2][0]: -32.663139
+population[2][0]: -32.517891
 population[3][0]: -99.984344
-fitness[0]: 424.977539
+fitness[0]: 433.762512
 fitness[1]: 3056.215088
-fitness[2]: 4541.890137
+fitness[2]: 4461.979492
 fitness[3]: 11360.282227
 
-M[0]: 0.419656
-M[1]: 0.318679
-M[2]: 0.261665
+M[0]: 0.418178
+M[1]: 0.317812
+M[2]: 0.264011
 M[3]: 0.000000
 Update accelerations
 
 i: 0; j: 1
-R: 41.022930
-M[j]: 0.318679
+R: 40.648972
+M[j]: 0.317812
 i 0
-population[i][0] 11.210644
+population[i][0] 11.064813
 population[j][0] -4.786812
 Forces[i][0] 0.000000
 
+i: 0; j: 2
+R: 87.603821
+M[j]: 0.264011
+i 0
+population[i][0] 11.064813
+population[j][0] -32.517891
+Forces[i][0] -0.061968
+
 i: 1; j: 0
-R: 41.022930
-M[j]: 0.419656
+R: 40.648972
+M[j]: 0.418178
 i 1
 population[i][0] -4.786812
-population[j][0] 11.210644
+population[j][0] 11.064813
 Forces[i][0] 0.000000
 
+i: 1; j: 2
+R: 116.764862
+M[j]: 0.264011
+i 1
+population[i][0] -4.786812
+population[j][0] -32.517891
+Forces[i][0] 0.081537
+
 i: 2; j: 0
-R: 87.970970
-M[j]: 0.419656
+R: 87.603821
+M[j]: 0.418178
 i 2
-population[i][0] -32.663139
-population[j][0] 11.210644
+population[i][0] -32.517891
+population[j][0] 11.064813
 Forces[i][0] 0.000000
 
 i: 2; j: 1
-R: 117.382729
-M[j]: 0.318679
+R: 116.764862
+M[j]: 0.317812
 i 2
-population[i][0] -32.663139
+population[i][0] -32.517891
 population[j][0] -4.786812
-Forces[i][0] 0.104648
+Forces[i][0] 0.104021
 
 i: 3; j: 0
-R: 123.711937
-M[j]: 0.419656
+R: 123.732353
+M[j]: 0.418178
 i 3
 population[i][0] -99.984344
-population[j][0] 11.210644
+population[j][0] 11.064813
 Forces[i][0] 0.000000
 
 i: 3; j: 1
 R: 132.387848
-M[j]: 0.318679
+M[j]: 0.317812
 i 3
 population[i][0] -99.984344
 population[j][0] -4.786812
-Forces[i][0] 0.188598
-Forces[0][0]: -0.062137
-Forces[1][0]: 0.081825
-Forces[2][0]: 0.142488
-Forces[3][0]: 0.303176
-
-accelerations[0][0]: -0.148066
-accelerations[1][0]: 0.256764
-accelerations[2][0]: 0.544545
-accelerations[3][0]: 0.000000
-
-velocity[0][0]: -0.148066
-velocity[1][0]: 0.486528
-velocity[2][0]: 0.910347
-velocity[3][0]: 0.000000
-
-population[0][0]: 11.062578
-population[1][0]: -4.300284
-population[2][0]: -31.752792
-population[3][0]: -99.984344
-
-
-
-Iteration: 6
-fitness[0]: 433.899292
-fitness[1]: 2926.567139
-fitness[2]: 4260.306641
-fitness[3]: 11360.282227
-
-
-population[0][0]: 11.062578
-population[1][0]: -4.300284
-population[2][0]: -31.752792
-population[3][0]: -99.984344
-fitness[0]: 433.899292
-fitness[1]: 2926.567139
-fitness[2]: 4260.306641
-fitness[3]: 11360.282227
-valocity[0][0]: -0.148066
-valocity[1][0]: 0.486528
-valocity[2][0]: 0.910347
-valocity[3][0]: 0.000000
-
-SOORTT:
-population[0][0]: 11.062578
-population[1][0]: -4.300284
-population[2][0]: -31.752792
-population[3][0]: -99.984344
-fitness[0]: 433.899292
-fitness[1]: 2926.567139
-fitness[2]: 4260.306641
-fitness[3]: 11360.282227
-
-M[0]: 0.412939
-M[1]: 0.318734
-M[2]: 0.268328
-M[3]: 0.000000
-Update accelerations
-
-i: 0; j: 1
-R: 39.395618
-M[j]: 0.318734
-i 0
-population[i][0] 11.062578
-population[j][0] -4.300284
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 39.395618
-M[j]: 0.412939
-i 1
-population[i][0] -4.300284
-population[j][0] 11.062578
-Forces[i][0] 0.000000
-
-i: 2; j: 0
-R: 86.080070
-M[j]: 0.412939
-i 2
-population[i][0] -31.752792
-population[j][0] 11.062578
-Forces[i][0] 0.000000
-
-i: 2; j: 1
-R: 114.299217
-M[j]: 0.318734
-i 2
-population[i][0] -31.752792
-population[j][0] -4.300284
-Forces[i][0] 0.102696
-
-i: 3; j: 0
-R: 123.732674
-M[j]: 0.412939
-i 3
-population[i][0] -99.984344
-population[j][0] 11.062578
-Forces[i][0] 0.000000
-
-i: 3; j: 1
-R: 131.944458
-M[j]: 0.318734
-i 3
-population[i][0] -99.984344
-population[j][0] -4.300284
-Forces[i][0] 0.185301
-Forces[0][0]: -0.062147
-Forces[1][0]: 0.080516
-Forces[2][0]: 0.140973
-Forces[3][0]: 0.300871
-
-accelerations[0][0]: -0.150500
-accelerations[1][0]: 0.252611
-accelerations[2][0]: 0.525375
-accelerations[3][0]: 0.000000
-
-velocity[0][0]: -0.224533
-velocity[1][0]: 0.495875
-velocity[2][0]: 0.980548
-velocity[3][0]: 0.000000
-
-population[0][0]: 10.838045
-population[1][0]: -3.804410
-population[2][0]: -30.772243
-population[3][0]: -99.984344
-
-
-
-Iteration: 7
-fitness[0]: 447.978760
-fitness[1]: 2797.631592
-fitness[2]: 3952.346191
-fitness[3]: 11360.282227
-
-
-population[0][0]: 10.838045
-population[1][0]: -3.804410
-population[2][0]: -30.772243
-population[3][0]: -99.984344
-fitness[0]: 447.978760
-fitness[1]: 2797.631592
-fitness[2]: 3952.346191
-fitness[3]: 11360.282227
-valocity[0][0]: -0.224533
-valocity[1][0]: 0.495875
-valocity[2][0]: 0.980548
-valocity[3][0]: 0.000000
-
-SOORTT:
-population[0][0]: 10.838045
-population[1][0]: -3.804410
-population[2][0]: -30.772243
-population[3][0]: -99.984344
-fitness[0]: 447.978760
-fitness[1]: 2797.631592
-fitness[2]: 3952.346191
-fitness[3]: 11360.282227
-
-M[0]: 0.405920
-M[1]: 0.318517
-M[2]: 0.275563
-M[3]: 0.000000
-Update accelerations
-
-i: 0; j: 1
-R: 37.548248
-M[j]: 0.318517
-i 0
-population[i][0] 10.838045
-population[j][0] -3.804410
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 37.548248
-M[j]: 0.405920
-i 1
-population[i][0] -3.804410
-population[j][0] 10.838045
-Forces[i][0] 0.000000
-
-i: 2; j: 0
-R: 84.027809
-M[j]: 0.405920
-i 2
-population[i][0] -30.772243
-population[j][0] 10.838045
-Forces[i][0] 0.000000
-
-i: 2; j: 1
-R: 110.906013
-M[j]: 0.318517
-i 2
-population[i][0] -30.772243
-population[j][0] -3.804410
-Forces[i][0] 0.100505
-
-i: 3; j: 0
-R: 123.766350
-M[j]: 0.405920
-i 3
-population[i][0] -99.984344
-population[j][0] 10.838045
-Forces[i][0] 0.000000
-
-i: 3; j: 1
-R: 131.503204
-M[j]: 0.318517
-i 3
-population[i][0] -99.984344
-population[j][0] -3.804410
-Forces[i][0] 0.181734
-Forces[0][0]: -0.062105
-Forces[1][0]: 0.079147
-Forces[2][0]: 0.139230
-Forces[3][0]: 0.298213
-
-accelerations[0][0]: -0.152998
-accelerations[1][0]: 0.248486
-accelerations[2][0]: 0.505257
-accelerations[3][0]: 0.000000
-
-velocity[0][0]: -0.265265
-velocity[1][0]: 0.496424
-velocity[2][0]: 0.995531
-velocity[3][0]: 0.000000
-
-population[0][0]: 10.572781
-population[1][0]: -3.307986
-population[2][0]: -29.776712
-population[3][0]: -99.984344
-
-
-
-Iteration: 8
-fitness[0]: 465.466675
-fitness[1]: 2671.793213
-fitness[2]: 3644.853516
-fitness[3]: 11360.282227
-
-
-population[0][0]: 10.572781
-population[1][0]: -3.307986
-population[2][0]: -29.776712
-population[3][0]: -99.984344
-fitness[0]: 465.466675
-fitness[1]: 2671.793213
-fitness[2]: 3644.853516
-fitness[3]: 11360.282227
-valocity[0][0]: -0.265265
-valocity[1][0]: 0.496424
-valocity[2][0]: 0.995531
-valocity[3][0]: 0.000000
-
-SOORTT:
-population[0][0]: 10.572781
-population[1][0]: -3.307986
-population[2][0]: -29.776712
-population[3][0]: -99.984344
-fitness[0]: 465.466675
-fitness[1]: 2671.793213
-fitness[2]: 3644.853516
-fitness[3]: 11360.282227
-
-M[0]: 0.399096
-M[1]: 0.318274
-M[2]: 0.282630
-M[3]: 0.000000
-Update accelerations
-
-i: 0; j: 1
-R: 35.595020
-M[j]: 0.318274
-i 0
-population[i][0] 10.572781
-population[j][0] -3.307986
-Forces[i][0] 0.000000
-
-i: 0; j: 2
-R: 81.947205
-M[j]: 0.282630
-i 0
-population[i][0] 10.572781
-population[j][0] -29.776712
-Forces[i][0] -0.062058
-
-i: 1; j: 0
-R: 35.595020
-M[j]: 0.399096
-i 1
-population[i][0] -3.307986
-population[j][0] 10.572781
-Forces[i][0] 0.000000
-
-i: 1; j: 2
-R: 107.414253
-M[j]: 0.282630
-i 1
-population[i][0] -3.307986
-population[j][0] -29.776712
-Forces[i][0] 0.077816
-
-i: 2; j: 0
-R: 81.947205
-M[j]: 0.399096
-i 2
-population[i][0] -29.776712
-population[j][0] 10.572781
-Forces[i][0] 0.000000
-
-i: 2; j: 1
-R: 107.414253
-M[j]: 0.318274
-i 2
-population[i][0] -29.776712
-population[j][0] -3.307986
-Forces[i][0] 0.098254
-
-i: 3; j: 0
-R: 123.809570
-M[j]: 0.399096
-i 3
-population[i][0] -99.984344
-population[j][0] 10.572781
-Forces[i][0] 0.000000
-
-i: 3; j: 1
-R: 131.072342
-M[j]: 0.318274
-i 3
-population[i][0] -99.984344
-population[j][0] -3.307986
-Forces[i][0] 0.178189
+Forces[i][0] 0.187656
 
 i: 3; j: 2
-R: 71.918633
-M[j]: 0.282630
+R: 70.786438
+M[j]: 0.264011
 i 3
 population[i][0] -99.984344
-population[j][0] -29.776712
-Forces[i][0] 0.295565
-Forces[0][0]: -0.131639
-Forces[1][0]: 0.042994
-Forces[2][0]: 0.137468
-Forces[3][0]: 0.433518
+population[j][0] -32.517891
+Forces[i][0] 0.301922
+Forces[0][0]: -0.127640
+Forces[1][0]: 0.050186
+Forces[2][0]: 0.141761
+Forces[3][0]: 0.427736
 
-accelerations[0][0]: -0.329843
-accelerations[1][0]: 0.135085
-accelerations[2][0]: 0.486391
+accelerations[0][0]: -0.305229
+accelerations[1][0]: 0.157913
+accelerations[2][0]: 0.536950
 accelerations[3][0]: 0.000000
 
-velocity[0][0]: -0.462475
-velocity[1][0]: 0.383297
-velocity[2][0]: 0.984156
+velocity[0][0]: -0.378144
+velocity[1][0]: 0.387676
+velocity[2][0]: 0.975378
 velocity[3][0]: 0.000000
 
-population[0][0]: 10.110306
-population[1][0]: -2.924690
-population[2][0]: -28.792557
+population[0][0]: 10.686668
+population[1][0]: -4.399136
+population[2][0]: -31.542513
 population[3][0]: -99.984344
+population[0][0]: 10.686668  population[0][1]: 17.892874 
 
+population[1][0]: -4.399136  population[1][1]: 53.523582 
 
+population[2][0]: -31.542513  population[2][1]: -56.140968 
 
-Iteration: 9
-fitness[0]: 470.038300
-fitness[1]: 2507.521973
-fitness[2]: 3349.735596
+population[3][0]: -99.984344  population[3][1]: -36.924423 
+
+fitness[0]: 433.762512
+fitness[1]: 3056.215088
+fitness[2]: 4461.979492
 fitness[3]: 11360.282227
-
-
-population[0][0]: 10.110306
-population[1][0]: -2.924690
-population[2][0]: -28.792557
-population[3][0]: -99.984344
-fitness[0]: 470.038300
-fitness[1]: 2507.521973
-fitness[2]: 3349.735596
-fitness[3]: 11360.282227
-valocity[0][0]: -0.462475
-valocity[1][0]: 0.383297
-valocity[2][0]: 0.984156
-valocity[3][0]: 0.000000
-
-SOORTT:
-population[0][0]: 10.110306
-population[1][0]: -2.924690
-population[2][0]: -28.792557
-population[3][0]: -99.984344
-fitness[0]: 470.038300
-fitness[1]: 2507.521973
-fitness[2]: 3349.735596
-fitness[3]: 11360.282227
-
-M[0]: 0.392391
-M[1]: 0.318978
-M[2]: 0.288631
-M[3]: 0.000000
-Update accelerations
-
-i: 0; j: 1
-R: 33.454922
-M[j]: 0.318978
-i 0
-population[i][0] 10.110306
-population[j][0] -2.924690
-Forces[i][0] 0.000000
-
-i: 0; j: 2
-R: 79.547310
-M[j]: 0.288631
-i 0
-population[i][0] 10.110306
-population[j][0] -28.792557
-Forces[i][0] -0.062141
-
-i: 1; j: 0
-R: 33.454922
-M[j]: 0.392391
-i 1
-population[i][0] -2.924690
-population[j][0] 10.110306
-Forces[i][0] 0.000000
-
-i: 1; j: 2
-R: 103.481804
-M[j]: 0.288631
-i 1
-population[i][0] -2.924690
-population[j][0] -28.792557
-Forces[i][0] 0.076443
-
-i: 2; j: 0
-R: 79.547310
-M[j]: 0.392391
-i 2
-population[i][0] -28.792557
-population[j][0] 10.110306
-Forces[i][0] 0.000000
-
-i: 2; j: 1
-R: 103.481804
-M[j]: 0.318978
-i 2
-population[i][0] -28.792557
-population[j][0] -2.924690
-Forces[i][0] 0.095950
-
-i: 3; j: 0
-R: 123.565308
-M[j]: 0.392391
-i 3
-population[i][0] -99.984344
-population[j][0] 10.110306
-Forces[i][0] 0.000000
-
-i: 3; j: 1
-R: 130.286758
-M[j]: 0.318978
-i 3
-population[i][0] -99.984344
-population[j][0] -2.924690
-Forces[i][0] 0.174807
-
-i: 3; j: 2
-R: 72.420250
-M[j]: 0.288631
-i 3
-population[i][0] -99.984344
-population[j][0] -28.792557
-Forces[i][0] 0.293621
-Forces[0][0]: -0.132719
-Forces[1][0]: 0.040368
-Forces[2][0]: 0.135818
-Forces[3][0]: 0.435489
-
-accelerations[0][0]: -0.338233
-accelerations[1][0]: 0.126555
-accelerations[2][0]: 0.470559
-accelerations[3][0]: 0.000000
-
-velocity[0][0]: -0.569470
-velocity[1][0]: 0.318203
-velocity[2][0]: 0.962638
-velocity[3][0]: 0.000000
-
-population[0][0]: 9.540835
-population[1][0]: -2.606487
-population[2][0]: -27.829920
-population[3][0]: -99.984344
-Configuration: dim = 2, pop_size = 4, n_iter = 10
+Configuration: dim = 2, pop_size = 4, n_iter = 5
 
 ----------------------------------------
 Serial GCA
 ----------------------------------------
 Best agent: 11.210644 17.300261 
 Best value: 424.977539
-Time measured: 0.001 seconds.
+Time measured: 0.000 seconds.
 

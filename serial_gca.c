@@ -331,5 +331,14 @@ float* serial_gca(float (*target_function)(float*, int), float lb, float ub, int
 
     }
 
+    for (int i = 0; i < pop_size; i++)
+    {
+        printf("population[%d][0]: %f  population[%d][1]: %f \n\n", i, population[i][0], i, population[i][1]);
+    }
+    for (int i = 0; i < pop_size; i++)
+    {
+        printf("fitness[%d]: %f\n", i, fitness[i]);
+    }
+
     return best_agent;
 }

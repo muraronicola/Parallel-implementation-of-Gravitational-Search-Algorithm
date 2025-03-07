@@ -31,6 +31,9 @@ my_rank: 0; local_M[1]: 0.433146
 
 my_rank: 0; global_M[0]: 0.000000
 my_rank: 0; global_M[1]: 0.433146
+Update accelerations
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
 my_rank: 0; global_M[2]: 0.250266
 my_rank: 0; global_M[3]: 0.316588
 Update accelerations
@@ -44,9 +47,6 @@ my_rank: 0; local_velocity[0][0]: 0.000000
 my_rank: 0; local_velocity[1][0]: 0.000000
 
 my_rank: 0; local_population[0][0]: -99.984344
-Update accelerations
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
 my_rank: 0; local_population[1][0]: 11.210644
 
 
@@ -79,11 +79,34 @@ my_rank: 0; global_M[0]: 0.000000
 my_rank: 0; global_M[1]: 0.433146
 my_rank: 0; global_M[2]: 0.250266
 Update accelerations
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
+
+i: 0; j: 0
+R: 91.584915
+M[j]: 0.433146
+indice 2
+population[i][0] -34.465527
 my_rank: 0; global_M[3]: 0.316588
 Update accelerations
-Forces[0][0]: 0.000000
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.433146
+indice 0
+population[i][0] -99.984344
+population[j][0] 11.210644
+translation_index[j] 1
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 43.905136
+M[j]: 0.433146
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+Forces[0][0]: 0.194660
 Forces[1][0]: 0.000000
 
 my_rank: 0; accelerations[0][0]: 0.000000
@@ -99,6 +122,10 @@ my_rank: 0; local_population[1][0]: 11.210644
 
 Iteration: 2; my_rank: 0
 my_rank: 0; local_fitness[0]: 11360.282227
+translation_index[j] 1
+Forces[i][0] 0.000000
+Forces[0][0]: 0.108011
+Forces[1][0]: 0.084456
 my_rank: 0; local_fitness[1]: 424.977539
 
 nmy_rank: 0; local_population[0][0]: -99.984344
@@ -110,56 +137,59 @@ my_rank: 0; local_velocity[1][0]: 0.000000
 
 SOORTT:
 my_rank: 0; global_population[0][0]: 11.210644
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -34.465527
+my_rank: 0; global_population[1][0]: -5.643998
+my_rank: 0; global_population[2][0]: -34.033939
 my_rank: 0; global_population[3][0]: -99.984344
 my_rank: 0; global_fitness[0]: 424.977539
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 5042.000977
+my_rank: 0; global_fitness[1]: 3292.208740
+my_rank: 0; global_fitness[2]: 4919.869629
 my_rank: 0; global_fitness[3]: 11360.282227
 
 my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.433146
+my_rank: 0; local_M[1]: 0.429783
 
 my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.433146
-my_rank: 0; global_M[2]: 0.250266
-my_rank: 0; global_M[3]: 0.316588
+my_rank: 0; global_M[1]: 0.429783
+my_rank: 0; global_M[2]: 0.253123
 Update accelerations
 
 i: 0; j: 0
-R: 91.584915
-M[j]: 0.000000
+R: 90.719543
+M[j]: 0.429783
 indice 2
-population[i][0] -34.465527
+population[i][0] -34.033939
 population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+my_rank: 0; global_M[3]: 0.317094
 Update accelerations
 
 i: 0; j: 0
 R: 123.711937
-M[j]: 0.000000
+M[j]: 0.429783
 indice 0
 population[i][0] -99.984344
 population[j][0] 11.210644
+translation_index[j] 1
 Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
+Forces[0][0]: 0.193149
 Forces[1][0]: 0.000000
 
 my_rank: 0; accelerations[0][0]: 0.000000
+
+i: 1; j: 0
+R: 43.221050
+M[j]: 0.429783
+indice 3
+population[i][0] -5.643998
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+Forces[0][0]: 0.107173
+Forces[1][0]: 0.083800
 my_rank: 0; accelerations[1][0]: 0.000000
 
 my_rank: 0; local_velocity[0][0]: 0.000000
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 43.905136
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
 my_rank: 0; local_velocity[1][0]: 0.000000
 
 my_rank: 0; local_population[0][0]: -99.984344
@@ -180,648 +210,229 @@ my_rank: 0; local_velocity[1][0]: 0.000000
 
 SOORTT:
 my_rank: 0; global_population[0][0]: 11.210644
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -34.465527
+my_rank: 0; global_population[1][0]: -5.246340
+my_rank: 0; global_population[2][0]: -33.394745
 my_rank: 0; global_population[3][0]: -99.984344
 my_rank: 0; global_fitness[0]: 424.977539
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 5042.000977
+my_rank: 0; global_fitness[1]: 3181.527100
+my_rank: 0; global_fitness[2]: 4741.740234
 my_rank: 0; global_fitness[3]: 11360.282227
 
 my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.433146
+my_rank: 0; local_M[1]: 0.424959
 
 my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.433146
-my_rank: 0; global_M[2]: 0.250266
 Update accelerations
 
 i: 0; j: 0
-R: 91.584915
-M[j]: 0.000000
+R: 89.437904
+M[j]: 0.424959
 indice 2
-population[i][0] -34.465527
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-my_rank: 0; global_M[3]: 0.316588
+my_rank: 0; global_M[1]: 0.424959
+my_rank: 0; global_M[2]: 0.257205
+my_rank: 0; global_M[3]: 0.317836
 Update accelerations
 
 i: 0; j: 0
 R: 123.711937
-M[j]: 0.000000
+M[j]: 0.424959
 indice 0
 population[i][0] -99.984344
+population[i][0] -33.394745
 population[j][0] 11.210644
+translation_index[j] 1
 Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
+
+i: 0; j: 1
+R: 119.736855
+M[j]: 0.317836
+indice 2
+population[i][0] -33.394745
+population[j][0] -5.246340
+translation_index[j] 3
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 132.816010
+M[j]: 0.317836
+indice 0
+population[i][0] -99.984344
+population[j][0] -5.246340
+translation_index[j] 3
+Forces[i][0] 0.190981
+
+i: 1; j: 1
+R: 42.201321
+M[j]: 0.317836
+indice 1
+population[i][0] 11.210644
+Forces[i][0] 0.105970
 
 i: 1; j: 0
-R: 43.905136
-M[j]: 0.000000
+R: 42.201321
+M[j]: 0.424959
 indice 3
-population[i][0] -5.910766
+population[i][0] -5.246340
 population[j][0] 11.210644
+translation_index[j] 1
 Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
-Forces[1][0]: 0.000000
+Forces[0][0]: 0.143329
+Forces[1][0]: 0.082859
+population[j][0] -5.246340
+translation_index[j] 3
+Forces[i][0] 0.000000
+Forces[0][0]: 0.304338
+Forces[1][0]: -0.061972
 
 my_rank: 0; accelerations[0][0]: 0.000000
-my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[1][0]: -0.145831
 
 my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: -0.145831
 
 my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[1][0]: 11.064813
 
 
 
 Iteration: 4; my_rank: 0
 my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 424.977539
+my_rank: 0; local_fitness[1]: 433.762512
 
 nmy_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[1][0]: 11.064813
 my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 424.977539
+my_rank: 0; local_fitness[1]: 433.762512
 my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: -0.145831
 
 SOORTT:
-my_rank: 0; global_population[0][0]: 11.210644
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -34.465527
+my_rank: 0; global_population[0][0]: 11.064813
+my_rank: 0; global_population[1][0]: -4.786812
+my_rank: 0; global_population[2][0]: -32.517891
 my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 424.977539
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 5042.000977
+my_rank: 0; global_fitness[0]: 433.762512
+my_rank: 0; global_fitness[1]: 3056.215088
+my_rank: 0; global_fitness[2]: 4461.979492
 my_rank: 0; global_fitness[3]: 11360.282227
 
 my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.433146
+my_rank: 0; local_M[1]: 0.418178
 
 my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.433146
-my_rank: 0; global_M[2]: 0.250266
+my_rank: 0; global_M[1]: 0.418178
+my_rank: 0; global_M[2]: 0.264011
+my_rank: 0; global_M[3]: 0.317812
 Update accelerations
 
 i: 0; j: 0
-R: 91.584915
-M[j]: 0.000000
+R: 87.603821
+M[j]: 0.418178
 indice 2
-population[i][0] -34.465527
-population[j][0] 11.210644
+population[i][0] -32.517891
+population[j][0] 11.064813
+translation_index[j] 1
 Forces[i][0] 0.000000
 
-i: 1; j: 0
-R: 43.905136
-M[j]: 0.000000
-my_rank: 0; global_M[3]: 0.316588
+i: 0; j: 1
+R: 116.764862
 Update accelerations
 
 i: 0; j: 0
-R: 123.711937
-M[j]: 0.000000
+R: 123.732353
+M[j]: 0.418178
 indice 0
 population[i][0] -99.984344
+population[j][0] 11.064813
+translation_index[j] 1
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 132.387848
+M[j]: 0.317812
+M[j]: 0.317812
+indice 2
+population[i][0] -32.517891
+population[j][0] -4.786812
+translation_index[j] 3
+Forces[i][0] 0.104021
+
+i: 1; j: 0
+R: 40.648972
+M[j]: 0.418178
 indice 3
-population[i][0] -5.910766
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[0][0]: 0.000000
-Forces[1][0]: 0.000000
-
-my_rank: 0; accelerations[0][0]: 0.000000
-my_rank: 0; accelerations[1][0]: 0.000000
-
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: 0.000000
-
-my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 11.210644
-
-
-
-Iteration: 5; my_rank: 0
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 424.977539
-
-nmy_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 11.210644
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 424.977539
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: 0.000000
-
-SOORTT:
-my_rank: 0; global_population[0][0]: 11.210644
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -34.465527
-my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 424.977539
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 5042.000977
-my_rank: 0; global_fitness[3]: 11360.282227
-
-my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.433146
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.433146
-my_rank: 0; global_M[2]: 0.250266
-my_rank: 0; global_M[3]: 0.316588
-Update accelerations
-
-i: 0; j: 0
-R: 91.584915
-M[j]: 0.000000
-indice 2
-population[i][0] -34.465527
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 123.166817
-M[j]: 0.433146
-indice 2
-population[i][0] -34.465527
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Update accelerations
-
-i: 0; j: 0
-R: 123.711937
-M[j]: 0.000000
-indice 0
-
-i: 1; j: 0
-R: 43.905136
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-Forces[0][0]: 0.050210
-Forces[1][0]: 0.000000
-population[i][0] -99.984344
-population[j][0] 11.210644
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 133.451080
-M[j]: 0.433146
 indice 0
 population[i][0] -99.984344
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-
-i: 1; j: 1
-R: 43.905136
-M[j]: 0.433146
-indice 1
-population[i][0] 11.210644
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Forces[0][0]: 0.152669
-Forces[1][0]: -0.084456
-
-my_rank: 0; accelerations[0][0]: 0.000000
-my_rank: 0; accelerations[1][0]: -0.194982
-
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.194982
-
-my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 11.015662
-
-
-
-Iteration: 6; my_rank: 0
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 436.786407
-
-nmy_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 11.015662
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 436.786407
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.194982
-
-SOORTT:
-my_rank: 0; global_population[0][0]: 11.015662
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -34.264900
-my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 436.786407
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 4924.400391
-my_rank: 0; global_fitness[3]: 11360.282227
-
-my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.430873
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.430873
-my_rank: 0; global_M[2]: 0.253861
-my_rank: 0; global_M[3]: 0.315267
-Update accelerations
-
-i: 0; j: 0
-R: 91.057182
-M[j]: 0.000000
-indice 2
-population[i][0] -34.264900
-population[j][0] 11.015662
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-Update accelerations
-R: 122.301445
-M[j]: 0.430873
-indice 2
-population[i][0] -34.264900
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 43.405132
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 11.015662
-Forces[i][0] 0.000000
-Forces[0][0]: 0.049946
-
-i: 0; j: 0
-R: 123.739494
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] 11.015662
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 133.451080
-M[j]: 0.430873
-indice 0
-population[i][0] -99.984344
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-
-i: 1; j: 1
-R: 43.405132
-Forces[1][0]: 0.000000
-M[j]: 0.430873
-indice 1
-population[i][0] 11.015662
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Forces[0][0]: 0.151867
-Forces[1][0]: -0.084012
-
-my_rank: 0; accelerations[0][0]: 0.000000
-my_rank: 0; accelerations[1][0]: -0.194982
-
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.292473
-
-my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 10.723189
-
-
-
-Iteration: 7; my_rank: 0
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 455.437195
-
-nmy_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 10.723189
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 455.437195
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.292473
-
-SOORTT:
-my_rank: 0; global_population[0][0]: 10.723189
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -33.967842
-my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 455.437195
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 4753.024902
-my_rank: 0; global_fitness[3]: 11360.282227
-
-my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.427561
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.427561
-Update accelerations
-
-i: 0; j: 0
-R: 90.282120
-M[j]: 0.000000
-indice 2
-population[i][0] -33.967842
-population[j][0] 10.723189
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 121.020126
-M[j]: 0.427561
-indice 2
-my_rank: 0; global_M[2]: 0.259060
-my_rank: 0; global_M[3]: 0.313379
-Update accelerations
-
-i: 0; j: 0
-R: 123.784607
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] 10.723189
-Forces[i][0] 0.000000
-population[i][0] -33.967842
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 42.655132
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 10.723189
-Forces[i][0] 0.000000
-Forces[0][0]: 0.049562
-Forces[1][0]: 0.000000
-
-i: 0; j: 1
-R: 133.451080
-M[j]: 0.427561
-indice 0
-population[i][0] -99.984344
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-
-i: 1; j: 1
-R: 42.655132
-M[j]: 0.427561
-indice 1
-population[i][0] 10.723189
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-Forces[0][0]: 0.150700
-Forces[1][0]: -0.083367
-
-my_rank: 0; accelerations[0][0]: 0.000000
-my_rank: 0; accelerations[1][0]: -0.194982
-
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.341218
-
-my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 10.381971
-
-
-
-Iteration: 8; my_rank: 0
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 478.618347
-
-nmy_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 10.381971
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 478.618347
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.341218
-
-SOORTT:
-my_rank: 0; global_population[0][0]: 10.381971
-my_rank: 0; global_population[1][0]: -5.910766
-my_rank: 0; global_population[2][0]: -33.627995
-my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 478.618347
-my_rank: 0; global_fitness[1]: 3367.624756
-my_rank: 0; global_fitness[2]: 4560.991699
-my_rank: 0; global_fitness[3]: 11360.282227
-
-my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.423846
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.423846
-my_rank: 0; global_M[2]: 0.264836
-my_rank: 0; global_M[3]: 0.311318
-Update accelerations
-
-i: 0; j: 0
-Update accelerations
-
-i: 0; j: 0
-R: 89.406540
-M[j]: 0.000000
-indice 2
-population[i][0] -33.627995
-population[j][0] 10.381971
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 119.554245
-M[j]: 0.423846
-indice 2
-population[i][0] -33.627995
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 41.780136
-R: 123.842964
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] 10.381971
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 133.451080
-M[j]: 0.423846
-indice 0
-population[i][0] -99.984344
-population[j][0] -5.910766
-Forces[i][0] 0.000000
+population[j][0] -4.786812
+translation_index[j] 3
+Forces[i][0] 0.187656
 
 i: 0; j: 2
-R: 69.796761
-M[j]: 0.264836
+R: 70.786438
+M[j]: 0.264011
 indice 0
+population[i][0] -4.786812
+population[j][0] 11.064813
+translation_index[j] 1
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 116.764862
+M[j]: 0.264011
+indice 3
+population[i][0] -4.786812
+population[j][0] -32.517891
+translation_index[j] 2
 population[i][0] -99.984344
-population[j][0] -33.627995
-Forces[i][0] 0.149391
+population[j][0] -32.517891
+translation_index[j] 2
+Forces[i][0] 0.301922
 
 i: 1; j: 1
-R: 41.780136
-M[j]: 0.423846
+R: 40.648972
+Forces[i][0] 0.081537
+Forces[0][0]: 0.141761
+Forces[1][0]: 0.050186
+M[j]: 0.317812
 indice 1
-M[j]: 0.000000
-indice 3
-population[i][0] -5.910766
-population[j][0] 10.381971
+population[i][0] 11.064813
+population[j][0] -4.786812
+translation_index[j] 3
 Forces[i][0] 0.000000
 
 i: 1; j: 2
-R: 119.554245
-M[j]: 0.264836
-indice 3
-population[i][0] -5.910766
-population[j][0] -33.627995
-Forces[i][0] 0.000000
-Forces[0][0]: 0.049132
-Forces[1][0]: -0.030700
-population[i][0] 10.381971
-population[j][0] -5.910766
-Forces[i][0] 0.000000
-
-i: 1; j: 2
-R: 89.406540
-M[j]: 0.264836
+R: 87.603821
+M[j]: 0.264011
 indice 1
-population[i][0] 10.381971
-population[j][0] -33.627995
-Forces[i][0] -0.082642
-Forces[0][0]: 0.275282
-Forces[1][0]: -0.147824
+population[i][0] 11.064813
+population[j][0] -32.517891
+translation_index[j] 2
+Forces[i][0] -0.061968
+Forces[0][0]: 0.427736
+Forces[1][0]: -0.127640
 
 my_rank: 0; accelerations[0][0]: 0.000000
-my_rank: 0; accelerations[1][0]: -0.348769
+my_rank: 0; accelerations[1][0]: -0.305229
 
 my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.519378
+my_rank: 0; local_velocity[1][0]: -0.378144
 
 my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 9.862593
+my_rank: 0; local_population[1][0]: 10.686668
+my_rank: 0; local_population[0][0]: -99.984344
+my_rank: 0; local_population[0][1]: -36.924423
 
-
-
-Iteration: 9; my_rank: 0
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 491.227997
-
-nmy_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 9.862593
-my_rank: 0; local_fitness[0]: 11360.282227
-my_rank: 0; local_fitness[1]: 491.227997
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.519378
-
-SOORTT:
-my_rank: 0; global_population[0][0]: 9.862593
-my_rank: 0; global_population[1][0]: -6.009377
-my_rank: 0; global_population[2][0]: -33.272552
-my_rank: 0; global_population[3][0]: -99.984344
-my_rank: 0; global_fitness[0]: 491.227997
-my_rank: 0; global_fitness[1]: 3321.199463
-my_rank: 0; global_fitness[2]: 4364.744141
+---------- DONE ----------
+my_rank: 0; global_population[0][0]: 10.686668   global_population[0][1]: 17.892874 
+my_rank: 0; global_population[1][0]: -4.399136   global_population[1][1]: 53.523582 
+my_rank: 0; global_population[2][0]: -31.542513   global_population[2][1]: -56.140968 
+my_rank: 0; global_population[3][0]: -99.984344   global_population[3][1]: -36.924423 
+my_rank: 0; global_fitness[0]: 434.359802
+my_rank: 0; global_fitness[1]: 2884.126221
+my_rank: 0; global_fitness[2]: 4146.738281
 my_rank: 0; global_fitness[3]: 11360.282227
-
-my_rank: 0; local_M[0]: 0.000000
-my_rank: 0; local_M[1]: 0.419595
-
-my_rank: 0; global_M[0]: 0.000000
-my_rank: 0; global_M[1]: 0.419595
-my_rank: 0; global_M[2]: 0.270060
-my_rank: 0; global_M[3]: 0.310345
-Update accelerations
-
-i: 0; j: 0
-R: 88.193047
-M[j]: 0.000000
-indice 2
-population[i][0] -33.272552
-population[j][0] 9.862593
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-Update accelerations
-
-i: 0; j: 0
-R: 123.650711
-M[j]: 0.000000
-indice 0
-population[i][0] -99.984344
-population[j][0] 9.862593
-Forces[i][0] 0.000000
-
-i: 0; j: 1
-R: 133.088287
-R: 117.595749
-M[j]: 0.419595
-indice 2
-population[i][0] -33.272552
-population[j][0] -6.009377
-Forces[i][0] 0.000000
-
-i: 1; j: 0
-R: 40.690536
-M[j]: 0.000000
-indice 3
-population[i][0] -6.009377
-M[j]: 0.419595
-indice 0
-population[i][0] -99.984344
-population[j][0] -6.009377
-Forces[i][0] 0.000000
-
-i: 0; j: 2
-R: 69.688980
-M[j]: 0.270060
-indice 0
-population[i][0] -99.984344
-population[j][0] -33.272552
-Forces[i][0] 0.148140
-
-i: 1; j: 1
-R: 40.690536
-M[j]: 0.419595
-population[j][0] 9.862593
-Forces[i][0] 0.000000
-
-i: 1; j: 2
-R: 117.595749
-M[j]: 0.270060
-indice 3
-population[i][0] -6.009377
-population[j][0] -33.272552
-Forces[i][0] 0.000000
-Forces[0][0]: 0.048639
-Forces[1][0]: -0.031305
-indice 1
-population[i][0] 9.862593
-population[j][0] -6.009377
-Forces[i][0] 0.000000
-
-i: 1; j: 2
-R: 88.193047
-M[j]: 0.270060
-indice 1
-population[i][0] 9.862593
-population[j][0] -33.272552
-Forces[i][0] -0.081835
-Forces[0][0]: 0.277401
-Forces[1][0]: -0.147878
-
-my_rank: 0; accelerations[0][0]: 0.000000
-my_rank: 0; accelerations[1][0]: -0.352430
-
-my_rank: 0; local_velocity[0][0]: 0.000000
-my_rank: 0; local_velocity[1][0]: -0.612119
-
-my_rank: 0; local_population[0][0]: -99.984344
-my_rank: 0; local_population[1][0]: 9.250474
-Best agent: 9.250474 20.323723 
-Best value: 498.624969
+Best agent: 10.686668 17.892874 
+Best value: 434.359802
 Time measured: 0.001 seconds.
