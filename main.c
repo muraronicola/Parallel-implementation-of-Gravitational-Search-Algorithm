@@ -22,19 +22,20 @@ int main(int argc, char *argv[]){
     //srand(time(NULL));
     srand(10); //Fix the seed for reproducibility (debug only)
 
-    if (argc != 4){
-        printf("Usage: %s <dim> <pop_size> <n_iter>\n", argv[0]);
+    if (argc != 5){
+        printf("Usage: %s <dim> <pop_size> <n_iter> <debug>\n", argv[0]);
         return 1;
     }
 
     int dim = atoi(argv[1]);
     int pop_size = atoi(argv[2]);
     int n_iter = atoi(argv[3]);
+    bool debug = atoi(argv[4]);
+
     int pop_per_proc = (int) pop_size/comm_sz;
     float* best_agent;
     long seconds, microseconds;
     double elapsed;
-    bool debug = true;
 
     struct timeval begin, end;
 

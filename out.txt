@@ -1,0 +1,752 @@
+
+
+
+Iteration: 0
+fitness[0]: 11360.282227
+fitness[1]: 424.977539
+fitness[2]: 5042.000977
+fitness[3]: 3367.624756
+fitness[4]: 4370.347168
+fitness[5]: 8230.990234
+fitness[6]: 2401.351562
+fitness[7]: 1696.260254
+
+
+population[0][0]: -99.984344
+population[1][0]: 11.210644
+population[2][0]: -34.465527
+population[3][0]: -5.910766
+population[4][0]: 58.592808
+population[5][0]: 67.004158
+population[6][0]: -38.069309
+population[7][0]: 6.923270
+fitness[0]: 11360.282227
+fitness[1]: 424.977539
+fitness[2]: 5042.000977
+fitness[3]: 3367.624756
+fitness[4]: 4370.347168
+fitness[5]: 8230.990234
+fitness[6]: 2401.351562
+fitness[7]: 1696.260254
+valocity[0][0]: 0.000000
+valocity[1][0]: 0.000000
+valocity[2][0]: 0.000000
+valocity[3][0]: 0.000000
+valocity[4][0]: 0.000000
+valocity[5][0]: 0.000000
+valocity[6][0]: 0.000000
+valocity[7][0]: 0.000000
+
+SOORTT:
+population[0][0]: 11.210644
+population[1][0]: 6.923270
+population[2][0]: -38.069309
+population[3][0]: -5.910766
+population[4][0]: 58.592808
+population[5][0]: -34.465527
+population[6][0]: 67.004158
+population[7][0]: -99.984344
+fitness[0]: 424.977539
+fitness[1]: 1696.260254
+fitness[2]: 2401.351562
+fitness[3]: 3367.624756
+fitness[4]: 4370.347168
+fitness[5]: 5042.000977
+fitness[6]: 8230.990234
+fitness[7]: 11360.282227
+
+M[0]: 0.202549
+M[1]: 0.179002
+M[2]: 0.165942
+M[3]: 0.148044
+M[4]: 0.129471
+M[5]: 0.117030
+M[6]: 0.057962
+M[7]: 0.000000
+Update accelerations
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+Forces[2][0]: 0.000000
+Forces[3][0]: 0.000000
+Forces[4][0]: 0.000000
+Forces[5][0]: 0.000000
+Forces[6][0]: 0.000000
+Forces[7][0]: 0.000000
+
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.000000
+accelerations[2][0]: 0.000000
+accelerations[3][0]: 0.000000
+accelerations[4][0]: 0.000000
+accelerations[5][0]: 0.000000
+accelerations[6][0]: 0.000000
+accelerations[7][0]: 0.000000
+
+velocity[0][0]: 0.000000
+velocity[1][0]: 0.000000
+velocity[2][0]: 0.000000
+velocity[3][0]: 0.000000
+velocity[4][0]: 0.000000
+velocity[5][0]: 0.000000
+velocity[6][0]: 0.000000
+velocity[7][0]: 0.000000
+
+population[0][0]: 11.210644
+population[1][0]: 6.923270
+population[2][0]: -38.069309
+population[3][0]: -5.910766
+population[4][0]: 58.592808
+population[5][0]: -34.465527
+population[6][0]: 67.004158
+population[7][0]: -99.984344
+
+
+
+Iteration: 1
+fitness[0]: 424.977539
+fitness[1]: 1696.260254
+fitness[2]: 2401.351562
+fitness[3]: 3367.624756
+fitness[4]: 4370.347168
+fitness[5]: 5042.000977
+fitness[6]: 8230.990234
+fitness[7]: 11360.282227
+
+
+population[0][0]: 11.210644
+population[1][0]: 6.923270
+population[2][0]: -38.069309
+population[3][0]: -5.910766
+population[4][0]: 58.592808
+population[5][0]: -34.465527
+population[6][0]: 67.004158
+population[7][0]: -99.984344
+fitness[0]: 424.977539
+fitness[1]: 1696.260254
+fitness[2]: 2401.351562
+fitness[3]: 3367.624756
+fitness[4]: 4370.347168
+fitness[5]: 5042.000977
+fitness[6]: 8230.990234
+fitness[7]: 11360.282227
+valocity[0][0]: 0.000000
+valocity[1][0]: 0.000000
+valocity[2][0]: 0.000000
+valocity[3][0]: 0.000000
+valocity[4][0]: 0.000000
+valocity[5][0]: 0.000000
+valocity[6][0]: 0.000000
+valocity[7][0]: 0.000000
+
+SOORTT:
+population[0][0]: 11.210644
+population[1][0]: 6.923270
+population[2][0]: -38.069309
+population[3][0]: -5.910766
+population[4][0]: 58.592808
+population[5][0]: -34.465527
+population[6][0]: 67.004158
+population[7][0]: -99.984344
+fitness[0]: 424.977539
+fitness[1]: 1696.260254
+fitness[2]: 2401.351562
+fitness[3]: 3367.624756
+fitness[4]: 4370.347168
+fitness[5]: 5042.000977
+fitness[6]: 8230.990234
+fitness[7]: 11360.282227
+
+M[0]: 0.202549
+M[1]: 0.179002
+M[2]: 0.165942
+M[3]: 0.148044
+M[4]: 0.129471
+M[5]: 0.117030
+M[6]: 0.057962
+M[7]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 58.058392
+M[j]: 0.179002
+i 0
+population[i][0] 11.210644
+population[j][0] 6.923270
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 68.902237
+M[j]: 0.165942
+i 0
+population[i][0] 11.210644
+population[j][0] -38.069309
+Forces[i][0] -0.006609
+
+i: 0; j: 3
+R: 43.905136
+M[j]: 0.148044
+i 0
+population[i][0] 11.210644
+population[j][0] -5.910766
+Forces[i][0] -0.065951
+
+i: 1; j: 0
+R: 58.058392
+M[j]: 0.202549
+i 1
+population[i][0] 6.923270
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 46.035576
+M[j]: 0.165942
+i 1
+population[i][0] 6.923270
+population[j][0] -38.069309
+Forces[i][0] 0.007479
+
+i: 1; j: 3
+R: 99.163071
+M[j]: 0.148044
+i 1
+population[i][0] 6.923270
+population[j][0] -5.910766
+Forces[i][0] -0.073612
+
+i: 2; j: 0
+R: 68.902237
+M[j]: 0.202549
+i 2
+population[i][0] -38.069309
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.035576
+M[j]: 0.179002
+i 2
+population[i][0] -38.069309
+population[j][0] 6.923270
+Forces[i][0] 0.072433
+
+i: 2; j: 3
+R: 94.241776
+M[j]: 0.148044
+i 2
+population[i][0] -38.069309
+population[j][0] -5.910766
+Forces[i][0] 0.159906
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.202549
+i 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.179002
+i 3
+population[i][0] -5.910766
+population[j][0] 6.923270
+Forces[i][0] 0.039493
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.165942
+i 3
+population[i][0] -5.910766
+population[j][0] -38.069309
+Forces[i][0] 0.051077
+
+i: 4; j: 0
+R: 67.385948
+M[j]: 0.202549
+i 4
+population[i][0] 58.592808
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 52.625557
+M[j]: 0.179002
+i 4
+population[i][0] 58.592808
+population[j][0] 6.923270
+Forces[i][0] -0.071211
+
+i: 4; j: 2
+R: 96.662415
+M[j]: 0.165942
+i 4
+population[i][0] 58.592808
+population[j][0] -38.069309
+Forces[i][0] -0.159086
+
+i: 4; j: 3
+R: 109.386055
+M[j]: 0.148044
+i 4
+population[i][0] 58.592808
+population[j][0] -5.910766
+Forces[i][0] -0.242056
+
+i: 5; j: 0
+R: 91.584915
+M[j]: 0.202549
+i 5
+population[i][0] -34.465527
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 46.631638
+M[j]: 0.179002
+i 5
+population[i][0] -34.465527
+population[j][0] 6.923270
+Forces[i][0] 0.050509
+
+i: 5; j: 2
+R: 31.433113
+M[j]: 0.165942
+i 5
+population[i][0] -34.465527
+population[j][0] -38.069309
+Forces[i][0] 0.129947
+
+i: 5; j: 3
+R: 123.166817
+M[j]: 0.148044
+i 5
+population[i][0] -34.465527
+population[j][0] -5.910766
+Forces[i][0] 0.120434
+
+i: 6; j: 0
+R: 96.281189
+M[j]: 0.202549
+i 6
+population[i][0] 67.004158
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 63.503864
+M[j]: 0.179002
+i 6
+population[i][0] 67.004158
+population[j][0] 6.923270
+Forces[i][0] -0.058687
+
+i: 6; j: 2
+R: 109.358215
+M[j]: 0.165942
+i 6
+population[i][0] 67.004158
+population[j][0] -38.069309
+Forces[i][0] -0.143364
+
+i: 6; j: 3
+R: 139.474045
+M[j]: 0.148044
+i 6
+population[i][0] 67.004158
+population[j][0] -5.910766
+Forces[i][0] -0.223084
+
+i: 7; j: 0
+R: 123.711937
+M[j]: 0.202549
+i 7
+population[i][0] -99.984344
+population[j][0] 11.210644
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 106.970764
+M[j]: 0.179002
+i 7
+population[i][0] -99.984344
+population[j][0] 6.923270
+Forces[i][0] 0.091028
+
+i: 7; j: 2
+R: 62.211735
+M[j]: 0.165942
+i 7
+population[i][0] -99.984344
+population[j][0] -38.069309
+Forces[i][0] 0.180476
+
+i: 7; j: 3
+R: 133.451080
+M[j]: 0.148044
+i 7
+population[i][0] -99.984344
+population[j][0] -5.910766
+Forces[i][0] 0.263051
+Forces[0][0]: -0.094817
+Forces[1][0]: -0.083193
+Forces[2][0]: 0.185165
+Forces[3][0]: 0.022764
+Forces[4][0]: -0.285706
+Forces[5][0]: 0.137595
+Forces[6][0]: -0.261781
+Forces[7][0]: 0.315231
+
+accelerations[0][0]: -0.468120
+accelerations[1][0]: -0.464758
+accelerations[2][0]: 1.115844
+accelerations[3][0]: 0.153768
+accelerations[4][0]: -2.206719
+accelerations[5][0]: 1.175725
+accelerations[6][0]: -4.516407
+accelerations[7][0]: 0.000000
+
+velocity[0][0]: -0.468120
+velocity[1][0]: -0.464758
+velocity[2][0]: 1.115844
+velocity[3][0]: 0.153768
+velocity[4][0]: -2.206719
+velocity[5][0]: 1.175725
+velocity[6][0]: -4.516407
+velocity[7][0]: 0.000000
+
+population[0][0]: 10.742524
+population[1][0]: 6.458512
+population[2][0]: -36.953465
+population[3][0]: -5.756998
+population[4][0]: 56.386089
+population[5][0]: -33.289803
+population[6][0]: 62.487751
+population[7][0]: -99.984344
+population[0][0]: 10.742524  population[0][1]: 16.909819 
+
+population[1][0]: 6.458512  population[1][1]: -39.527229 
+
+population[2][0]: -36.953465  population[2][1]: -30.124100 
+
+population[3][0]: -5.756998  population[3][1]: 55.973228 
+
+population[4][0]: 56.386089  population[4][1]: -29.729040 
+
+population[5][0]: -33.289803  population[5][1]: -59.659691 
+
+population[6][0]: 62.487751  population[6][1]: -57.757740 
+
+population[7][0]: -99.984344  population[7][1]: -36.924423 
+
+fitness[0]: 424.977539
+fitness[1]: 1696.260254
+fitness[2]: 2401.351562
+fitness[3]: 3367.624756
+fitness[4]: 4370.347168
+fitness[5]: 5042.000977
+fitness[6]: 8230.990234
+fitness[7]: 11360.282227
+Configuration: dim = 2, pop_size = 8, n_iter = 2
+
+----------------------------------------
+Serial GCA
+----------------------------------------
+Best agent: 11.210644 17.300261 
+Best value: 424.977539
+Time measured: 0.000 seconds.
+
+
+----------------------------------------
+Parallel GCA
+----------------------------------------
+
+
+
+Iteration: 0; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282227
+my_rank: 0; local_fitness[1]: 424.977539
+my_rank: 0; local_fitness[2]: 5042.000977
+my_rank: 0; local_fitness[3]: 3367.624756
+
+my_rank: 0; local_population[0][0]: -99.984344
+my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[2][0]: -34.465527
+my_rank: 0; local_population[3][0]: -5.910766
+
+my_rank: 0; local_fitness[0]: 11360.282227
+my_rank: 0; local_fitness[1]: 424.977539
+my_rank: 0; local_fitness[2]: 5042.000977
+my_rank: 0; local_fitness[3]: 3367.624756
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 0.000000
+my_rank: 0; local_velocity[3][0]: 0.000000
+
+my_rank: 0; global_population[0][0]: 11.210644
+my_rank: 0; global_population[1][0]: 6.923270
+my_rank: 0; global_population[2][0]: -38.069309
+my_rank: 0; global_population[3][0]: -5.910766
+my_rank: 0; global_population[4][0]: 58.592808
+my_rank: 0; global_population[5][0]: -34.465527
+my_rank: 0; global_population[6][0]: 67.004158
+my_rank: 0; global_population[7][0]: -99.984344
+
+my_rank: 0; global_fitness[0]: 424.977539
+my_rank: 0; global_fitness[1]: 1696.260254
+my_rank: 0; global_fitness[2]: 2401.351562
+my_rank: 0; global_fitness[3]: 3367.624756
+my_rank: 0; global_fitness[4]: 4370.347168
+my_rank: 0; global_fitness[5]: 5042.000977
+my_rank: 0; global_fitness[6]: 8230.990234
+my_rank: 0; global_fitness[7]: 11360.282227
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.202549
+my_rank: 0; global_M[2]: 0.117030
+my_rank: 0; global_M[3]: 0.148044
+my_rank: 0; global_M[4]: 0.129471
+my_rank: 0; global_M[5]: 0.057962
+my_rank: 0; global_M[6]: 0.165942
+my_rank: 0; global_M[7]: 0.179002
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.202549
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.202549
+my_rank: 0; global_M[2]: 0.117030
+my_rank: 0; global_M[3]: 0.148044
+Update accelerations
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.000000
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+
+my_rank: 0; local_population[0][0]: -99.984344
+my_rank: 0; local_population[1][0]: 11.210644
+
+
+
+Iteration: 1; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282227
+my_rank: 0; local_fitness[1]: 424.977539
+my_rank: 0; local_fitness[2]: 5042.000977
+my_rank: 0; local_fitness[3]: 3367.624756
+
+my_rank: 0; local_population[0][0]: -99.984344
+my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[2][0]: -34.465527
+my_rank: 0; local_population[3][0]: -5.910766
+
+my_rank: 0; local_fitness[0]: 11360.282227
+my_rank: 0; local_fitness[1]: 424.977539
+my_rank: 0; local_fitness[2]: 5042.000977
+my_rank: 0; local_fitness[3]: 3367.624756
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 0.000000
+my_rank: 0; local_velocity[3][0]: 0.000000
+
+my_rank: 0; global_population[0][0]: 11.210644
+my_rank: 0; global_population[1][0]: 6.923270
+my_rank: 0; global_population[2][0]: -38.069309
+my_rank: 0; global_population[3][0]: -5.910766
+my_rank: 0; global_population[4][0]: 58.592808
+my_rank: 0; global_population[5][0]: -34.465527
+my_rank: 0; global_population[6][0]: 67.004158
+my_rank: 0; global_population[7][0]: -99.984344
+
+my_rank: 0; global_fitness[0]: 424.977539
+my_rank: 0; global_fitness[1]: 1696.260254
+my_rank: 0; global_fitness[2]: 2401.351562
+my_rank: 0; global_fitness[3]: 3367.624756
+my_rank: 0; global_fitness[4]: 4370.347168
+my_rank: 0; global_fitness[5]: 5042.000977
+my_rank: 0; global_fitness[6]: 8230.990234
+my_rank: 0; global_fitness[7]: 11360.282227
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.202549
+my_rank: 0; global_M[2]: 0.117030
+my_rank: 0; global_M[3]: 0.148044
+my_rank: 0; global_M[4]: 0.129471
+my_rank: 0; global_M[5]: 0.057962
+my_rank: 0; global_M[6]: 0.165942
+my_rank: 0; global_M[7]: 0.179002
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.202549
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.202549
+my_rank: 0; global_M[2]: 0.117030
+my_rank: 0; global_M[3]: 0.148044
+Update accelerations
+
+i: 0; j: 0
+R: 123.711937
+M[j]: 0.202549
+indice 0
+population[i][0] -99.984344
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+
+i: 0; j: 1
+R: 106.970764
+M[j]: 0.179002
+indice 0
+population[i][0] -99.984344
+population[j][0] 6.923270
+translation_index[j] 7
+Forces[i][0] 0.091028
+
+i: 0; j: 2
+R: 62.211735
+M[j]: 0.165942
+indice 0
+population[i][0] -99.984344
+population[j][0] -38.069309
+translation_index[j] 6
+Forces[i][0] 0.180476
+
+i: 0; j: 3
+R: 133.451080
+M[j]: 0.148044
+indice 0
+population[i][0] -99.984344
+population[j][0] -5.910766
+translation_index[j] 3
+Forces[i][0] 0.263051
+
+i: 1; j: 1
+R: 58.058392
+M[j]: 0.179002
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.923270
+translation_index[j] 7
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 68.902237
+M[j]: 0.165942
+indice 1
+population[i][0] 11.210644
+population[j][0] -38.069309
+translation_index[j] 6
+Forces[i][0] -0.006609
+
+i: 1; j: 3
+R: 43.905136
+M[j]: 0.148044
+indice 1
+population[i][0] 11.210644
+population[j][0] -5.910766
+translation_index[j] 3
+Forces[i][0] -0.065951
+
+i: 2; j: 0
+R: 91.584915
+M[j]: 0.202549
+indice 2
+population[i][0] -34.465527
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 46.631638
+M[j]: 0.179002
+indice 2
+population[i][0] -34.465527
+population[j][0] 6.923270
+translation_index[j] 7
+Forces[i][0] 0.050509
+
+i: 2; j: 2
+R: 31.433113
+M[j]: 0.165942
+indice 2
+population[i][0] -34.465527
+population[j][0] -38.069309
+translation_index[j] 6
+Forces[i][0] 0.129947
+
+i: 2; j: 3
+R: 123.166817
+M[j]: 0.148044
+indice 2
+population[i][0] -34.465527
+population[j][0] -5.910766
+translation_index[j] 3
+Forces[i][0] 0.120434
+
+i: 3; j: 0
+R: 43.905136
+M[j]: 0.202549
+indice 3
+population[i][0] -5.910766
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 99.163071
+M[j]: 0.179002
+indice 3
+population[i][0] -5.910766
+population[j][0] 6.923270
+translation_index[j] 7
+Forces[i][0] 0.039493
+
+i: 3; j: 2
+R: 94.241776
+M[j]: 0.165942
+indice 3
+population[i][0] -5.910766
+population[j][0] -38.069309
+translation_index[j] 6
+Forces[i][0] 0.051077
+Forces[0][0]: 0.315231
+Forces[1][0]: -0.094817
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: -0.468120
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: -0.468120
+
+my_rank: 0; local_population[0][0]: -99.984344
+my_rank: 0; local_population[1][0]: 10.742524
+my_rank: 0; local_population[0][0]: -99.984344
+my_rank: 0; local_population[0][1]: -36.924423
+
+---------- DONE ----------
+my_rank: 0; global_population[0][0]: 10.742524   global_population[0][1]: 16.909819 
+my_rank: 0; global_population[1][0]: 6.458512   global_population[1][1]: -39.527229 
+my_rank: 0; global_population[2][0]: -36.953465   global_population[2][1]: -30.124100 
+my_rank: 0; global_population[3][0]: -5.756998   global_population[3][1]: 55.973228 
+my_rank: 0; global_population[4][0]: 56.386089   global_population[4][1]: -29.729040 
+my_rank: 0; global_population[5][0]: -33.289803   global_population[5][1]: -59.659691 
+my_rank: 0; global_population[6][0]: 62.487751   global_population[6][1]: -57.757740 
+my_rank: 0; global_population[7][0]: -99.984344   global_population[7][1]: -36.924423 
+my_rank: 0; global_fitness[0]: 401.343781
+my_rank: 0; global_fitness[1]: 1604.114258
+my_rank: 0; global_fitness[2]: 2273.020020
+my_rank: 0; global_fitness[3]: 3166.145264
+my_rank: 0; global_fitness[4]: 4063.207031
+my_rank: 0; global_fitness[5]: 4667.489746
+my_rank: 0; global_fitness[6]: 7240.675293
+my_rank: 0; global_fitness[7]: 11360.282227
+Best agent: 10.742524 16.909819 
+Best value: 401.343781
+Time measured: 0.002 seconds.
