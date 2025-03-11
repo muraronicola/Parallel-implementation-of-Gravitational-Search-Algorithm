@@ -354,7 +354,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
 
         if (debug)
             printf("it: %d,  sum_m: %.15f\n", l, sum_m);
-            
+
         for (int i = 0; i < pop_size; i++)
         {
             M[i] = m[i] / sum_m;
