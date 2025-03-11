@@ -5,22 +5,22 @@
 #include "utility.h"
 #include <stdbool.h>
 
-float **initialize_population(float (*target_function)(float *, int), float lb, float ub, int dim, int pop_size)
+double **initialize_population(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size)
 {
-    float **population = allocate_matrix_float(pop_size, dim);
+    double **population = allocate_matrix_double(pop_size, dim);
 
     for (int i = 0; i < pop_size; i++)
     {
         for (int j = 0; j < dim; j++)
         {
-            population[i][j] = random_float(lb, ub);
+            population[i][j] = random_double(lb, ub);
         }
     }
 
     return population;
 }
 
-float *clip_position_agent(float *agent, float lb, float ub, int dim)
+double *clip_position_agent(double *agent, double lb, double ub, int dim)
 { // Needed in order to constraint the search space (in the bound of the test function)
     for (int i = 0; i < dim; i++)
     {
@@ -37,14 +37,14 @@ float *clip_position_agent(float *agent, float lb, float ub, int dim)
     return agent;
 }
 
-float get_G(float G0, int t, float n_iter)
+double get_G(double G0, int t, double n_iter)
 {
     return G0 * (1 - t / (n_iter + 1)); // the +1 is needed in order to avoid G0 equal to 0 (at the last iteration)
 }
 
-float get_best(float *fitness, int pop_size)
+double get_best(double *fitness, int pop_size)
 {
-    float best = 1e20;
+    double best = 1e20;
     for (int i = 0; i < pop_size; i++)
     {
         if (fitness[i] < best)
@@ -55,9 +55,9 @@ float get_best(float *fitness, int pop_size)
     return best;
 }
 
-float get_worst(float *fitness, int pop_size)
+double get_worst(double *fitness, int pop_size)
 {
-    float worst = 0;
+    double worst = 0;
     for (int i = 0; i < pop_size; i++)
     {
         if (fitness[i] > worst)
@@ -68,9 +68,9 @@ float get_worst(float *fitness, int pop_size)
     return worst;
 }
 
-void sort_agents(float *fitness, float **velocity, float **population, float *M, int pop_size, int dim, int *translation_index)
+void sort_agents(double *fitness, double **velocity, double **population, double *M, int pop_size, int dim, int *translation_index)
 {
-    float tmp_float;
+    double tmp_double;
     int tmp_int;
     for (int i = 0; i < pop_size; i++)
     {
@@ -83,39 +83,39 @@ void sort_agents(float *fitness, float **velocity, float **population, float *M,
         {
             if (fitness[i] > fitness[j])
             {
-                tmp_float = fitness[i];
+                tmp_double = fitness[i];
                 fitness[i] = fitness[j];
-                fitness[j] = tmp_float;
+                fitness[j] = tmp_double;
 
                 tmp_int = translation_index[i];
                 translation_index[i] = translation_index[j];
                 translation_index[j] = tmp_int;
 
-                tmp_float = M[i];
+                tmp_double = M[i];
                 M[i] = M[j];
-                M[j] = tmp_float;
+                M[j] = tmp_double;
 
                 for (int k = 0; k < dim; k++)
                 {
-                    tmp_float = velocity[i][k];
+                    tmp_double = velocity[i][k];
                     velocity[i][k] = velocity[j][k];
-                    velocity[j][k] = tmp_float;
+                    velocity[j][k] = tmp_double;
 
-                    tmp_float = population[i][k];
+                    tmp_double = population[i][k];
                     population[i][k] = population[j][k];
-                    population[j][k] = tmp_float;
+                    population[j][k] = tmp_double;
                 }
             }
         }
     }
 }
 
-float getk_best(int pop_size, int t, float n_iter)
+double getk_best(int pop_size, int t, double n_iter)
 {
     return pop_size * (0.1 + (0.9 * (t / n_iter)));
 }
 
-bool check_different_element(float *individual1, float *individual2, int dim)
+bool check_different_element(double *individual1, double *individual2, int dim)
 {
     for (int i = 0; i < dim; i++)
     {
@@ -127,12 +127,13 @@ bool check_different_element(float *individual1, float *individual2, int dim)
     return false;
 }
 
-float **update_accelerations(float *global_M, float *local_M, float **global_population, float **local_population, float **accelerations, int dim, int pop_size, int k_best, int sub_pop_start_index, int rank, int *translation_index, bool debug)
+double **update_accelerations(double *global_M, double *local_M, double **global_population, double **local_population, double **accelerations, int dim, int pop_size, int k_best, int sub_pop_start_index, int rank, int *translation_index, bool debug)
 {
-    float R;
-    float **Forces = allocate_matrix_float(pop_size, dim);
-    float random;
+    double R;
+    double **Forces = allocate_matrix_double(pop_size, dim);
+    double random;
     int indice;
+
     if (rank == 0 && debug)
     {
         printf("Update accelerations\n");
@@ -173,7 +174,7 @@ float **update_accelerations(float *global_M, float *local_M, float **global_pop
 
                 for (int d = 0; d < dim; d++)
                 {
-                    // random = random_float(0, 1);
+                    // random = random_double(0, 1);
                     random = 0.5;
                     // printf("random: %f\n", random);
                     Forces[i][d] = Forces[i][d] + random * global_M[translation_index[j]] * (global_population[j][d] - local_population[i][d]) / (R + 1e-20);
@@ -216,14 +217,14 @@ float **update_accelerations(float *global_M, float *local_M, float **global_pop
     return accelerations;
 }
 
-float **update_velocity(float **velocity, float **accelerations, float G, int dim, int pop_size)
+double **update_velocity(double **velocity, double **accelerations, double G, int dim, int pop_size)
 {
-    float random;
+    double random;
     for (int i = 0; i < pop_size; i++)
     {
         for (int d = 0; d < dim; d++)
         {
-            // random = random_float(0, 1);
+            // random = random_double(0, 1);
             random = 0.5;
             velocity[i][d] = random * velocity[i][d] + accelerations[i][d];
         }
@@ -231,7 +232,7 @@ float **update_velocity(float **velocity, float **accelerations, float G, int di
     return velocity;
 }
 
-float **update_position(float **population, float **velocity, int dim, int pop_size)
+double **update_position(double **population, double **velocity, int dim, int pop_size)
 {
     for (int i = 0; i < pop_size; i++)
     {
@@ -243,7 +244,7 @@ float **update_position(float **population, float **velocity, int dim, int pop_s
     return population;
 }
 
-float **get_local_population(float **local_population, float **global_population, int sub_pop_start_index, int local_pop_size, int global_pop_size, int dim)
+double **get_local_population(double **local_population, double **global_population, int sub_pop_start_index, int local_pop_size, int global_pop_size, int dim)
 {
     for (int i = 0; i < local_pop_size; i++)
     {
@@ -255,7 +256,7 @@ float **get_local_population(float **local_population, float **global_population
     return local_population;
 }
 
-float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug)
+double *gca(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug)
 {
     // Returns the best agent found by the algorithm
 
@@ -266,28 +267,29 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
     // pop_size: population size
     // n_iter: number of iterations
 
-    float **global_velocity = allocate_matrix_float(global_pop_size, dim); // Each process calculates for its own subpopulation
-    float **local_velocity = allocate_matrix_float(local_pop_size, dim);   // Each process calculates for its own subpopulation
-    float **accelerations = allocate_matrix_float(local_pop_size, dim);    // Each process calculates for its own subpopulation
-    float *local_fitness = allocate_vector_float(local_pop_size);          // Each process calculates for its own subpopulation
-    float *global_fitness = allocate_vector_float(global_pop_size);        // Each process calculates for its own subpopulation
-    float *local_M = allocate_vector_float(local_pop_size);                // Each process calculates for its own subpopulation
-    float *global_M = allocate_vector_float(global_pop_size);              // Each process calculates for its own subpopulation
-    float *m = allocate_vector_float(local_pop_size);
+    double **global_velocity = allocate_matrix_double(global_pop_size, dim); // Each process calculates for its own subpopulation
+    double **local_velocity = allocate_matrix_double(local_pop_size, dim);   // Each process calculates for its own subpopulation
+    double **accelerations = allocate_matrix_double(local_pop_size, dim);    // Each process calculates for its own subpopulation
+    double *local_fitness = allocate_vector_double(local_pop_size);          // Each process calculates for its own subpopulation
+    double *global_fitness = allocate_vector_double(global_pop_size);        // Each process calculates for its own subpopulation
+    double *local_M = allocate_vector_double(local_pop_size);                // Each process calculates for its own subpopulation
+    double *global_M = allocate_vector_double(global_pop_size);              // Each process calculates for its own subpopulation
+    double *m = allocate_vector_double(local_pop_size);
     int *translation_index = allocate_vector_int(global_pop_size); // Each process calculates for its own subpopulation
-    float G0 = 100;                                                // G0 = 100
-    float G;
-    float best, worst;
-    float sum_m = 0;
-    float local_sum = 0;
-    float k_best;
-    float **global_population = NULL;
-    float **local_population = allocate_matrix_float(local_pop_size, dim);
+    //int *reverse_translation_index = allocate_vector_int(global_pop_size);
+    double G0 = 100;                                                // G0 = 100
+    double G;
+    double best, worst;
+    double sum_m = 0;
+    double local_sum = 0;
+    double k_best;
+    double **global_population = NULL;
+    double **local_population = allocate_matrix_double(local_pop_size, dim);
     int sub_pop_start_index = my_rank * local_pop_size;
     int indice;
 
-    float *best_agents = allocate_vector_float(dim);
-    float best_score_best_agent = 1e20;
+    double *best_agents = allocate_vector_double(dim);
+    double best_score_best_agent = 1e20;
 
     if (my_rank == 0)
     {
@@ -300,21 +302,21 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
     }
     else
     {
-        global_population = allocate_matrix_float(global_pop_size, dim);
+        global_population = allocate_matrix_double(global_pop_size, dim);
     }
-    MPI_Scatter(&(global_population[0][0]), local_pop_size * dim, MPI_FLOAT, &(local_population[0][0]), local_pop_size * dim, MPI_FLOAT, 0, MPI_COMM_WORLD);
+    MPI_Scatter(&(global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, &(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);
     /*printf("Scatter done\n");
     printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
     printf("my_rank: %d; local_population[1][0]: %f\n", my_rank, local_population[1][0]);*/
 
     // For additional information
-    float *convergence_curve = allocate_vector_float(n_iter);
-    float *best_agent = allocate_vector_float(dim);
-    float local_best_score = 1e20;
+    double *convergence_curve = allocate_vector_double(n_iter);
+    double *best_agent = allocate_vector_double(dim);
+    double local_best_score = 1e20;
 
     for (int l = 0; l < n_iter; l++)
     {
-        // MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_FLOAT, &(global_population[0][0]), sub_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
+        // MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), sub_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
         if (my_rank == 0 && debug)
         {
             printf("\n\n\nIteration: %d; my_rank: %d\n", l, my_rank);
@@ -335,9 +337,9 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
             }
         }
 
-        MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_population[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
-        MPI_Allgather(local_fitness, local_pop_size, MPI_FLOAT, global_fitness, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
-        MPI_Allgather(&(local_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
+        MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
+        MPI_Allgather(local_fitness, local_pop_size, MPI_DOUBLE, global_fitness, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD);
+        MPI_Allgather(&(local_velocity[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_velocity[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
 
         if (my_rank == 0 && debug)
         {
@@ -361,6 +363,10 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
         }
 
         sort_agents(global_fitness, global_velocity, global_population, global_M, global_pop_size, dim, translation_index); // Sort the agents based on their fitness
+        /*for(int k = 0; k < global_pop_size; k++){
+            reverse_translation_index[translation_index[k]] = k;
+        }*/
+
         k_best = getk_best(global_pop_size, l, n_iter);
 
         if (my_rank == 0 && best_score_best_agent > global_fitness[0])
@@ -422,7 +428,7 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
             local_sum += m[i];
         }
 
-        MPI_Allreduce(&local_sum, &sum_m, 1, MPI_FLOAT, MPI_SUM, MPI_COMM_WORLD);
+        MPI_Allreduce(&local_sum, &sum_m, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
         // printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
 
         for (int i = 0; i < local_pop_size; i++)
@@ -433,7 +439,7 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
         /*printf("Before sending local_M: \n");
         printf("%f\n", local_M[0]);
         printf("%f\n", local_M[1]);
-        MPI_Allgather(local_M, local_pop_size, MPI_FLOAT, global_M, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
+        MPI_Allgather(local_M, local_pop_size, MPI_DOUBLE, global_M, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD);
 
         printf("After sending local_M: \n");
         printf("%f\n", local_M[0]);
@@ -448,7 +454,7 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
         printf("my_rank: %d; global_M[2]: %f\n", my_rank, global_M[2]);
         printf("my_rank: %d; global_M[3]: %f\n", my_rank, global_M[3]);*/
 
-        MPI_Allgather(local_M, local_pop_size, MPI_FLOAT, global_M, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
+        MPI_Allgather(local_M, local_pop_size, MPI_DOUBLE, global_M, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD);
 
         if (my_rank == 0 && debug)
         {
@@ -534,9 +540,9 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
         }
     }
 
-    MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_population[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
-    MPI_Allgather(local_fitness, local_pop_size, MPI_FLOAT, global_fitness, local_pop_size, MPI_FLOAT, MPI_COMM_WORLD);
-    MPI_Allgather(&(local_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, &(global_velocity[0][0]), local_pop_size * dim, MPI_FLOAT, MPI_COMM_WORLD);
+    MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
+    MPI_Allgather(local_fitness, local_pop_size, MPI_DOUBLE, global_fitness, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD);
+    MPI_Allgather(&(local_velocity[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_velocity[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
 
     if (my_rank == 0 && debug)
     {

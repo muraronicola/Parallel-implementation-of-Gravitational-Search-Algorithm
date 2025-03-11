@@ -9,7 +9,7 @@
 #include <sys/time.h>
 #include <stdbool.h>
 
-void print_results(float* best_agent, float (*target_function)(float*, int), int dim);
+void print_results(double* best_agent, double (*target_function)(double*, int), int dim);
 
 
 int main(int argc, char *argv[]){
@@ -33,7 +33,7 @@ int main(int argc, char *argv[]){
     bool debug = atoi(argv[4]);
 
     int pop_per_proc = (int) pop_size/comm_sz;
-    float* best_agent;
+    double* best_agent;
     long seconds, microseconds;
     double elapsed;
 
@@ -81,7 +81,7 @@ int main(int argc, char *argv[]){
 }
 
 
-void print_results(float* best_agent, float (*target_function)(float*, int), int dim){
+void print_results(double* best_agent, double (*target_function)(double*, int), int dim){
     printf("Best agent: ");
     for (int i = 0; i < dim; i++){
         printf("%f ", best_agent[i]);

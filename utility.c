@@ -10,9 +10,9 @@ void check_allocation(void *ptr)
     }
 }
 
-float *allocate_vector_float(int n)
+double *allocate_vector_double(int n)
 {
-    float *ptr = (float *)malloc(sizeof(float) * n);
+    double *ptr = (double *)malloc(sizeof(double) * n);
     check_allocation(ptr);
 
     return ptr;
@@ -26,14 +26,14 @@ int *allocate_vector_int(int n)
     return ptr;
 }
 
-float **allocate_matrix_float(int rows, int columns)
+double **allocate_matrix_double(int rows, int columns)
 {
-    float *continuos_chunk = (float *)malloc(rows*columns*sizeof(float));
+    double *continuos_chunk = (double *)malloc(rows*columns*sizeof(double));
     check_allocation(continuos_chunk);
     for (int i=0; i<rows*columns; i++)
         continuos_chunk[i] = 0;
 
-    float **mat = (float **)malloc(rows * sizeof(float *));
+    double **mat = (double **)malloc(rows * sizeof(double *));
     check_allocation(mat);
 
     for (int i=0; i<rows; i++)
@@ -42,7 +42,7 @@ float **allocate_matrix_float(int rows, int columns)
     return mat;
 }
 
-float random_float(int lb, int ub){
-    float val = (((float)rand()) /((float)RAND_MAX))*(ub - lb) + lb;
+double random_double(int lb, int ub){
+    double val = (((double)rand()) /((double)RAND_MAX))*(ub - lb) + lb;
     return val;
 }

@@ -2,9 +2,9 @@
 #define _UTILITY_H
 
 void check_allocation(void *ptr);
-float *allocate_vector_float(int n);
-float **allocate_matrix_float(int rows, int columns);
-float random_float(int lb, int ub);
+double *allocate_vector_double(int n);
+double **allocate_matrix_double(int rows, int columns);
+double random_double(int lb, int ub);
 int *allocate_vector_int(int n);
 
 #endif

@@ -4,15 +4,15 @@
 #include "utility.h"
 #include <stdbool.h>
 
-float **serial_initialize_population(float (*target_function)(float *, int), float **velocity, float lb, float ub, int dim, int pop_size, float *fitness, float *M)
+double **serial_initialize_population(double (*target_function)(double *, int), double **velocity, double lb, double ub, int dim, int pop_size, double *fitness, double *M)
 {
-    float **population = allocate_matrix_float(pop_size, dim);
+    double **population = allocate_matrix_double(pop_size, dim);
 
     for (int i = 0; i < pop_size; i++)
     {
         for (int j = 0; j < dim; j++)
         {
-            population[i][j] = random_float(lb, ub);
+            population[i][j] = random_double(lb, ub);
             velocity[i][j] = 0;
         }
         fitness[i] = target_function(population[i], dim);
@@ -22,7 +22,7 @@ float **serial_initialize_population(float (*target_function)(float *, int), flo
     return population;
 }
 
-float *serial_clip_position_agent(float *agent, float lb, float ub, int dim)
+double *serial_clip_position_agent(double *agent, double lb, double ub, int dim)
 { // Needed in order to constraint the search space (in the bound of the test function)
     for (int i = 0; i < dim; i++)
     {
@@ -39,14 +39,14 @@ float *serial_clip_position_agent(float *agent, float lb, float ub, int dim)
     return agent;
 }
 
-float serial_get_G(float G0, int t, float n_iter)
+double serial_get_G(double G0, int t, double n_iter)
 {
     return G0 * (1 - t / (n_iter + 1)); // the +1 is needed in order to avoid G0 equal to 0 (at the last iteration)
 }
 
-float serial_get_best(float *fitness, int pop_size)
+double serial_get_best(double *fitness, int pop_size)
 {
-    float best = 1e20;
+    double best = 1e20;
     for (int i = 0; i < pop_size; i++)
     {
         if (fitness[i] < best)
@@ -57,9 +57,9 @@ float serial_get_best(float *fitness, int pop_size)
     return best;
 }
 
-float serial_get_worst(float *fitness, int pop_size)
+double serial_get_worst(double *fitness, int pop_size)
 {
-    float worst = 0;
+    double worst = 0;
     for (int i = 0; i < pop_size; i++)
     {
         if (fitness[i] > worst)
@@ -70,9 +70,9 @@ float serial_get_worst(float *fitness, int pop_size)
     return worst;
 }
 
-void serial_sort_agents(float *fitness, float **velocity, float **population, float *M, int pop_size, int dim)
+void serial_sort_agents(double *fitness, double **velocity, double **population, double *M, int pop_size, int dim)
 {
-    float temp;
+    double temp;
     for (int i = 0; i < pop_size; i++)
     {
         for (int j = i + 1; j < pop_size; j++)
@@ -102,16 +102,16 @@ void serial_sort_agents(float *fitness, float **velocity, float **population, fl
     }
 }
 
-float serial_getk_best(int pop_size, int t, float n_iter)
+double serial_getk_best(int pop_size, int t, double n_iter)
 {
     return pop_size * (0.1 + (0.9 * (t / n_iter)));
 }
 
-float **serial_update_accelearations(float *M, float **population, float **accelerations, int dim, int pop_size, int k_best, bool debug)
+double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, bool debug)
 {
-    float R;
-    float **Forces = allocate_matrix_float(pop_size, dim);
-    float random;
+    double R;
+    double **Forces = allocate_matrix_double(pop_size, dim);
+    double random;
     if (debug)
     {
         printf("Update accelerations\n");
@@ -154,7 +154,7 @@ float **serial_update_accelearations(float *M, float **population, float **accel
                 }
                 for (int d = 0; d < dim; d++)
                 {
-                    // random = random_float(0, 1);
+                    // random = random_double(0, 1);
                     random = 0.5;
                     // printf("random: %f\n", random);
                     Forces[i][d] = Forces[i][d] + random * M[j] * (population[j][d] - population[i][d]) / (R + 1e-20);
@@ -207,14 +207,14 @@ float **serial_update_accelearations(float *M, float **population, float **accel
     return accelerations;
 }
 
-float **serial_update_velocity(float **velocity, float **accelerations, float G, int dim, int pop_size)
+double **serial_update_velocity(double **velocity, double **accelerations, double G, int dim, int pop_size)
 {
-    float random;
+    double random;
     for (int i = 0; i < pop_size; i++)
     {
         for (int d = 0; d < dim; d++)
         {
-            // random = random_float(0, 1);
+            // random = random_double(0, 1);
             random = 0.5;
             velocity[i][d] = random * velocity[i][d] + accelerations[i][d];
         }
@@ -222,7 +222,7 @@ float **serial_update_velocity(float **velocity, float **accelerations, float G,
     return velocity;
 }
 
-float **serial_update_position(float **population, float **velocity, int dim, int pop_size)
+double **serial_update_position(double **population, double **velocity, int dim, int pop_size)
 {
     for (int i = 0; i < pop_size; i++)
     {
@@ -234,7 +234,7 @@ float **serial_update_position(float **population, float **velocity, int dim, in
     return population;
 }
 
-float *serial_gca(float (*target_function)(float *, int), float lb, float ub, int dim, int pop_size, int n_iter, bool debug)
+double *serial_gca(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size, int n_iter, bool debug)
 {
     // Returns the best agent found by the algorithm
 
@@ -245,18 +245,18 @@ float *serial_gca(float (*target_function)(float *, int), float lb, float ub, in
     // pop_size: population size
     // n_iter: number of iterations
 
-    float **velocity = allocate_matrix_float(pop_size, dim);
-    float **accelerations = allocate_matrix_float(pop_size, dim);
-    float *fitness = allocate_vector_float(pop_size);
-    float *M = allocate_vector_float(pop_size);
-    float *m = allocate_vector_float(pop_size);
-    float G0 = 100; // G0 = 100
-    float G;
-    float best, worst;
-    float sum_m;
-    float k_best;
+    double **velocity = allocate_matrix_double(pop_size, dim);
+    double **accelerations = allocate_matrix_double(pop_size, dim);
+    double *fitness = allocate_vector_double(pop_size);
+    double *M = allocate_vector_double(pop_size);
+    double *m = allocate_vector_double(pop_size);
+    double G0 = 100; // G0 = 100
+    double G;
+    double best, worst;
+    double sum_m;
+    double k_best;
 
-    float **population = serial_initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M);
+    double **population = serial_initialize_population(target_function, velocity, lb, ub, dim, pop_size, fitness, M);
 
     /*printf("Initial population:\n");
     for (int i = 0; i< pop_size; i++){
@@ -265,9 +265,9 @@ float *serial_gca(float (*target_function)(float *, int), float lb, float ub, in
     printf("-------\n");*/
 
     // For additional information
-    float *convergence_curve = allocate_vector_float(n_iter);
-    float *best_agent = allocate_vector_float(dim);
-    float best_score = 1e20;
+    double *convergence_curve = allocate_vector_double(n_iter);
+    double *best_agent = allocate_vector_double(dim);
+    double best_score = 1e20;
 
     for (int l = 0; l < n_iter; l++)
     {
