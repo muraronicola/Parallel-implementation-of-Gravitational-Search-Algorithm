@@ -431,6 +431,9 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         MPI_Allreduce(&local_sum, &sum_m, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
         // printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
 
+        if (debug && my_rank == 0)
+            printf("it: %d,  sum_m: %.15f\n", l, sum_m);
+
         for (int i = 0; i < local_pop_size; i++)
         {
             local_M[i] = m[i] / sum_m;
