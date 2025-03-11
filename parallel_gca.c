@@ -183,9 +183,12 @@ float **update_accelerations(float *global_M, float *local_M, float **global_pop
         }
     }
 
-    if (rank == 0 && debug){
-        printf("Forces[0][0]: %f\n", Forces[0][0]);
-        printf("Forces[1][0]: %f\n", Forces[1][0]);
+    if (rank == 0 && debug)
+    {
+        for (int i = 0; i < pop_size; i++)
+        {
+            printf("Forces[%d][0]: %f\n", i, Forces[i][0]);
+        }
     }
 
     for (int i = 0; i < pop_size; i++)
@@ -363,7 +366,7 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
         if (my_rank == 0 && best_score_best_agent > global_fitness[0])
         {
             best_score_best_agent = global_fitness[0];
-            //printf("Best score: %f\n", best_score_best_agent);
+            // printf("Best score: %f\n", best_score_best_agent);
             for (int i = 0; i < dim; i++)
             {
                 best_agents[i] = global_population[0][i];
@@ -372,6 +375,13 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
 
         if (my_rank == 0 && debug)
         {
+            printf("SORT DONE:\n");
+            printf("\n");
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("my_rank: %d; global_fitness[%d]: %f\n", my_rank, i, global_fitness[i]);
+            }
+
             printf("\n");
             for (int i = 0; i < global_pop_size; i++)
             {
@@ -381,9 +391,8 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
             printf("\n");
             for (int i = 0; i < global_pop_size; i++)
             {
-                printf("my_rank: %d; global_fitness[%d]: %f\n", my_rank, i, global_fitness[i]);
+                printf("my_rank: %d; translation_index[%d]: %d\n", my_rank, i, translation_index[i]);
             }
-            
         }
 
         // local_population = get_local_population(local_population, global_population, sub_pop_start_index, local_pop_size, global_pop_size, dim);
@@ -449,21 +458,22 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
                 printf("my_rank: %d; global_M[%d]: %f\n", my_rank, i, global_M[i]);
             }
 
-            printf("\nmy_rank: %d; local_M[0]: %f\n", my_rank, local_M[0]);
-            printf("my_rank: %d; local_M[1]: %f\n", my_rank, local_M[1]);
-
-            printf("\nmy_rank: %d; global_M[0]: %f\n", my_rank, global_M[0]);
-            printf("my_rank: %d; global_M[1]: %f\n", my_rank, global_M[1]);
-            printf("my_rank: %d; global_M[2]: %f\n", my_rank, global_M[2]);
-            printf("my_rank: %d; global_M[3]: %f\n", my_rank, global_M[3]);
+            printf("\n");
+            for (int i = 0; i < local_pop_size; i++)
+            {
+                printf("my_rank: %d; local_M[%d]: %f\n", my_rank, i, local_M[i]);
+            }
         }
 
         accelerations = update_accelerations(global_M, local_M, global_population, local_population, accelerations, dim, local_pop_size, k_best, sub_pop_start_index, my_rank, translation_index, debug);
 
         if (my_rank == 0 && debug)
         {
-            printf("\nmy_rank: %d; accelerations[0][0]: %f\n", my_rank, accelerations[0][0]);
-            printf("my_rank: %d; accelerations[1][0]: %f\n", my_rank, accelerations[1][0]);
+            printf("\n");
+            for (int i = 0; i < local_pop_size; i++)
+            {
+                printf("my_rank: %d; accelerations[%d][0]: %f\n", my_rank, i, accelerations[i][0]);
+            }
         }
 
         /*printf("\n\nmy_rank: %d; local_accelerations[0][0]: %f\n", my_rank, accelerations[0][0]);
@@ -476,8 +486,11 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
 
         if (my_rank == 0 && debug)
         {
-            printf("\nmy_rank: %d; local_velocity[0][0]: %f\n", my_rank, local_velocity[0][0]);
-            printf("my_rank: %d; local_velocity[1][0]: %f\n", my_rank, local_velocity[1][0]);
+            printf("\n");
+            for (int i = 0; i < local_pop_size; i++)
+            {
+                printf("my_rank: %d; local_velocity[%d][0]: %f\n", my_rank, i, local_velocity[i][0]);
+            }
         }
 
         /*printf("\n\nmy_rank: %d; local_velocity[0][0]: %f\n", my_rank, local_velocity[0][0]);
@@ -487,8 +500,11 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
 
         if (my_rank == 0 && debug)
         {
-            printf("\nmy_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
-            printf("my_rank: %d; local_population[1][0]: %f\n", my_rank, local_population[1][0]);
+            printf("\n");
+            for (int i = 0; i < local_pop_size; i++)
+            {
+                printf("my_rank: %d; local_population[%d][0]: %f\n", my_rank, i, local_population[i][0]);
+            }
         }
 
         convergence_curve[l] = local_best_score;
@@ -524,8 +540,11 @@ float *gca(float (*target_function)(float *, int), float lb, float ub, int dim, 
 
     if (my_rank == 0 && debug)
     {
-        printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
-        printf("my_rank: %d; local_population[0][1]: %f\n", my_rank, local_population[0][1]);
+        printf("\n");
+        for (int i = 0; i < local_pop_size; i++)
+        {
+            printf("my_rank: %d; local_population[%d][0]: %f\n", my_rank, i, local_population[i][0]);
+        }
     }
 
     sort_agents(global_fitness, global_velocity, global_population, global_M, global_pop_size, dim, translation_index); // Sort the agents based on their fitness

@@ -141,9 +141,10 @@ float **serial_update_accelearations(float *M, float **population, float **accel
                 {
                     R += (population[i][d] - population[j][d]) * (population[i][d] - population[j][d]);
                 }
+                R = sqrt(R);
+                
                 if (debug)
                 {
-                    R = sqrt(R);
                     printf("R: %f\n", R);
                     printf("M[j]: %f\n", M[j]);
                     printf("i %d\n", i);
@@ -404,6 +405,25 @@ float *serial_gca(float (*target_function)(float *, int), float lb, float ub, in
         convergence_curve[l] = best_score;
 
         // return population[0];
+    }
+
+    for (int i = 0; i < pop_size; i++)
+    {
+        population[i] = serial_clip_position_agent(population[i], lb, ub, dim);
+        fitness[i] = target_function(population[i], dim);
+        if (debug)
+        {
+            printf("fitness[%d]: %f\n", i, fitness[i]);
+        }
+        if (fitness[i] < best_score)
+        {
+            //printf("Best score: %f\n", fitness[i]);
+            best_score = fitness[i];
+            for (int j = 0; j < dim; j++)
+            {
+                best_agent[j] = population[i][j];
+            }
+        }
     }
 
     if (debug)

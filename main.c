@@ -41,6 +41,7 @@ int main(int argc, char *argv[]){
 
     
     if (my_rank == 0){
+        printf("my_rank: %d\n", my_rank);
         gettimeofday(&begin, 0);
         best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter, debug);
         gettimeofday(&end, 0);
