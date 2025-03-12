@@ -1,0 +1,67 @@
+echo "Generating performance data v={$1}"
+
+
+echo "1 core"
+echo " "
+mpiexec -n 1 ./gca 2 1000 100 0 > "./tests/v$1/1_1000_100.txt"
+echo "1_1000_100.txt done"
+mpiexec -n 1 ./gca 2 2000 100 0 > "./tests/v$1/1_2000_100.txt"
+echo "1_2000_100.txt done"
+mpiexec -n 1 ./gca 2 4000 100 0 > "./tests/v$1/1_4000_100.txt"
+echo "1_4000_100.txt done"
+mpiexec -n 1 ./gca 2 8000 100 0 > "./tests/v$1/1_8000_100.txt"
+echo "1_8000_100.txt done"
+mpiexec -n 1 ./gca 2 16000 100 0 > "./tests/v$1/1_16000_100.txt"
+echo "1_16000_100.txt done"
+
+
+echo " "
+echo " "
+echo "2 cores"
+echo " "
+
+mpiexec -n 2 ./gca 2 1000 100 0 > "./tests/v$1/2_1000_100.txt"
+echo "2_1000_100.txt done"
+mpiexec -n 2 ./gca 2 2000 100 0 > "./tests/v$1/2_2000_100.txt"
+echo "2_2000_100.txt done"
+mpiexec -n 2 ./gca 2 4000 100 0 > "./tests/v$1/2_4000_100.txt"
+echo "2_4000_100.txt done"
+mpiexec -n 2 ./gca 2 8000 100 0 > "./tests/v$1/2_8000_100.txt"
+echo "2_8000_100.txt done"
+mpiexec -n 2 ./gca 2 16000 100 0 > "./tests/v$1/2_16000_100.txt"
+echo "2_16000_100.txt done"
+
+
+echo " "
+echo " "
+echo "4 cores"
+echo " "
+
+
+mpiexec -n 4 ./gca 2 1000 100 0 > "./tests/v$1/4_1000_100.txt"
+echo "4_1000_100.txt done"
+mpiexec -n 4 ./gca 2 2000 100 0 > "./tests/v$1/4_2000_100.txt"
+echo "4_2000_100.txt done"
+mpiexec -n 4 ./gca 2 4000 100 0 > "./tests/v$1/4_4000_100.txt"
+echo "4_4000_100.txt done"
+mpiexec -n 4 ./gca 2 8000 100 0 > "./tests/v$1/4_8000_100.txt"
+echo "4_8000_100.txt done"
+mpiexec -n 4 ./gca 2 16000 100 0 > "./tests/v$1/4_16000_100.txt"
+echo "4_16000_100.txt done"
+
+
+echo " "
+echo " "
+echo "8 cores"
+echo " "
+
+mpiexec -n 8 ./gca 2 1000 100 0 > "./tests/v$1/8_1000_100.txt"
+echo "8_1000_100.txt done"
+mpiexec -n 8 ./gca 2 2000 100 0 > "./tests/v$1/8_2000_100.txt"
+echo "8_2000_100.txt done"
+mpiexec -n 8 ./gca 2 4000 100 0 > "./tests/v$1/8_4000_100.txt"
+echo "8_4000_100.txt done"
+mpiexec -n 8 ./gca 2 8000 100 0 > "./tests/v$1/8_8000_100.txt"
+echo "8_8000_100.txt done"
+mpiexec -n 8 ./gca 2 16000 100 0 > "./tests/v$1/8_16000_100.txt"
+echo "8_16000_100.txt done"
