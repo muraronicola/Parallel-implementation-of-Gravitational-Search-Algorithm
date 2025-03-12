@@ -46,6 +46,7 @@ double serial_get_G(double G0, int t, double n_iter)
 
 double serial_get_best(double *fitness, int pop_size)
 {
+    /*
     double best = 1e20;
     for (int i = 0; i < pop_size; i++)
     {
@@ -54,12 +55,13 @@ double serial_get_best(double *fitness, int pop_size)
             best = fitness[i];
         }
     }
-    return best;
+    return best;*/
+    return fitness[0];
 }
 
 double serial_get_worst(double *fitness, int pop_size)
 {
-    double worst = 0;
+    /*double worst = 0;
     for (int i = 0; i < pop_size; i++)
     {
         if (fitness[i] > worst)
@@ -67,7 +69,8 @@ double serial_get_worst(double *fitness, int pop_size)
             worst = fitness[i];
         }
     }
-    return worst;
+    return worst;*/
+    return fitness[pop_size - 1];
 }
 
 void serial_sort_agents(double *fitness, double **velocity, double **population, double *M, int pop_size, int dim)

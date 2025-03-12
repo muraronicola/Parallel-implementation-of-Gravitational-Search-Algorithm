@@ -2,4 +2,4 @@ Parallel GCA
 ----------------------------------------
 Best agent: -0.085304 0.253082 
 Best value: 0.071327
-Time measured: 4.744 seconds.
+Time measured: 4.766 seconds.

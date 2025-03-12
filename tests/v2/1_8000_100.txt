@@ -5,7 +5,7 @@ Serial GCA
 ----------------------------------------
 Best agent: 0.094782 -0.166011 
 Best value: 0.036543
-Time measured: 51.806 seconds.
+Time measured: 50.474 seconds.
 
 
 ----------------------------------------
