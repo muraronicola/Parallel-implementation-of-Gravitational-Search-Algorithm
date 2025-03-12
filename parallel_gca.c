@@ -10,9 +10,10 @@ double **initialize_population(double (*target_function)(double *, int), double 
 {
     double **population = allocate_matrix_double(pop_size, dim);
     int i = 0;
+    int j = 0;
     for (i = 0; i < pop_size; i++)
     {
-        for (int j = 0; j < dim; j++)
+        for (j = 0; j < dim; j++)
         {
             population[i][j] = random_double(lb, ub);
         }
@@ -84,6 +85,7 @@ void initial_sort(double *fitness, double **population, double *M, int pop_size,
     }
 
     int j = 0;
+    int k = 0;
     for (i = 0; i < pop_size; i++)
     {
         for (j = i + 1; j < pop_size; j++)
@@ -102,7 +104,7 @@ void initial_sort(double *fitness, double **population, double *M, int pop_size,
                 M[i] = M[j];
                 M[j] = tmp_double;
 
-                for (int k = 0; k < dim; k++)
+                for (k = 0; k < dim; k++)
                 {
                     tmp_double = population[i][k];
                     population[i][k] = population[j][k];
