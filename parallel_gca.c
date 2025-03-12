@@ -622,7 +622,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         }
     }
 
-    final_sort(global_fitness, global_population, global_M, translation_index, global_fitness, global_population, global_M, translation_index, global_pop_size, local_pop_size, dim, n_agents);
+    final_sort(global_fitness, global_population, global_M, unsorted_translation_index, global_fitness, global_population, global_M, translation_index, global_pop_size, local_pop_size, dim, n_agents);
 
     if (my_rank == 0 && best_score_best_agent > global_fitness[0])
     {
