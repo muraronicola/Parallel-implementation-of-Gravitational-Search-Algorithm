@@ -28,21 +28,23 @@ int *allocate_vector_int(int n)
 
 double **allocate_matrix_double(int rows, int columns)
 {
-    double *continuos_chunk = (double *)malloc(rows*columns*sizeof(double));
+    double *continuos_chunk = (double *)malloc(rows * columns * sizeof(double));
     check_allocation(continuos_chunk);
-    for (int i=0; i<rows*columns; i++)
+    int i = 0;
+    for (i = 0; i < rows * columns; i++)
         continuos_chunk[i] = 0;
 
     double **mat = (double **)malloc(rows * sizeof(double *));
     check_allocation(mat);
 
-    for (int i=0; i<rows; i++)
-        mat[i] = &(continuos_chunk[columns*i]);
+    for (i = 0; i < rows; i++)
+        mat[i] = &(continuos_chunk[columns * i]);
 
     return mat;
 }
 
-double random_double(int lb, int ub){
-    double val = (((double)rand()) /((double)RAND_MAX))*(ub - lb) + lb;
+double random_double(int lb, int ub)
+{
+    double val = (((double)rand()) / ((double)RAND_MAX)) * (ub - lb) + lb;
     return val;
 }

@@ -86,7 +86,8 @@ int main(int argc, char *argv[])
 void print_results(double *best_agent, double (*target_function)(double *, int), int dim)
 {
     printf("Best agent: ");
-    for (int i = 0; i < dim; i++)
+    int i = 0;
+    for ( i = 0; i < dim; i++)
     {
         printf("%f ", best_agent[i]);
     }
