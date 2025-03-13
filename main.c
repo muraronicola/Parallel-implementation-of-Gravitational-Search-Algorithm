@@ -35,47 +35,44 @@ int main(int argc, char *argv[])
 
     int pop_per_proc = (int)pop_size / comm_sz;
     double *best_agent;
-    long seconds, microseconds;
-    double elapsed;
+    double t1, t2, final_time;
 
-    struct timeval begin, end;
 
     if (comm_sz == 1)
     {
         printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
         printf("\n");
 
-        gettimeofday(&begin, 0);
+        t1 = MPI_Wtime();
         best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter, debug);
-        gettimeofday(&end, 0);
-
-        seconds = end.tv_sec - begin.tv_sec;
-        microseconds = end.tv_usec - begin.tv_usec;
-        elapsed = seconds + microseconds * 1e-6;
+        t2 = MPI_Wtime();
+        final_time = t2 - t1;
 
         printf("----------------------------------------\n");
         printf("Serial GCA\n");
         printf("----------------------------------------\n");
         print_results(best_agent, sphere, dim);
-        printf("Time measured: %.3f seconds.\n", elapsed);
+        printf("Time measured: %.3f seconds.\n", final_time);
         printf("\n\n----------------------------------------\n");
     }
     else
     {
         srand(10);
-        gettimeofday(&begin, 0);
+
+        t1 = MPI_Wtime();
         best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc, debug);
-        gettimeofday(&end, 0);
+        t2 = MPI_Wtime();
+        final_time = t2 - t1;
 
         if (my_rank == 0)
         {
+            printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
+            printf("\n");
+            printf("----------------------------------------\n");
             printf("Parallel GCA\n");
             printf("----------------------------------------\n");
-            seconds = end.tv_sec - begin.tv_sec;
-            microseconds = end.tv_usec - begin.tv_usec;
-            elapsed = seconds + microseconds * 1e-6;
             print_results(best_agent, sphere, dim);
-            printf("Time measured: %.3f seconds.\n", elapsed);
+            printf("Time measured: %.3f seconds.\n", final_time);
         }
     }
 
