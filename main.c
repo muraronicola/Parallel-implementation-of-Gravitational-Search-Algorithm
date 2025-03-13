@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
     double *best_agent;
     double t1, t2, final_time;
 
-
     if (comm_sz == 1)
     {
         printf("Configuration: dim = %d, pop_size = %d, n_iter = %d\n", dim, pop_size, n_iter);
@@ -73,6 +72,7 @@ int main(int argc, char *argv[])
             printf("----------------------------------------\n");
             print_results(best_agent, sphere, dim);
             printf("Time measured: %.3f seconds.\n", final_time);
+            printf("\n\n----------------------------------------\n");
         }
     }
 
@@ -84,7 +84,7 @@ void print_results(double *best_agent, double (*target_function)(double *, int),
 {
     printf("Best agent: ");
     int i = 0;
-    for ( i = 0; i < dim; i++)
+    for (i = 0; i < dim; i++)
     {
         printf("%f ", best_agent[i]);
     }
