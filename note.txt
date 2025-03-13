@@ -17,3 +17,10 @@ parallelo: calcolo di M[i] (normalizzato),
         update_accelerations (anche alla fine, sulla popsize)
         update_velocity (pop_size)
         update_position (pop_size)
+
+
+
+
+
+I risultati, faccio ogni call 10 times, faccio una avg.
+(sullo stesso nodo)
