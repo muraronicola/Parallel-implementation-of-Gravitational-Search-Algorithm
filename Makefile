@@ -1,6 +1,6 @@
 # Variabili
 CC = mpicc #era: gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -lm
 
 # Target predefinito
 all: gca
