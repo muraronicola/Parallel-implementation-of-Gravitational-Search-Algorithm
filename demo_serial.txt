@@ -1,11 +1,4593 @@
-Configuration: dim = 2, pop_size = 10, n_iter = 1000
+Configuration: dim = 2, pop_size = 10, n_iter = 10
 
+
+
+
+Iteration: 0
+fitness[0]: 11360.291161
+fitness[1]: 424.977951
+fitness[2]: 5041.995764
+fitness[3]: 3367.621254
+fitness[4]: 4370.345506
+fitness[5]: 8231.002060
+fitness[6]: 2401.352157
+fitness[7]: 1696.259742
+fitness[8]: 8946.957658
+fitness[9]: 5601.068154
+
+
+population[0][0]: -99.984398
+population[1][0]: 11.210600
+population[2][0]: -34.465500
+population[3][0]: -5.910800
+population[4][0]: 58.592800
+population[5][0]: 67.004204
+population[6][0]: -38.069302
+population[7][0]: 6.923300
+population[8][0]: 42.298801
+population[9][0]: 66.831299
+fitness[0]: 11360.291161
+fitness[1]: 424.977951
+fitness[2]: 5041.995764
+fitness[3]: 3367.621254
+fitness[4]: 4370.345506
+fitness[5]: 8231.002060
+fitness[6]: 2401.352157
+fitness[7]: 1696.259742
+fitness[8]: 8946.957658
+fitness[9]: 5601.068154
+valocity[0][0]: 0.000000
+valocity[1][0]: 0.000000
+valocity[2][0]: 0.000000
+valocity[3][0]: 0.000000
+valocity[4][0]: 0.000000
+valocity[5][0]: 0.000000
+valocity[6][0]: 0.000000
+valocity[7][0]: 0.000000
+valocity[8][0]: 0.000000
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 11.210599899291992
+population[1][0]: 6.923299789428711
+population[2][0]: -38.069301605224609
+population[3][0]: -5.910799980163574
+population[4][0]: 58.592800140380859
+population[5][0]: -34.465499877929688
+population[6][0]: 66.831298828125000
+population[7][0]: 67.004203796386719
+population[8][0]: 42.298801422119141
+population[9][0]: -99.984397888183594
+fitness[0]: 424.977950888165651
+fitness[1]: 1696.259741876074258
+fitness[2]: 2401.352157145302044
+fitness[3]: 3367.621254054779456
+fitness[4]: 4370.345506180339726
+fitness[5]: 5041.995763888364309
+fitness[6]: 5601.068154324835632
+fitness[7]: 8231.002059785256279
+fitness[8]: 8946.957658283718047
+fitness[9]: 11360.291160762426443
+it: 0,  sum_m: 5.684431621428588
+
+M[0]: 0.175919
+M[1]: 0.155468
+M[2]: 0.144125
+M[3]: 0.128580
+M[4]: 0.112449
+M[5]: 0.101644
+M[6]: 0.092650
+M[7]: 0.050342
+M[8]: 0.038824
+M[9]: 0.000000
+Update accelerations
+
+i: 1; j: 0
+R: 58.058416
+M[j]: 0.175919
+i 1
+population[i][0] 6.923300
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 68.902241
+M[j]: 0.175919
+i 2
+population[i][0] -38.069302
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.905062
+M[j]: 0.175919
+i 3
+population[i][0] -5.910800
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 67.385995
+M[j]: 0.175919
+i 4
+population[i][0] 58.592800
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 5; j: 0
+R: 91.584891
+M[j]: 0.175919
+i 5
+population[i][0] -34.465500
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 6; j: 0
+R: 57.983655
+M[j]: 0.175919
+i 6
+population[i][0] 66.831299
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 7; j: 0
+R: 96.281311
+M[j]: 0.175919
+i 7
+population[i][0] 67.004204
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 8; j: 0
+R: 106.540514
+M[j]: 0.175919
+i 8
+population[i][0] 42.298801
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 9; j: 0
+R: 123.711947
+M[j]: 0.175919
+i 9
+population[i][0] -99.984398
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.006495
+Forces[2][0]: 0.062910
+Forces[3][0]: 0.034301
+Forces[4][0]: -0.061848
+Forces[5][0]: 0.043868
+Forces[6][0]: -0.084375
+Forces[7][0]: -0.050971
+Forces[8][0]: -0.025666
+Forces[9][0]: 0.079060
+
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.041779
+accelerations[2][0]: 0.436497
+accelerations[3][0]: 0.266768
+accelerations[4][0]: -0.550013
+accelerations[5][0]: 0.431585
+accelerations[6][0]: -0.910685
+accelerations[7][0]: -1.012507
+accelerations[8][0]: -0.661096
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: 0.000000
+velocity[1][0]: 0.041779
+velocity[2][0]: 0.436497
+velocity[3][0]: 0.266768
+velocity[4][0]: -0.550013
+velocity[5][0]: 0.431585
+velocity[6][0]: -0.910685
+velocity[7][0]: -1.012507
+velocity[8][0]: -0.661096
+velocity[9][0]: 0.000000
+
+population[0][0]: 11.210600
+population[1][0]: 6.965079
+population[2][0]: -37.632805
+population[3][0]: -5.644032
+population[4][0]: 58.042787
+population[5][0]: -34.033915
+population[6][0]: 65.920614
+population[7][0]: 65.991697
+population[8][0]: 41.637705
+population[9][0]: -99.984398
+
+
+
+Iteration: 1
+fitness[0]: 424.977951
+fitness[1]: 1651.345900
+fitness[2]: 2342.170033
+fitness[3]: 3292.207494
+fitness[4]: 4272.450135
+fitness[5]: 4919.859448
+fitness[6]: 5462.167959
+fitness[7]: 7924.166427
+fitness[8]: 8529.490964
+fitness[9]: 11360.291161
+
+
+population[0][0]: 11.210600
+population[1][0]: 6.965100
+population[2][0]: -37.632801
+population[3][0]: -5.644000
+population[4][0]: 58.042801
+population[5][0]: -34.033901
+population[6][0]: 65.920601
+population[7][0]: 65.991699
+population[8][0]: 41.637699
+population[9][0]: -99.984398
+fitness[0]: 424.977951
+fitness[1]: 1651.345900
+fitness[2]: 2342.170033
+fitness[3]: 3292.207494
+fitness[4]: 4272.450135
+fitness[5]: 4919.859448
+fitness[6]: 5462.167959
+fitness[7]: 7924.166427
+fitness[8]: 8529.490964
+fitness[9]: 11360.291161
+valocity[0][0]: 0.000000
+valocity[1][0]: 0.041800
+valocity[2][0]: 0.436500
+valocity[3][0]: 0.266800
+valocity[4][0]: -0.550000
+valocity[5][0]: 0.431600
+valocity[6][0]: -0.910700
+valocity[7][0]: -1.012500
+valocity[8][0]: -0.661100
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 11.210599899291992
+population[1][0]: 6.965099811553955
+population[2][0]: -37.632801055908203
+population[3][0]: -5.644000053405762
+population[4][0]: 58.042800903320312
+population[5][0]: -34.033901214599609
+population[6][0]: 65.920600891113281
+population[7][0]: 65.991699218750000
+population[8][0]: 41.637699127197266
+population[9][0]: -99.984397888183594
+fitness[0]: 424.977950888165651
+fitness[1]: 1651.345899822565343
+fitness[2]: 2342.170032561862172
+fitness[3]: 3292.207493964692731
+fitness[4]: 4272.450134642484045
+fitness[5]: 4919.859447666589404
+fitness[6]: 5462.167959439626429
+fitness[7]: 7924.166426945710555
+fitness[8]: 8529.490963889533305
+fitness[9]: 11360.291160762426443
+it: 1,  sum_m: 5.799905582930248
+
+M[0]: 0.172417
+M[1]: 0.153081
+M[2]: 0.142188
+M[3]: 0.127209
+M[4]: 0.111754
+M[5]: 0.101546
+M[6]: 0.092995
+M[7]: 0.054177
+M[8]: 0.044633
+M[9]: 0.000000
+Update accelerations
+
+i: 1; j: 0
+R: 57.492668
+M[j]: 0.172417
+i 1
+population[i][0] 6.965100
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 68.291966
+M[j]: 0.172417
+i 2
+population[i][0] -37.632801
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 3; j: 0
+R: 43.220987
+M[j]: 0.172417
+i 3
+population[i][0] -5.644000
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 4; j: 0
+R: 66.603782
+M[j]: 0.172417
+i 4
+population[i][0] 58.042801
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 5; j: 0
+R: 90.719486
+M[j]: 0.172417
+i 5
+population[i][0] -34.033901
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 6; j: 0
+R: 57.034256
+M[j]: 0.172417
+i 6
+population[i][0] 65.920601
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 7; j: 0
+R: 94.534044
+M[j]: 0.172417
+i 7
+population[i][0] 65.991699
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 8; j: 0
+R: 104.274914
+M[j]: 0.172417
+i 8
+population[i][0] 41.637699
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 9; j: 0
+R: 123.711947
+M[j]: 0.172417
+i 9
+population[i][0] -99.984398
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+Forces[0][0]: 0.000000
+Forces[1][0]: 0.006366
+Forces[2][0]: 0.061657
+Forces[3][0]: 0.033618
+Forces[4][0]: -0.060617
+Forces[5][0]: 0.042995
+Forces[6][0]: -0.082695
+Forces[7][0]: -0.049956
+Forces[8][0]: -0.025155
+Forces[9][0]: 0.077486
+
+accelerations[0][0]: 0.000000
+accelerations[1][0]: 0.041586
+accelerations[2][0]: 0.433632
+accelerations[3][0]: 0.264274
+accelerations[4][0]: -0.542417
+accelerations[5][0]: 0.423401
+accelerations[6][0]: -0.889239
+accelerations[7][0]: -0.922093
+accelerations[8][0]: -0.563602
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: 0.000000
+velocity[1][0]: 0.062486
+velocity[2][0]: 0.651882
+velocity[3][0]: 0.397674
+velocity[4][0]: -0.817417
+velocity[5][0]: 0.639201
+velocity[6][0]: -1.344589
+velocity[7][0]: -1.428343
+velocity[8][0]: -0.894152
+velocity[9][0]: 0.000000
+
+population[0][0]: 11.210600
+population[1][0]: 7.027586
+population[2][0]: -36.980919
+population[3][0]: -5.246326
+population[4][0]: 57.225384
+population[5][0]: -33.394701
+population[6][0]: 64.576012
+population[7][0]: 64.563356
+population[8][0]: 40.743547
+population[9][0]: -99.984398
+
+
+
+Iteration: 2
+fitness[0]: 424.977951
+fitness[1]: 1585.376507
+fitness[2]: 2255.168047
+fitness[3]: 3181.525378
+fitness[4]: 4129.221012
+fitness[5]: 4741.726608
+fitness[6]: 5260.386291
+fitness[7]: 7501.705247
+fitness[8]: 7981.188971
+fitness[9]: 11360.291161
+
+
+population[0][0]: 11.210600
+population[1][0]: 7.027600
+population[2][0]: -36.980900
+population[3][0]: -5.246300
+population[4][0]: 57.225399
+population[5][0]: -33.394699
+population[6][0]: 64.575996
+population[7][0]: 64.563400
+population[8][0]: 40.743500
+population[9][0]: -99.984398
+fitness[0]: 424.977951
+fitness[1]: 1585.376507
+fitness[2]: 2255.168047
+fitness[3]: 3181.525378
+fitness[4]: 4129.221012
+fitness[5]: 4741.726608
+fitness[6]: 5260.386291
+fitness[7]: 7501.705247
+fitness[8]: 7981.188971
+fitness[9]: 11360.291161
+valocity[0][0]: 0.000000
+valocity[1][0]: 0.062500
+valocity[2][0]: 0.651900
+valocity[3][0]: 0.397700
+valocity[4][0]: -0.817400
+valocity[5][0]: 0.639200
+valocity[6][0]: -1.344600
+valocity[7][0]: -1.428300
+valocity[8][0]: -0.894200
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 11.210599899291992
+population[1][0]: 7.027599811553955
+population[2][0]: -36.980899810791016
+population[3][0]: -5.246300220489502
+population[4][0]: 57.225399017333984
+population[5][0]: -33.394699096679688
+population[6][0]: 64.575996398925781
+population[7][0]: 64.563400268554688
+population[8][0]: 40.743499755859375
+population[9][0]: -99.984397888183594
+fitness[0]: 424.977950888165651
+fitness[1]: 1585.376506566110265
+fitness[2]: 2255.168046646536823
+fitness[3]: 3181.525378264799656
+fitness[4]: 4129.221011534114950
+fitness[5]: 4741.726607555188821
+fitness[6]: 5260.386291142509435
+fitness[7]: 7501.705246678800904
+fitness[8]: 7981.188970912771765
+fitness[9]: 11360.291160762426443
+it: 2,  sum_m: 5.960628944566126
+
+M[0]: 0.167768
+M[1]: 0.149965
+M[2]: 0.139689
+M[3]: 0.125477
+M[4]: 0.110938
+M[5]: 0.101541
+M[6]: 0.093584
+M[7]: 0.059198
+M[8]: 0.051842
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 56.646656
+M[j]: 0.149965
+i 0
+population[i][0] 11.210600
+population[j][0] 7.027600
+Forces[i][0] 0.000000
+
+i: 1; j: 0
+R: 56.646656
+M[j]: 0.167768
+i 1
+population[i][0] 7.027600
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 2; j: 0
+R: 67.380514
+M[j]: 0.167768
+i 2
+population[i][0] -36.980900
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 45.001075
+M[j]: 0.149965
+i 2
+population[i][0] -36.980900
+population[j][0] 7.027600
+Forces[i][0] 0.059995
+
+i: 3; j: 0
+R: 42.201240
+M[j]: 0.167768
+i 3
+population[i][0] -5.246300
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 96.138913
+M[j]: 0.149965
+i 3
+population[i][0] -5.246300
+population[j][0] 7.027600
+Forces[i][0] 0.032712
+
+i: 4; j: 0
+R: 65.441278
+M[j]: 0.167768
+i 4
+population[i][0] 57.225399
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 51.176427
+M[j]: 0.149965
+i 4
+population[i][0] 57.225399
+population[j][0] 7.027600
+Forces[i][0] -0.058983
+
+i: 5; j: 0
+R: 89.437815
+M[j]: 0.167768
+i 5
+population[i][0] -33.394699
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 45.565084
+M[j]: 0.149965
+i 5
+population[i][0] -33.394699
+population[j][0] 7.027600
+Forces[i][0] 0.041835
+
+i: 6; j: 0
+R: 55.632523
+M[j]: 0.167768
+i 6
+population[i][0] 64.575996
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 92.338302
+M[j]: 0.149965
+i 6
+population[i][0] 64.575996
+population[j][0] 7.027600
+Forces[i][0] -0.080465
+
+i: 7; j: 0
+R: 92.069228
+M[j]: 0.167768
+i 7
+population[i][0] 64.563400
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 60.450011
+M[j]: 0.149965
+i 7
+population[i][0] 64.563400
+population[j][0] 7.027600
+Forces[i][0] -0.048609
+
+i: 8; j: 0
+R: 101.210641
+M[j]: 0.167768
+i 8
+population[i][0] 40.743500
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 52.554547
+M[j]: 0.149965
+i 8
+population[i][0] 40.743500
+population[j][0] 7.027600
+Forces[i][0] -0.024477
+
+i: 9; j: 0
+R: 123.711947
+M[j]: 0.167768
+i 9
+population[i][0] -99.984398
+population[j][0] 11.210600
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 107.036014
+M[j]: 0.149965
+i 9
+population[i][0] -99.984398
+population[j][0] 7.027600
+Forces[i][0] 0.075397
+Forces[0][0]: -0.005537
+Forces[1][0]: 0.006194
+Forces[2][0]: 0.133323
+Forces[3][0]: 0.042284
+Forces[4][0]: -0.132531
+Forces[5][0]: 0.108355
+Forces[6][0]: -0.127197
+Forces[7][0]: -0.119977
+Forces[8][0]: -0.072581
+Forces[9][0]: 0.150362
+
+accelerations[0][0]: -0.033004
+accelerations[1][0]: 0.041305
+accelerations[2][0]: 0.954430
+accelerations[3][0]: 0.336989
+accelerations[4][0]: -1.194645
+accelerations[5][0]: 1.067106
+accelerations[6][0]: -1.359180
+accelerations[7][0]: -2.026719
+accelerations[8][0]: -1.400060
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: -0.033004
+velocity[1][0]: 0.072555
+velocity[2][0]: 1.280380
+velocity[3][0]: 0.535839
+velocity[4][0]: -1.603345
+velocity[5][0]: 1.386706
+velocity[6][0]: -2.031480
+velocity[7][0]: -2.740869
+velocity[8][0]: -1.847160
+velocity[9][0]: 0.000000
+
+population[0][0]: 11.177596
+population[1][0]: 7.100155
+population[2][0]: -35.700520
+population[3][0]: -4.710461
+population[4][0]: 55.622054
+population[5][0]: -32.007993
+population[6][0]: 62.544516
+population[7][0]: 61.822531
+population[8][0]: 38.896339
+population[9][0]: -99.984398
+
+
+
+Iteration: 3
+fitness[0]: 409.016311
+fitness[1]: 1510.569924
+fitness[2]: 2125.192995
+fitness[3]: 2990.553445
+fitness[4]: 3901.059882
+fitness[5]: 4459.444768
+fitness[6]: 4932.118408
+fitness[7]: 6867.593036
+fitness[8]: 7195.534382
+fitness[9]: 11360.291161
+
+
+population[0][0]: 11.177600
+population[1][0]: 7.100200
+population[2][0]: -35.700500
+population[3][0]: -4.710500
+population[4][0]: 55.622101
+population[5][0]: -32.007999
+population[6][0]: 62.544498
+population[7][0]: 61.822498
+population[8][0]: 38.896301
+population[9][0]: -99.984398
+fitness[0]: 409.016311
+fitness[1]: 1510.569924
+fitness[2]: 2125.192995
+fitness[3]: 2990.553445
+fitness[4]: 3901.059882
+fitness[5]: 4459.444768
+fitness[6]: 4932.118408
+fitness[7]: 6867.593036
+fitness[8]: 7195.534382
+fitness[9]: 11360.291161
+valocity[0][0]: -0.033000
+valocity[1][0]: 0.072600
+valocity[2][0]: 1.280400
+valocity[3][0]: 0.535800
+valocity[4][0]: -1.603300
+valocity[5][0]: 1.386700
+valocity[6][0]: -2.031500
+valocity[7][0]: -2.740900
+valocity[8][0]: -1.847200
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 11.177599906921387
+population[1][0]: 7.100200176239014
+population[2][0]: -35.700500488281250
+population[3][0]: -4.710499763488770
+population[4][0]: 55.622100830078125
+population[5][0]: -32.007999420166016
+population[6][0]: 62.544498443603516
+population[7][0]: 61.822498321533203
+population[8][0]: 38.896301269531250
+population[9][0]: -99.984397888183594
+fitness[0]: 409.016311392287207
+fitness[1]: 1510.569924146915810
+fitness[2]: 2125.192994759188878
+fitness[3]: 2990.553445220933099
+fitness[4]: 3901.059882035191549
+fitness[5]: 4459.444768488479895
+fitness[6]: 4932.118407685789862
+fitness[7]: 6867.593035693469574
+fitness[8]: 7195.534382460871711
+fitness[9]: 11360.291160762426443
+it: 3,  sum_m: 6.195766084610796
+
+M[0]: 0.161401
+M[1]: 0.145166
+M[2]: 0.136107
+M[3]: 0.123354
+M[4]: 0.109935
+M[5]: 0.101705
+M[6]: 0.094739
+M[7]: 0.066214
+M[8]: 0.061380
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 55.217352
+M[j]: 0.145166
+i 0
+population[i][0] 11.177600
+population[j][0] 7.100200
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 65.692241
+M[j]: 0.136107
+i 0
+population[i][0] 11.177600
+population[j][0] -35.700500
+Forces[i][0] -0.005360
+
+i: 1; j: 0
+R: 55.217352
+M[j]: 0.161401
+i 1
+population[i][0] 7.100200
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 43.746160
+M[j]: 0.136107
+i 1
+population[i][0] 7.100200
+population[j][0] -35.700500
+Forces[i][0] 0.005959
+
+i: 2; j: 0
+R: 65.692241
+M[j]: 0.161401
+i 2
+population[i][0] -35.700500
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 43.746160
+M[j]: 0.145166
+i 2
+population[i][0] -35.700500
+population[j][0] 7.100200
+Forces[i][0] 0.057588
+
+i: 3; j: 0
+R: 40.844897
+M[j]: 0.161401
+i 3
+population[i][0] -4.710500
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 93.444103
+M[j]: 0.145166
+i 3
+population[i][0] -4.710500
+population[j][0] 7.100200
+Forces[i][0] 0.031391
+
+i: 3; j: 2
+R: 89.204926
+M[j]: 0.136107
+i 3
+population[i][0] -4.710500
+population[j][0] -35.700500
+Forces[i][0] 0.040565
+
+i: 4; j: 0
+R: 63.437992
+M[j]: 0.161401
+i 4
+population[i][0] 55.622101
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 49.501665
+M[j]: 0.145166
+i 4
+population[i][0] 55.622101
+population[j][0] 7.100200
+Forces[i][0] -0.056538
+
+i: 4; j: 2
+R: 91.325716
+M[j]: 0.136107
+i 4
+population[i][0] 55.622101
+population[j][0] -35.700500
+Forces[i][0] -0.127685
+
+i: 5; j: 0
+R: 86.946221
+M[j]: 0.161401
+i 5
+population[i][0] -32.007999
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 44.107372
+M[j]: 0.145166
+i 5
+population[i][0] -32.007999
+population[j][0] 7.100200
+Forces[i][0] 0.040083
+
+i: 5; j: 2
+R: 29.672744
+M[j]: 0.136107
+i 5
+population[i][0] -32.007999
+population[j][0] -35.700500
+Forces[i][0] 0.104440
+
+i: 6; j: 0
+R: 53.536846
+M[j]: 0.161401
+i 6
+population[i][0] 62.544498
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 89.418579
+M[j]: 0.145166
+i 6
+population[i][0] 62.544498
+population[j][0] 7.100200
+Forces[i][0] -0.077429
+
+i: 6; j: 2
+R: 115.699250
+M[j]: 0.136107
+i 6
+population[i][0] 62.544498
+population[j][0] -35.700500
+Forces[i][0] -0.122435
+
+i: 7; j: 0
+R: 88.061652
+M[j]: 0.161401
+i 7
+population[i][0] 61.822498
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 57.294592
+M[j]: 0.145166
+i 7
+population[i][0] 61.822498
+population[j][0] 7.100200
+Forces[i][0] -0.046411
+
+i: 7; j: 2
+R: 100.934640
+M[j]: 0.136107
+i 7
+population[i][0] 61.822498
+population[j][0] -35.700500
+Forces[i][0] -0.115736
+
+i: 8; j: 0
+R: 96.312618
+M[j]: 0.161401
+i 8
+population[i][0] 38.896301
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 48.915057
+M[j]: 0.145166
+i 8
+population[i][0] 38.896301
+population[j][0] 7.100200
+Forces[i][0] -0.023225
+
+i: 8; j: 2
+R: 87.753546
+M[j]: 0.136107
+i 8
+population[i][0] 38.896301
+population[j][0] -35.700500
+Forces[i][0] -0.070406
+
+i: 9; j: 0
+R: 123.487533
+M[j]: 0.161401
+i 9
+population[i][0] -99.984398
+population[j][0] 11.177600
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 107.092339
+M[j]: 0.145166
+i 9
+population[i][0] -99.984398
+population[j][0] 7.100200
+Forces[i][0] 0.072645
+
+i: 9; j: 2
+R: 64.750360
+M[j]: 0.136107
+i 9
+population[i][0] -99.984398
+population[j][0] -35.700500
+Forces[i][0] 0.145223
+Forces[0][0]: -0.053923
+Forces[1][0]: -0.060624
+Forces[2][0]: 0.128602
+Forces[3][0]: 0.016923
+Forces[4][0]: -0.195736
+Forces[5][0]: 0.095971
+Forces[6][0]: -0.180222
+Forces[7][0]: -0.181489
+Forces[8][0]: -0.128257
+Forces[9][0]: 0.212787
+
+accelerations[0][0]: -0.334094
+accelerations[1][0]: -0.417618
+accelerations[2][0]: 0.944857
+accelerations[3][0]: 0.137193
+accelerations[4][0]: -1.780478
+accelerations[5][0]: 0.943619
+accelerations[6][0]: -1.902302
+accelerations[7][0]: -2.740960
+accelerations[8][0]: -2.089539
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: -0.350594
+velocity[1][0]: -0.381318
+velocity[2][0]: 1.585057
+velocity[3][0]: 0.405093
+velocity[4][0]: -2.582128
+velocity[5][0]: 1.636969
+velocity[6][0]: -2.918052
+velocity[7][0]: -4.111410
+velocity[8][0]: -3.013140
+velocity[9][0]: 0.000000
+
+population[0][0]: 10.827006
+population[1][0]: 6.718883
+population[2][0]: -34.115443
+population[3][0]: -4.305407
+population[4][0]: 53.039973
+population[5][0]: -30.371030
+population[6][0]: 59.626446
+population[7][0]: 57.711088
+population[8][0]: 35.883162
+population[9][0]: -99.984398
+
+
+
+Iteration: 4
+fitness[0]: 369.649299
+fitness[1]: 1419.387891
+fitness[2]: 1978.854395
+fitness[3]: 2716.310625
+fitness[4]: 3575.791249
+fitness[5]: 4071.795850
+fitness[6]: 4466.302907
+fitness[7]: 6068.581538
+fitness[8]: 6269.154816
+fitness[9]: 11360.291161
+
+
+population[0][0]: 10.827000
+population[1][0]: 6.718900
+population[2][0]: -34.115398
+population[3][0]: -4.305400
+population[4][0]: 53.040001
+population[5][0]: -30.371000
+population[6][0]: 59.626400
+population[7][0]: 57.711102
+population[8][0]: 35.883202
+population[9][0]: -99.984398
+fitness[0]: 369.649299
+fitness[1]: 1419.387891
+fitness[2]: 1978.854395
+fitness[3]: 2716.310625
+fitness[4]: 3575.791249
+fitness[5]: 4071.795850
+fitness[6]: 4466.302907
+fitness[7]: 6068.581538
+fitness[8]: 6269.154816
+fitness[9]: 11360.291161
+valocity[0][0]: -0.350600
+valocity[1][0]: -0.381300
+valocity[2][0]: 1.585100
+valocity[3][0]: 0.405100
+valocity[4][0]: -2.582100
+valocity[5][0]: 1.637000
+valocity[6][0]: -2.918100
+valocity[7][0]: -4.111400
+valocity[8][0]: -3.013100
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 10.826999664306641
+population[1][0]: 6.718900203704834
+population[2][0]: -34.115398406982422
+population[3][0]: -4.305399894714355
+population[4][0]: 53.040000915527344
+population[5][0]: -30.371000289916992
+population[6][0]: 59.626399993896484
+population[7][0]: 57.711101531982422
+population[8][0]: 35.883201599121094
+population[9][0]: -99.984397888183594
+fitness[0]: 369.649299341167534
+fitness[1]: 1419.387890510470470
+fitness[2]: 1978.854394546622643
+fitness[3]: 2716.310624916565757
+fitness[4]: 3575.791249136862461
+fitness[5]: 4071.795849803314923
+fitness[6]: 4466.302907440567651
+fitness[7]: 6068.581538390862988
+fitness[8]: 6269.154816034366377
+fitness[9]: 11360.291160762426443
+it: 4,  sum_m: 6.487955187316054
+
+M[0]: 0.154132
+M[1]: 0.139410
+M[2]: 0.131564
+M[3]: 0.121222
+M[4]: 0.109169
+M[5]: 0.102213
+M[6]: 0.096681
+M[7]: 0.074210
+M[8]: 0.071398
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 53.117798
+M[j]: 0.139410
+i 0
+population[i][0] 10.827000
+population[j][0] 6.718900
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 63.201086
+M[j]: 0.131564
+i 0
+population[i][0] 10.827000
+population[j][0] -34.115398
+Forces[i][0] -0.005391
+
+i: 0; j: 3
+R: 39.099242
+M[j]: 0.121222
+i 0
+population[i][0] 10.827000
+population[j][0] -4.305400
+Forces[i][0] -0.052169
+
+i: 1; j: 0
+R: 53.117798
+M[j]: 0.154132
+i 1
+population[i][0] 6.718900
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 41.714223
+M[j]: 0.131564
+i 1
+population[i][0] 6.718900
+population[j][0] -34.115398
+Forces[i][0] 0.005960
+
+i: 1; j: 3
+R: 89.691003
+M[j]: 0.121222
+i 1
+population[i][0] 6.718900
+population[j][0] -4.305400
+Forces[i][0] -0.058434
+
+i: 2; j: 0
+R: 63.201086
+M[j]: 0.154132
+i 2
+population[i][0] -34.115398
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 41.714223
+M[j]: 0.139410
+i 2
+population[i][0] -34.115398
+population[j][0] 6.718900
+Forces[i][0] 0.054802
+
+i: 2; j: 3
+R: 85.831151
+M[j]: 0.121222
+i 2
+population[i][0] -34.115398
+population[j][0] -4.305400
+Forces[i][0] 0.123036
+
+i: 3; j: 0
+R: 39.099242
+M[j]: 0.154132
+i 3
+population[i][0] -4.305400
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 89.691003
+M[j]: 0.139410
+i 3
+population[i][0] -4.305400
+population[j][0] 6.718900
+Forces[i][0] 0.029826
+
+i: 3; j: 2
+R: 85.831151
+M[j]: 0.131564
+i 3
+population[i][0] -4.305400
+population[j][0] -34.115398
+Forces[i][0] 0.038394
+
+i: 4; j: 0
+R: 60.616655
+M[j]: 0.154132
+i 4
+population[i][0] 53.040001
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 47.276525
+M[j]: 0.139410
+i 4
+population[i][0] 53.040001
+population[j][0] 6.718900
+Forces[i][0] -0.053668
+
+i: 4; j: 2
+R: 87.160402
+M[j]: 0.131564
+i 4
+population[i][0] 53.040001
+population[j][0] -34.115398
+Forces[i][0] -0.121965
+
+i: 4; j: 3
+R: 98.068332
+M[j]: 0.121222
+i 4
+population[i][0] 53.040001
+population[j][0] -4.305400
+Forces[i][0] -0.187743
+
+i: 5; j: 0
+R: 82.959875
+M[j]: 0.154132
+i 5
+population[i][0] -30.371000
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 41.695487
+M[j]: 0.139410
+i 5
+population[i][0] -30.371000
+population[j][0] 6.718900
+Forces[i][0] 0.038271
+
+i: 5; j: 2
+R: 27.824496
+M[j]: 0.131564
+i 5
+population[i][0] -30.371000
+population[j][0] -34.115398
+Forces[i][0] 0.100277
+
+i: 5; j: 3
+R: 111.158863
+M[j]: 0.121222
+i 5
+population[i][0] -30.371000
+population[j][0] -4.305400
+Forces[i][0] 0.091424
+
+i: 6; j: 0
+R: 50.850002
+M[j]: 0.154132
+i 6
+population[i][0] 59.626400
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 85.570070
+M[j]: 0.139410
+i 6
+population[i][0] 59.626400
+population[j][0] 6.718900
+Forces[i][0] -0.073958
+
+i: 6; j: 2
+R: 110.620213
+M[j]: 0.131564
+i 6
+population[i][0] 59.626400
+population[j][0] -34.115398
+Forces[i][0] -0.117056
+
+i: 6; j: 3
+R: 67.532656
+M[j]: 0.121222
+i 6
+population[i][0] 59.626400
+population[j][0] -4.305400
+Forces[i][0] -0.172802
+
+i: 7; j: 0
+R: 82.772310
+M[j]: 0.154132
+i 7
+population[i][0] 57.711102
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 53.225236
+M[j]: 0.139410
+i 7
+population[i][0] 57.711102
+population[j][0] 6.718900
+Forces[i][0] -0.043652
+
+i: 7; j: 2
+R: 94.855125
+M[j]: 0.131564
+i 7
+population[i][0] 57.711102
+population[j][0] -34.115398
+Forces[i][0] -0.110433
+
+i: 7; j: 3
+R: 121.315566
+M[j]: 0.121222
+i 7
+population[i][0] 57.711102
+population[j][0] -4.305400
+Forces[i][0] -0.174114
+
+i: 8; j: 0
+R: 90.025155
+M[j]: 0.154132
+i 8
+population[i][0] 35.883202
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 44.423301
+M[j]: 0.139410
+i 8
+population[i][0] 35.883202
+population[j][0] 6.718900
+Forces[i][0] -0.021449
+
+i: 8; j: 2
+R: 81.648596
+M[j]: 0.131564
+i 8
+population[i][0] 35.883202
+population[j][0] -34.115398
+Forces[i][0] -0.067211
+
+i: 8; j: 3
+R: 128.943103
+M[j]: 0.121222
+i 8
+population[i][0] 35.883202
+population[j][0] -4.305400
+Forces[i][0] -0.123607
+
+i: 9; j: 0
+R: 122.753024
+M[j]: 0.154132
+i 9
+population[i][0] -99.984398
+population[j][0] 10.827000
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 106.703399
+M[j]: 0.139410
+i 9
+population[i][0] -99.984398
+population[j][0] 6.718900
+Forces[i][0] 0.069569
+
+i: 9; j: 2
+R: 66.399454
+M[j]: 0.131564
+i 9
+population[i][0] -99.984398
+population[j][0] -34.115398
+Forces[i][0] 0.139274
+
+i: 9; j: 3
+R: 130.580896
+M[j]: 0.121222
+i 9
+population[i][0] -99.984398
+population[j][0] -4.305400
+Forces[i][0] 0.204531
+Forces[0][0]: -0.075627
+Forces[1][0]: -0.065884
+Forces[2][0]: 0.144087
+Forces[3][0]: 0.015547
+Forces[4][0]: -0.223185
+Forces[5][0]: 0.105637
+Forces[6][0]: -0.230181
+Forces[7][0]: -0.205099
+Forces[8][0]: -0.142499
+Forces[9][0]: 0.248941
+
+accelerations[0][0]: -0.490664
+accelerations[1][0]: -0.472593
+accelerations[2][0]: 1.095185
+accelerations[3][0]: 0.128255
+accelerations[4][0]: -2.044400
+accelerations[5][0]: 1.033496
+accelerations[6][0]: -2.380838
+accelerations[7][0]: -2.763746
+accelerations[8][0]: -1.995845
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: -0.665964
+velocity[1][0]: -0.663243
+velocity[2][0]: 1.887735
+velocity[3][0]: 0.330805
+velocity[4][0]: -3.335450
+velocity[5][0]: 1.851996
+velocity[6][0]: -3.839888
+velocity[7][0]: -4.819446
+velocity[8][0]: -3.502395
+velocity[9][0]: 0.000000
+
+population[0][0]: 10.161036
+population[1][0]: 6.055657
+population[2][0]: -32.227664
+population[3][0]: -3.974595
+population[4][0]: 49.704551
+population[5][0]: -28.519004
+population[6][0]: 55.786512
+population[7][0]: 52.891655
+population[8][0]: 32.380807
+population[9][0]: -99.984398
+
+
+
+Iteration: 5
+fitness[0]: 328.732191
+fitness[1]: 1291.332896
+fitness[2]: 1795.061657
+fitness[3]: 2417.101388
+fitness[4]: 3167.116677
+fitness[5]: 3590.085850
+fitness[6]: 3916.020386
+fitness[7]: 5183.502919
+fitness[8]: 5289.716140
+fitness[9]: 11360.291161
+
+
+population[0][0]: 10.161000
+population[1][0]: 6.055700
+population[2][0]: -32.227699
+population[3][0]: -3.974600
+population[4][0]: 49.704601
+population[5][0]: -28.518999
+population[6][0]: 55.786499
+population[7][0]: 52.891701
+population[8][0]: 32.380798
+population[9][0]: -99.984398
+fitness[0]: 328.732191
+fitness[1]: 1291.332896
+fitness[2]: 1795.061657
+fitness[3]: 2417.101388
+fitness[4]: 3167.116677
+fitness[5]: 3590.085850
+fitness[6]: 3916.020386
+fitness[7]: 5183.502919
+fitness[8]: 5289.716140
+fitness[9]: 11360.291161
+valocity[0][0]: -0.666000
+valocity[1][0]: -0.663200
+valocity[2][0]: 1.887700
+valocity[3][0]: 0.330800
+valocity[4][0]: -3.335500
+valocity[5][0]: 1.852000
+valocity[6][0]: -3.839900
+valocity[7][0]: -4.819400
+valocity[8][0]: -3.502400
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 10.161000251770020
+population[1][0]: 6.055699825286865
+population[2][0]: -32.227699279785156
+population[3][0]: -3.974600076675415
+population[4][0]: 49.704601287841797
+population[5][0]: -28.518999099731445
+population[6][0]: 55.786499023437500
+population[7][0]: 52.891700744628906
+population[8][0]: 32.380798339843750
+population[9][0]: -99.984397888183594
+fitness[0]: 328.732190526980048
+fitness[1]: 1291.332895545185465
+fitness[2]: 1795.061656577399845
+fitness[3]: 2417.101387577814421
+fitness[4]: 3167.116676744644792
+fitness[5]: 3590.085849693339696
+fitness[6]: 3916.020386263295222
+fitness[7]: 5183.502919277016190
+fitness[8]: 5289.716140289092436
+fitness[9]: 11360.291160762426443
+it: 5,  sum_m: 6.822603273702186
+
+M[0]: 0.146572
+M[1]: 0.133782
+M[2]: 0.127089
+M[3]: 0.118824
+M[4]: 0.108859
+M[5]: 0.103239
+M[6]: 0.098909
+M[7]: 0.082068
+M[8]: 0.080657
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 50.604197
+M[j]: 0.133782
+i 0
+population[i][0] 10.161000
+population[j][0] 6.055700
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 60.039306
+M[j]: 0.127089
+i 0
+population[i][0] 10.161000
+population[j][0] -32.227699
+Forces[i][0] -0.005427
+
+i: 0; j: 3
+R: 36.809301
+M[j]: 0.118824
+i 0
+population[i][0] 10.161000
+population[j][0] -3.974600
+Forces[i][0] -0.050290
+
+i: 0; j: 4
+R: 57.257183
+M[j]: 0.108859
+i 0
+population[i][0] 10.161000
+population[j][0] 49.704601
+Forces[i][0] -0.073106
+
+i: 1; j: 0
+R: 50.604197
+M[j]: 0.146572
+i 1
+population[i][0] 6.055700
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 39.093608
+M[j]: 0.127089
+i 1
+population[i][0] 6.055700
+population[j][0] -32.227699
+Forces[i][0] 0.005945
+
+i: 1; j: 3
+R: 85.018054
+M[j]: 0.118824
+i 1
+population[i][0] 6.055700
+population[j][0] -3.974600
+Forces[i][0] -0.056282
+
+i: 1; j: 4
+R: 44.572887
+M[j]: 0.108859
+i 1
+population[i][0] 6.055700
+population[j][0] 49.704601
+Forces[i][0] -0.063292
+
+i: 2; j: 0
+R: 60.039306
+M[j]: 0.146572
+i 2
+population[i][0] -32.227699
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 39.093608
+M[j]: 0.133782
+i 2
+population[i][0] -32.227699
+population[j][0] 6.055700
+Forces[i][0] 0.051741
+
+i: 2; j: 3
+R: 81.556621
+M[j]: 0.118824
+i 2
+population[i][0] -32.227699
+population[j][0] -3.974600
+Forces[i][0] 0.117246
+
+i: 2; j: 4
+R: 81.939830
+M[j]: 0.108859
+i 2
+population[i][0] -32.227699
+population[j][0] 49.704601
+Forces[i][0] 0.137827
+
+i: 3; j: 0
+R: 36.809301
+M[j]: 0.146572
+i 3
+population[i][0] -3.974600
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 85.018054
+M[j]: 0.133782
+i 3
+population[i][0] -3.974600
+population[j][0] 6.055700
+Forces[i][0] 0.028143
+
+i: 3; j: 2
+R: 81.556621
+M[j]: 0.127089
+i 3
+population[i][0] -3.974600
+population[j][0] -32.227699
+Forces[i][0] 0.036035
+
+i: 3; j: 4
+R: 92.552516
+M[j]: 0.108859
+i 3
+population[i][0] -3.974600
+population[j][0] 49.704601
+Forces[i][0] 0.014022
+
+i: 4; j: 0
+R: 57.257183
+M[j]: 0.146572
+i 4
+population[i][0] 49.704601
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 44.572887
+M[j]: 0.133782
+i 4
+population[i][0] 49.704601
+population[j][0] 6.055700
+Forces[i][0] -0.050613
+
+i: 4; j: 2
+R: 81.939830
+M[j]: 0.127089
+i 4
+population[i][0] 49.704601
+population[j][0] -32.227699
+Forces[i][0] -0.116118
+
+i: 4; j: 3
+R: 92.552516
+M[j]: 0.118824
+i 4
+population[i][0] 49.704601
+population[j][0] -3.974600
+Forces[i][0] -0.179657
+
+i: 5; j: 0
+R: 77.980353
+M[j]: 0.146572
+i 5
+population[i][0] -28.518999
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 38.649587
+M[j]: 0.133782
+i 5
+population[i][0] -28.518999
+population[j][0] 6.055700
+Forces[i][0] 0.036351
+
+i: 5; j: 2
+R: 25.463034
+M[j]: 0.127089
+i 5
+population[i][0] -28.518999
+population[j][0] -32.227699
+Forces[i][0] 0.096190
+
+i: 5; j: 3
+R: 104.617929
+M[j]: 0.118824
+i 5
+population[i][0] -28.518999
+population[j][0] -3.974600
+Forces[i][0] 0.086935
+
+i: 5; j: 4
+R: 82.527224
+M[j]: 0.108859
+i 5
+population[i][0] -28.518999
+population[j][0] 49.704601
+Forces[i][0] 0.100873
+
+i: 6; j: 0
+R: 47.534763
+M[j]: 0.146572
+i 6
+population[i][0] 55.786499
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 80.872048
+M[j]: 0.133782
+i 6
+population[i][0] 55.786499
+population[j][0] 6.055700
+Forces[i][0] -0.070342
+
+i: 6; j: 2
+R: 104.242148
+M[j]: 0.127089
+i 6
+population[i][0] 55.786499
+population[j][0] -32.227699
+Forces[i][0] -0.111476
+
+i: 6; j: 3
+R: 63.228315
+M[j]: 0.118824
+i 6
+population[i][0] 55.786499
+population[j][0] -3.974600
+Forces[i][0] -0.165128
+
+i: 6; j: 4
+R: 55.082294
+M[j]: 0.108859
+i 6
+population[i][0] 55.786499
+population[j][0] 49.704601
+Forces[i][0] -0.221282
+
+i: 7; j: 0
+R: 76.839733
+M[j]: 0.146572
+i 7
+population[i][0] 52.891701
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 48.722141
+M[j]: 0.133782
+i 7
+population[i][0] 52.891701
+population[j][0] 6.055700
+Forces[i][0] -0.040754
+
+i: 7; j: 2
+R: 87.754407
+M[j]: 0.127089
+i 7
+population[i][0] 52.891701
+population[j][0] -32.227699
+Forces[i][0] -0.105056
+
+i: 7; j: 3
+R: 113.173766
+M[j]: 0.118824
+i 7
+population[i][0] 52.891701
+population[j][0] -3.974600
+Forces[i][0] -0.166692
+
+i: 7; j: 4
+R: 22.678863
+M[j]: 0.108859
+i 7
+population[i][0] 52.891701
+population[j][0] 49.704601
+Forces[i][0] -0.196545
+
+i: 8; j: 0
+R: 83.163999
+M[j]: 0.146572
+i 8
+population[i][0] 32.380798
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 39.690007
+M[j]: 0.133782
+i 8
+population[i][0] 32.380798
+population[j][0] 6.055700
+Forces[i][0] -0.019581
+
+i: 8; j: 2
+R: 74.763660
+M[j]: 0.127089
+i 8
+population[i][0] 32.380798
+population[j][0] -32.227699
+Forces[i][0] -0.063947
+
+i: 8; j: 3
+R: 119.778227
+M[j]: 0.118824
+i 8
+population[i][0] 32.380798
+population[j][0] -3.974600
+Forces[i][0] -0.118860
+
+i: 8; j: 4
+R: 42.429636
+M[j]: 0.108859
+i 8
+population[i][0] 32.380798
+population[j][0] 49.704601
+Forces[i][0] -0.136893
+
+i: 9; j: 0
+R: 121.777809
+M[j]: 0.146572
+i 9
+population[i][0] -99.984398
+population[j][0] 10.161000
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 106.050752
+M[j]: 0.133782
+i 9
+population[i][0] -99.984398
+population[j][0] 6.055700
+Forces[i][0] 0.066285
+
+i: 9; j: 2
+R: 68.408519
+M[j]: 0.127089
+i 9
+population[i][0] -99.984398
+population[j][0] -32.227699
+Forces[i][0] 0.133170
+
+i: 9; j: 3
+R: 128.846485
+M[j]: 0.118824
+i 9
+population[i][0] -99.984398
+population[j][0] -3.974600
+Forces[i][0] 0.196109
+
+i: 9; j: 4
+R: 150.059039
+M[j]: 0.108859
+i 9
+population[i][0] -99.984398
+population[j][0] 49.704601
+Forces[i][0] 0.240380
+Forces[0][0]: -0.035515
+Forces[1][0]: -0.009990
+Forces[2][0]: 0.192252
+Forces[3][0]: 0.045590
+Forces[4][0]: -0.214115
+Forces[5][0]: 0.152465
+Forces[6][0]: -0.227292
+Forces[7][0]: -0.204194
+Forces[8][0]: -0.114670
+Forces[9][0]: 0.294675
+
+accelerations[0][0]: -0.242304
+accelerations[1][0]: -0.074676
+accelerations[2][0]: 1.512733
+accelerations[3][0]: 0.383677
+accelerations[4][0]: -1.966896
+accelerations[5][0]: 1.476806
+accelerations[6][0]: -2.297994
+accelerations[7][0]: -2.488099
+accelerations[8][0]: -1.421698
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: -0.575304
+velocity[1][0]: -0.406276
+velocity[2][0]: 2.456583
+velocity[3][0]: 0.549077
+velocity[4][0]: -3.634646
+velocity[5][0]: 2.402806
+velocity[6][0]: -4.217944
+velocity[7][0]: -4.897799
+velocity[8][0]: -3.172898
+velocity[9][0]: 0.000000
+
+population[0][0]: 9.585696
+population[1][0]: 5.649424
+population[2][0]: -29.771116
+population[3][0]: -3.425523
+population[4][0]: 46.069955
+population[5][0]: -26.116193
+population[6][0]: 51.568555
+population[7][0]: 47.993902
+population[8][0]: 29.207901
+population[9][0]: -99.984398
+
+
+
+Iteration: 6
+fitness[0]: 285.768992
+fitness[1]: 1149.534205
+fitness[2]: 1574.588294
+fitness[3]: 2084.833292
+fitness[4]: 2746.580189
+fitness[5]: 3057.672645
+fitness[6]: 3335.414106
+fitness[7]: 4298.733912
+fitness[8]: 4356.107544
+fitness[9]: 11360.291161
+
+
+population[0][0]: 9.585700
+population[1][0]: 5.649400
+population[2][0]: -29.771099
+population[3][0]: -3.425500
+population[4][0]: 46.070000
+population[5][0]: -26.116199
+population[6][0]: 51.568600
+population[7][0]: 47.993900
+population[8][0]: 29.207899
+population[9][0]: -99.984398
+fitness[0]: 285.768992
+fitness[1]: 1149.534205
+fitness[2]: 1574.588294
+fitness[3]: 2084.833292
+fitness[4]: 2746.580189
+fitness[5]: 3057.672645
+fitness[6]: 3335.414106
+fitness[7]: 4298.733912
+fitness[8]: 4356.107544
+fitness[9]: 11360.291161
+valocity[0][0]: -0.575300
+valocity[1][0]: -0.406300
+valocity[2][0]: 2.456600
+valocity[3][0]: 0.549100
+valocity[4][0]: -3.634600
+valocity[5][0]: 2.402800
+valocity[6][0]: -4.217900
+valocity[7][0]: -4.897800
+valocity[8][0]: -3.172900
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 9.585700035095215
+population[1][0]: 5.649400234222412
+population[2][0]: -29.771099090576172
+population[3][0]: -3.425499916076660
+population[4][0]: 46.069999694824219
+population[5][0]: -26.116199493408203
+population[6][0]: 51.568599700927734
+population[7][0]: 47.993900299072266
+population[8][0]: 29.207899093627930
+population[9][0]: -99.984397888183594
+fitness[0]: 285.768992417569279
+fitness[1]: 1149.534204691141213
+fitness[2]: 1574.588293931261433
+fitness[3]: 2084.833292126307242
+fitness[4]: 2746.580188554085908
+fitness[5]: 3057.672644507751102
+fitness[6]: 3335.414106286145397
+fitness[7]: 4298.733912409355980
+fitness[8]: 4356.107543812675431
+fitness[9]: 11360.291160762426443
+it: 6,  sum_m: 7.165400552896748
+
+M[0]: 0.139560
+M[1]: 0.128674
+M[2]: 0.123318
+M[3]: 0.116888
+M[4]: 0.108549
+M[5]: 0.104628
+M[6]: 0.101128
+M[7]: 0.088989
+M[8]: 0.088266
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 47.518319
+M[j]: 0.128674
+i 0
+population[i][0] 9.585700
+population[j][0] 5.649400
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 56.229093
+M[j]: 0.123318
+i 0
+population[i][0] 9.585700
+population[j][0] -29.771099
+Forces[i][0] -0.005330
+
+i: 0; j: 3
+R: 34.180405
+M[j]: 0.116888
+i 0
+population[i][0] 9.585700
+population[j][0] -3.425500
+Forces[i][0] -0.048487
+
+i: 0; j: 4
+R: 53.337145
+M[j]: 0.108549
+i 0
+population[i][0] 9.585700
+population[j][0] 46.070000
+Forces[i][0] -0.070734
+
+i: 0; j: 5
+R: 72.121183
+M[j]: 0.104628
+i 0
+population[i][0] 9.585700
+population[j][0] -26.116199
+Forces[i][0] -0.033609
+
+i: 1; j: 0
+R: 47.518319
+M[j]: 0.139560
+i 1
+population[i][0] 5.649400
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 36.144056
+M[j]: 0.123318
+i 1
+population[i][0] 5.649400
+population[j][0] -29.771099
+Forces[i][0] 0.005780
+
+i: 1; j: 3
+R: 79.481867
+M[j]: 0.116888
+i 1
+population[i][0] 5.649400
+population[j][0] -3.425500
+Forces[i][0] -0.054644
+
+i: 1; j: 4
+R: 41.294010
+M[j]: 0.108549
+i 1
+population[i][0] 5.649400
+population[j][0] 46.070000
+Forces[i][0] -0.061317
+
+i: 1; j: 5
+R: 35.262360
+M[j]: 0.104628
+i 1
+population[i][0] 5.649400
+population[j][0] -26.116199
+Forces[i][0] -0.008191
+
+i: 2; j: 0
+R: 56.229093
+M[j]: 0.139560
+i 2
+population[i][0] -29.771099
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 36.144056
+M[j]: 0.128674
+i 2
+population[i][0] -29.771099
+population[j][0] 5.649400
+Forces[i][0] 0.048841
+
+i: 2; j: 3
+R: 76.449185
+M[j]: 0.116888
+i 2
+population[i][0] -29.771099
+population[j][0] -3.425500
+Forces[i][0] 0.111891
+
+i: 2; j: 4
+R: 75.851436
+M[j]: 0.108549
+i 2
+population[i][0] -29.771099
+population[j][0] 46.070000
+Forces[i][0] 0.132031
+
+i: 2; j: 5
+R: 22.800248
+M[j]: 0.104628
+i 2
+population[i][0] -29.771099
+population[j][0] -26.116199
+Forces[i][0] 0.186298
+
+i: 3; j: 0
+R: 34.180405
+M[j]: 0.139560
+i 3
+population[i][0] -3.425500
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 79.481867
+M[j]: 0.128674
+i 3
+population[i][0] -3.425500
+population[j][0] 5.649400
+Forces[i][0] 0.026563
+
+i: 3; j: 2
+R: 76.449185
+M[j]: 0.123318
+i 3
+population[i][0] -3.425500
+population[j][0] -29.771099
+Forces[i][0] 0.033908
+
+i: 3; j: 4
+R: 86.151197
+M[j]: 0.108549
+i 3
+population[i][0] -3.425500
+population[j][0] 46.070000
+Forces[i][0] 0.012660
+
+i: 3; j: 5
+R: 96.963922
+M[j]: 0.104628
+i 3
+population[i][0] -3.425500
+population[j][0] -26.116199
+Forces[i][0] 0.043841
+
+i: 4; j: 0
+R: 53.337145
+M[j]: 0.139560
+i 4
+population[i][0] 46.070000
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 41.294010
+M[j]: 0.128674
+i 4
+population[i][0] 46.070000
+population[j][0] 5.649400
+Forces[i][0] -0.047732
+
+i: 4; j: 2
+R: 75.851436
+M[j]: 0.123318
+i 4
+population[i][0] 46.070000
+population[j][0] -29.771099
+Forces[i][0] -0.110708
+
+i: 4; j: 3
+R: 86.151197
+M[j]: 0.116888
+i 4
+population[i][0] 46.070000
+population[j][0] -3.425500
+Forces[i][0] -0.172359
+
+i: 4; j: 5
+R: 75.995203
+M[j]: 0.104628
+i 4
+population[i][0] 46.070000
+population[j][0] -26.116199
+Forces[i][0] -0.205936
+
+i: 5; j: 0
+R: 72.121183
+M[j]: 0.139560
+i 5
+population[i][0] -26.116199
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 35.262360
+M[j]: 0.128674
+i 5
+population[i][0] -26.116199
+population[j][0] 5.649400
+Forces[i][0] 0.034543
+
+i: 5; j: 2
+R: 22.800248
+M[j]: 0.123318
+i 5
+population[i][0] -26.116199
+population[j][0] -29.771099
+Forces[i][0] 0.092500
+
+i: 5; j: 3
+R: 96.963922
+M[j]: 0.116888
+i 5
+population[i][0] -26.116199
+population[j][0] -3.425500
+Forces[i][0] 0.082616
+
+i: 5; j: 4
+R: 75.995203
+M[j]: 0.108549
+i 5
+population[i][0] -26.116199
+population[j][0] 46.070000
+Forces[i][0] 0.096293
+
+i: 6; j: 0
+R: 43.685607
+M[j]: 0.139560
+i 6
+population[i][0] 51.568600
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 75.105306
+M[j]: 0.128674
+i 6
+population[i][0] 51.568600
+population[j][0] 5.649400
+Forces[i][0] -0.067060
+
+i: 6; j: 2
+R: 96.668606
+M[j]: 0.123318
+i 6
+population[i][0] 51.568600
+population[j][0] -29.771099
+Forces[i][0] -0.106396
+
+i: 6; j: 3
+R: 58.358824
+M[j]: 0.116888
+i 6
+population[i][0] 51.568600
+population[j][0] -3.425500
+Forces[i][0] -0.158277
+
+i: 6; j: 4
+R: 51.280151
+M[j]: 0.108549
+i 6
+population[i][0] 51.568600
+population[j][0] 46.070000
+Forces[i][0] -0.213352
+
+i: 6; j: 5
+R: 107.802178
+M[j]: 0.104628
+i 6
+population[i][0] 51.568600
+population[j][0] -26.116199
+Forces[i][0] -0.219171
+
+i: 7; j: 0
+R: 70.059637
+M[j]: 0.139560
+i 7
+population[i][0] 47.993900
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 43.810430
+M[j]: 0.128674
+i 7
+population[i][0] 47.993900
+population[j][0] 5.649400
+Forces[i][0] -0.038255
+
+i: 7; j: 2
+R: 79.920030
+M[j]: 0.123318
+i 7
+population[i][0] 47.993900
+population[j][0] -29.771099
+Forces[i][0] -0.100439
+
+i: 7; j: 3
+R: 103.827013
+M[j]: 0.116888
+i 7
+population[i][0] 47.993900
+population[j][0] -3.425500
+Forces[i][0] -0.160436
+
+i: 7; j: 4
+R: 19.780084
+M[j]: 0.108549
+i 7
+population[i][0] 47.993900
+population[j][0] 46.070000
+Forces[i][0] -0.189379
+
+i: 7; j: 5
+R: 74.221846
+M[j]: 0.104628
+i 7
+population[i][0] 47.993900
+population[j][0] -26.116199
+Forces[i][0] -0.194658
+
+i: 8; j: 0
+R: 75.697828
+M[j]: 0.139560
+i 8
+population[i][0] 29.207899
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 34.904776
+M[j]: 0.128674
+i 8
+population[i][0] 29.207899
+population[j][0] 5.649400
+Forces[i][0] -0.018088
+
+i: 8; j: 2
+R: 67.559680
+M[j]: 0.123318
+i 8
+population[i][0] 29.207899
+population[j][0] -29.771099
+Forces[i][0] -0.061512
+
+i: 8; j: 3
+R: 109.684517
+M[j]: 0.116888
+i 8
+population[i][0] 29.207899
+population[j][0] -3.425500
+Forces[i][0] -0.115339
+
+i: 8; j: 4
+R: 38.134102
+M[j]: 0.108549
+i 8
+population[i][0] 29.207899
+population[j][0] 46.070000
+Forces[i][0] -0.132728
+
+i: 8; j: 5
+R: 56.301623
+M[j]: 0.104628
+i 8
+population[i][0] 29.207899
+population[j][0] -26.116199
+Forces[i][0] -0.108729
+
+i: 9; j: 0
+R: 120.793984
+M[j]: 0.139560
+i 9
+population[i][0] -99.984398
+population[j][0] 9.585700
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 105.691554
+M[j]: 0.128674
+i 9
+population[i][0] -99.984398
+population[j][0] 5.649400
+Forces[i][0] 0.063296
+
+i: 9; j: 2
+R: 71.022340
+M[j]: 0.123318
+i 9
+population[i][0] -99.984398
+population[j][0] -29.771099
+Forces[i][0] 0.127598
+
+i: 9; j: 3
+R: 126.974656
+M[j]: 0.116888
+i 9
+population[i][0] -99.984398
+population[j][0] -3.425500
+Forces[i][0] 0.188555
+
+i: 9; j: 4
+R: 146.541773
+M[j]: 0.108549
+i 9
+population[i][0] -99.984398
+population[j][0] 46.070000
+Forces[i][0] 0.232999
+
+i: 9; j: 5
+R: 74.807260
+M[j]: 0.104628
+i 9
+population[i][0] -99.984398
+population[j][0] -26.116199
+Forces[i][0] 0.287093
+Forces[0][0]: -0.059506
+Forces[1][0]: -0.055317
+Forces[2][0]: 0.194684
+Forces[3][0]: 0.031599
+Forces[4][0]: -0.255628
+Forces[5][0]: 0.147847
+Forces[6][0]: -0.256870
+Forces[7][0]: -0.246894
+Forces[8][0]: -0.160135
+Forces[9][0]: 0.338750
+
+accelerations[0][0]: -0.426384
+accelerations[1][0]: -0.429901
+accelerations[2][0]: 1.578718
+accelerations[3][0]: 0.270337
+accelerations[4][0]: -2.354960
+accelerations[5][0]: 1.413065
+accelerations[6][0]: -2.540041
+accelerations[7][0]: -2.774440
+accelerations[8][0]: -1.814234
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: -0.714034
+velocity[1][0]: -0.633051
+velocity[2][0]: 2.807018
+velocity[3][0]: 0.544887
+velocity[4][0]: -4.172260
+velocity[5][0]: 2.614465
+velocity[6][0]: -4.648991
+velocity[7][0]: -5.223340
+velocity[8][0]: -3.400684
+velocity[9][0]: 0.000000
+
+population[0][0]: 8.871666
+population[1][0]: 5.016349
+population[2][0]: -26.964081
+population[3][0]: -2.880613
+population[4][0]: 41.897740
+population[5][0]: -23.501734
+population[6][0]: 46.919609
+population[7][0]: 42.770560
+population[8][0]: 25.807215
+population[9][0]: -99.984398
+
+
+
+Iteration: 7
+fitness[0]: 231.998696
+fitness[1]: 1013.561464
+fitness[2]: 1365.483982
+fitness[3]: 1721.115403
+fitness[4]: 2314.711525
+fitness[5]: 2544.131120
+fitness[6]: 2735.229982
+fitness[7]: 3464.224352
+fitness[8]: 3504.908431
+fitness[9]: 11360.291161
+
+
+population[0][0]: 8.871700
+population[1][0]: 5.016300
+population[2][0]: -26.964100
+population[3][0]: -2.880600
+population[4][0]: 41.897701
+population[5][0]: -23.501699
+population[6][0]: 46.919601
+population[7][0]: 42.770599
+population[8][0]: 25.807199
+population[9][0]: -99.984398
+fitness[0]: 231.998696
+fitness[1]: 1013.561464
+fitness[2]: 1365.483982
+fitness[3]: 1721.115403
+fitness[4]: 2314.711525
+fitness[5]: 2544.131120
+fitness[6]: 2735.229982
+fitness[7]: 3464.224352
+fitness[8]: 3504.908431
+fitness[9]: 11360.291161
+valocity[0][0]: -0.714000
+valocity[1][0]: -0.633100
+valocity[2][0]: 2.807000
+valocity[3][0]: 0.544900
+valocity[4][0]: -4.172300
+valocity[5][0]: 2.614500
+valocity[6][0]: -4.649000
+valocity[7][0]: -5.223300
+valocity[8][0]: -3.400700
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 8.871700286865234
+population[1][0]: 5.016300201416016
+population[2][0]: -26.964099884033203
+population[3][0]: -2.880599975585938
+population[4][0]: 41.897701263427734
+population[5][0]: -23.501699447631836
+population[6][0]: 46.919601440429688
+population[7][0]: 42.770599365234375
+population[8][0]: 25.807199478149414
+population[9][0]: -99.984397888183594
+fitness[0]: 231.998695784277515
+fitness[1]: 1013.561464192724088
+fitness[2]: 1365.483981580258842
+fitness[3]: 1721.115402617724612
+fitness[4]: 2314.711525151698879
+fitness[5]: 2544.131119939182099
+fitness[6]: 2735.229982490654947
+fitness[7]: 3464.224352401681244
+fitness[8]: 3504.908431017760449
+fitness[9]: 11360.291160762426443
+it: 7,  sum_m: 7.489671551497055
+
+M[0]: 0.133517
+M[1]: 0.124140
+M[2]: 0.119918
+M[3]: 0.115651
+M[4]: 0.108529
+M[5]: 0.105776
+M[6]: 0.103483
+M[7]: 0.094737
+M[8]: 0.094249
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 43.989178
+M[j]: 0.124140
+i 0
+population[i][0] 8.871700
+population[j][0] 5.016300
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 51.976764
+M[j]: 0.119918
+i 0
+population[i][0] 8.871700
+population[j][0] -26.964100
+Forces[i][0] -0.005440
+
+i: 0; j: 3
+R: 31.295565
+M[j]: 0.115651
+i 0
+population[i][0] 8.871700
+population[j][0] -2.880600
+Forces[i][0] -0.046779
+
+i: 0; j: 4
+R: 48.876515
+M[j]: 0.108529
+i 0
+population[i][0] 8.871700
+population[j][0] 41.897701
+Forces[i][0] -0.068494
+
+i: 0; j: 5
+R: 65.561093
+M[j]: 0.105776
+i 0
+population[i][0] 8.871700
+population[j][0] -23.501699
+Forces[i][0] -0.031828
+
+i: 0; j: 6
+R: 39.529950
+M[j]: 0.103483
+i 0
+population[i][0] 8.871700
+population[j][0] 46.919601
+Forces[i][0] -0.057943
+
+i: 1; j: 0
+R: 43.989178
+M[j]: 0.133517
+i 1
+population[i][0] 5.016300
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 32.570495
+M[j]: 0.119918
+i 1
+population[i][0] 5.016300
+population[j][0] -26.964100
+Forces[i][0] 0.005851
+
+i: 1; j: 3
+R: 73.251906
+M[j]: 0.115651
+i 1
+population[i][0] 5.016300
+population[j][0] -2.880600
+Forces[i][0] -0.053022
+
+i: 1; j: 4
+R: 37.694993
+M[j]: 0.108529
+i 1
+population[i][0] 5.016300
+population[j][0] 41.897701
+Forces[i][0] -0.059255
+
+i: 1; j: 5
+R: 31.420909
+M[j]: 0.105776
+i 1
+population[i][0] 5.016300
+population[j][0] -23.501699
+Forces[i][0] -0.006162
+
+i: 1; j: 6
+R: 68.780601
+M[j]: 0.103483
+i 1
+population[i][0] 5.016300
+population[j][0] 46.919601
+Forces[i][0] -0.054164
+
+i: 2; j: 0
+R: 51.976764
+M[j]: 0.133517
+i 2
+population[i][0] -26.964100
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 32.570495
+M[j]: 0.124140
+i 2
+population[i][0] -26.964100
+population[j][0] 5.016300
+Forces[i][0] 0.046027
+
+i: 2; j: 3
+R: 70.870756
+M[j]: 0.115651
+i 2
+population[i][0] -26.964100
+population[j][0] -2.880600
+Forces[i][0] 0.106973
+
+i: 2; j: 4
+R: 68.880798
+M[j]: 0.108529
+i 2
+population[i][0] -26.964100
+population[j][0] 41.897701
+Forces[i][0] 0.126623
+
+i: 2; j: 5
+R: 19.669736
+M[j]: 0.105776
+i 2
+population[i][0] -26.964100
+population[j][0] -23.501699
+Forces[i][0] 0.180873
+
+i: 2; j: 6
+R: 88.309264
+M[j]: 0.103483
+i 2
+population[i][0] -26.964100
+population[j][0] 46.919601
+Forces[i][0] 0.190182
+
+i: 3; j: 0
+R: 31.295565
+M[j]: 0.133517
+i 3
+population[i][0] -2.880600
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 73.251906
+M[j]: 0.124140
+i 3
+population[i][0] -2.880600
+population[j][0] 5.016300
+Forces[i][0] 0.025070
+
+i: 3; j: 2
+R: 70.870756
+M[j]: 0.119918
+i 3
+population[i][0] -2.880600
+population[j][0] -26.964100
+Forces[i][0] 0.031761
+
+i: 3; j: 4
+R: 78.960279
+M[j]: 0.108529
+i 3
+population[i][0] -2.880600
+population[j][0] 41.897701
+Forces[i][0] 0.011386
+
+i: 3; j: 5
+R: 88.453082
+M[j]: 0.105776
+i 3
+population[i][0] -2.880600
+population[j][0] -23.501699
+Forces[i][0] 0.042159
+
+i: 3; j: 6
+R: 53.050069
+M[j]: 0.103483
+i 3
+population[i][0] -2.880600
+population[j][0] 46.919601
+Forces[i][0] 0.029829
+
+i: 4; j: 0
+R: 48.876515
+M[j]: 0.133517
+i 4
+population[i][0] 41.897701
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 37.694993
+M[j]: 0.124140
+i 4
+population[i][0] 41.897701
+population[j][0] 5.016300
+Forces[i][0] -0.045109
+
+i: 4; j: 2
+R: 68.880798
+M[j]: 0.119918
+i 4
+population[i][0] 41.897701
+population[j][0] -26.964100
+Forces[i][0] -0.105839
+
+i: 4; j: 3
+R: 78.960279
+M[j]: 0.115651
+i 4
+population[i][0] 41.897701
+population[j][0] -2.880600
+Forces[i][0] -0.165782
+
+i: 4; j: 5
+R: 68.682242
+M[j]: 0.105776
+i 4
+population[i][0] 41.897701
+population[j][0] -23.501699
+Forces[i][0] -0.198574
+
+i: 4; j: 6
+R: 47.022037
+M[j]: 0.103483
+i 4
+population[i][0] 41.897701
+population[j][0] 46.919601
+Forces[i][0] -0.248935
+
+i: 5; j: 0
+R: 65.561093
+M[j]: 0.133517
+i 5
+population[i][0] -23.501699
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 31.420909
+M[j]: 0.124140
+i 5
+population[i][0] -23.501699
+population[j][0] 5.016300
+Forces[i][0] 0.032965
+
+i: 5; j: 2
+R: 19.669736
+M[j]: 0.119918
+i 5
+population[i][0] -23.501699
+population[j][0] -26.964100
+Forces[i][0] 0.089300
+
+i: 5; j: 3
+R: 88.453082
+M[j]: 0.115651
+i 5
+population[i][0] -23.501699
+population[j][0] -2.880600
+Forces[i][0] 0.078746
+
+i: 5; j: 4
+R: 68.682242
+M[j]: 0.108529
+i 5
+population[i][0] -23.501699
+population[j][0] 41.897701
+Forces[i][0] 0.092227
+
+i: 5; j: 6
+R: 97.708545
+M[j]: 0.103483
+i 5
+population[i][0] -23.501699
+population[j][0] 46.919601
+Forces[i][0] 0.143897
+
+i: 6; j: 0
+R: 39.529950
+M[j]: 0.133517
+i 6
+population[i][0] 46.919601
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 68.780601
+M[j]: 0.124140
+i 6
+population[i][0] 46.919601
+population[j][0] 5.016300
+Forces[i][0] -0.064256
+
+i: 6; j: 2
+R: 88.309264
+M[j]: 0.119918
+i 6
+population[i][0] 46.919601
+population[j][0] -26.964100
+Forces[i][0] -0.102071
+
+i: 6; j: 3
+R: 53.050069
+M[j]: 0.115651
+i 6
+population[i][0] 46.919601
+population[j][0] -2.880600
+Forces[i][0] -0.152235
+
+i: 6; j: 4
+R: 47.022037
+M[j]: 0.108529
+i 6
+population[i][0] 46.919601
+population[j][0] 41.897701
+Forces[i][0] -0.206518
+
+i: 6; j: 5
+R: 97.708545
+M[j]: 0.105776
+i 6
+population[i][0] 46.919601
+population[j][0] -23.501699
+Forces[i][0] -0.212313
+
+i: 7; j: 0
+R: 62.757943
+M[j]: 0.133517
+i 7
+population[i][0] 42.770599
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 38.811067
+M[j]: 0.124140
+i 7
+population[i][0] 42.770599
+population[j][0] 5.016300
+Forces[i][0] -0.036060
+
+i: 7; j: 2
+R: 71.364999
+M[j]: 0.119918
+i 7
+population[i][0] 42.770599
+population[j][0] -26.964100
+Forces[i][0] -0.096440
+
+i: 7; j: 3
+R: 93.693973
+M[j]: 0.115651
+i 7
+population[i][0] 42.770599
+population[j][0] -2.880600
+Forces[i][0] -0.155029
+
+i: 7; j: 4
+R: 16.807181
+M[j]: 0.108529
+i 7
+population[i][0] 42.770599
+population[j][0] 41.897701
+Forces[i][0] -0.183204
+
+i: 7; j: 5
+R: 66.404981
+M[j]: 0.105776
+i 7
+population[i][0] 42.770599
+population[j][0] -23.501699
+Forces[i][0] -0.186022
+
+i: 7; j: 6
+R: 63.672920
+M[j]: 0.103483
+i 7
+population[i][0] 42.770599
+population[j][0] 46.919601
+Forces[i][0] -0.238804
+
+i: 8; j: 0
+R: 67.811222
+M[j]: 0.133517
+i 8
+population[i][0] 25.807199
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 30.155534
+M[j]: 0.124140
+i 8
+population[i][0] 25.807199
+population[j][0] 5.016300
+Forces[i][0] -0.016673
+
+i: 8; j: 2
+R: 59.746222
+M[j]: 0.119918
+i 8
+population[i][0] 25.807199
+population[j][0] -26.964100
+Forces[i][0] -0.059467
+
+i: 8; j: 3
+R: 98.918781
+M[j]: 0.115651
+i 8
+population[i][0] 25.807199
+population[j][0] -2.880600
+Forces[i][0] -0.112426
+
+i: 8; j: 4
+R: 33.718744
+M[j]: 0.108529
+i 8
+population[i][0] 25.807199
+population[j][0] 41.897701
+Forces[i][0] -0.129196
+
+i: 8; j: 5
+R: 50.062155
+M[j]: 0.105776
+i 8
+population[i][0] 25.807199
+population[j][0] -23.501699
+Forces[i][0] -0.103302
+
+i: 8; j: 6
+R: 79.248986
+M[j]: 0.103483
+i 8
+population[i][0] 25.807199
+population[j][0] 46.919601
+Forces[i][0] -0.155394
+
+i: 9; j: 0
+R: 119.501809
+M[j]: 0.133517
+i 9
+population[i][0] -99.984398
+population[j][0] 8.871700
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 105.143894
+M[j]: 0.124140
+i 9
+population[i][0] -99.984398
+population[j][0] 5.016300
+Forces[i][0] 0.060811
+
+i: 9; j: 2
+R: 73.944972
+M[j]: 0.119918
+i 9
+population[i][0] -99.984398
+population[j][0] -26.964100
+Forces[i][0] 0.122797
+
+i: 9; j: 3
+R: 124.746534
+M[j]: 0.115651
+i 9
+population[i][0] -99.984398
+population[j][0] -2.880600
+Forces[i][0] 0.182006
+
+i: 9; j: 4
+R: 142.501774
+M[j]: 0.108529
+i 9
+population[i][0] -99.984398
+population[j][0] 41.897701
+Forces[i][0] 0.227018
+
+i: 9; j: 5
+R: 76.869846
+M[j]: 0.105776
+i 9
+population[i][0] -99.984398
+population[j][0] -23.501699
+Forces[i][0] 0.281046
+
+i: 9; j: 6
+R: 158.695173
+M[j]: 0.103483
+i 9
+population[i][0] -99.984398
+population[j][0] 46.919601
+Forces[i][0] 0.333668
+Forces[0][0]: -0.008141
+Forces[1][0]: -0.022641
+Forces[2][0]: 0.233472
+Forces[3][0]: 0.078401
+Forces[4][0]: -0.243409
+Forces[5][0]: 0.181189
+Forces[6][0]: -0.250431
+Forces[7][0]: -0.235433
+Forces[8][0]: -0.141610
+Forces[9][0]: 0.381565
+
+accelerations[0][0]: -0.060976
+accelerations[1][0]: -0.182386
+accelerations[2][0]: 1.946935
+accelerations[3][0]: 0.677913
+accelerations[4][0]: -2.242801
+accelerations[5][0]: 1.712947
+accelerations[6][0]: -2.420014
+accelerations[7][0]: -2.485120
+accelerations[8][0]: -1.502507
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: -0.417976
+velocity[1][0]: -0.498936
+velocity[2][0]: 3.350435
+velocity[3][0]: 0.950363
+velocity[4][0]: -4.328951
+velocity[5][0]: 3.020197
+velocity[6][0]: -4.744514
+velocity[7][0]: -5.096770
+velocity[8][0]: -3.202857
+velocity[9][0]: 0.000000
+
+population[0][0]: 8.453725
+population[1][0]: 4.517364
+population[2][0]: -23.613665
+population[3][0]: -1.930237
+population[4][0]: 37.568750
+population[5][0]: -20.481502
+population[6][0]: 42.175087
+population[7][0]: 37.673829
+population[8][0]: 22.604342
+population[9][0]: -99.984398
+
+
+
+Iteration: 8
+fitness[0]: 185.604363
+fitness[1]: 867.828131
+fitness[2]: 1143.808412
+fitness[3]: 1355.912903
+fitness[4]: 1890.867227
+fitness[5]: 2035.025298
+fitness[6]: 2178.882906
+fitness[7]: 2702.545382
+fitness[8]: 2733.925919
+fitness[9]: 11360.291161
+
+
+population[0][0]: 8.453700
+population[1][0]: 4.517400
+population[2][0]: -23.613701
+population[3][0]: -1.930200
+population[4][0]: 37.568802
+population[5][0]: -20.481501
+population[6][0]: 42.175098
+population[7][0]: 37.673801
+population[8][0]: 22.604300
+population[9][0]: -99.984398
+fitness[0]: 185.604363
+fitness[1]: 867.828131
+fitness[2]: 1143.808412
+fitness[3]: 1355.912903
+fitness[4]: 1890.867227
+fitness[5]: 2035.025298
+fitness[6]: 2178.882906
+fitness[7]: 2702.545382
+fitness[8]: 2733.925919
+fitness[9]: 11360.291161
+valocity[0][0]: -0.418000
+valocity[1][0]: -0.498900
+valocity[2][0]: 3.350400
+valocity[3][0]: 0.950400
+valocity[4][0]: -4.329000
+valocity[5][0]: 3.020200
+valocity[6][0]: -4.744500
+valocity[7][0]: -5.096800
+valocity[8][0]: -3.202900
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 8.453700065612793
+population[1][0]: 4.517399787902832
+population[2][0]: -23.613700866699219
+population[3][0]: -1.930199980735779
+population[4][0]: 37.568801879882812
+population[5][0]: -20.481500625610352
+population[6][0]: 42.175098419189453
+population[7][0]: 37.673801422119141
+population[8][0]: 22.604299545288086
+population[9][0]: -99.984397888183594
+fitness[0]: 185.604362855790896
+fitness[1]: 867.828130638147741
+fitness[2]: 1143.808411705689650
+fitness[3]: 1355.912903093751083
+fitness[4]: 1890.867227429349441
+fitness[5]: 2035.025297778705863
+fitness[6]: 2178.882906297123554
+fitness[7]: 2702.545381968171569
+fitness[8]: 2733.925919485660415
+fitness[9]: 11360.291160762426443
+it: 8,  sum_m: 7.798717000456336
+
+M[0]: 0.128226
+M[1]: 0.120398
+M[2]: 0.117231
+M[3]: 0.114797
+M[4]: 0.108659
+M[5]: 0.107005
+M[6]: 0.105354
+M[7]: 0.099345
+M[8]: 0.098985
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 39.988310
+M[j]: 0.120398
+i 0
+population[i][0] 8.453700
+population[j][0] 4.517400
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 47.391910
+M[j]: 0.117231
+i 0
+population[i][0] 8.453700
+population[j][0] -23.613701
+Forces[i][0] -0.005926
+
+i: 0; j: 3
+R: 28.079087
+M[j]: 0.114797
+i 0
+population[i][0] 8.453700
+population[j][0] -1.930200
+Forces[i][0] -0.045588
+
+i: 0; j: 4
+R: 43.693771
+M[j]: 0.108659
+i 0
+population[i][0] 8.453700
+population[j][0] 37.568802
+Forces[i][0] -0.066814
+
+i: 0; j: 5
+R: 58.529868
+M[j]: 0.107005
+i 0
+population[i][0] 8.453700
+population[j][0] -20.481501
+Forces[i][0] -0.030612
+
+i: 0; j: 6
+R: 34.985641
+M[j]: 0.105354
+i 0
+population[i][0] 8.453700
+population[j][0] 42.175098
+Forces[i][0] -0.057062
+
+i: 0; j: 7
+R: 54.923618
+M[j]: 0.099345
+i 0
+population[i][0] 8.453700
+population[j][0] 37.673801
+Forces[i][0] -0.006288
+
+i: 1; j: 0
+R: 39.988310
+M[j]: 0.128226
+i 1
+population[i][0] 4.517400
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 28.554475
+M[j]: 0.117231
+i 1
+population[i][0] 4.517400
+population[j][0] -23.613701
+Forces[i][0] 0.006311
+
+i: 1; j: 3
+R: 66.197344
+M[j]: 0.114797
+i 1
+population[i][0] 4.517400
+population[j][0] -1.930200
+Forces[i][0] -0.051435
+
+i: 1; j: 4
+R: 33.829549
+M[j]: 0.108659
+i 1
+population[i][0] 4.517400
+population[j][0] 37.568802
+Forces[i][0] -0.057026
+
+i: 1; j: 5
+R: 27.345609
+M[j]: 0.107005
+i 1
+population[i][0] 4.517400
+population[j][0] -20.481501
+Forces[i][0] -0.003946
+
+i: 1; j: 6
+R: 61.889394
+M[j]: 0.105354
+i 1
+population[i][0] 4.517400
+population[j][0] 42.175098
+Forces[i][0] -0.052857
+
+i: 1; j: 7
+R: 33.828891
+M[j]: 0.099345
+i 1
+population[i][0] 4.517400
+population[j][0] 37.673801
+Forces[i][0] -0.020805
+
+i: 2; j: 0
+R: 47.391910
+M[j]: 0.128226
+i 2
+population[i][0] -23.613701
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 28.554475
+M[j]: 0.120398
+i 2
+population[i][0] -23.613701
+population[j][0] 4.517400
+Forces[i][0] 0.043382
+
+i: 2; j: 3
+R: 64.723918
+M[j]: 0.114797
+i 2
+population[i][0] -23.613701
+population[j][0] -1.930200
+Forces[i][0] 0.102688
+
+i: 2; j: 4
+R: 61.226292
+M[j]: 0.108659
+i 2
+population[i][0] -23.613701
+population[j][0] 37.568802
+Forces[i][0] 0.121917
+
+i: 2; j: 5
+R: 16.286135
+M[j]: 0.107005
+i 2
+population[i][0] -23.613701
+population[j][0] -20.481501
+Forces[i][0] 0.176208
+
+i: 2; j: 6
+R: 79.266323
+M[j]: 0.105354
+i 2
+population[i][0] -23.613701
+population[j][0] 42.175098
+Forces[i][0] 0.186498
+
+i: 2; j: 7
+R: 62.377592
+M[j]: 0.099345
+i 2
+population[i][0] -23.613701
+population[j][0] 37.673801
+Forces[i][0] 0.230218
+
+i: 3; j: 0
+R: 28.079087
+M[j]: 0.128226
+i 3
+population[i][0] -1.930200
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 66.197344
+M[j]: 0.120398
+i 3
+population[i][0] -1.930200
+population[j][0] 4.517400
+Forces[i][0] 0.023710
+
+i: 3; j: 2
+R: 64.723918
+M[j]: 0.117231
+i 3
+population[i][0] -1.930200
+population[j][0] -23.613701
+Forces[i][0] 0.029573
+
+i: 3; j: 4
+R: 70.725978
+M[j]: 0.108659
+i 3
+population[i][0] -1.930200
+population[j][0] 37.568802
+Forces[i][0] 0.009936
+
+i: 3; j: 5
+R: 79.169974
+M[j]: 0.107005
+i 3
+population[i][0] -1.930200
+population[j][0] -20.481501
+Forces[i][0] 0.040278
+
+i: 3; j: 6
+R: 47.185378
+M[j]: 0.105354
+i 3
+population[i][0] -1.930200
+population[j][0] 42.175098
+Forces[i][0] 0.027741
+
+i: 3; j: 7
+R: 82.694675
+M[j]: 0.099345
+i 3
+population[i][0] -1.930200
+population[j][0] 37.673801
+Forces[i][0] 0.076979
+
+i: 4; j: 0
+R: 43.693771
+M[j]: 0.128226
+i 4
+population[i][0] 37.568802
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 33.829549
+M[j]: 0.120398
+i 4
+population[i][0] 37.568802
+population[j][0] 4.517400
+Forces[i][0] -0.042721
+
+i: 4; j: 2
+R: 61.226292
+M[j]: 0.117231
+i 4
+population[i][0] 37.568802
+population[j][0] -23.613701
+Forces[i][0] -0.101536
+
+i: 4; j: 3
+R: 70.725978
+M[j]: 0.114797
+i 4
+population[i][0] 37.568802
+population[j][0] -1.930200
+Forces[i][0] -0.160109
+
+i: 4; j: 5
+R: 60.865662
+M[j]: 0.107005
+i 4
+population[i][0] 37.568802
+population[j][0] -20.481501
+Forces[i][0] -0.192165
+
+i: 4; j: 6
+R: 42.152437
+M[j]: 0.105354
+i 4
+population[i][0] 37.568802
+population[j][0] 42.175098
+Forces[i][0] -0.243193
+
+i: 4; j: 7
+R: 13.926196
+M[j]: 0.099345
+i 4
+population[i][0] 37.568802
+population[j][0] 37.673801
+Forces[i][0] -0.237436
+
+i: 5; j: 0
+R: 58.529868
+M[j]: 0.128226
+i 5
+population[i][0] -20.481501
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 27.345609
+M[j]: 0.120398
+i 5
+population[i][0] -20.481501
+population[j][0] 4.517400
+Forces[i][0] 0.031695
+
+i: 5; j: 2
+R: 16.286135
+M[j]: 0.117231
+i 5
+population[i][0] -20.481501
+population[j][0] -23.613701
+Forces[i][0] 0.086728
+
+i: 5; j: 3
+R: 79.169974
+M[j]: 0.114797
+i 5
+population[i][0] -20.481501
+population[j][0] -1.930200
+Forces[i][0] 0.075455
+
+i: 5; j: 4
+R: 60.865662
+M[j]: 0.108659
+i 5
+population[i][0] -20.481501
+population[j][0] 37.568802
+Forces[i][0] 0.088905
+
+i: 5; j: 6
+R: 86.888228
+M[j]: 0.105354
+i 5
+population[i][0] -20.481501
+population[j][0] 42.175098
+Forces[i][0] 0.140721
+
+i: 5; j: 7
+R: 58.319372
+M[j]: 0.099345
+i 5
+population[i][0] -20.481501
+population[j][0] 37.673801
+Forces[i][0] 0.178708
+
+i: 6; j: 0
+R: 34.985641
+M[j]: 0.128226
+i 6
+population[i][0] 42.175098
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 61.889394
+M[j]: 0.120398
+i 6
+population[i][0] 42.175098
+population[j][0] 4.517400
+Forces[i][0] -0.061796
+
+i: 6; j: 2
+R: 79.266323
+M[j]: 0.117231
+i 6
+population[i][0] 42.175098
+population[j][0] -23.613701
+Forces[i][0] -0.098425
+
+i: 6; j: 3
+R: 47.185378
+M[j]: 0.114797
+i 6
+population[i][0] 42.175098
+population[j][0] -1.930200
+Forces[i][0] -0.147075
+
+i: 6; j: 4
+R: 42.152437
+M[j]: 0.108659
+i 6
+population[i][0] 42.175098
+population[j][0] 37.568802
+Forces[i][0] -0.200727
+
+i: 6; j: 5
+R: 86.888228
+M[j]: 0.107005
+i 6
+population[i][0] 42.175098
+population[j][0] -20.481501
+Forces[i][0] -0.206664
+
+i: 6; j: 7
+R: 56.006978
+M[j]: 0.099345
+i 6
+population[i][0] 42.175098
+population[j][0] 37.673801
+Forces[i][0] -0.245245
+
+i: 7; j: 0
+R: 54.923618
+M[j]: 0.128226
+i 7
+population[i][0] 37.673801
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 33.828891
+M[j]: 0.120398
+i 7
+population[i][0] 37.673801
+population[j][0] 4.517400
+Forces[i][0] -0.034109
+
+i: 7; j: 2
+R: 62.377592
+M[j]: 0.117231
+i 7
+population[i][0] 37.673801
+population[j][0] -23.613701
+Forces[i][0] -0.093111
+
+i: 7; j: 3
+R: 82.694675
+M[j]: 0.114797
+i 7
+population[i][0] 37.673801
+population[j][0] -1.930200
+Forces[i][0] -0.150702
+
+i: 7; j: 4
+R: 13.926196
+M[j]: 0.108659
+i 7
+population[i][0] 37.673801
+population[j][0] 37.568802
+Forces[i][0] -0.178192
+
+i: 7; j: 5
+R: 58.319372
+M[j]: 0.107005
+i 7
+population[i][0] 37.673801
+population[j][0] -20.481501
+Forces[i][0] -0.178601
+
+i: 7; j: 6
+R: 56.006978
+M[j]: 0.105354
+i 7
+population[i][0] 37.673801
+population[j][0] 42.175098
+Forces[i][0] -0.231953
+
+i: 8; j: 0
+R: 59.538052
+M[j]: 0.128226
+i 8
+population[i][0] 22.604300
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 25.544114
+M[j]: 0.120398
+i 8
+population[i][0] 22.604300
+population[j][0] 4.517400
+Forces[i][0] -0.015238
+
+i: 8; j: 2
+R: 51.596515
+M[j]: 0.117231
+i 8
+population[i][0] 22.604300
+population[j][0] -23.613701
+Forces[i][0] -0.057863
+
+i: 8; j: 3
+R: 87.433355
+M[j]: 0.114797
+i 8
+population[i][0] 22.604300
+population[j][0] -1.930200
+Forces[i][0] -0.110368
+
+i: 8; j: 4
+R: 29.353020
+M[j]: 0.108659
+i 8
+population[i][0] 22.604300
+population[j][0] 37.568802
+Forces[i][0] -0.126475
+
+i: 8; j: 5
+R: 43.643488
+M[j]: 0.107005
+i 8
+population[i][0] 22.604300
+population[j][0] -20.481501
+Forces[i][0] -0.098777
+
+i: 8; j: 6
+R: 69.945744
+M[j]: 0.105354
+i 8
+population[i][0] 22.604300
+population[j][0] 42.175098
+Forces[i][0] -0.151596
+
+i: 8; j: 7
+R: 18.851330
+M[j]: 0.099345
+i 8
+population[i][0] 22.604300
+population[j][0] 37.673801
+Forces[i][0] -0.136857
+
+i: 9; j: 0
+R: 118.428640
+M[j]: 0.128226
+i 9
+population[i][0] -99.984398
+population[j][0] 8.453700
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 104.793524
+M[j]: 0.120398
+i 9
+population[i][0] -99.984398
+population[j][0] 4.517400
+Forces[i][0] 0.058705
+
+i: 9; j: 2
+R: 77.421565
+M[j]: 0.117231
+i 9
+population[i][0] -99.984398
+population[j][0] -23.613701
+Forces[i][0] 0.118736
+
+i: 9; j: 3
+R: 122.661321
+M[j]: 0.114797
+i 9
+population[i][0] -99.984398
+population[j][0] -1.930200
+Forces[i][0] 0.176556
+
+i: 9; j: 4
+R: 138.371686
+M[j]: 0.108659
+i 9
+population[i][0] -99.984398
+population[j][0] 37.568802
+Forces[i][0] 0.222440
+
+i: 9; j: 5
+R: 79.570089
+M[j]: 0.107005
+i 9
+population[i][0] -99.984398
+population[j][0] -20.481501
+Forces[i][0] 0.276448
+
+i: 9; j: 6
+R: 153.134319
+M[j]: 0.105354
+i 9
+population[i][0] -99.984398
+population[j][0] 42.175098
+Forces[i][0] 0.329905
+
+i: 9; j: 7
+R: 137.662612
+M[j]: 0.099345
+i 9
+population[i][0] -99.984398
+population[j][0] 37.673801
+Forces[i][0] 0.378807
+Forces[0][0]: 0.020138
+Forces[1][0]: 0.027880
+Forces[2][0]: 0.279023
+Forces[3][0]: 0.100768
+Forces[4][0]: -0.237062
+Forces[5][0]: 0.228240
+Forces[6][0]: -0.249237
+Forces[7][0]: -0.227720
+Forces[8][0]: -0.097149
+Forces[9][0]: 0.428478
+
+accelerations[0][0]: 0.157052
+accelerations[1][0]: 0.231566
+accelerations[2][0]: 2.380108
+accelerations[3][0]: 0.877795
+accelerations[4][0]: -2.181709
+accelerations[5][0]: 2.132995
+accelerations[6][0]: -2.365713
+accelerations[7][0]: -2.292208
+accelerations[8][0]: -0.981452
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: -0.051948
+velocity[1][0]: -0.017884
+velocity[2][0]: 4.055307
+velocity[3][0]: 1.352995
+velocity[4][0]: -4.346209
+velocity[5][0]: 3.643095
+velocity[6][0]: -4.737963
+velocity[7][0]: -4.840608
+velocity[8][0]: -2.582902
+velocity[9][0]: 0.000000
+
+population[0][0]: 8.401752
+population[1][0]: 4.499516
+population[2][0]: -19.558393
+population[3][0]: -0.577205
+population[4][0]: 33.222593
+population[5][0]: -16.838406
+population[6][0]: 37.437135
+population[7][0]: 32.833194
+population[8][0]: 20.021398
+population[9][0]: -99.984398
+
+
+
+Iteration: 9
+fitness[0]: 143.689325
+fitness[1]: 731.907830
+fitness[2]: 919.217706
+fitness[3]: 996.025926
+fitness[4]: 1520.048008
+fitness[5]: 1553.698577
+fitness[6]: 1670.066906
+fitness[7]: 2051.309136
+fitness[8]: 2068.174180
+fitness[9]: 11360.291161
+
+
+population[0][0]: 8.401800
+population[1][0]: 4.499500
+population[2][0]: -19.558399
+population[3][0]: -0.577200
+population[4][0]: 33.222599
+population[5][0]: -16.838400
+population[6][0]: 37.437099
+population[7][0]: 32.833199
+population[8][0]: 20.021400
+population[9][0]: -99.984398
+fitness[0]: 143.689325
+fitness[1]: 731.907830
+fitness[2]: 919.217706
+fitness[3]: 996.025926
+fitness[4]: 1520.048008
+fitness[5]: 1553.698577
+fitness[6]: 1670.066906
+fitness[7]: 2051.309136
+fitness[8]: 2068.174180
+fitness[9]: 11360.291161
+valocity[0][0]: -0.051900
+valocity[1][0]: -0.017900
+valocity[2][0]: 4.055300
+valocity[3][0]: 1.353000
+valocity[4][0]: -4.346200
+valocity[5][0]: 3.643100
+valocity[6][0]: -4.738000
+valocity[7][0]: -4.840600
+valocity[8][0]: -2.582900
+valocity[9][0]: 0.000000
+
+SOORTT:
+population[0][0]: 8.401800155639648
+population[1][0]: 4.499499797821045
+population[2][0]: -19.558399200439453
+population[3][0]: -0.577199995517731
+population[4][0]: 33.222599029541016
+population[5][0]: -16.838399887084961
+population[6][0]: 37.437099456787109
+population[7][0]: 32.833198547363281
+population[8][0]: 20.021400451660156
+population[9][0]: -99.984397888183594
+fitness[0]: 143.689324512434723
+fitness[1]: 731.907829872943921
+fitness[2]: 919.217705775663489
+fitness[3]: 996.025925972494178
+fitness[4]: 1520.048007506808062
+fitness[5]: 1553.698577486433351
+fitness[6]: 1670.066905647068779
+fitness[7]: 2051.309135860476090
+fitness[8]: 2068.174180423025973
+fitness[9]: 11360.291160762426443
+it: 9,  sum_m: 8.076285864141061
+
+M[0]: 0.123819
+M[1]: 0.117326
+M[2]: 0.115258
+M[3]: 0.114410
+M[4]: 0.108626
+M[5]: 0.108254
+M[6]: 0.106970
+M[7]: 0.102761
+M[8]: 0.102575
+M[9]: 0.000000
+Update accelerations
+
+i: 0; j: 1
+R: 35.442282
+M[j]: 0.117326
+i 0
+population[i][0] 8.401800
+population[j][0] 4.499500
+Forces[i][0] 0.000000
+
+i: 0; j: 2
+R: 42.281159
+M[j]: 0.115258
+i 0
+population[i][0] 8.401800
+population[j][0] -19.558399
+Forces[i][0] -0.006459
+
+i: 0; j: 3
+R: 24.695005
+M[j]: 0.114410
+i 0
+population[i][0] 8.401800
+population[j][0] -0.577200
+Forces[i][0] -0.044569
+
+i: 0; j: 4
+R: 38.136222
+M[j]: 0.108626
+i 0
+population[i][0] 8.401800
+population[j][0] 33.222599
+Forces[i][0] -0.065368
+
+i: 0; j: 5
+R: 50.889617
+M[j]: 0.108254
+i 0
+population[i][0] 8.401800
+population[j][0] -16.838400
+Forces[i][0] -0.030019
+
+i: 0; j: 6
+R: 30.074387
+M[j]: 0.106970
+i 0
+population[i][0] 8.401800
+population[j][0] 37.437099
+Forces[i][0] -0.056865
+
+i: 0; j: 7
+R: 46.655643
+M[j]: 0.102761
+i 0
+population[i][0] 8.401800
+population[j][0] 32.833199
+Forces[i][0] -0.005228
+
+i: 0; j: 8
+R: 50.731218
+M[j]: 0.102575
+i 0
+population[i][0] 8.401800
+population[j][0] 20.021400
+Forces[i][0] 0.021678
+
+i: 1; j: 0
+R: 35.442282
+M[j]: 0.123819
+i 1
+population[i][0] 4.499500
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 1; j: 2
+R: 24.312674
+M[j]: 0.115258
+i 1
+population[i][0] 4.499500
+population[j][0] -19.558399
+Forces[i][0] 0.006816
+
+i: 1; j: 3
+R: 58.452477
+M[j]: 0.114410
+i 1
+population[i][0] 4.499500
+population[j][0] -0.577200
+Forces[i][0] -0.050209
+
+i: 1; j: 4
+R: 29.400204
+M[j]: 0.108626
+i 1
+population[i][0] 4.499500
+population[j][0] 33.222599
+Forces[i][0] -0.055177
+
+i: 1; j: 5
+R: 23.143694
+M[j]: 0.108254
+i 1
+population[i][0] 4.499500
+population[j][0] -16.838400
+Forces[i][0] -0.002115
+
+i: 1; j: 6
+R: 54.216095
+M[j]: 0.106970
+i 1
+population[i][0] 4.499500
+population[j][0] 37.437099
+Forces[i][0] -0.052019
+
+i: 1; j: 7
+R: 28.692060
+M[j]: 0.102761
+i 1
+population[i][0] 4.499500
+population[j][0] 32.833199
+Forces[i][0] -0.019526
+
+i: 1; j: 8
+R: 21.007525
+M[j]: 0.102575
+i 1
+population[i][0] 4.499500
+population[j][0] 20.021400
+Forces[i][0] 0.031213
+
+i: 2; j: 0
+R: 42.281159
+M[j]: 0.123819
+i 2
+population[i][0] -19.558399
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 2; j: 1
+R: 24.312674
+M[j]: 0.117326
+i 2
+population[i][0] -19.558399
+population[j][0] 4.499500
+Forces[i][0] 0.040940
+
+i: 2; j: 3
+R: 57.919640
+M[j]: 0.114410
+i 2
+population[i][0] -19.558399
+population[j][0] -0.577200
+Forces[i][0] 0.098989
+
+i: 2; j: 4
+R: 52.853263
+M[j]: 0.108626
+i 2
+population[i][0] -19.558399
+population[j][0] 33.222599
+Forces[i][0] 0.117736
+
+i: 2; j: 5
+R: 12.766035
+M[j]: 0.108254
+i 2
+population[i][0] -19.558399
+population[j][0] -16.838400
+Forces[i][0] 0.171974
+
+i: 2; j: 6
+R: 69.375488
+M[j]: 0.106970
+i 2
+population[i][0] -19.558399
+population[j][0] 37.437099
+Forces[i][0] 0.183507
+
+i: 2; j: 7
+R: 53.003567
+M[j]: 0.102761
+i 2
+population[i][0] -19.558399
+population[j][0] 32.833199
+Forces[i][0] 0.227447
+
+i: 2; j: 8
+R: 43.343497
+M[j]: 0.102575
+i 2
+population[i][0] -19.558399
+population[j][0] 20.021400
+Forces[i][0] 0.278235
+
+i: 3; j: 0
+R: 24.695005
+M[j]: 0.123819
+i 3
+population[i][0] -0.577200
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 3; j: 1
+R: 58.452477
+M[j]: 0.117326
+i 3
+population[i][0] -0.577200
+population[j][0] 4.499500
+Forces[i][0] 0.022510
+
+i: 3; j: 2
+R: 57.919640
+M[j]: 0.115258
+i 3
+population[i][0] -0.577200
+population[j][0] -19.558399
+Forces[i][0] 0.027605
+
+i: 3; j: 4
+R: 61.984522
+M[j]: 0.108626
+i 3
+population[i][0] -0.577200
+population[j][0] 33.222599
+Forces[i][0] 0.008719
+
+i: 3; j: 5
+R: 69.133641
+M[j]: 0.108254
+i 3
+population[i][0] -0.577200
+population[j][0] -16.838400
+Forces[i][0] 0.038336
+
+i: 3; j: 6
+R: 40.928548
+M[j]: 0.106970
+i 3
+population[i][0] -0.577200
+population[j][0] 37.437099
+Forces[i][0] 0.025604
+
+i: 3; j: 7
+R: 71.092146
+M[j]: 0.102761
+i 3
+population[i][0] -0.577200
+population[j][0] 32.833199
+Forces[i][0] 0.075281
+
+i: 3; j: 8
+R: 75.261134
+M[j]: 0.102575
+i 3
+population[i][0] -0.577200
+population[j][0] 20.021400
+Forces[i][0] 0.099427
+
+i: 4; j: 0
+R: 38.136222
+M[j]: 0.123819
+i 4
+population[i][0] 33.222599
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 4; j: 1
+R: 29.400204
+M[j]: 0.117326
+i 4
+population[i][0] 33.222599
+population[j][0] 4.499500
+Forces[i][0] -0.040294
+
+i: 4; j: 2
+R: 52.853263
+M[j]: 0.115258
+i 4
+population[i][0] 33.222599
+population[j][0] -19.558399
+Forces[i][0] -0.097606
+
+i: 4; j: 3
+R: 61.984522
+M[j]: 0.114410
+i 4
+population[i][0] 33.222599
+population[j][0] -0.577200
+Forces[i][0] -0.155156
+
+i: 4; j: 5
+R: 52.328130
+M[j]: 0.108254
+i 4
+population[i][0] 33.222599
+population[j][0] -16.838400
+Forces[i][0] -0.186350
+
+i: 4; j: 6
+R: 37.031108
+M[j]: 0.106970
+i 4
+population[i][0] 33.222599
+population[j][0] 37.437099
+Forces[i][0] -0.238132
+
+i: 4; j: 7
+R: 10.801020
+M[j]: 0.102761
+i 4
+population[i][0] 33.222599
+population[j][0] 32.833199
+Forces[i][0] -0.232045
+
+i: 4; j: 8
+R: 24.323320
+M[j]: 0.102575
+i 4
+population[i][0] 33.222599
+population[j][0] 20.021400
+Forces[i][0] -0.233897
+
+i: 5; j: 0
+R: 50.889617
+M[j]: 0.123819
+i 5
+population[i][0] -16.838400
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 5; j: 1
+R: 23.143694
+M[j]: 0.117326
+i 5
+population[i][0] -16.838400
+population[j][0] 4.499500
+Forces[i][0] 0.030706
+
+i: 5; j: 2
+R: 12.766035
+M[j]: 0.115258
+i 5
+population[i][0] -16.838400
+population[j][0] -19.558399
+Forces[i][0] 0.084792
+
+i: 5; j: 3
+R: 69.133641
+M[j]: 0.114410
+i 5
+population[i][0] -16.838400
+population[j][0] -0.577200
+Forces[i][0] 0.072513
+
+i: 5; j: 4
+R: 52.328130
+M[j]: 0.108626
+i 5
+population[i][0] -16.838400
+population[j][0] 33.222599
+Forces[i][0] 0.085968
+
+i: 5; j: 6
+R: 75.183547
+M[j]: 0.106970
+i 5
+population[i][0] -16.838400
+population[j][0] 37.437099
+Forces[i][0] 0.137928
+
+i: 5; j: 7
+R: 49.869803
+M[j]: 0.102761
+i 5
+population[i][0] -16.838400
+population[j][0] 32.833199
+Forces[i][0] 0.176539
+
+i: 5; j: 8
+R: 37.223867
+M[j]: 0.102575
+i 5
+population[i][0] -16.838400
+population[j][0] 20.021400
+Forces[i][0] 0.227716
+
+i: 6; j: 0
+R: 30.074387
+M[j]: 0.123819
+i 6
+population[i][0] 37.437099
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 6; j: 1
+R: 54.216095
+M[j]: 0.117326
+i 6
+population[i][0] 37.437099
+population[j][0] 4.499500
+Forces[i][0] -0.059771
+
+i: 6; j: 2
+R: 69.375488
+M[j]: 0.115258
+i 6
+population[i][0] 37.437099
+population[j][0] -19.558399
+Forces[i][0] -0.095410
+
+i: 6; j: 3
+R: 40.928548
+M[j]: 0.114410
+i 6
+population[i][0] 37.437099
+population[j][0] -0.577200
+Forces[i][0] -0.142755
+
+i: 6; j: 4
+R: 37.031108
+M[j]: 0.108626
+i 6
+population[i][0] 37.437099
+population[j][0] 33.222599
+Forces[i][0] -0.195887
+
+i: 6; j: 5
+R: 75.183547
+M[j]: 0.108254
+i 6
+population[i][0] 37.437099
+population[j][0] -16.838400
+Forces[i][0] -0.202068
+
+i: 6; j: 7
+R: 47.806699
+M[j]: 0.102761
+i 6
+population[i][0] 37.437099
+population[j][0] 32.833199
+Forces[i][0] -0.241143
+
+i: 6; j: 8
+R: 59.811377
+M[j]: 0.102575
+i 6
+population[i][0] 37.437099
+population[j][0] 20.021400
+Forces[i][0] -0.246091
+
+i: 7; j: 0
+R: 46.655643
+M[j]: 0.123819
+i 7
+population[i][0] 32.833199
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 7; j: 1
+R: 28.692060
+M[j]: 0.117326
+i 7
+population[i][0] 32.833199
+population[j][0] 4.499500
+Forces[i][0] -0.032419
+
+i: 7; j: 2
+R: 53.003567
+M[j]: 0.115258
+i 7
+population[i][0] 32.833199
+population[j][0] -19.558399
+Forces[i][0] -0.090350
+
+i: 7; j: 3
+R: 71.092146
+M[j]: 0.114410
+i 7
+population[i][0] 32.833199
+population[j][0] -0.577200
+Forces[i][0] -0.147313
+
+i: 7; j: 4
+R: 10.801020
+M[j]: 0.108626
+i 7
+population[i][0] 32.833199
+population[j][0] 33.222599
+Forces[i][0] -0.174197
+
+i: 7; j: 5
+R: 49.869803
+M[j]: 0.108254
+i 7
+population[i][0] 32.833199
+population[j][0] -16.838400
+Forces[i][0] -0.172239
+
+i: 7; j: 6
+R: 47.806699
+M[j]: 0.106970
+i 7
+population[i][0] 32.833199
+population[j][0] 37.437099
+Forces[i][0] -0.226151
+
+i: 7; j: 8
+R: 16.030574
+M[j]: 0.102575
+i 7
+population[i][0] 32.833199
+population[j][0] 20.021400
+Forces[i][0] -0.221001
+
+i: 8; j: 0
+R: 50.731218
+M[j]: 0.123819
+i 8
+population[i][0] 20.021400
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 8; j: 1
+R: 21.007525
+M[j]: 0.117326
+i 8
+population[i][0] 20.021400
+population[j][0] 4.499500
+Forces[i][0] -0.014180
+
+i: 8; j: 2
+R: 43.343497
+M[j]: 0.115258
+i 8
+population[i][0] 20.021400
+population[j][0] -19.558399
+Forces[i][0] -0.057524
+
+i: 8; j: 3
+R: 75.261134
+M[j]: 0.114410
+i 8
+population[i][0] 20.021400
+population[j][0] -0.577200
+Forces[i][0] -0.110149
+
+i: 8; j: 4
+R: 24.323320
+M[j]: 0.108626
+i 8
+population[i][0] 20.021400
+population[j][0] 33.222599
+Forces[i][0] -0.125806
+
+i: 8; j: 5
+R: 37.223867
+M[j]: 0.108254
+i 8
+population[i][0] 20.021400
+population[j][0] -16.838400
+Forces[i][0] -0.096329
+
+i: 8; j: 6
+R: 59.811377
+M[j]: 0.106970
+i 8
+population[i][0] 20.021400
+population[j][0] 37.437099
+Forces[i][0] -0.149926
+
+i: 8; j: 7
+R: 16.030574
+M[j]: 0.102761
+i 8
+population[i][0] 20.021400
+population[j][0] 32.833199
+Forces[i][0] -0.134353
+
+i: 9; j: 0
+R: 117.539231
+M[j]: 0.123819
+i 9
+population[i][0] -99.984398
+population[j][0] 8.401800
+Forces[i][0] 0.000000
+
+i: 9; j: 1
+R: 104.985209
+M[j]: 0.117326
+i 9
+population[i][0] -99.984398
+population[j][0] 4.499500
+Forces[i][0] 0.057089
+
+i: 9; j: 2
+R: 81.594247
+M[j]: 0.115258
+i 9
+population[i][0] -99.984398
+population[j][0] -19.558399
+Forces[i][0] 0.115471
+
+i: 9; j: 3
+R: 120.711078
+M[j]: 0.114410
+i 9
+population[i][0] -99.984398
+population[j][0] -0.577200
+Forces[i][0] 0.172276
+
+i: 9; j: 4
+R: 134.227571
+M[j]: 0.108626
+i 9
+population[i][0] -99.984398
+population[j][0] 33.222599
+Forces[i][0] 0.219385
+
+i: 9; j: 5
+R: 83.155927
+M[j]: 0.108254
+i 9
+population[i][0] -99.984398
+population[j][0] -16.838400
+Forces[i][0] 0.273285
+
+i: 9; j: 6
+R: 147.400009
+M[j]: 0.106970
+i 9
+population[i][0] -99.984398
+population[j][0] 37.437099
+Forces[i][0] 0.327405
+
+i: 9; j: 7
+R: 132.941003
+M[j]: 0.102761
+i 9
+population[i][0] -99.984398
+population[j][0] 32.833199
+Forces[i][0] 0.377269
+
+i: 9; j: 8
+R: 120.069427
+M[j]: 0.102575
+i 9
+population[i][0] -99.984398
+population[j][0] 20.021400
+Forces[i][0] 0.428602
+Forces[0][0]: 0.033425
+Forces[1][0]: 0.069108
+Forces[2][0]: 0.325069
+Forces[3][0]: 0.113465
+Forces[4][0]: -0.261733
+Forces[5][0]: 0.278502
+Forces[6][0]: -0.261025
+Forces[7][0]: -0.261990
+Forces[8][0]: -0.093289
+Forces[9][0]: 0.479863
+
+accelerations[0][0]: 0.269947
+accelerations[1][0]: 0.589027
+accelerations[2][0]: 2.820351
+accelerations[3][0]: 0.991733
+accelerations[4][0]: -2.409490
+accelerations[5][0]: 2.572660
+accelerations[6][0]: -2.440177
+accelerations[7][0]: -2.549504
+accelerations[8][0]: -0.909469
+accelerations[9][0]: 0.000000
+
+velocity[0][0]: 0.243997
+velocity[1][0]: 0.580077
+velocity[2][0]: 4.848001
+velocity[3][0]: 1.668233
+velocity[4][0]: -4.582590
+velocity[5][0]: 4.394210
+velocity[6][0]: -4.809177
+velocity[7][0]: -4.969804
+velocity[8][0]: -2.200919
+velocity[9][0]: 0.000000
+
+population[0][0]: 8.645798
+population[1][0]: 5.079577
+population[2][0]: -14.710398
+population[3][0]: 1.091033
+population[4][0]: 28.640009
+population[5][0]: -12.444190
+population[6][0]: 32.627923
+population[7][0]: 27.863395
+population[8][0]: 17.820481
+population[9][0]: -99.984398
+fitness[0]: 107.657040
+fitness[1]: 624.116848
+fitness[2]: 712.088183
+fitness[3]: 656.371586
+fitness[4]: 1198.598806
+fitness[5]: 1125.674477
+fitness[6]: 1210.792655
+fitness[7]: 1505.714299
+fitness[8]: 1516.009028
+fitness[9]: 11360.291161
+population[0][0]: 8.645797595350089  population[0][1]: 5.736481842607975 
+population[1][0]: 5.079576894444765  population[1][1]: -24.460473155329606 
+population[2][0]: 1.091033113817174  population[2][1]: 25.596508206378164 
+population[3][0]: -14.710397903964726  population[3][1]: -22.264150022733119 
+population[4][0]: -12.444189665267780  population[4][1]: -31.157930304675205 
+population[5][0]: 28.640009335124162  population[5][1]: -19.451186886476552 
+population[6][0]: 32.627922710580251  population[6][1]: 12.091787062468873 
+population[7][0]: 27.863394701370552  population[7][1]: -27.006398041821807 
+population[8][0]: 17.820481452794848  population[8][1]: -34.618484492494787 
+population[9][0]: -99.984397888183594  population[9][1]: -36.924400329589844 
+fitness[0]: 107.657039990332379
+fitness[1]: 624.116848409177351
+fitness[2]: 656.371585614630362
+fitness[3]: 712.088182727736921
+fitness[4]: 1125.674477296154919
+fitness[5]: 1198.598806008636529
+fitness[6]: 1210.792654771687921
+fitness[7]: 1505.714299477681379
+fitness[8]: 1516.009027766507188
+fitness[9]: 11360.291160762426443
 ----------------------------------------
 Serial GCA
 ----------------------------------------
-Best agent: 0.011113 0.010552 
-Best value: 0.000235
-Time measured: 0.002 seconds.
+Best agent: 8.645798 5.736482 
+Best value: 107.657040
+Time measured: 0.003 seconds.
 
 
 ----------------------------------------

@@ -50,13 +50,12 @@ double random_double(int lb, int ub)
     return val;
 }
 
-
 double round_to_2_decimals(double number)
 {
     return roundf(number * 10000) / 10000;
 }
 
-double* round_to_2_decimals_vector(double* vector, int dim)
+double *round_to_2_decimals_vector(double *vector, int dim)
 {
     for (int i = 0; i < dim; i++)
     {
@@ -65,14 +64,14 @@ double* round_to_2_decimals_vector(double* vector, int dim)
     return vector;
 }
 
-double** round_to_2_decimals_matrix(double** matrix, int rows, int columns)
+double **round_to_2_decimals_matrix(double **matrix, int rows, int columns)
 {
     for (int i = 0; i < rows; i++)
     {
-       for (int j = 0; j < columns; j++)
-       {
+        for (int j = 0; j < columns; j++)
+        {
             matrix[i][j] = round_to_2_decimals(matrix[i][j]);
-       }
+        }
     }
     return matrix;
 }
