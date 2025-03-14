@@ -11,14 +11,17 @@ void sort_agents(double *fitness, double **population, double *M, int pop_size, 
 {
     double tmp_double;
     int tmp_int;
-    for (int i = 0; i < pop_size; i++)
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    for (i = 0; i < pop_size; i++)
     {
         translation_index[i] = i;
     }
 
-    for (int i = 0; i < pop_size; i++)
+    for (i = 0; i < pop_size; i++)
     {
-        for (int j = i + 1; j < pop_size; j++)
+        for (j = i + 1; j < pop_size; j++)
         {
             if (fitness[i] > fitness[j])
             {
@@ -34,7 +37,7 @@ void sort_agents(double *fitness, double **population, double *M, int pop_size, 
                 M[i] = M[j];
                 M[j] = tmp_double;
 
-                for (int k = 0; k < dim; k++)
+                for (k = 0; k < dim; k++)
                 {
                     tmp_double = population[i][k];
                     population[i][k] = population[j][k];
@@ -118,6 +121,7 @@ void initial_sort(double *fitness, double **population, double *local_fitness_so
     double tmp_double;
     int tmp_int;
     int i = 0;
+    int j = 0;
     for (i = 0; i < pop_size; i++)
     {
         local_translation_index[i] = i;
@@ -127,7 +131,7 @@ void initial_sort(double *fitness, double **population, double *local_fitness_so
     for (i = 0; i < pop_size; i++)
     {
         local_fitness_sorted[i] = fitness[i];
-        for (int j = 0; j < dim; j++)
+        for (j = 0; j < dim; j++)
         {
             local_population_sorted[i][j] = population[i][j];
         }
@@ -135,7 +139,6 @@ void initial_sort(double *fitness, double **population, double *local_fitness_so
 
     //printf("-----------------\n");
     double temp;
-    int j = 0;
     int k = 0;
     int this_element = 0;
     int next_element = 0;
