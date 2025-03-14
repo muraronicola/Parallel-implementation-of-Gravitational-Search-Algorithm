@@ -71,7 +71,7 @@ double** round_to_2_decimals_matrix(double** matrix, int rows, int columns)
     {
        for (int j = 0; j < columns; j++)
        {
-           matrix[i][j] = round_to_2_decimals(matrix[i][j]);
+            matrix[i][j] = round_to_2_decimals(matrix[i][j]);
        }
     }
     return matrix;
