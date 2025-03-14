@@ -82,29 +82,34 @@ void serial_sort_agents(double *fitness, double **velocity, double **population,
     int i = 0;
     int j = 0;
     int k = 0;
-    for (i = 0; i < pop_size; i++)
+    int this_element = 0;
+    int next_element = 0;
+    for (i = 0; i < pop_size - 1; i++)
     {
-        for (j = i + 1; j < pop_size; j++)
+        for (j = 0; j < pop_size - i - 1; j++)
         {
-            if (fitness[i] > fitness[j])
-            {
-                temp = fitness[i];
-                fitness[i] = fitness[j];
-                fitness[j] = temp;
+            this_element = j;
+            next_element = j + 1;
 
-                temp = M[i];
-                M[i] = M[j];
-                M[j] = temp;
+            if (fitness[this_element] > fitness[next_element])
+            {
+                temp = fitness[this_element];
+                fitness[this_element] = fitness[next_element];
+                fitness[next_element] = temp;
+
+                temp = M[this_element];
+                M[this_element] = M[next_element];
+                M[next_element] = temp;
 
                 for (k = 0; k < dim; k++)
                 {
-                    temp = velocity[i][k];
-                    velocity[i][k] = velocity[j][k];
-                    velocity[j][k] = temp;
+                    temp = velocity[this_element][k];
+                    velocity[this_element][k] = velocity[next_element][k];
+                    velocity[next_element][k] = temp;
 
-                    temp = population[i][k];
-                    population[i][k] = population[j][k];
-                    population[j][k] = temp;
+                    temp = population[this_element][k];
+                    population[this_element][k] = population[next_element][k];
+                    population[next_element][k] = temp;
                 }
             }
         }
@@ -154,7 +159,7 @@ double **serial_update_accelearations(double *M, double **population, double **a
                     R += (population[i][d] - population[j][d]) * (population[i][d] - population[j][d]);
                 }
                 R = sqrt(R);
-                
+
                 if (debug)
                 {
                     printf("R: %f\n", R);
@@ -221,16 +226,22 @@ double **serial_update_accelearations(double *M, double **population, double **a
 
 double **serial_update_velocity(double **velocity, double **accelerations, double G, int dim, int pop_size)
 {
+    // MANCA G
     double random;
     int i = 0;
     int d = 0;
     for (i = 0; i < pop_size; i++)
     {
+        //printf("\nupdating_velocity_i: %d\n", i);
         for (d = 0; d < dim; d++)
         {
             // random = random_double(0, 1);
             random = 0.5;
+            //printf("velocity[i][d]: %f\n", velocity[i][d]);
+            //printf("accelerations[i][d]: %f\n", accelerations[i][d]);
+
             velocity[i][d] = random * velocity[i][d] + accelerations[i][d];
+            //printf("updated_velocity[i][d]: %f\n", velocity[i][d]);
         }
     }
     return velocity;
@@ -287,7 +298,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
 
     int l = 0;
     int i = 0;
-    int j = 0; 
+    int j = 0;
     int k = 0;
     for (l = 0; l < n_iter; l++)
     {
@@ -305,7 +316,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
             }
             if (fitness[i] < best_score)
             {
-                //printf("Best score: %f\n", fitness[i]);
+                printf("Best score: %f\n", fitness[i]);
                 best_score = fitness[i];
                 for (j = 0; j < dim; j++)
                 {
@@ -342,12 +353,12 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
             printf("\nSOORTT:\n");
             for (k = 0; k < pop_size; k++)
             {
-                printf("population[%d][0]: %f\n", k, population[k][0]);
+                printf("population[%d][0]: %.15f\n", k, population[k][0]);
             }
 
             for (k = 0; k < pop_size; k++)
             {
-                printf("fitness[%d]: %f\n", k, fitness[k]);
+                printf("fitness[%d]: %.15f\n", k, fitness[k]);
             }
         }
 
@@ -440,7 +451,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
         }
         if (fitness[i] < best_score)
         {
-            //printf("Best score: %f\n", fitness[i]);
+            // printf("Best score: %f\n", fitness[i]);
             best_score = fitness[i];
             for (j = 0; j < dim; j++)
             {
@@ -451,13 +462,15 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
 
     if (debug)
     {
+        serial_sort_agents(fitness, velocity, population, M, pop_size, dim); // Sort the agents based on their fitness
+
         for (i = 0; i < pop_size; i++)
         {
-            printf("population[%d][0]: %f  population[%d][1]: %f \n\n", i, population[i][0], i, population[i][1]);
+            printf("population[%d][0]: %.15f  population[%d][1]: %.15f \n", i, population[i][0], i, population[i][1]);
         }
         for (i = 0; i < pop_size; i++)
         {
-            printf("fitness[%d]: %f\n", i, fitness[i]);
+            printf("fitness[%d]: %.15f\n", i, fitness[i]);
         }
     }
 
