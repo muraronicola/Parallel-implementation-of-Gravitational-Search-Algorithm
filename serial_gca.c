@@ -302,10 +302,19 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
     int k = 0;
     for (l = 0; l < n_iter; l++)
     {
+
+
         if (debug)
         {
             printf("\n\n\nIteration: %d\n", l);
         }
+
+        population = round_to_2_decimals_matrix(population, pop_size, dim);
+        velocity = round_to_2_decimals_matrix(velocity, pop_size, dim);
+        accelerations = round_to_2_decimals_matrix(accelerations, pop_size, dim);
+        fitness = round_to_2_decimals_vector(fitness, pop_size);
+        M = round_to_2_decimals_vector(M, pop_size);
+
         for (i = 0; i < pop_size; i++)
         {
             population[i] = serial_clip_position_agent(population[i], lb, ub, dim);
@@ -316,7 +325,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
             }
             if (fitness[i] < best_score)
             {
-                printf("Best score: %f\n", fitness[i]);
+                //printf("Best score: %f\n", fitness[i]);
                 best_score = fitness[i];
                 for (j = 0; j < dim; j++)
                 {
