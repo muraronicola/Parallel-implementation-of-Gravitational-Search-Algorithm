@@ -517,11 +517,11 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     int j = 0;
     for (l = 0; l < n_iter; l++)
     {
-        local_population = round_to_2_decimals_matrix(local_population, local_pop_size, dim);
+        /*local_population = round_to_2_decimals_matrix(local_population, local_pop_size, dim);
         local_velocity = round_to_2_decimals_matrix(local_velocity, local_pop_size, dim);
         accelerations = round_to_2_decimals_matrix(accelerations, local_pop_size, dim);
         local_fitness = round_to_2_decimals_vector(local_fitness, local_pop_size);
-        local_M = round_to_2_decimals_vector(local_M, local_pop_size);
+        local_M = round_to_2_decimals_vector(local_M, local_pop_size);*/
 
         // MPI_Allgather(&(sub_population[0][0]), sub_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), sub_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
         if (my_rank == 0 && debug)
