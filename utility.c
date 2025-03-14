@@ -57,7 +57,8 @@ double round_to_2_decimals(double number)
 
 double *round_to_2_decimals_vector(double *vector, int dim)
 {
-    for (int i = 0; i < dim; i++)
+    int i = 0;
+    for (i = 0; i < dim; i++)
     {
         vector[i] = round_to_2_decimals(vector[i]);
     }
@@ -66,9 +67,11 @@ double *round_to_2_decimals_vector(double *vector, int dim)
 
 double **round_to_2_decimals_matrix(double **matrix, int rows, int columns)
 {
-    for (int i = 0; i < rows; i++)
+    int i = 0;
+    int j = 0;
+    for (i = 0; i < rows; i++)
     {
-        for (int j = 0; j < columns; j++)
+        for (j = 0; j < columns; j++)
         {
             matrix[i][j] = round_to_2_decimals(matrix[i][j]);
         }
