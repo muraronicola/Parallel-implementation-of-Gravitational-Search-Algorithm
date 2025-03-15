@@ -24,3 +24,8 @@ parallelo: calcolo di M[i] (normalizzato),
 
 I risultati, faccio ogni call 10 times, faccio una avg.
 (sullo stesso nodo)
+
+
+
+//Voglio creare v3
+Quando faccio la Allgather di M, posso mandare solo M relativo ai top k individui

@@ -1,5 +1,0 @@
-Parallel GCA
-----------------------------------------
-Best agent: -0.021446 -0.042516 
-Best value: 0.002268
-Time measured: 9.410 seconds.
