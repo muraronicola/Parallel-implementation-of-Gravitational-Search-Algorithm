@@ -6,8 +6,8 @@ CFLAGS = -Wall -g -lm
 all: gca
 
 # Regole per la compilazione
-gca: main.o parallel_gca.o serial_gca.o utility.o test_functions.o 
-	$(CC) $(CFLAGS) -o gca main.o parallel_gca.o serial_gca.o utility.o test_functions.o 
+gca: main.o parallel_gca.o serial_gca.o utility.o test_functions.o merge_sort.o
+	$(CC) $(CFLAGS) -o gca main.o parallel_gca.o serial_gca.o utility.o test_functions.o merge_sort.o
 
 # Regole per compilare i file oggetto
 main.o: main.c parallel_gca.h serial_gca.h
@@ -24,6 +24,9 @@ utility.o: utility.c utility.h
 
 test_functions.o: test_functions.c test_functions.h
 	$(CC) $(CFLAGS) -c test_functions.c
+
+merge_sort.o: merge_sort.c merge_sort.h
+	$(CC) $(CFLAGS) -c merge_sort.c
 
 # Pulizia dei file generati
 clean:

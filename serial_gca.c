@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include "utility.h"
 #include <stdbool.h>
+#include "merge_sort.h"
 
 double **serial_initialize_population(double (*target_function)(double *, int), double **velocity, double lb, double ub, int dim, int pop_size, double *fitness, double *M)
 {
@@ -353,7 +354,8 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
             }
         }
 
-        serial_sort_agents(fitness, velocity, population, M, pop_size, dim); // Sort the agents based on their fitness
+        //serial_sort_agents(fitness, velocity, population, M, pop_size, dim); // Sort the agents based on their fitness
+        merge_sort_serial(fitness, velocity, population, M, pop_size, dim); // Sort the agents based on their fitness
         k_best = serial_getk_best(pop_size, l, n_iter);
         // printf("Sort fitness:");
 

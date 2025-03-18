@@ -5,6 +5,7 @@
 #include "utility.h"
 #include <stdbool.h>
 #include <float.h>
+#include "merge_sort.h" 
 
 
 void sort_agents(double *fitness, double **population, double *M, int pop_size, int dim, int *translation_index)
@@ -547,7 +548,8 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
             }
         }
 
-        initial_sort(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim, local_translation_index); //this is v2
+        //initial_sort(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim, local_translation_index); //this is v2
+        merge_sort_parallel(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim, local_translation_index); //this is v2
         
         MPI_Allgather(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD); //this is v2
         MPI_Allgather(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD); //this is v2
