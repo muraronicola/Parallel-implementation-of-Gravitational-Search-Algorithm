@@ -449,7 +449,7 @@ double **get_local_population(double **local_population, double **global_populat
     return local_population;
 }
 
-double *gca(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug)
+double *gca(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug, int n_agents, int* dispacement, int* counts, int* dispacement_matrix, int *count_matrix)
 {
     // Returns the best agent found by the algorithm
 
@@ -483,8 +483,6 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     double **local_population_sorted  = allocate_matrix_double(local_pop_size, dim);      // Each process calculates for its own subpopulation
     int sub_pop_start_index = my_rank * local_pop_size;
     int indice;
-    int n_agents = global_pop_size / local_pop_size;
-
     double *unsorted_global_fitness = allocate_vector_double(global_pop_size);
     double *unsorted_global_M = allocate_vector_double(global_pop_size);
     double **unsorted_global_population = allocate_matrix_double(global_pop_size, dim);
@@ -506,7 +504,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     {
         global_population = allocate_matrix_double(global_pop_size, dim);
     }
-    MPI_Scatter(&(global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, &(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
     /*printf("Scatter done\n");
     printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
     printf("my_rank: %d; local_population[1][0]: %f\n", my_rank, local_population[1][0]);*/
@@ -551,9 +549,9 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         //initial_sort(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim, local_translation_index); //this is v2
         merge_sort_parallel(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim, local_translation_index); //this is v2
         
-        MPI_Allgather(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD); //this is v2
-        MPI_Allgather(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD); //this is v2
-        MPI_Allgather(local_translation_index, local_pop_size, MPI_INT, unsorted_translation_index, local_pop_size, MPI_INT, MPI_COMM_WORLD); //this is v2
+        MPI_Allgatherv(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD); //this is v2
+        MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD); //this is v2
+        MPI_Allgatherv(local_translation_index, local_pop_size, MPI_INT, unsorted_translation_index, counts, dispacement, MPI_INT, MPI_COMM_WORLD); //this is v2
 
 
         //MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD); //this is v1
@@ -679,7 +677,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         printf("my_rank: %d; global_M[3]: %f\n", my_rank, global_M[3]);*/
 
         // MPI_Allgather(local_M, local_pop_size, MPI_DOUBLE, global_M, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD); //v1
-        MPI_Allgather(local_M, local_pop_size, MPI_DOUBLE, global_M, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD); // Vorrei poter mandare solo i topk...
+        MPI_Allgatherv(local_M, local_pop_size, MPI_DOUBLE, global_M, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD); // Vorrei poter mandare solo i topk...
 
         if (my_rank == 0 && debug)
         {
@@ -775,9 +773,9 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
 
     initial_sort(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim, local_translation_index);
 
-    MPI_Allgather(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
-    MPI_Allgather(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD);
-    MPI_Allgather(local_translation_index, local_pop_size, MPI_INT, unsorted_translation_index, local_pop_size, MPI_INT, MPI_COMM_WORLD); //this is v2
+    MPI_Allgatherv(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD);
+    MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);
+    MPI_Allgatherv(local_translation_index, local_pop_size, MPI_INT, unsorted_translation_index, counts, dispacement, MPI_INT, MPI_COMM_WORLD); //this is v2
     // MPI_Allgather(&(local_velocity[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_velocity[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD);
 
     if (my_rank == 0 && debug)

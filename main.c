@@ -1,5 +1,6 @@
 #include <mpi.h>
 #include <stdio.h>
+#include <math.h>
 #include "parallel_gca.h"
 #include "serial_gca.h"
 #include "test_functions.h"
@@ -33,7 +34,62 @@ int main(int argc, char *argv[])
     int n_iter = atoi(argv[3]);
     bool debug = atoi(argv[4]);
 
-    int pop_per_proc = (int)pop_size / comm_sz;
+    int pop_per_proc = floor(pop_size / comm_sz);
+    int remainder = pop_size % comm_sz;
+
+    int *displacement = (int *)malloc(comm_sz * sizeof(int));
+    int *counts = (int *)malloc(comm_sz * sizeof(int));
+    int *dispacement_matrix = (int *)malloc(comm_sz * sizeof(int));
+    int *count_matrix = (int *)malloc(comm_sz * sizeof(int));
+    int i;
+
+
+    int this_displacement = 0;
+
+    displacement[0] = 0;
+    dispacement_matrix[0] = 0;
+    counts[0] = pop_per_proc;
+    count_matrix[0] = pop_per_proc;
+
+    if (remainder > 0)
+    {
+        counts[0]++;
+        count_matrix[0]++;
+    }
+
+    count_matrix[0] *= dim;
+
+    for (i = 1; i < comm_sz; i++)
+    {
+        this_displacement = pop_per_proc;
+        counts[i] = pop_per_proc;
+        count_matrix[i] = pop_per_proc;
+
+        if (i < remainder)
+        {
+            counts[i]++;
+            this_displacement++;
+            count_matrix[i]++;
+        }
+
+        displacement[i] = displacement[i - 1] + this_displacement;
+        count_matrix[i] *= dim;
+        dispacement_matrix[i] = displacement[i] * dim;
+    }
+
+    if (my_rank < remainder)
+    {
+        pop_per_proc++;
+    }
+
+    printf("pop_per_proc: %d\n", pop_per_proc);
+    printf("remainder: %d\n", remainder);
+    //exit(0);
+    printf("my_rank: %d; displacement: %d\n", my_rank, displacement[my_rank]);
+    printf("my_rank: %d; counts: %d\n", my_rank, counts[my_rank]);
+    printf("my_rank: %d; dispacement_matrix: %d\n", my_rank, dispacement_matrix[my_rank]);
+    printf("my_rank: %d; count_matrix: %d\n", my_rank, count_matrix[my_rank]);
+
     double *best_agent;
     double t1, t2, final_time;
 
@@ -59,7 +115,7 @@ int main(int argc, char *argv[])
         srand(10);
 
         t1 = MPI_Wtime();
-        best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc, debug);
+        best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
         t2 = MPI_Wtime();
         final_time = t2 - t1;
 
