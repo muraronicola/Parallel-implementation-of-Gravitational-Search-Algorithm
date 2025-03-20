@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l select=1:ncpus=32:mem=4gb
+#PBS -l select=1:ncpus=32:mem=2gb -l place=pack:excl
 # set max execution time
 #PBS -l walltime=0:10:00
 # set the queue
@@ -11,3 +11,5 @@ mpirun.actual -n 32 /home/nicola.muraro/project_hpc/GSA/gca 2 2000 100 0
 mpirun.actual -n 32 /home/nicola.muraro/project_hpc/GSA/gca 2 4000 100 0
 mpirun.actual -n 32 /home/nicola.muraro/project_hpc/GSA/gca 2 8000 100 0
 mpirun.actual -n 32 /home/nicola.muraro/project_hpc/GSA/gca 2 16000 100 0
+mpirun.actual -n 32 /home/nicola.muraro/project_hpc/GSA/gca 2 32000 100 0
+mpirun.actual -n 32 /home/nicola.muraro/project_hpc/GSA/gca 2 64000 100 0
