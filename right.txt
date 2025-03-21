@@ -1,0 +1,18 @@
+my_rank: 0;  pop_per_proc: 100
+my_rank: 0;  remainder: 0
+my_rank: 0; displacement: 0
+my_rank: 0; counts: 100
+my_rank: 0; dispacement_matrix: 0
+my_rank: 0; count_matrix: 200
+----------------------------------------
+Configuration: dim = 2, pop_size = 100, n_iter = 50
+
+----------------------------------------
+Serial GCA
+----------------------------------------
+Best agent: 0.148738 0.006086 
+Best value: 0.022160
+Time measured: 0.008 seconds.
+
+
+----------------------------------------

@@ -180,7 +180,7 @@ void initial_sort(double *fitness, double **population, double *local_fitness_so
     }
 }
 
-void final_sort(double *source_fitness, double **source_population, double *source_M, int *unsorted_translation_index, double *dest_fitness, double **dest_population, double *dest_M, int *dest_translation_index, int global_pop_size, int local_pop_size, int dim, int n_agents)
+void final_sort(double *source_fitness, double **source_population, double *source_M, int *unsorted_translation_index, double *dest_fitness, double **dest_population, double *dest_M, int *dest_translation_index, int global_pop_size, int local_pop_size, int dim, int n_agents, int* dispacement, int* counts, int* dispacement_matrix, int *count_matrix)
 {
     int *index_agent = allocate_vector_int(n_agents);
 
@@ -208,9 +208,10 @@ void final_sort(double *source_fitness, double **source_population, double *sour
     }*/
 
     int i = 0;
+    int j = 0;
     for (i = 0; i < n_agents; i++)
     {
-        index_agent[i] = i * local_pop_size;
+        index_agent[i] = dispacement[i];
         //printf("index_agent[%d]: %d\n", i, index_agent[i]);
     }
 
@@ -223,13 +224,23 @@ void final_sort(double *source_fitness, double **source_population, double *sour
     }*/
 
     double multiplier = 0;
+    j = 0;
+    int counter_pop = 0;
     for (i = 0; i < global_pop_size; i++)
     {
-        if (i % local_pop_size == 0 && i != 0)
+
+        /*if (i % local_pop_size == 0 && i != 0)
         {
             multiplier++;
         }
         unsorted_translation_index[i] = unsorted_translation_index[i] + (multiplier * local_pop_size);
+        */
+        unsorted_translation_index[i] = unsorted_translation_index[i] + dispacement[j];
+        counter_pop++;
+        if (counter_pop == counts[j]){
+            j++;
+            counter_pop = 0;
+        }
     }
     
     /*printf("unsorted_translation_index\n");
@@ -239,18 +250,15 @@ void final_sort(double *source_fitness, double **source_population, double *sour
         printf("unsorted_translation_index[%d]: %d\n", i, unsorted_translation_index[i]);
     }*/
 
-    //exit(0);
-
     double lowest_fitness;
     int index_lowest_fitness;
-    int j = 0;
     int k = 0;
     for (i = 0; i < global_pop_size; i++)
     {
         lowest_fitness = DBL_MAX;
         for (j = 0; j < n_agents; j++)
         {
-            if (index_agent[j] < (j + 1) * local_pop_size)
+            if (index_agent[j] < counts[j] + dispacement[j])
             {
                 if (source_fitness[index_agent[j]] < lowest_fitness)
                 {
@@ -494,17 +502,19 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     if (my_rank == 0)
     {
         global_population = initialize_population(target_function, lb, ub, dim, global_pop_size);
-        /*printf("Initial population:\n");
+        printf("Initial population:\n");
         for (int i = 0; i< global_pop_size; i++){
             printf("global_population[%d][0]: %f\n", i, global_population[i][0]);
         }
-        printf("-------\n");*/
+        printf("-------\n");
     }
     else
     {
         global_population = allocate_matrix_double(global_pop_size, dim);
     }
-    MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size*dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    //printf("my_rank: %d; scatter done\n", my_rank);
+    
     /*printf("Scatter done\n");
     printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
     printf("my_rank: %d; local_population[1][0]: %f\n", my_rank, local_population[1][0]);*/
@@ -553,6 +563,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD); //this is v2
         MPI_Allgatherv(local_translation_index, local_pop_size, MPI_INT, unsorted_translation_index, counts, dispacement, MPI_INT, MPI_COMM_WORLD); //this is v2
 
+        //printf("my_rank: %d; MPI_Allgatherv done\n", my_rank);
 
         //MPI_Allgather(&(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), local_pop_size * dim, MPI_DOUBLE, MPI_COMM_WORLD); //this is v1
         //MPI_Allgather(local_fitness, local_pop_size, MPI_DOUBLE, global_fitness, local_pop_size, MPI_DOUBLE, MPI_COMM_WORLD); //this is v1
@@ -560,10 +571,22 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
 
         if (my_rank == 0 && debug)
         {
+            printf("\n local sort done \n");
+            for (i = 0; i < local_pop_size; i++)
+            {
+                printf("my_rank: %d; local_fitness_sorted[%d]: %f\n", my_rank, i, local_fitness_sorted[i]);
+            }
+
             printf("\n");
             for (i = 0; i < local_pop_size; i++)
             {
-                printf("my_rank: %d; local_population[%d][0]: %f\n", my_rank, i, local_population[i][0]);
+                printf("my_rank: %d; local_translation_index[%d]: %f\n", my_rank, i, local_translation_index[i]);
+            }
+
+            printf("\n");
+            for (i = 0; i < local_pop_size; i++)
+            {
+                printf("my_rank: %d; unsorted_translation_index[%d]: %f\n", my_rank, i, unsorted_translation_index[i]);
             }
 
             printf("\n");
@@ -579,7 +602,8 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
             }
         }
 
-        final_sort(unsorted_global_fitness, unsorted_global_population, unsorted_global_M, unsorted_translation_index, global_fitness, global_population, global_M, global_translation_index, global_pop_size, local_pop_size, dim, n_agents); //this is v2
+        final_sort(unsorted_global_fitness, unsorted_global_population, unsorted_global_M, unsorted_translation_index, global_fitness, global_population, global_M, global_translation_index, global_pop_size, local_pop_size, dim, n_agents, dispacement, counts, dispacement_matrix, count_matrix); //this is v2
+        //printf("my_rank: %d; final_sort done\n", my_rank);
         
         //sort_agents(global_fitness, global_population, global_M, global_pop_size, dim, translation_index); // Sort the agents based on their fitness (this is v1)
         /*for(int k = 0; k < global_pop_size; k++){
@@ -648,6 +672,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         }
 
         MPI_Allreduce(&local_sum, &sum_m, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
+        //printf("my_rank: %d; MPI_Allreduce done\n", my_rank);
         // printf("my_rank: %d; local_population[0][0]: %f\n", my_rank, local_population[0][0]);
 
         if (debug && my_rank == 0)
@@ -799,7 +824,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         }
     }
 
-    final_sort(unsorted_global_fitness, unsorted_global_population, unsorted_global_M, unsorted_translation_index, global_fitness, global_population, global_M, global_translation_index, global_pop_size, local_pop_size, dim, n_agents);
+    final_sort(unsorted_global_fitness, unsorted_global_population, unsorted_global_M, unsorted_translation_index, global_fitness, global_population, global_M, global_translation_index, global_pop_size, local_pop_size, dim, n_agents, dispacement, counts, dispacement_matrix, count_matrix); //this is v2
     
     // sort_agents(global_fitness, global_population, global_M, global_pop_size, dim, translation_index); // Sort the agents based on their fitness
     /*for(int k = 0; k < global_pop_size; k++){

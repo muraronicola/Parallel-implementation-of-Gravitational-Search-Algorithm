@@ -1,5 +1,6 @@
 #include "merge_sort.h"
 #include "utility.h"
+#include <stdio.h>
 
 
 void merge_serial(double *fitness, double **velocity, double **population, double *M, int pop_size, int dim, int left, int mid, int right) {

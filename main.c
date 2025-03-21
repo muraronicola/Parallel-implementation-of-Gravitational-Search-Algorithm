@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
 
 
     int this_displacement = 0;
+    int counter_displacement = 0;
 
     displacement[0] = 0;
     dispacement_matrix[0] = 0;
@@ -56,6 +57,7 @@ int main(int argc, char *argv[])
         counts[0]++;
         count_matrix[0]++;
     }
+    counter_displacement = counts[0];
 
     count_matrix[0] *= dim;
 
@@ -71,10 +73,10 @@ int main(int argc, char *argv[])
             this_displacement++;
             count_matrix[i]++;
         }
-
-        displacement[i] = displacement[i - 1] + this_displacement;
+        displacement[i] = counter_displacement;
         count_matrix[i] *= dim;
         dispacement_matrix[i] = displacement[i] * dim;
+        counter_displacement += counts[i];
     }
 
     if (my_rank < remainder)
@@ -82,13 +84,16 @@ int main(int argc, char *argv[])
         pop_per_proc++;
     }
 
-    printf("pop_per_proc: %d\n", pop_per_proc);
-    printf("remainder: %d\n", remainder);
+    /*printf("my_rank: %d;  pop_per_proc: %d\n", my_rank, pop_per_proc);
+    printf("my_rank: %d;  remainder: %d\n", my_rank, remainder);
     //exit(0);
     printf("my_rank: %d; displacement: %d\n", my_rank, displacement[my_rank]);
     printf("my_rank: %d; counts: %d\n", my_rank, counts[my_rank]);
     printf("my_rank: %d; dispacement_matrix: %d\n", my_rank, dispacement_matrix[my_rank]);
     printf("my_rank: %d; count_matrix: %d\n", my_rank, count_matrix[my_rank]);
+
+    printf("----------------------------------------\n");
+    */
 
     double *best_agent;
     double t1, t2, final_time;
