@@ -37,52 +37,7 @@ int main(int argc, char *argv[])
     int pop_per_proc = floor(pop_size / comm_sz);
     int remainder = pop_size % comm_sz;
 
-    int *displacement = (int *)malloc(comm_sz * sizeof(int));
-    int *counts = (int *)malloc(comm_sz * sizeof(int));
-    int *dispacement_matrix = (int *)malloc(comm_sz * sizeof(int));
-    int *count_matrix = (int *)malloc(comm_sz * sizeof(int));
-    int i;
-
-
-    int this_displacement = 0;
-    int counter_displacement = 0;
-
-    displacement[0] = 0;
-    dispacement_matrix[0] = 0;
-    counts[0] = pop_per_proc;
-    count_matrix[0] = pop_per_proc;
-
-    if (remainder > 0)
-    {
-        counts[0]++;
-        count_matrix[0]++;
-    }
-    counter_displacement = counts[0];
-
-    count_matrix[0] *= dim;
-
-    for (i = 1; i < comm_sz; i++)
-    {
-        this_displacement = pop_per_proc;
-        counts[i] = pop_per_proc;
-        count_matrix[i] = pop_per_proc;
-
-        if (i < remainder)
-        {
-            counts[i]++;
-            this_displacement++;
-            count_matrix[i]++;
-        }
-        displacement[i] = counter_displacement;
-        count_matrix[i] *= dim;
-        dispacement_matrix[i] = displacement[i] * dim;
-        counter_displacement += counts[i];
-    }
-
-    if (my_rank < remainder)
-    {
-        pop_per_proc++;
-    }
+    
 
     /*printf("my_rank: %d;  pop_per_proc: %d\n", my_rank, pop_per_proc);
     printf("my_rank: %d;  remainder: %d\n", my_rank, remainder);
@@ -120,6 +75,53 @@ int main(int argc, char *argv[])
         srand(10);
 
         t1 = MPI_Wtime();
+        int *displacement = (int *)malloc(comm_sz * sizeof(int));
+        int *counts = (int *)malloc(comm_sz * sizeof(int));
+        int *dispacement_matrix = (int *)malloc(comm_sz * sizeof(int));
+        int *count_matrix = (int *)malloc(comm_sz * sizeof(int));
+        int i;
+    
+    
+        int this_displacement = 0;
+        int counter_displacement = 0;
+    
+        displacement[0] = 0;
+        dispacement_matrix[0] = 0;
+        counts[0] = pop_per_proc;
+        count_matrix[0] = pop_per_proc;
+    
+        if (remainder > 0)
+        {
+            counts[0]++;
+            count_matrix[0]++;
+        }
+        counter_displacement = counts[0];
+    
+        count_matrix[0] *= dim;
+    
+        for (i = 1; i < comm_sz; i++)
+        {
+            this_displacement = pop_per_proc;
+            counts[i] = pop_per_proc;
+            count_matrix[i] = pop_per_proc;
+    
+            if (i < remainder)
+            {
+                counts[i]++;
+                this_displacement++;
+                count_matrix[i]++;
+            }
+            displacement[i] = counter_displacement;
+            count_matrix[i] *= dim;
+            dispacement_matrix[i] = displacement[i] * dim;
+            counter_displacement += counts[i];
+        }
+    
+        if (my_rank < remainder)
+        {
+            pop_per_proc++;
+        }
+
         best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
         t2 = MPI_Wtime();
         final_time = t2 - t1;

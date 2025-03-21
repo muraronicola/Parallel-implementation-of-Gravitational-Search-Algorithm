@@ -502,11 +502,11 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     if (my_rank == 0)
     {
         global_population = initialize_population(target_function, lb, ub, dim, global_pop_size);
-        printf("Initial population:\n");
+        /*printf("Initial population:\n");
         for (int i = 0; i< global_pop_size; i++){
             printf("global_population[%d][0]: %f\n", i, global_population[i][0]);
         }
-        printf("-------\n");
+        printf("-------\n");*/
     }
     else
     {
