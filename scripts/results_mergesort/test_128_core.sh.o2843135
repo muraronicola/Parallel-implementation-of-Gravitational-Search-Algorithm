@@ -1,11 +1,11 @@
 Configuration: dim = 2, pop_size = 1000, n_iter = 100
-
+(seguito con scatter:exect)
 ----------------------------------------
 Parallel GCA
 ----------------------------------------
 Best agent: 0.021849 -0.070572 
 Best value: 0.005458
-Time measured: 0.582 seconds.
+Time measured: 0.137 seconds.
 
 
 ----------------------------------------
@@ -16,7 +16,7 @@ Parallel GCA
 ----------------------------------------
 Best agent: 0.066346 0.058649 
 Best value: 0.007842
-Time measured: 2.070 seconds.
+Time measured: 0.227 seconds.
 
 
 ----------------------------------------
@@ -27,7 +27,7 @@ Parallel GCA
 ----------------------------------------
 Best agent: 0.093395 -0.114354 
 Best value: 0.021799
-Time measured: 8.724 seconds.
+Time measured: 0.554 seconds.
 
 
 ----------------------------------------
@@ -38,7 +38,7 @@ Parallel GCA
 ----------------------------------------
 Best agent: 0.546391 -0.145598 
 Best value: 0.319742
-Time measured: 34.894 seconds.
+Time measured: 1.846 seconds.
 
 
 ----------------------------------------
@@ -49,7 +49,29 @@ Parallel GCA
 ----------------------------------------
 Best agent: 0.546391 -0.145598 
 Best value: 0.319742
-Time measured: 140.081 seconds.
+Time measured: 5.838 seconds.
+
+
+----------------------------------------
+Configuration: dim = 2, pop_size = 32000, n_iter = 100
+
+----------------------------------------
+Parallel GCA
+----------------------------------------
+Best agent: -0.013320 -0.325556 
+Best value: 0.106164
+Time measured: 21.641 seconds.
+
+
+----------------------------------------
+Configuration: dim = 2, pop_size = 64000, n_iter = 100
+
+----------------------------------------
+Parallel GCA
+----------------------------------------
+Best agent: -0.015031 -0.396782 
+Best value: 0.157662
+Time measured: 89.203 seconds.
 
 
 ----------------------------------------
