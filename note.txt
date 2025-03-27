@@ -29,3 +29,7 @@ I risultati, faccio ogni call 10 times, faccio una avg.
 
 //Voglio creare v3
 Quando faccio la Allgather di M, posso mandare solo M relativo ai top k individui
+
+
+
+//POSSO RIMUOVERE M dal merge_sort_serial

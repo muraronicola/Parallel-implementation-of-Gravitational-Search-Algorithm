@@ -122,7 +122,7 @@ double serial_getk_best(int pop_size, int t, double n_iter)
     return pop_size * (0.1 + (0.9 * (t / n_iter)));
 }
 
-double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, bool debug)
+double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, double G, bool debug)
 {
     double R;
     double **Forces = allocate_matrix_double(pop_size, dim);
@@ -175,7 +175,7 @@ double **serial_update_accelearations(double *M, double **population, double **a
                     // random = random_double(0, 1);
                     random = 0.5;
                     // printf("random: %f\n", random);
-                    Forces[i][d] = Forces[i][d] + random * M[j] * (population[j][d] - population[i][d]) / (R + 1e-20);
+                    Forces[i][d] = Forces[i][d] + random * (G * ((M[j] * M[i]) / (R + 1e-20)) * (population[j][d] - population[i][d]));
                 }
                 // printf("Forces[i][0] %f\n", Forces[i][0]);
             }
@@ -194,15 +194,14 @@ double **serial_update_accelearations(double *M, double **population, double **a
     {
         for (d = 0; d < dim; d++)
         {
-            if (M[i] > 0)
-            { // Mia aggiunta
+            if (Forces[i][d] > 0)
+            {
                 accelerations[i][d] = Forces[i][d] / M[i];
             }
             else
             {
                 accelerations[i][d] = 0;
             }
-            // accelerations[i][d] = Forces[i][d] / M[i];
         }
     }
     /*printf("M[0]: %f\n", M[0]);
@@ -225,7 +224,7 @@ double **serial_update_accelearations(double *M, double **population, double **a
     return accelerations;
 }
 
-double **serial_update_velocity(double **velocity, double **accelerations, double G, int dim, int pop_size)
+double **serial_update_velocity(double **velocity, double **accelerations, int dim, int pop_size)
 {
     // MANCA G
     double random;
@@ -233,16 +232,16 @@ double **serial_update_velocity(double **velocity, double **accelerations, doubl
     int d = 0;
     for (i = 0; i < pop_size; i++)
     {
-        //printf("\nupdating_velocity_i: %d\n", i);
+        // printf("\nupdating_velocity_i: %d\n", i);
         for (d = 0; d < dim; d++)
         {
             // random = random_double(0, 1);
             random = 0.5;
-            //printf("velocity[i][d]: %f\n", velocity[i][d]);
-            //printf("accelerations[i][d]: %f\n", accelerations[i][d]);
+            // printf("velocity[i][d]: %f\n", velocity[i][d]);
+            // printf("accelerations[i][d]: %f\n", accelerations[i][d]);
 
             velocity[i][d] = random * velocity[i][d] + accelerations[i][d];
-            //printf("updated_velocity[i][d]: %f\n", velocity[i][d]);
+            // printf("updated_velocity[i][d]: %f\n", velocity[i][d]);
         }
     }
     return velocity;
@@ -304,7 +303,6 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
     for (l = 0; l < n_iter; l++)
     {
 
-
         if (debug)
         {
             printf("\n\n\nIteration: %d\n", l);
@@ -326,7 +324,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
             }
             if (fitness[i] < best_score)
             {
-                //printf("Best score: %f\n", fitness[i]);
+                // printf("Best score: %f\n", fitness[i]);
                 best_score = fitness[i];
                 for (j = 0; j < dim; j++)
                 {
@@ -354,7 +352,9 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
             }
         }
 
-        //serial_sort_agents(fitness, velocity, population, M, pop_size, dim); // Sort the agents based on their fitness
+        // serial_sort_agents(fitness, velocity, population, M, pop_size, dim); // Sort the agents based on their fitness
+
+        // POSSO RIMUOVERE M dal merge_sort_serial
         merge_sort_serial(fitness, velocity, population, M, pop_size, dim); // Sort the agents based on their fitness
         k_best = serial_getk_best(pop_size, l, n_iter);
         // printf("Sort fitness:");
@@ -414,7 +414,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
         // return population[0];
 
         // Update the velocity
-        accelerations = serial_update_accelearations(M, population, accelerations, dim, pop_size, k_best, debug);
+        accelerations = serial_update_accelearations(M, population, accelerations, dim, pop_size, k_best, G, debug);
 
         if (debug)
         {
@@ -425,7 +425,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
             }
         }
 
-        velocity = serial_update_velocity(velocity, accelerations, G, dim, pop_size);
+        velocity = serial_update_velocity(velocity, accelerations, dim, pop_size);
 
         if (debug)
         {
