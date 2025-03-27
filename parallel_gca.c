@@ -332,10 +332,10 @@ double **update_accelerations(double *global_M, double *local_M, double **global
     {
         for (j = 0; j < k_best; j++)
         {
-            if (check_different_element(local_population[i], global_population[j], dim)) // Da cambiare con il check di uguaglianza degli indici
-            {
-                indice = i + sub_pop_start_index;
+            indice = i + sub_pop_start_index;
 
+            if (indice != translation_index[j]) // Da cambiare con il check di uguaglianza degli indici
+            {
                 if (rank == 0 && debug)
                 {
                     printf("\ni: %d; j: %d\n", i, j);
@@ -485,7 +485,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     double **global_population = NULL;
     double **local_population = allocate_matrix_double(local_pop_size, dim);
     double **local_population_sorted = allocate_matrix_double(local_pop_size, dim); // Each process calculates for its own subpopulation
-    int sub_pop_start_index = my_rank * local_pop_size;
+    int sub_pop_start_index = dispacement[my_rank];
     int indice;
     double *unsorted_global_fitness = allocate_vector_double(global_pop_size);
     double *unsorted_global_M = allocate_vector_double(global_pop_size);

@@ -1,0 +1,4385 @@
+
+
+
+Iteration: 0; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 5042.000879
+my_rank: 0; local_fitness[3]: 3367.624693
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 424.977677
+my_rank: 0; local_fitness_sorted[1]: 3367.624693
+my_rank: 0; local_fitness_sorted[2]: 5042.000879
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 5042.000879
+my_rank: 0; local_fitness[3]: 3367.624693
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 0.000000
+my_rank: 0; local_velocity[3][0]: 0.000000
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 424.977676812834318
+my_rank: 0; global_fitness[1]: 1696.260271245052991
+my_rank: 0; global_fitness[2]: 2401.351288795615346
+my_rank: 0; global_fitness[3]: 3367.624692831579523
+my_rank: 0; global_fitness[4]: 4370.347318487260964
+my_rank: 0; global_fitness[5]: 5042.000879291013007
+my_rank: 0; global_fitness[6]: 5601.066720018952765
+my_rank: 0; global_fitness[7]: 8230.989974489350061
+my_rank: 0; global_fitness[8]: 8946.959586693867095
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 11.210644390066449
+my_rank: 0; global_population[1][0]: 6.923270089050404
+my_rank: 0; global_population[2][0]: -38.069307775268932
+my_rank: 0; global_population[3][0]: -5.910767571027753
+my_rank: 0; global_population[4][0]: 58.592811673224347
+my_rank: 0; global_population[5][0]: -34.465525175661561
+my_rank: 0; global_population[6][0]: 66.831301509789796
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 42.298768154484570
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 1
+my_rank: 0; global_translation_index[1]: 7
+my_rank: 0; global_translation_index[2]: 6
+my_rank: 0; global_translation_index[3]: 3
+my_rank: 0; global_translation_index[4]: 4
+my_rank: 0; global_translation_index[5]: 2
+my_rank: 0; global_translation_index[6]: 9
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 8
+my_rank: 0; global_translation_index[9]: 0
+it: 0,  sum_m: 5.684429101096265
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.175919
+my_rank: 0; global_M[2]: 0.101644
+my_rank: 0; global_M[3]: 0.128580
+my_rank: 0; global_M[4]: 0.112449
+my_rank: 0; global_M[5]: 0.050342
+my_rank: 0; global_M[6]: 0.144125
+my_rank: 0; global_M[7]: 0.155468
+my_rank: 0; global_M[8]: 0.038824
+my_rank: 0; global_M[9]: 0.092650
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.175919
+my_rank: 0; local_M[2]: 0.101644
+my_rank: 0; local_M[3]: 0.128580
+Update accelerations
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 0; j: 0
+R: 123.711935
+M[j]: 0.175919
+indice 0
+population[i][0] -99.984347
+population[j][0] 11.210644
+translation_index[j] 1
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -38.069308; global_population[j][0]: 11.210644
+Different elements
+
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 6.923270; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 11.210644
+Different elements
+
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 11.210644; global_population[j][0]: 11.210644
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -34.465525; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 2; j: 0
+R: 91.584918
+M[j]: 0.175919
+indice 2
+population[i][0] -34.465525
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 3; j: 0; translation_index[j]:1; translation_index[i]: 3
+local_population[i][0]: -5.910768; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 3; j: 0
+R: 43.905131
+M[j]: 0.175919
+indice 3
+population[i][0] -5.910768
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: 0.000000
+my_rank: 0; Forces[2][0]: 0.445892
+my_rank: 0; Forces[3][0]: 0.441043
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[2][0]: 4.386810
+my_rank: 0; accelerations[3][0]: 3.430105
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[2][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[3][0]: 0.000000
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 4.386810
+my_rank: 0; local_velocity[3][0]: 3.430105
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[2][0]: -30.078715
+my_rank: 0; local_population[3][0]: -2.480662
+
+
+
+Iteration: 1; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 3870.366567
+my_rank: 0; local_fitness[3]: 3338.841205
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 424.977677
+my_rank: 0; local_fitness_sorted[1]: 3338.841205
+my_rank: 0; local_fitness_sorted[2]: 3870.366567
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 3870.366567
+my_rank: 0; local_fitness[3]: 3338.841205
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 4.386810
+my_rank: 0; local_velocity[3][0]: 3.430105
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 424.977676812834318
+my_rank: 0; global_fitness[1]: 1070.348187375206635
+my_rank: 0; global_fitness[2]: 1620.358040687096036
+my_rank: 0; global_fitness[3]: 3338.841204946728794
+my_rank: 0; global_fitness[4]: 3870.366567149956609
+my_rank: 0; global_fitness[5]: 4026.521450767083479
+my_rank: 0; global_fitness[6]: 5601.066720018952765
+my_rank: 0; global_fitness[7]: 7405.416468705075204
+my_rank: 0; global_fitness[8]: 7594.172814734067288
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 11.210644390066449
+my_rank: 0; global_population[1][0]: 7.572815496932208
+my_rank: 0; global_population[2][0]: -31.778301603220697
+my_rank: 0; global_population[3][0]: -2.480662289361926
+my_rank: 0; global_population[4][0]: -30.078714737633028
+my_rank: 0; global_population[5][0]: 58.592811673224347
+my_rank: 0; global_population[6][0]: 66.831301509789796
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 42.298768154484570
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 1
+my_rank: 0; global_translation_index[1]: 7
+my_rank: 0; global_translation_index[2]: 6
+my_rank: 0; global_translation_index[3]: 3
+my_rank: 0; global_translation_index[4]: 2
+my_rank: 0; global_translation_index[5]: 4
+my_rank: 0; global_translation_index[6]: 9
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 8
+my_rank: 0; global_translation_index[9]: 0
+it: 1,  sum_m: 6.153506939951436
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.162509
+my_rank: 0; global_M[2]: 0.111307
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -31.778302; global_population[j][0]: 11.210644
+Different elements
+
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 7.572815; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 11.210644
+Different elements
+
+my_rank: 0; global_M[3]: 0.119206
+my_rank: 0; global_M[4]: 0.108987
+my_rank: 0; global_M[5]: 0.058773
+my_rank: 0; global_M[6]: 0.144744
+my_rank: 0; global_M[7]: 0.152918
+my_rank: 0; global_M[8]: 0.055968
+my_rank: 0; global_M[9]: 0.085587
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.162509
+my_rank: 0; local_M[2]: 0.111307
+my_rank: 0; local_M[3]: 0.119206
+Update accelerations
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 0; j: 0
+R: 123.711935
+M[j]: 0.162509
+indice 0
+population[i][0] -99.984347
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 11.210644; global_population[j][0]: 11.210644
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -30.078715; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 2; j: 0
+R: 82.788959
+M[j]: 0.162509
+indice 2
+population[i][0] -30.078715
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 3; j: 0; translation_index[j]:1; translation_index[i]: 3
+local_population[i][0]: -2.480662; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 3; j: 0
+R: 42.684537
+M[j]: 0.162509
+indice 3
+population[i][0] -2.480662
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: 0.000000
+my_rank: 0; Forces[2][0]: 0.410057
+my_rank: 0; Forces[3][0]: 0.282441
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[2][0]: 3.684006
+my_rank: 0; accelerations[3][0]: 2.369349
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[2][0]: 4.386810
+my_rank: 0; before_updating: local_velocity[3][0]: 3.430105
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 5.877411
+my_rank: 0; local_velocity[3][0]: 4.084401
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[2][0]: -24.201303
+my_rank: 0; local_population[3][0]: 1.603739
+
+
+
+Iteration: 2; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 2543.159370
+my_rank: 0; local_fitness[3]: 3335.259498
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 424.977677
+my_rank: 0; local_fitness_sorted[1]: 2543.159370
+my_rank: 0; local_fitness_sorted[2]: 3335.259498
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 2543.159370
+my_rank: 0; local_fitness[3]: 3335.259498
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 5.877411
+my_rank: 0; local_velocity[3][0]: 4.084401
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 424.977676812834318
+my_rank: 0; global_fitness[1]: 474.294992432158097
+my_rank: 0; global_fitness[2]: 816.528420192410636
+my_rank: 0; global_fitness[3]: 2543.159369779120425
+my_rank: 0; global_fitness[4]: 3335.259498008123956
+my_rank: 0; global_fitness[5]: 3700.610118490075365
+my_rank: 0; global_fitness[6]: 5601.066720018952765
+my_rank: 0; global_fitness[7]: 6010.869235650659903
+my_rank: 0; global_fitness[8]: 6478.456273192305162
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 11.210644390066449
+my_rank: 0; global_population[1][0]: 8.443070912834651
+my_rank: 0; global_population[2][0]: -23.349665011740228
+my_rank: 0; global_population[3][0]: -24.201303403633737
+my_rank: 0; global_population[4][0]: 1.603738898716875
+my_rank: 0; global_population[5][0]: 58.592811673224347
+my_rank: 0; global_population[6][0]: 66.831301509789796
+my_rank: 0; global_population[7][0]: 42.298768154484570
+my_rank: 0; global_population[8][0]: 67.004154979718919
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 1
+my_rank: 0; global_translation_index[1]: 7
+my_rank: 0; global_translation_index[2]: 6
+my_rank: 0; global_translation_index[3]: 2
+my_rank: 0; global_translation_index[4]: 3
+my_rank: 0; global_translation_index[5]: 4
+my_rank: 0; global_translation_index[6]: 9
+my_rank: 0; global_translation_index[7]: 8
+my_rank: 0; global_translation_index[8]: 5
+my_rank: 0; global_translation_index[9]: 0
+it: 2,  sum_m: 6.662577951897736
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.150092
+my_rank: 0; global_M[2]: 0.121019
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 11.210644
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 8.443071
+Different elements
+
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 8.443071
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 8.443071; global_population[j][0]: 11.210644
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 8.443071; global_population[j][0]: 8.443071
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 8.443071
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 6
+my_rank: 0; global_M[3]: 0.110147
+my_rank: 0; global_M[4]: 0.105133
+my_rank: 0; global_M[5]: 0.067005
+my_rank: 0; global_M[6]: 0.144718
+my_rank: 0; global_M[7]: 0.149415
+my_rank: 0; global_M[8]: 0.073423
+my_rank: 0; global_M[9]: 0.079048
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.150092
+my_rank: 0; local_M[2]: 0.121019
+my_rank: 0; local_M[3]: 0.110147
+Update accelerations
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 0; j: 0
+R: 123.711935
+M[j]: 0.150092
+indice 0
+population[i][0] -99.984347
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: -23.349665; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: -23.349665; global_population[j][0]: 8.443071
+Different elements
+
+local_population[i][0]: 66.831302; global_population[j][0]: 8.443071
+Different elements
+
+local_population[i][0]: -99.984347; global_population[j][0]: 8.443071
+Different elements
+
+
+i: 0; j: 1
+R: 109.728778
+M[j]: 0.149415
+indice 0
+population[i][0] -99.984347
+population[j][0] 8.443071
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 11.210644; global_population[j][0]: 11.210644
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 11.210644; global_population[j][0]: 8.443071
+Different elements
+
+
+i: 1; j: 1
+R: 37.477688
+M[j]: 0.149415
+indice 1
+population[i][0] 11.210644
+population[j][0] 8.443071
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -24.201303; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 2; j: 0
+R: 71.004210
+M[j]: 0.150092
+indice 2
+population[i][0] -24.201303
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: -24.201303; global_population[j][0]: 8.443071
+Different elements
+
+
+i: 2; j: 1
+R: 40.617113
+M[j]: 0.149415
+indice 2
+population[i][0] -24.201303
+population[j][0] 8.443071
+translation_index[j] 7
+Forces[i][0] 0.370593
+i: 3; j: 0; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 1.603739; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 3; j: 0
+R: 41.554908
+M[j]: 0.150092
+indice 3
+population[i][0] 1.603739
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 1.603739; global_population[j][0]: 8.443071
+Different elements
+
+
+i: 3; j: 1
+R: 78.104555
+M[j]: 0.149415
+indice 3
+population[i][0] 1.603739
+population[j][0] 8.443071
+translation_index[j] 7
+Forces[i][0] 0.156355
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: -0.067748
+my_rank: 0; Forces[2][0]: 0.965114
+my_rank: 0; Forces[3][0]: 0.215311
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[2][0]: 7.974895
+my_rank: 0; accelerations[3][0]: 1.954755
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[2][0]: 5.877411
+my_rank: 0; before_updating: local_velocity[3][0]: 4.084401
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 10.913601
+my_rank: 0; local_velocity[3][0]: 3.996955
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[2][0]: -13.287703
+my_rank: 0; local_population[3][0]: 5.600694
+
+
+
+Iteration: 3; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 1087.205791
+my_rank: 0; local_fitness[3]: 3364.055296
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 424.977677
+my_rank: 0; local_fitness_sorted[1]: 1087.205791
+my_rank: 0; local_fitness_sorted[2]: 3364.055296
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 1087.205791
+my_rank: 0; local_fitness[3]: 3364.055296
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 10.913601
+my_rank: 0; local_velocity[3][0]: 3.996955
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 151.747177785611399
+my_rank: 0; global_fitness[1]: 152.291998342746211
+my_rank: 0; global_fitness[2]: 424.977676812834318
+my_rank: 0; global_fitness[3]: 1087.205791171380497
+my_rank: 0; global_fitness[4]: 3364.055296304666172
+my_rank: 0; global_fitness[5]: 3518.668294457101638
+my_rank: 0; global_fitness[6]: 4164.991865270250855
+my_rank: 0; global_fitness[7]: 5576.880456994722408
+my_rank: 0; global_fitness[8]: 5601.066720018952765
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: -8.670275568286673
+my_rank: 0; global_population[1][0]: 9.331621981851466
+my_rank: 0; global_population[2][0]: 11.210644390066449
+my_rank: 0; global_population[3][0]: -13.287702796276289
+my_rank: 0; global_population[4][0]: 5.600694309797648
+my_rank: 0; global_population[5][0]: 58.592811673224347
+my_rank: 0; global_population[6][0]: 42.298768154484570
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 66.831301509789796
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 6
+my_rank: 0; global_translation_index[1]: 7
+my_rank: 0; global_translation_index[2]: 1
+my_rank: 0; global_translation_index[3]: 2
+my_rank: 0; global_translation_index[4]: 3
+my_rank: 0; global_translation_index[5]: 4
+my_rank: 0; global_translation_index[6]: 8
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 9
+my_rank: 0; global_translation_index[9]: 0
+it: 3,  sum_m: 6.976884624856940
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.139836
+my_rank: 0; global_M[2]: 0.131368
+my_rank: 0; global_M[3]: 0.102253
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: -8.670276
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 9.331622
+Different elements
+
+i: 0; j: 2; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: -8.670276
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 9.331622
+Different elements
+
+i: 1; j: 2; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 1
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 9.331622; global_population[j][0]: -8.670276
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 9.331622; global_population[j][0]: 9.331622
+i: 0; j: 2; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 9.331622; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: -8.670276
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 9.331622
+Different elements
+
+i: 1; j: 2; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 11.210644
+Different elements
+
+my_rank: 0; global_M[4]: 0.100276
+my_rank: 0; global_M[5]: 0.073956
+my_rank: 0; global_M[6]: 0.143330
+my_rank: 0; global_M[7]: 0.143323
+my_rank: 0; global_M[8]: 0.092011
+my_rank: 0; global_M[9]: 0.073647
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.139836
+my_rank: 0; local_M[2]: 0.131368
+my_rank: 0; local_M[3]: 0.102253
+Update accelerations
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: -8.670276
+Different elements
+
+
+i: 0; j: 0
+R: 95.561616
+M[j]: 0.143330
+indice 0
+local_population[i][0]: -8.670276; global_population[j][0]: -8.670276
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: -8.670276; global_population[j][0]: 9.331622
+Different elements
+
+i: 2; j: 2; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: -8.670276; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 66.831302; global_population[j][0]: -8.670276
+Different elements
+
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 66.831302; global_population[j][0]: 9.331622
+Different elements
+
+i: 2; j: 2; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 66.831302; global_population[j][0]: 11.210644
+Different elements
+
+population[i][0] -99.984347
+population[j][0] -8.670276
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 9.331622
+Different elements
+
+
+i: 0; j: 1
+R: 113.058589
+M[j]: 0.143323
+indice 0
+population[i][0] -99.984347
+population[j][0] 9.331622
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 0; j: 2; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 0; j: 2
+R: 123.711935
+M[j]: 0.139836
+indice 0
+population[i][0] -99.984347
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 11.210644; global_population[j][0]: -8.670276
+Different elements
+
+
+i: 1; j: 0
+R: 32.770413
+M[j]: 0.143330
+indice 1
+population[i][0] 11.210644
+population[j][0] -8.670276
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 11.210644; global_population[j][0]: 9.331622
+Different elements
+
+
+i: 1; j: 1
+R: 25.445184
+M[j]: 0.143323
+indice 1
+population[i][0] 11.210644
+population[j][0] 9.331622
+translation_index[j] 7
+Forces[i][0] -0.442161
+i: 1; j: 2; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 11.210644; global_population[j][0]: 11.210644
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: -13.287703; global_population[j][0]: -8.670276
+Different elements
+
+
+i: 2; j: 0
+R: 21.918119
+M[j]: 0.143330
+indice 2
+population[i][0] -13.287703
+population[j][0] -8.670276
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: -13.287703; global_population[j][0]: 9.331622
+Different elements
+
+
+i: 2; j: 1
+R: 31.624457
+M[j]: 0.143323
+indice 2
+population[i][0] -13.287703
+population[j][0] 9.331622
+translation_index[j] 7
+Forces[i][0] 0.144242
+i: 2; j: 2; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: -13.287703; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 2; j: 2
+R: 53.425145
+M[j]: 0.139836
+indice 2
+population[i][0] -13.287703
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.633944
+i: 3; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 5.600694; global_population[j][0]: -8.670276
+Different elements
+
+
+i: 3; j: 0
+R: 67.994553
+M[j]: 0.143330
+indice 3
+population[i][0] 5.600694
+population[j][0] -8.670276
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 5.600694; global_population[j][0]: 9.331622
+Different elements
+
+
+i: 3; j: 1
+R: 65.910561
+M[j]: 0.143323
+indice 3
+population[i][0] 5.600694
+population[j][0] 9.331622
+translation_index[j] 7
+Forces[i][0] -0.111856
+i: 3; j: 2; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 5.600694; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 3; j: 2
+R: 40.816532
+M[j]: 0.139836
+indice 3
+population[i][0] 5.600694
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] -0.081690
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: -0.495980
+my_rank: 0; Forces[2][0]: 0.940259
+my_rank: 0; Forces[3][0]: -0.010226
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[2][0]: 7.157436
+my_rank: 0; accelerations[3][0]: 0.000000
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[2][0]: 10.913601
+my_rank: 0; before_updating: local_velocity[3][0]: 3.996955
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 12.614236
+my_rank: 0; local_velocity[3][0]: 1.998478
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[2][0]: -0.673466
+my_rank: 0; local_population[3][0]: 7.599172
+
+
+
+Iteration: 4; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 98.215823
+my_rank: 0; local_fitness[3]: 3390.434935
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 98.215823
+my_rank: 0; local_fitness_sorted[1]: 424.977677
+my_rank: 0; local_fitness_sorted[2]: 3390.434935
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 98.215823
+my_rank: 0; local_fitness[3]: 3390.434935
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 12.614236
+my_rank: 0; local_velocity[3][0]: 1.998478
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 48.901028939792369
+my_rank: 0; global_fitness[1]: 98.215822517996799
+my_rank: 0; global_fitness[2]: 103.408808017929445
+my_rank: 0; global_fitness[3]: 424.977676812834318
+my_rank: 0; global_fitness[4]: 2616.295184275013526
+my_rank: 0; global_fitness[5]: 3390.434934871563200
+my_rank: 0; global_fitness[6]: 3442.407848787901457
+my_rank: 0; global_fitness[7]: 4893.753664174399091
+my_rank: 0; global_fitness[8]: 5601.066720018952765
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 6.962429225446117
+my_rank: 0; global_population[1][0]: -0.673466406590638
+my_rank: 0; global_population[2][0]: 9.775897516359874
+my_rank: 0; global_population[3][0]: 11.210644390066449
+my_rank: 0; global_population[4][0]: 42.298768154484570
+my_rank: 0; global_population[5][0]: 7.599172015338034
+my_rank: 0; global_population[6][0]: 58.592811673224347
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 66.831301509789796
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 6
+my_rank: 0; global_translation_index[1]: 2
+my_rank: 0; global_translation_index[2]: 7
+my_rank: 0; global_translation_index[3]: 1
+my_rank: 0; global_translation_index[4]: 8
+my_rank: 0; global_translation_index[5]: 3
+my_rank: 0; global_translation_index[6]: 4
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 9
+my_rank: 0; global_translation_index[9]: 0
+it: 4,  sum_m: 7.216013489704274
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.133973
+my_rank: 0; global_M[2]: 0.137976
+my_rank: 0; global_M[3]: 0.097642
+my_rank: 0; global_M[4]: 0.097005
+my_rank: 0; global_M[5]: 0.079224
+my_rank: 0; global_M[6]: 0.138581
+my_rank: 0; global_M[7]: 0.137913
+my_rank: 0; global_M[8]: 0.107126
+my_rank: 0; global_M[9]: 0.070559
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.133973
+my_rank: 0; local_M[2]: 0.137976
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 6.962429
+Different elements
+
+i: 0; j: 1; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: -0.673466
+Different elements
+
+i: 0; j: 2; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 9.775898
+Different elements
+
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 6.962429
+Different elements
+
+i: 1; j: 1; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: -0.673466
+Different elements
+
+i: 1; j: 2; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 9.775898
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 11.210644
+Different elements
+
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 9.775898; global_population[j][0]: 6.962429
+Different elements
+
+i: 0; j: 1; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 9.775898; global_population[j][0]: -0.673466
+Different elements
+
+i: 0; j: 2; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 9.775898; global_population[j][0]: 9.775898
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 9.775898; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 6.962429
+Different elements
+
+i: 1; j: 1; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: -0.673466
+Different elements
+
+i: 1; j: 2; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 9.775898
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 6.962429
+Different elements
+
+i: 2; j: 1; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: -0.673466
+Different elements
+
+i: 2; j: 2; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 9.775898
+Different elements
+
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 11.210644
+Different elements
+
+my_rank: 0; local_M[3]: 0.097642
+Update accelerations
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 6.962429
+Different elements
+
+
+i: 0; j: 0
+R: 112.930393
+M[j]: 0.138581
+indice 0
+population[i][0] -99.984347
+population[j][0] 6.962429
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 0; j: 1; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: -0.673466
+Different elements
+
+
+i: 0; j: 1
+R: 102.925446
+M[j]: 0.137976
+indice 0
+population[i][0] -99.984347
+population[j][0] -0.673466
+translation_index[j] 2
+Forces[i][0] 0.000000
+i: 0; j: 2; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 9.775898
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 6.962429; global_population[j][0]: 6.962429
+i: 2; j: 1; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 6.962429; global_population[j][0]: -0.673466
+Different elements
+
+i: 2; j: 2; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 6.962429; global_population[j][0]: 9.775898
+Different elements
+
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 6.962429; global_population[j][0]: 11.210644
+Different elements
+
+Different elements
+
+
+i: 0; j: 2
+R: 116.727675
+M[j]: 0.137913
+indice 0
+population[i][0] -99.984347
+population[j][0] 9.775898
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 0; j: 3
+R: 123.711935
+M[j]: 0.133973
+indice 0
+population[i][0] -99.984347
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 6.962429
+Different elements
+
+
+i: 1; j: 0
+R: 18.448441
+M[j]: 0.138581
+indice 1
+population[i][0] 11.210644
+population[j][0] 6.962429
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 1; j: 1; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: -0.673466
+Different elements
+
+
+i: 1; j: 1
+R: 29.671628
+M[j]: 0.137976
+indice 1
+population[i][0] 11.210644
+population[j][0] -0.673466
+translation_index[j] 2
+Forces[i][0] -0.136033
+i: 1; j: 2; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 9.775898
+Different elements
+
+
+i: 1; j: 2
+R: 14.570959
+M[j]: 0.137913
+indice 1
+population[i][0] 11.210644
+population[j][0] 9.775898
+translation_index[j] 7
+Forces[i][0] -0.371605
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 11.210644
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: -0.673466; global_population[j][0]: 6.962429
+Different elements
+
+
+i: 2; j: 0
+R: 11.983065
+M[j]: 0.138581
+indice 2
+population[i][0] -0.673466
+population[j][0] 6.962429
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 2; j: 1; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: -0.673466; global_population[j][0]: -0.673466
+i: 2; j: 2; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: -0.673466; global_population[j][0]: 9.775898
+Different elements
+
+
+i: 2; j: 2
+R: 16.436674
+M[j]: 0.137913
+indice 2
+population[i][0] -0.673466
+population[j][0] 9.775898
+translation_index[j] 7
+Forces[i][0] 0.387682
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: -0.673466; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 2; j: 3
+R: 29.671628
+M[j]: 0.133973
+indice 2
+population[i][0] -0.673466
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.772593
+i: 3; j: 0; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 7.599172; global_population[j][0]: 6.962429
+Different elements
+
+
+i: 3; j: 0
+R: 58.385293
+M[j]: 0.138581
+indice 3
+population[i][0] 7.599172
+population[j][0] 6.962429
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 7.599172; global_population[j][0]: -0.673466
+Different elements
+
+
+i: 3; j: 1
+R: 68.121095
+M[j]: 0.137976
+indice 3
+population[i][0] 7.599172
+population[j][0] -0.673466
+translation_index[j] 2
+Forces[i][0] -0.004695
+i: 3; j: 2; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 7.599172; global_population[j][0]: 9.775898
+Different elements
+
+
+i: 3; j: 2
+R: 54.972433
+M[j]: 0.137913
+indice 3
+population[i][0] 7.599172
+population[j][0] 9.775898
+translation_index[j] 7
+Forces[i][0] -0.056753
+i: 3; j: 3; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 7.599172; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 3; j: 3
+R: 40.590153
+M[j]: 0.133973
+indice 3
+population[i][0] 7.599172
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] -0.039787
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: -0.429492
+my_rank: 0; Forces[2][0]: 1.008165
+my_rank: 0; Forces[3][0]: -0.002753
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[2][0]: 7.306791
+my_rank: 0; accelerations[3][0]: 0.000000
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[2][0]: 12.614236
+my_rank: 0; before_updating: local_velocity[3][0]: 1.998478
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 13.613909
+my_rank: 0; local_velocity[3][0]: 0.999239
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 11.210644
+my_rank: 0; local_population[2][0]: 12.940443
+my_rank: 0; local_population[3][0]: 8.598411
+
+
+
+Iteration: 5; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 287.326887
+my_rank: 0; local_fitness[3]: 3406.620189
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 287.326887
+my_rank: 0; local_fitness_sorted[1]: 424.977677
+my_rank: 0; local_fitness_sorted[2]: 3406.620189
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 424.977677
+my_rank: 0; local_fitness[2]: 287.326887
+my_rank: 0; local_fitness[3]: 3406.620189
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 0.000000
+my_rank: 0; local_velocity[2][0]: 13.613909
+my_rank: 0; local_velocity[3][0]: 0.999239
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 167.823596143597683
+my_rank: 0; global_fitness[1]: 287.326886578041638
+my_rank: 0; global_fitness[2]: 304.790746559212607
+my_rank: 0; global_fitness[3]: 424.977676812834318
+my_rank: 0; global_fitness[4]: 1847.996512974391408
+my_rank: 0; global_fitness[5]: 3406.620189009668138
+my_rank: 0; global_fitness[6]: 3436.950627826778600
+my_rank: 0; global_fitness[7]: 4548.095073706538642
+my_rank: 0; global_fitness[8]: 5601.066720018952765
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 9.998035283614078
+my_rank: 0; global_population[1][0]: 12.940442567518186
+my_rank: 0; global_population[2][0]: 15.734935429398350
+my_rank: 0; global_population[3][0]: 11.210644390066449
+my_rank: 0; global_population[4][0]: 42.298768154484570
+my_rank: 0; global_population[5][0]: 8.598410868108228
+my_rank: 0; global_population[6][0]: 58.592811673224347
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 66.831301509789796
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 7
+my_rank: 0; global_translation_index[1]: 2
+my_rank: 0; global_translation_index[2]: 6
+my_rank: 0; global_translation_index[3]: 1
+my_rank: 0; global_translation_index[4]: 8
+my_rank: 0; global_translation_index[5]: 3
+my_rank: 0; global_translation_index[6]: 4
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 9
+my_rank: 0; global_translation_index[9]: 0
+it: 5,  sum_m: 7.345740164262384
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.133006
+my_rank: 0; global_M[2]: 0.134680
+my_rank: 0; global_M[3]: 0.096740
+my_rank: 0; global_M[4]: 0.096371
+my_rank: 0; global_M[5]: 0.082856
+my_rank: 0; global_M[6]: 0.134467
+my_rank: 0; global_M[7]: 0.136133
+i: 0; j: 0; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 58.592812; global_population[j][0]: 9.998035
+Different elements
+
+i: 0; j: 1; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 58.592812; global_population[j][0]: 12.940443
+Different elements
+
+i: 0; j: 2; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 58.592812; global_population[j][0]: 15.734935
+Different elements
+
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 58.592812; global_population[j][0]: 11.210644
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 58.592812; global_population[j][0]: 42.298768
+Different elements
+
+i: 1; j: 0; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 9.998035
+Different elements
+
+i: 0; j: 0; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 9.998035; global_population[j][0]: 9.998035
+i: 0; j: 1; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 9.998035; global_population[j][0]: 12.940443
+Different elements
+
+i: 0; j: 2; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 9.998035; global_population[j][0]: 15.734935
+Different elements
+
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 9.998035; global_population[j][0]: 11.210644
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 9.998035; global_population[j][0]: 42.298768
+Different elements
+
+i: 1; j: 0; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 9.998035
+Different elements
+
+i: 1; j: 1; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 12.940443
+Different elements
+
+my_rank: 0; global_M[8]: 0.115697
+my_rank: 0; global_M[9]: 0.070049
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.133006
+my_rank: 0; local_M[2]: 0.134680
+my_rank: 0; local_M[3]: 0.096740
+Update accelerations
+i: 0; j: 0; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: -99.984347; global_population[j][0]: 9.998035
+Different elements
+
+
+i: 0; j: 0
+R: 118.893900
+M[j]: 0.136133
+indice 0
+population[i][0] -99.984347
+population[j][0] 9.998035
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 1; j: 1; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 12.940443
+Different elements
+
+i: 1; j: 2; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 15.734935
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 67.004155; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 0; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 15.734935; global_population[j][0]: 9.998035
+Different elements
+
+i: 2; j: 1; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 15.734935; global_population[j][0]: 12.940443
+Different elements
+
+i: 2; j: 2; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 15.734935; global_population[j][0]: 15.734935
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 15.734935; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 6
+i: 1; j: 2; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 15.734935
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 11.210644
+Different elements
+
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 42.298768; global_population[j][0]: 42.298768
+i: 2; j: 0; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 9.998035
+Different elements
+
+i: 2; j: 1; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 12.940443
+Different elements
+
+i: 2; j: 2; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 15.734935
+Different elements
+
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 11.210644
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 1; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: -99.984347; global_population[j][0]: 12.940443
+Different elements
+
+
+i: 0; j: 1
+R: 122.653310
+M[j]: 0.134680
+indice 0
+population[i][0] -99.984347
+population[j][0] 12.940443
+translation_index[j] 2
+Forces[i][0] 0.000000
+i: 0; j: 2; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: -99.984347; global_population[j][0]: 15.734935
+Different elements
+
+
+i: 0; j: 2
+R: 123.976225
+M[j]: 0.134467
+indice 0
+population[i][0] -99.984347
+population[j][0] 15.734935
+translation_index[j] 6
+Forces[i][0] 0.000000
+local_population[i][0]: 15.734935; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: -99.984347; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 0; j: 3
+R: 123.711935
+M[j]: 0.133006
+indice 0
+population[i][0] -99.984347
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: -99.984347; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 0; j: 4
+R: 145.259683
+M[j]: 0.115697
+indice 0
+population[i][0] -99.984347
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 9.998035
+Different elements
+
+
+i: 1; j: 0
+R: 9.143138
+M[j]: 0.136133
+indice 1
+population[i][0] 11.210644
+population[j][0] 9.998035
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 1; j: 1; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 12.940443
+Different elements
+
+
+i: 1; j: 1
+R: 6.582996
+M[j]: 0.134680
+indice 1
+population[i][0] 11.210644
+population[j][0] 12.940443
+translation_index[j] 2
+Forces[i][0] -0.065492
+i: 1; j: 2; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 15.734935
+Different elements
+
+
+i: 1; j: 2
+R: 10.736801
+M[j]: 0.134467
+indice 1
+population[i][0] 11.210644
+population[j][0] 15.734935
+translation_index[j] 6
+Forces[i][0] 0.062881
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 11.210644
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 11.210644; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 1; j: 4
+R: 39.873880
+M[j]: 0.115697
+indice 1
+population[i][0] 11.210644
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.268418
+i: 2; j: 0; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 12.940443; global_population[j][0]: 9.998035
+Different elements
+
+
+i: 2; j: 0
+R: 4.000711
+M[j]: 0.136133
+indice 2
+population[i][0] 12.940443
+population[j][0] 9.998035
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 2; j: 1; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 12.940443; global_population[j][0]: 12.940443
+i: 2; j: 2; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 12.940443; global_population[j][0]: 15.734935
+Different elements
+
+
+i: 2; j: 2
+R: 4.389746
+M[j]: 0.134467
+indice 2
+population[i][0] 12.940443
+population[j][0] 15.734935
+translation_index[j] 6
+Forces[i][0] -0.367757
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 12.940443; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 2; j: 3
+R: 6.582996
+M[j]: 0.133006
+indice 2
+population[i][0] 12.940443
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] -0.053336
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 12.940443; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 2; j: 4
+R: 34.763766
+M[j]: 0.115697
+indice 2
+population[i][0] 12.940443
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] -0.181709
+i: 3; j: 0; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 8.598411; global_population[j][0]: 9.998035
+Different elements
+
+
+i: 3; j: 0
+R: 49.511327
+M[j]: 0.136133
+indice 3
+population[i][0] 8.598411
+population[j][0] 9.998035
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 8.598411; global_population[j][0]: 12.940443
+Different elements
+
+
+i: 3; j: 1
+R: 46.981908
+M[j]: 0.134680
+indice 3
+population[i][0] 8.598411
+population[j][0] 12.940443
+translation_index[j] 2
+Forces[i][0] 0.010153
+i: 3; j: 2; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 8.598411; global_population[j][0]: 15.734935
+Different elements
+
+
+i: 3; j: 2
+R: 50.671267
+M[j]: 0.134467
+indice 3
+population[i][0] 8.598411
+population[j][0] 15.734935
+translation_index[j] 6
+Forces[i][0] 0.042993
+i: 3; j: 3; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 8.598411; global_population[j][0]: 11.210644
+Different elements
+
+
+i: 3; j: 3
+R: 40.513474
+M[j]: 0.133006
+indice 3
+population[i][0] 8.598411
+population[j][0] 11.210644
+translation_index[j] 1
+Forces[i][0] 0.092959
+i: 3; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 8.598411; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 3; j: 4
+R: 73.570681
+M[j]: 0.115697
+indice 3
+population[i][0] 8.598411
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.115586
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: 0.595629
+my_rank: 0; Forces[2][0]: 0.177180
+my_rank: 0; Forces[3][0]: 0.255412
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 4.478229
+my_rank: 0; accelerations[2][0]: 1.315562
+my_rank: 0; accelerations[3][0]: 2.640188
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[2][0]: 13.613909
+my_rank: 0; before_updating: local_velocity[3][0]: 0.999239
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 4.478229
+my_rank: 0; local_velocity[2][0]: 8.122516
+my_rank: 0; local_velocity[3][0]: 3.139808
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 15.688874
+my_rank: 0; local_population[2][0]: 21.062959
+my_rank: 0; local_population[3][0]: 11.738218
+
+
+
+Iteration: 6; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 545.439883
+my_rank: 0; local_fitness[2]: 900.181514
+my_rank: 0; local_fitness[3]: 3470.473292
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 545.439883
+my_rank: 0; local_fitness_sorted[1]: 900.181514
+my_rank: 0; local_fitness_sorted[2]: 3470.473292
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 545.439883
+my_rank: 0; local_fitness[2]: 900.181514
+my_rank: 0; local_fitness[3]: 3470.473292
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 4.478229
+my_rank: 0; local_velocity[2][0]: 8.122516
+my_rank: 0; local_velocity[3][0]: 3.139808
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 545.439882798997019
+my_rank: 0; global_fitness[1]: 622.242916057434968
+my_rank: 0; global_fitness[2]: 682.331171746419159
+my_rank: 0; global_fitness[3]: 900.181514240441857
+my_rank: 0; global_fitness[4]: 1901.114003848114407
+my_rank: 0; global_fitness[5]: 3464.863289494090168
+my_rank: 0; global_fitness[6]: 3470.473292072008007
+my_rank: 0; global_fitness[7]: 4500.377175576221816
+my_rank: 0; global_fitness[8]: 5601.066720018952765
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 15.688873561434903
+my_rank: 0; global_population[1][0]: 19.764585919737399
+my_rank: 0; global_population[2][0]: 20.121188531374465
+my_rank: 0; global_population[3][0]: 21.062958747654406
+my_rank: 0; global_population[4][0]: 42.298768154484570
+my_rank: 0; global_population[5][0]: 58.592811673224347
+my_rank: 0; global_population[6][0]: 11.738218455930257
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 66.831301509789796
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 1
+my_rank: 0; global_translation_index[1]: 7
+my_rank: 0; global_translation_index[2]: 6
+my_rank: 0; global_translation_index[3]: 2
+my_rank: 0; global_translation_index[4]: 8
+my_rank: 0; global_translation_index[5]: 4
+my_rank: 0; global_translation_index[6]: 3
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 9
+my_rank: 0; global_translation_index[9]: 0
+it: 6,  sum_m: 7.448509034745438
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.134255
+my_rank: 0; global_M[2]: 0.129851
+my_rank: 0; global_M[3]: 0.097944
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 15.688874
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 19.764586
+Different elements
+
+i: 0; j: 2; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 20.121189
+Different elements
+
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 19.764586; global_population[j][0]: 15.688874
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 19.764586; global_population[j][0]: 19.764586
+i: 0; j: 2; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 19.764586; global_population[j][0]: 20.121189
+Different elements
+
+i: 0; j: 3; translation_index[j]:2; translation_index[i]: 1
+my_rank: 0; global_M[4]: 0.098013
+my_rank: 0; global_M[5]: 0.085159
+my_rank: 0; global_M[6]: 0.132556
+my_rank: 0; global_M[7]: 0.133302
+my_rank: 0; global_M[8]: 0.117426
+my_rank: 0; global_M[9]: 0.071495
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.134255
+my_rank: 0; local_M[2]: 0.129851
+my_rank: 0; local_M[3]: 0.097944
+Update accelerations
+i: 0; j: 0; translation_index[j]:1; translation_index[i]: 1
+i: 0; j: 3; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 21.062959
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: 58.592812; global_population[j][0]: 58.592812
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 15.688874
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 19.764586
+Different elements
+
+i: 1; j: 2; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 20.121189
+Different elements
+
+local_population[i][0]: 19.764586; global_population[j][0]: 21.062959
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 19.764586; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: 19.764586; global_population[j][0]: 58.592812
+Different elements
+
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 15.688874
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 19.764586
+Different elements
+
+i: 1; j: 2; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 20.121189
+Different elements
+
+i: 1; j: 3; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 21.062959
+Different elements
+
+local_population[i][0]: -99.984347; global_population[j][0]: 15.688874
+Different elements
+
+
+i: 0; j: 0
+R: 127.752146
+M[j]: 0.134255
+indice 0
+population[i][0] -99.984347
+population[j][0] 15.688874
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 19.764586
+Different elements
+
+
+i: 0; j: 1
+R: 130.608943
+M[j]: 0.133302
+indice 0
+population[i][0] -99.984347
+population[j][0] 19.764586
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 1; j: 3; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 21.062959
+Different elements
+
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 42.298768
+Different elements
+
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 20.121189; global_population[j][0]: 15.688874
+Different elements
+
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 20.121189; global_population[j][0]: 19.764586
+Different elements
+
+i: 2; j: 2; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 20.121189; global_population[j][0]: 20.121189
+i: 2; j: 3; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 20.121189; global_population[j][0]: 21.062959
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 42.298768
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 15.688874
+Different elements
+
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 19.764586
+Different elements
+
+i: 2; j: 2; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 20.121189
+Different elements
+
+i: 2; j: 3; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 21.062959
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 2; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 20.121189
+Different elements
+
+
+i: 0; j: 2
+R: 131.515594
+M[j]: 0.132556
+indice 0
+population[i][0] -99.984347
+population[j][0] 20.121189
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 0; j: 3; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 21.062959
+Different elements
+
+
+i: 0; j: 3
+R: 134.351399
+M[j]: 0.129851
+indice 0
+population[i][0] -99.984347
+population[j][0] 21.062959
+translation_index[j] 2
+Forces[i][0] 0.000000
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 20.121189; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: 20.121189; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: 66.831302; global_population[j][0]: 58.592812
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 0; j: 4
+R: 150.003728
+M[j]: 0.117426
+indice 0
+population[i][0] -99.984347
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.000000
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: -99.984347; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 0; j: 5
+R: 164.188803
+M[j]: 0.098013
+indice 0
+population[i][0] -99.984347
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 15.688874; global_population[j][0]: 15.688874
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 15.688874; global_population[j][0]: 19.764586
+Different elements
+
+
+i: 1; j: 1
+R: 4.576570
+M[j]: 0.133302
+indice 1
+population[i][0] 15.688874
+population[j][0] 19.764586
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 1; j: 2; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 15.688874; global_population[j][0]: 20.121189
+Different elements
+
+
+i: 1; j: 2
+R: 4.478693
+M[j]: 0.132556
+indice 1
+population[i][0] 15.688874
+population[j][0] 20.121189
+translation_index[j] 6
+Forces[i][0] 0.362224
+i: 1; j: 3; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 15.688874; global_population[j][0]: 21.062959
+Different elements
+
+
+i: 1; j: 3
+R: 6.739154
+M[j]: 0.129851
+indice 1
+population[i][0] 15.688874
+population[j][0] 21.062959
+translation_index[j] 2
+Forces[i][0] 0.762496
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 15.688874; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 1; j: 4
+R: 27.445467
+M[j]: 0.117426
+indice 1
+population[i][0] 15.688874
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 1.078450
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 15.688874; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 1; j: 5
+R: 44.461690
+M[j]: 0.098013
+indice 1
+population[i][0] 15.688874
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 1.425837
+i: 2; j: 0; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 21.062959; global_population[j][0]: 15.688874
+Different elements
+
+
+i: 2; j: 0
+R: 6.739154
+M[j]: 0.134255
+indice 2
+population[i][0] 21.062959
+population[j][0] 15.688874
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 21.062959; global_population[j][0]: 19.764586
+Different elements
+
+
+i: 2; j: 1
+R: 6.283698
+M[j]: 0.133302
+indice 2
+population[i][0] 21.062959
+population[j][0] 19.764586
+translation_index[j] 7
+Forces[i][0] -0.315954
+i: 2; j: 2; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 21.062959; global_population[j][0]: 20.121189
+Different elements
+
+
+i: 2; j: 2
+R: 4.802486
+M[j]: 0.132556
+indice 2
+population[i][0] 21.062959
+population[j][0] 20.121189
+translation_index[j] 6
+Forces[i][0] -0.397239
+i: 2; j: 3; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 21.062959; global_population[j][0]: 21.062959
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 21.062959; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 2; j: 4
+R: 23.818470
+M[j]: 0.117426
+indice 2
+population[i][0] 21.062959
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] -0.473953
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: 21.062959; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 2; j: 5
+R: 40.693922
+M[j]: 0.098013
+indice 2
+population[i][0] 21.062959
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] -0.164986
+i: 3; j: 0; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 11.738218; global_population[j][0]: 15.688874
+Different elements
+
+
+i: 3; j: 0
+R: 40.621736
+M[j]: 0.134255
+indice 3
+population[i][0] 11.738218
+population[j][0] 15.688874
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 11.738218; global_population[j][0]: 19.764586
+Different elements
+
+
+i: 3; j: 1
+R: 43.261974
+M[j]: 0.133302
+indice 3
+population[i][0] 11.738218
+population[j][0] 19.764586
+translation_index[j] 7
+Forces[i][0] 0.029065
+i: 3; j: 2; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 11.738218; global_population[j][0]: 20.121189
+Different elements
+
+
+i: 3; j: 2
+R: 41.918805
+M[j]: 0.132556
+indice 3
+population[i][0] 11.738218
+population[j][0] 20.121189
+translation_index[j] 6
+Forces[i][0] 0.084117
+i: 3; j: 3; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 11.738218; global_population[j][0]: 21.062959
+Different elements
+
+
+i: 3; j: 3
+R: 37.539361
+M[j]: 0.129851
+indice 3
+population[i][0] 11.738218
+population[j][0] 21.062959
+translation_index[j] 2
+Forces[i][0] 0.143125
+i: 3; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 11.738218; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 3; j: 4
+R: 56.187657
+M[j]: 0.117426
+indice 3
+population[i][0] 11.738218
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.214924
+i: 3; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 11.738218; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 3; j: 5
+R: 70.066058
+M[j]: 0.098013
+indice 3
+population[i][0] 11.738218
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.357094
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: 1.714423
+my_rank: 0; Forces[2][0]: 0.101778
+my_rank: 0; Forces[3][0]: 0.502994
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 12.769894
+my_rank: 0; accelerations[2][0]: 0.783804
+my_rank: 0; accelerations[3][0]: 5.135534
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 4.478229
+my_rank: 0; before_updating: local_velocity[2][0]: 8.122516
+my_rank: 0; before_updating: local_velocity[3][0]: 3.139808
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 15.009008
+my_rank: 0; local_velocity[2][0]: 4.845062
+my_rank: 0; local_velocity[3][0]: 6.705438
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 30.697882
+my_rank: 0; local_population[2][0]: 25.908021
+my_rank: 0; local_population[3][0]: 18.443656
+
+
+
+Iteration: 7; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 1241.659084
+my_rank: 0; local_fitness[2]: 1377.491233
+my_rank: 0; local_fitness[3]: 3672.855984
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 1241.659084
+my_rank: 0; local_fitness_sorted[1]: 1377.491233
+my_rank: 0; local_fitness_sorted[2]: 3672.855984
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 1241.659084
+my_rank: 0; local_fitness[2]: 1377.491233
+my_rank: 0; local_fitness[3]: 3672.855984
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 15.009008
+my_rank: 0; local_velocity[2][0]: 4.845062
+my_rank: 0; local_velocity[3][0]: 6.705438
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 1018.923111287122879
+my_rank: 0; global_fitness[1]: 1241.659083839339473
+my_rank: 0; global_fitness[2]: 1377.491232578895733
+my_rank: 0; global_fitness[3]: 1403.185547279635102
+my_rank: 0; global_fitness[4]: 2297.585433430037028
+my_rank: 0; global_fitness[5]: 3571.062496168734469
+my_rank: 0; global_fitness[6]: 3672.855983545003255
+my_rank: 0; global_fitness[7]: 4673.573743605107666
+my_rank: 0; global_fitness[8]: 5601.066720018952765
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 23.859864505129597
+my_rank: 0; global_population[1][0]: 30.697881924768581
+my_rank: 0; global_population[2][0]: 25.908021107773990
+my_rank: 0; global_population[3][0]: 28.041663421738313
+my_rank: 0; global_population[4][0]: 42.298768154484570
+my_rank: 0; global_population[5][0]: 58.592811673224347
+my_rank: 0; global_population[6][0]: 18.443656470237595
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 66.831301509789796
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 6
+my_rank: 0; global_translation_index[1]: 1
+my_rank: 0; global_translation_index[2]: 2
+my_rank: 0; global_translation_index[3]: 7
+my_rank: 0; global_translation_index[4]: 8
+my_rank: 0; global_translation_index[5]: 4
+my_rank: 0; global_translation_index[6]: 3
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 9
+my_rank: 0; global_translation_index[9]: 0
+it: 7,  sum_m: 7.483072257696891
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.130757
+my_rank: 0; global_M[2]: 0.129001
+my_rank: 0; global_M[3]: 0.099340
+my_rank: 0; global_M[4]: 0.100655
+my_rank: 0; global_M[5]: 0.086408
+my_rank: 0; global_M[6]: 0.133635
+my_rank: 0; global_M[7]: 0.128669
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 23.859865
+Different elements
+
+i: 0; j: 1; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 30.697882
+Different elements
+
+i: 0; j: 2; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 25.908021
+Different elements
+
+i: 0; j: 3; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 28.041663
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 58.592812
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 28.041663; global_population[j][0]: 23.859865
+Different elements
+
+i: 0; j: 1; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 28.041663; global_population[j][0]: 30.697882
+Different elements
+
+i: 0; j: 2; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 28.041663; global_population[j][0]: 25.908021
+Different elements
+
+i: 0; j: 3; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 28.041663; global_population[j][0]: 28.041663
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 28.041663; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: 28.041663; global_population[j][0]: 58.592812
+Different elements
+
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 6
+my_rank: 0; global_M[8]: 0.117112
+my_rank: 0; global_M[9]: 0.074423
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.130757
+my_rank: 0; local_M[2]: 0.129001
+my_rank: 0; local_M[3]: 0.099340
+Update accelerations
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 23.859865
+Different elements
+
+
+i: 0; j: 0
+R: 136.807742
+M[j]: 0.133635
+indice 0
+population[i][0] -99.984347
+population[j][0] 23.859865
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 0; j: 1; translation_index[j]:1; translation_index[i]: 6
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 18.443656
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 67.004155; global_population[j][0]: 23.859865
+Different elements
+
+i: 1; j: 1; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 67.004155; global_population[j][0]: 30.697882
+Different elements
+
+i: 1; j: 2; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 67.004155; global_population[j][0]: 25.908021
+Different elements
+
+i: 1; j: 3; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 67.004155; global_population[j][0]: 28.041663
+Different elements
+
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 67.004155; global_population[j][0]: 42.298768
+Different elements
+
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: 28.041663; global_population[j][0]: 18.443656
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 42.298768; global_population[j][0]: 23.859865
+Different elements
+
+i: 1; j: 1; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 42.298768; global_population[j][0]: 30.697882
+Different elements
+
+i: 1; j: 2; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 42.298768; global_population[j][0]: 25.908021
+Different elements
+
+i: 1; j: 3; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 42.298768; global_population[j][0]: 28.041663
+Different elements
+
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 42.298768; global_population[j][0]: 42.298768
+local_population[i][0]: -99.984347; global_population[j][0]: 30.697882
+Different elements
+
+
+i: 0; j: 1
+R: 141.485553
+M[j]: 0.130757
+indice 0
+population[i][0] -99.984347
+population[j][0] 30.697882
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 0; j: 2; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 25.908021
+Different elements
+
+
+i: 0; j: 2
+R: 141.000528
+M[j]: 0.129001
+indice 0
+population[i][0] -99.984347
+local_population[i][0]: 67.004155; global_population[j][0]: 58.592812
+Different elements
+
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 1
+local_population[i][0]: 67.004155; global_population[j][0]: 18.443656
+Different elements
+
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 23.859865; global_population[j][0]: 23.859865
+i: 2; j: 1; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 23.859865; global_population[j][0]: 30.697882
+Different elements
+
+i: 2; j: 2; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 23.859865; global_population[j][0]: 25.908021
+Different elements
+
+i: 2; j: 3; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 23.859865; global_population[j][0]: 28.041663
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 2
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: 42.298768; global_population[j][0]: 58.592812
+Different elements
+
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 1
+local_population[i][0]: 42.298768; global_population[j][0]: 18.443656
+Different elements
+
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 23.859865
+Different elements
+
+i: 2; j: 1; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 30.697882
+Different elements
+
+i: 2; j: 2; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 25.908021
+Different elements
+
+i: 2; j: 3; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 28.041663
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 18.443656
+Different elements
+
+population[j][0] 25.908021
+translation_index[j] 2
+Forces[i][0] 0.000000
+i: 0; j: 3; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 28.041663
+Different elements
+
+
+i: 0; j: 3
+R: 142.144534
+M[j]: 0.128669
+indice 0
+population[i][0] -99.984347
+population[j][0] 28.041663
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 0; j: 4
+R: 154.212259
+M[j]: 0.117112
+indice 0
+population[i][0] -99.984347
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.000000
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 0; j: 5
+R: 165.877749
+M[j]: 0.100655
+indice 0
+population[i][0] -99.984347
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.000000
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 18.443656
+Different elements
+
+
+i: 0; j: 6
+R: 151.606546
+M[j]: 0.099340
+indice 0
+population[i][0] -99.984347
+population[j][0] 18.443656
+translation_index[j] 3
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 30.697882; global_population[j][0]: 23.859865
+Different elements
+
+
+i: 1; j: 0
+R: 7.874096
+M[j]: 0.133635
+indice 1
+population[i][0] 30.697882
+population[j][0] 23.859865
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 1; j: 1; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 30.697882; global_population[j][0]: 30.697882
+i: 1; j: 2; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 30.697882; global_population[j][0]: 25.908021
+Different elements
+
+
+i: 1; j: 2
+R: 10.439144
+M[j]: 0.129001
+indice 1
+population[i][0] 30.697882
+population[j][0] 25.908021
+translation_index[j] 2
+Forces[i][0] -0.275899
+i: 1; j: 3; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 30.697882; global_population[j][0]: 28.041663
+Different elements
+
+
+i: 1; j: 3
+R: 7.990621
+M[j]: 0.128669
+indice 1
+population[i][0] 30.697882
+population[j][0] 28.041663
+translation_index[j] 7
+Forces[i][0] -0.416619
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 30.697882; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 1; j: 4
+R: 12.732492
+M[j]: 0.117112
+indice 1
+population[i][0] 30.697882
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] -0.518304
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: 30.697882; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 1; j: 5
+R: 28.442716
+M[j]: 0.100655
+indice 1
+population[i][0] 30.697882
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] -0.264629
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 1
+local_population[i][0]: 30.697882; global_population[j][0]: 18.443656
+Different elements
+
+
+i: 1; j: 6
+R: 42.245518
+M[j]: 0.099340
+indice 1
+population[i][0] 30.697882
+population[j][0] 18.443656
+translation_index[j] 3
+Forces[i][0] -0.029940
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 25.908021; global_population[j][0]: 23.859865
+Different elements
+
+
+i: 2; j: 0
+R: 5.748436
+local_population[i][0]: 23.859865; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 23.859865; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 23.859865; global_population[j][0]: 18.443656
+Different elements
+
+M[j]: 0.133635
+indice 2
+population[i][0] 25.908021
+population[j][0] 23.859865
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 2; j: 1; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 25.908021; global_population[j][0]: 30.697882
+Different elements
+
+
+i: 2; j: 1
+R: 10.439144
+M[j]: 0.130757
+indice 2
+population[i][0] 25.908021
+population[j][0] 30.697882
+translation_index[j] 1
+Forces[i][0] -0.111677
+i: 2; j: 2; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 25.908021; global_population[j][0]: 25.908021
+i: 2; j: 3; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 25.908021; global_population[j][0]: 28.041663
+Different elements
+
+
+i: 2; j: 3
+R: 2.752668
+M[j]: 0.128669
+indice 2
+population[i][0] 25.908021
+population[j][0] 28.041663
+translation_index[j] 7
+Forces[i][0] 0.029042
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 25.908021; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 2; j: 4
+R: 16.878415
+M[j]: 0.117112
+indice 2
+population[i][0] 25.908021
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.262966
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 25.908021; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 2; j: 5
+R: 35.892118
+M[j]: 0.100655
+indice 2
+population[i][0] 25.908021
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.529712
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 25.908021; global_population[j][0]: 18.443656
+Different elements
+
+
+i: 2; j: 6
+R: 32.035518
+M[j]: 0.099340
+indice 2
+population[i][0] 25.908021
+population[j][0] 18.443656
+translation_index[j] 3
+Forces[i][0] 0.744701
+i: 3; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 18.443656; global_population[j][0]: 23.859865
+Different elements
+
+
+i: 3; j: 0
+R: 36.924349
+M[j]: 0.133635
+indice 3
+population[i][0] 18.443656
+population[j][0] 23.859865
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 18.443656; global_population[j][0]: 30.697882
+Different elements
+
+
+i: 3; j: 1
+R: 42.245518
+M[j]: 0.130757
+indice 3
+population[i][0] 18.443656
+population[j][0] 30.697882
+translation_index[j] 1
+Forces[i][0] 0.035405
+i: 3; j: 2; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 18.443656; global_population[j][0]: 25.908021
+Different elements
+
+
+i: 3; j: 2
+R: 32.035518
+M[j]: 0.129001
+indice 3
+population[i][0] 18.443656
+population[j][0] 25.908021
+translation_index[j] 2
+Forces[i][0] 0.103911
+i: 3; j: 3; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 18.443656; global_population[j][0]: 28.041663
+Different elements
+
+
+i: 3; j: 3
+R: 34.264679
+M[j]: 0.128669
+indice 3
+population[i][0] 18.443656
+population[j][0] 28.041663
+translation_index[j] 7
+Forces[i][0] 0.158201
+i: 3; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 18.443656; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 3; j: 4
+R: 42.506698
+M[j]: 0.117112
+indice 3
+population[i][0] 18.443656
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.223299
+i: 3; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 18.443656; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 3; j: 5
+R: 61.045256
+M[j]: 0.100655
+indice 3
+population[i][0] 18.443656
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.342008
+i: 3; j: 6; translation_index[j]:3; translation_index[i]: 7
+local_population[i][0]: 18.443656; global_population[j][0]: 18.443656
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: -0.098446
+my_rank: 0; Forces[2][0]: 0.690411
+my_rank: 0; Forces[3][0]: 0.461578
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[2][0]: 5.351966
+my_rank: 0; accelerations[3][0]: 4.646456
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 15.009008
+my_rank: 0; before_updating: local_velocity[2][0]: 4.845062
+my_rank: 0; before_updating: local_velocity[3][0]: 6.705438
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 7.504504
+my_rank: 0; local_velocity[2][0]: 7.774497
+my_rank: 0; local_velocity[3][0]: 7.999175
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 38.202386
+my_rank: 0; local_population[2][0]: 33.682518
+my_rank: 0; local_population[3][0]: 26.442831
+
+
+
+Iteration: 8; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 2086.626144
+my_rank: 0; local_fitness[2]: 1985.994297
+my_rank: 0; local_fitness[3]: 4031.910855
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 1985.994297
+my_rank: 0; local_fitness_sorted[1]: 2086.626144
+my_rank: 0; local_fitness_sorted[2]: 4031.910855
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 2086.626144
+my_rank: 0; local_fitness[2]: 1985.994297
+my_rank: 0; local_fitness[3]: 4031.910855
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 7.504504
+my_rank: 0; local_velocity[2][0]: 7.774497
+my_rank: 0; local_velocity[3][0]: 7.999175
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 1912.817651959802788
+my_rank: 0; global_fitness[1]: 1941.393649628749699
+my_rank: 0; global_fitness[2]: 1985.994296698155267
+my_rank: 0; global_fitness[3]: 2086.626143513458828
+my_rank: 0; global_fitness[4]: 2618.030013284765118
+my_rank: 0; global_fitness[5]: 3846.463221376708589
+my_rank: 0; global_fitness[6]: 4031.910855020180861
+my_rank: 0; global_fitness[7]: 4986.127661279421773
+my_rank: 0; global_fitness[8]: 5601.066720018952765
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 34.020249357146149
+my_rank: 0; global_population[1][0]: 32.596643730112064
+my_rank: 0; global_population[2][0]: 33.682517858087991
+my_rank: 0; global_population[3][0]: 38.202386106435419
+my_rank: 0; global_population[4][0]: 42.298768154484570
+my_rank: 0; global_population[5][0]: 58.592811673224347
+my_rank: 0; global_population[6][0]: 26.442831457075748
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 66.831301509789796
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 6
+my_rank: 0; global_translation_index[1]: 7
+my_rank: 0; global_translation_index[2]: 2
+my_rank: 0; global_translation_index[3]: 1
+my_rank: 0; global_translation_index[4]: 8
+my_rank: 0; global_translation_index[5]: 4
+my_rank: 0; global_translation_index[6]: 3
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 9
+my_rank: 0; global_translation_index[9]: 0
+it: 8,  sum_m: 7.751509404332587
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.126634
+my_rank: 0; global_M[2]: 0.128008
+my_rank: 0; global_M[3]: 0.100070
+my_rank: 0; global_M[4]: 0.102603
+my_rank: 0; global_M[5]: 0.087040
+my_rank: 0; global_M[6]: 0.129007
+my_rank: 0; global_M[7]: 0.128617
+my_rank: 0; global_M[8]: 0.119377
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 34.020249
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 32.596644
+Different elements
+
+i: 0; j: 2; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 33.682518
+Different elements
+
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 38.202386
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 58.592812
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 26.442831
+Different elements
+
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 34.020249
+Different elements
+
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 32.596644
+i: 0; j: 2; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 33.682518
+Different elements
+
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 38.202386
+Different elements
+
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 58.592812
+Different elements
+
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 26.442831
+Different elements
+
+i: 0; j: 7; translation_index[j]:5; translation_index[i]: 6
+local_population[i][0]: 32.596644; global_population[j][0]: 67.004155
+my_rank: 0; global_M[9]: 0.078643
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.126634
+my_rank: 0; local_M[2]: 0.128008
+my_rank: 0; local_M[3]: 0.100070
+Update accelerations
+i: 0; j: 0; translation_index[j]:6; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 34.020249
+Different elements
+
+
+i: 0; j: 0
+R: 148.680332
+M[j]: 0.129007
+indice 0
+population[i][0] -99.984347
+population[j][0] 34.020249
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 0; j: 1; translation_index[j]:7; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 32.596644
+i: 0; j: 7; translation_index[j]:5; translation_index[i]: 6
+local_population[i][0]: 58.592812; global_population[j][0]: 67.004155
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 34.020249
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 32.596644
+Different elements
+
+i: 1; j: 2; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 33.682518
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 38.202386
+Different elements
+
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 42.298768
+Different elements
+
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 7
+Different elements
+
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 34.020249
+Different elements
+
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 32.596644
+Different elements
+
+i: 1; j: 2; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 33.682518
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 38.202386
+Different elements
+
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 42.298768
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 58.592812
+Different elements
+
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 26.442831
+Different elements
+
+
+i: 0; j: 1
+R: 148.355205
+M[j]: 0.128617
+indice 0
+population[i][0] -99.984347
+population[j][0] 32.596644
+translation_index[j] 7
+Forces[i][0] 0.000000
+i: 0; j: 2; translation_index[j]:2; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 33.682518
+Different elements
+
+
+i: 0; j: 2
+R: 149.119576
+M[j]: 0.128008
+indice 0
+population[i][0] -99.984347
+population[j][0] 33.682518
+translation_index[j] 2
+local_population[i][0]: 67.004155; global_population[j][0]: 58.592812
+Different elements
+
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 26.442831
+Different elements
+
+i: 1; j: 7; translation_index[j]:5; translation_index[i]: 7
+local_population[i][0]: 67.004155; global_population[j][0]: 67.004155
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 34.020249
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 32.596644
+Different elements
+
+i: 2; j: 2; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 33.682518
+Different elements
+
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 38.202386
+Different elements
+
+i: 1; j: 7; translation_index[j]:5; translation_index[i]: 7
+local_population[i][0]: 42.298768; global_population[j][0]: 67.004155
+Different elements
+
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 34.020249
+Different elements
+
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 32.596644
+Different elements
+
+i: 2; j: 2; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 33.682518
+Different elements
+
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 38.202386
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 2
+Forces[i][0] 0.000000
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 38.202386
+Different elements
+
+
+i: 0; j: 3
+R: 151.445249
+M[j]: 0.126634
+indice 0
+population[i][0] -99.984347
+population[j][0] 38.202386
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 0; j: 4; translation_index[j]:8; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 0; j: 4
+R: 156.725317
+M[j]: 0.119377
+indice 0
+population[i][0] -99.984347
+Different elements
+
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 26.442831
+Different elements
+
+i: 2; j: 7; translation_index[j]:5; translation_index[i]: 2
+local_population[i][0]: 34.020249; global_population[j][0]: 67.004155
+Different elements
+
+local_population[i][0]: 66.831302; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 26.442831
+Different elements
+
+i: 2; j: 7; translation_index[j]:5; translation_index[i]: 2
+local_population[i][0]: 66.831302; global_population[j][0]: 67.004155
+Different elements
+
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.000000
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 0; j: 5
+R: 168.596820
+M[j]: 0.102603
+indice 0
+population[i][0] -99.984347
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.000000
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 26.442831
+Different elements
+
+
+i: 0; j: 6
+R: 157.934114
+M[j]: 0.100070
+indice 0
+population[i][0] -99.984347
+population[j][0] 26.442831
+translation_index[j] 3
+Forces[i][0] 0.000000
+i: 0; j: 7; translation_index[j]:5; translation_index[i]: 6
+local_population[i][0]: -99.984347; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 0; j: 7
+R: 177.174439
+M[j]: 0.087040
+indice 0
+population[i][0] -99.984347
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 34.020249
+Different elements
+
+
+i: 1; j: 0
+R: 4.842510
+M[j]: 0.129007
+indice 1
+population[i][0] 38.202386
+population[j][0] 34.020249
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 1; j: 1; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 32.596644
+Different elements
+
+
+i: 1; j: 1
+R: 7.252400
+M[j]: 0.128617
+indice 1
+population[i][0] 38.202386
+population[j][0] 32.596644
+translation_index[j] 7
+Forces[i][0] -0.192393
+i: 1; j: 2; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 33.682518
+Different elements
+
+
+i: 1; j: 2
+R: 6.126728
+M[j]: 0.128008
+indice 1
+population[i][0] 38.202386
+population[j][0] 33.682518
+translation_index[j] 2
+Forces[i][0] -0.364064
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 38.202386
+i: 1; j: 4; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 1; j: 4
+R: 5.550675
+M[j]: 0.119377
+indice 1
+population[i][0] 38.202386
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] -0.527137
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 1; j: 5
+R: 20.928046
+M[j]: 0.102603
+indice 1
+population[i][0] 38.202386
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] -0.375004
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 26.442831
+Different elements
+
+
+i: 1; j: 6
+R: 34.736468
+M[j]: 0.100070
+indice 1
+population[i][0] 38.202386
+population[j][0] 26.442831
+translation_index[j] 3
+Forces[i][0] -0.202378
+i: 1; j: 7; translation_index[j]:5; translation_index[i]: 7
+local_population[i][0]: 38.202386; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 1; j: 7
+R: 28.933725
+M[j]: 0.087040
+indice 1
+population[i][0] 38.202386
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] -0.260879
+i: 2; j: 0; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 34.020249
+Different elements
+
+
+i: 2; j: 0
+R: 1.728217
+M[j]: 0.129007
+indice 2
+population[i][0] 33.682518
+population[j][0] 34.020249
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 2; j: 1; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 32.596644
+Different elements
+
+
+i: 2; j: 1
+R: 1.181357
+M[j]: 0.128617
+indice 2
+population[i][0] 33.682518
+population[j][0] 32.596644
+translation_index[j] 7
+Forces[i][0] 0.044007
+i: 2; j: 2; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 33.682518
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 38.202386
+Different elements
+
+
+i: 2; j: 3
+R: 6.126728
+M[j]: 0.126634
+indice 2
+population[i][0] 33.682518
+population[j][0] 38.202386
+translation_index[j] 1
+Forces[i][0] -0.162356
+i: 2; j: 4; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 2; j: 4
+R: 8.625095
+M[j]: 0.119377
+indice 2
+population[i][0] 33.682518
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.000717
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 2; j: 5
+R: 26.435435
+M[j]: 0.102603
+indice 2
+population[i][0] 33.682518
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.208884
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 26.442831
+Different elements
+
+
+i: 2; j: 6
+R: 29.452904
+M[j]: 0.100070
+indice 2
+population[i][0] 33.682518
+population[j][0] 26.442831
+translation_index[j] 3
+Forces[i][0] 0.377651
+i: 2; j: 7; translation_index[j]:5; translation_index[i]: 2
+local_population[i][0]: 33.682518; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 2; j: 7
+R: 34.027789
+M[j]: 0.087040
+indice 2
+population[i][0] 33.682518
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] 0.334714
+i: 3; j: 0; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 34.020249
+Different elements
+
+
+i: 3; j: 0
+R: 31.178943
+M[j]: 0.129007
+indice 3
+population[i][0] 26.442831
+population[j][0] 34.020249
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 32.596644
+Different elements
+
+
+i: 3; j: 1
+R: 28.750300
+M[j]: 0.128617
+indice 3
+population[i][0] 26.442831
+population[j][0] 32.596644
+translation_index[j] 7
+Forces[i][0] 0.042784
+i: 3; j: 2; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 33.682518
+Different elements
+
+
+i: 3; j: 2
+R: 29.452904
+M[j]: 0.128008
+indice 3
+population[i][0] 26.442831
+population[j][0] 33.682518
+translation_index[j] 2
+Forces[i][0] 0.080350
+i: 3; j: 3; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 38.202386
+Different elements
+
+
+i: 3; j: 3
+R: 34.736468
+M[j]: 0.126634
+indice 3
+population[i][0] 26.442831
+population[j][0] 38.202386
+translation_index[j] 1
+Forces[i][0] 0.123288
+i: 3; j: 4; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 3; j: 4
+R: 32.998811
+M[j]: 0.119377
+indice 3
+population[i][0] 26.442831
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.181788
+i: 3; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 3; j: 5
+R: 49.318062
+M[j]: 0.102603
+indice 3
+population[i][0] 26.442831
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.260062
+i: 3; j: 6; translation_index[j]:3; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 26.442831
+i: 3; j: 7; translation_index[j]:5; translation_index[i]: 1
+local_population[i][0]: 26.442831; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 3; j: 7
+R: 53.866585
+M[j]: 0.087040
+indice 3
+population[i][0] 26.442831
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] 0.351335
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: -0.111261
+my_rank: 0; Forces[2][0]: 0.483495
+my_rank: 0; Forces[3][0]: 0.440772
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 0.000000
+my_rank: 0; accelerations[2][0]: 3.777072
+my_rank: 0; accelerations[3][0]: 4.404615
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 7.504504
+my_rank: 0; before_updating: local_velocity[2][0]: 7.774497
+my_rank: 0; before_updating: local_velocity[3][0]: 7.999175
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 3.752252
+my_rank: 0; local_velocity[2][0]: 7.664321
+my_rank: 0; local_velocity[3][0]: 8.404202
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 41.954638
+my_rank: 0; local_population[2][0]: 41.346839
+my_rank: 0; local_population[3][0]: 34.847034
+
+
+
+Iteration: 9; my_rank: 0
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 2919.469400
+my_rank: 0; local_fitness[2]: 2638.739254
+my_rank: 0; local_fitness[3]: 4547.003283
+
+ local sort done 
+my_rank: 0; local_fitness_sorted[0]: 2638.739254
+my_rank: 0; local_fitness_sorted[1]: 2919.469400
+my_rank: 0; local_fitness_sorted[2]: 4547.003283
+my_rank: 0; local_fitness_sorted[3]: 11360.282764
+
+my_rank: 0; local_translation_index[0]: 0.000000
+my_rank: 0; local_translation_index[1]: 0.000000
+my_rank: 0; local_translation_index[2]: 0.000000
+my_rank: 0; local_translation_index[3]: 0.000000
+
+my_rank: 0; unsorted_translation_index[0]: 0.000000
+my_rank: 0; unsorted_translation_index[1]: 0.000000
+my_rank: 0; unsorted_translation_index[2]: 0.000000
+my_rank: 0; unsorted_translation_index[3]: 0.000000
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 2919.469400
+my_rank: 0; local_fitness[2]: 2638.739254
+my_rank: 0; local_fitness[3]: 4547.003283
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 3.752252
+my_rank: 0; local_velocity[2][0]: 7.664321
+my_rank: 0; local_velocity[3][0]: 8.404202
+SORT DONE:
+
+my_rank: 0; global_fitness[0]: 2638.739254386262473
+my_rank: 0; global_fitness[1]: 2807.473622605699802
+my_rank: 0; global_fitness[2]: 2840.992801644236351
+my_rank: 0; global_fitness[3]: 2919.469400008877983
+my_rank: 0; global_fitness[4]: 3007.107014370941215
+my_rank: 0; global_fitness[5]: 4258.743518078975285
+my_rank: 0; global_fitness[6]: 4547.003282577036771
+my_rank: 0; global_fitness[7]: 5318.920636323658982
+my_rank: 0; global_fitness[8]: 5601.066720018952765
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+
+my_rank: 0; global_population[0][0]: 41.346838530794791
+my_rank: 0; global_population[1][0]: 42.298768154484570
+my_rank: 0; global_population[2][0]: 42.588669902002174
+my_rank: 0; global_population[3][0]: 41.954638197268835
+my_rank: 0; global_population[4][0]: 43.077721296760416
+my_rank: 0; global_population[5][0]: 58.592811673224347
+my_rank: 0; global_population[6][0]: 34.847033776552202
+my_rank: 0; global_population[7][0]: 67.004154979718919
+my_rank: 0; global_population[8][0]: 66.831301509789796
+my_rank: 0; global_population[9][0]: -99.984347261481147
+
+my_rank: 0; global_translation_index[0]: 2
+my_rank: 0; global_translation_index[1]: 8
+my_rank: 0; global_translation_index[2]: 7
+my_rank: 0; global_translation_index[3]: 1
+my_rank: 0; global_translation_index[4]: 6
+my_rank: 0; global_translation_index[5]: 4
+my_rank: 0; global_translation_index[6]: 3
+my_rank: 0; global_translation_index[7]: 5
+my_rank: 0; global_translation_index[8]: 9
+my_rank: 0; global_translation_index[9]: 0
+it: 9,  sum_m: 7.831529883508304
+
+my_rank: 0; global_M[0]: 0.000000
+my_rank: 0; global_M[1]: 0.123579
+my_rank: 0; global_M[2]: 0.127689
+my_rank: 0; global_M[3]: 0.099751
+my_rank: 0; global_M[4]: 0.103971
+my_rank: 0; global_M[5]: 0.088449
+my_rank: 0; global_M[6]: 0.122296
+i: 0; j: 0; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 41.346839
+Different elements
+
+i: 0; j: 1; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 2; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 42.588670
+Different elements
+
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 41.954638
+i: 0; j: 0; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 41.346839
+Different elements
+
+i: 0; j: 1; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 42.298768
+Different elements
+
+i: 0; j: 2; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 42.588670
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 41.954638
+Different elements
+
+i: 0; j: 4; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 43.077721
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 58.592812
+my_rank: 0; global_M[7]: 0.124728
+my_rank: 0; global_M[8]: 0.125219
+my_rank: 0; global_M[9]: 0.084319
+
+my_rank: 0; local_M[0]: 0.000000
+my_rank: 0; local_M[1]: 0.123579
+my_rank: 0; local_M[2]: 0.127689
+my_rank: 0; local_M[3]: 0.099751
+Update accelerations
+i: 0; j: 0; translation_index[j]:2; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 41.346839
+Different elements
+
+
+i: 0; j: 0
+R: 156.582845
+M[j]: 0.127689
+indice 0
+population[i][0] -99.984347
+population[j][0] 41.346839
+translation_index[j] 2
+Different elements
+
+i: 0; j: 4; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 43.077721
+Different elements
+
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 58.592812
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 34.847034
+Different elements
+
+i: 0; j: 7; translation_index[j]:5; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 67.004155
+Different elements
+
+i: 0; j: 8; translation_index[j]:9; translation_index[i]: 2
+local_population[i][0]: 58.592812; global_population[j][0]: 66.831302
+Different elements
+
+i: 1; j: 0; translation_index[j]:2; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 41.346839
+Different elements
+
+i: 1; j: 1; translation_index[j]:8; translation_index[i]: 8
+Different elements
+
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 34.847034
+Different elements
+
+i: 0; j: 7; translation_index[j]:5; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 67.004155
+Different elements
+
+i: 0; j: 8; translation_index[j]:9; translation_index[i]: 2
+local_population[i][0]: 42.588670; global_population[j][0]: 66.831302
+Different elements
+
+i: 1; j: 0; translation_index[j]:2; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 41.346839
+Different elements
+
+i: 1; j: 1; translation_index[j]:8; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 42.298768
+Forces[i][0] 0.000000
+i: 0; j: 1; translation_index[j]:8; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 0; j: 1
+R: 158.059320
+M[j]: 0.125219
+indice 0
+population[i][0] -99.984347
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.000000
+i: 0; j: 2; translation_index[j]:7; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 42.588670
+Different elements
+
+
+i: 0; j: 2
+R: 158.380954
+M[j]: 0.124728
+indice 0
+population[i][0] -99.984347
+population[j][0] 42.588670
+translation_index[j] 7
+Forces[i][0] 0.000000
+local_population[i][0]: 67.004155; global_population[j][0]: 42.298768
+Different elements
+
+i: 1; j: 2; translation_index[j]:7; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 42.588670
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 41.954638
+Different elements
+
+i: 1; j: 4; translation_index[j]:6; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 43.077721
+Different elements
+
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 58.592812
+Different elements
+
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 34.847034
+Different elements
+
+i: 1; j: 7; translation_index[j]:5; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 67.004155
+i: 1; j: 8; translation_index[j]:9; translation_index[i]: 8
+local_population[i][0]: 67.004155; global_population[j][0]: 66.831302
+Different elements
+
+i: 2; j: 0; translation_index[j]:2; translation_index[i]: 7
+i: 1; j: 2; translation_index[j]:7; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 42.588670
+Different elements
+
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 41.954638
+Different elements
+
+i: 1; j: 4; translation_index[j]:6; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 43.077721
+Different elements
+
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 58.592812
+Different elements
+
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 34.847034
+Different elements
+
+i: 1; j: 7; translation_index[j]:5; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 67.004155
+Different elements
+
+i: 1; j: 8; translation_index[j]:9; translation_index[i]: 8
+local_population[i][0]: 42.298768; global_population[j][0]: 66.831302
+Different elements
+
+i: 2; j: 0; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 41.346839
+Different elements
+
+i: 2; j: 1; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 2; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 42.588670
+Different elements
+
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 41.954638
+Different elements
+
+i: 2; j: 4; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 43.077721
+Different elements
+
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 34.847034
+Different elements
+
+i: 2; j: 7; translation_index[j]:5; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 67.004155
+Different elements
+
+i: 2; j: 8; translation_index[j]:9; translation_index[i]: 7
+local_population[i][0]: 66.831302; global_population[j][0]: 66.831302
+i: 0; j: 3; translation_index[j]:1; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 41.954638
+Different elements
+
+
+i: 0; j: 3
+R: 158.693996
+M[j]: 0.123579
+indice 0
+population[i][0] -99.984347
+population[j][0] 41.954638
+translation_index[j] 1
+Forces[i][0] 0.000000
+i: 0; j: 4; translation_index[j]:6; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 43.077721
+Different elements
+
+
+i: 0; j: 4
+R: 159.647938
+M[j]: 0.122296
+indice 0
+population[i][0] -99.984347
+population[j][0] 43.077721
+translation_index[j] 6
+Forces[i][0] 0.000000
+i: 0; j: 5; translation_index[j]:4; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 0; j: 5
+R: 171.632472
+M[j]: 0.103971
+indice 0
+population[i][0] -99.984347
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.000000
+i: 0; j: 6; translation_index[j]:3; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 34.847034
+Different elements
+
+
+i: 0; j: 6
+R: 164.738745
+M[j]: 0.099751
+indice 0
+population[i][0] -99.984347
+population[j][0] 34.847034
+translation_index[j] 3
+Forces[i][0] 0.000000
+i: 0; j: 7; translation_index[j]:5; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 0; j: 7
+R: 179.456641
+M[j]: 0.088449
+indice 0
+population[i][0] -99.984347
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] 0.000000
+i: 0; j: 8; translation_index[j]:9; translation_index[i]: 2
+local_population[i][0]: -99.984347; global_population[j][0]: 66.831302
+Different elements
+
+
+i: 0; j: 8
+R: 181.143803
+M[j]: 0.084319
+indice 0
+population[i][0] -99.984347
+population[j][0] 66.831302
+translation_index[j] 9
+Forces[i][0] 0.000000
+i: 1; j: 0; translation_index[j]:2; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 41.346839
+Different elements
+
+
+i: 1; j: 0
+R: 3.617174
+M[j]: 0.127689
+indice 1
+population[i][0] 41.954638
+population[j][0] 41.346839
+translation_index[j] 2
+Forces[i][0] 0.000000
+i: 1; j: 1; translation_index[j]:8; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 1; j: 1
+R: 2.165069
+M[j]: 0.125219
+indice 1
+population[i][0] 41.954638
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] -0.024104
+i: 1; j: 2; translation_index[j]:7; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 42.588670
+Different elements
+
+
+i: 1; j: 2
+R: 2.096414
+M[j]: 0.124728
+indice 1
+population[i][0] 41.954638
+population[j][0] 42.588670
+translation_index[j] 7
+Forces[i][0] -0.001744
+i: 1; j: 3; translation_index[j]:1; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 41.954638
+i: 1; j: 4; translation_index[j]:6; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 43.077721
+Different elements
+
+
+i: 1; j: 4
+R: 1.129020
+M[j]: 0.122296
+indice 1
+population[i][0] 41.954638
+population[j][0] 43.077721
+translation_index[j] 6
+Forces[i][0] 0.040634
+i: 1; j: 5; translation_index[j]:4; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 1; j: 5
+R: 17.466319
+M[j]: 0.103971
+indice 1
+population[i][0] 41.954638
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.177305
+i: 1; j: 6; translation_index[j]:3; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 34.847034
+Different elements
+
+
+i: 1; j: 6
+R: 24.724894
+M[j]: 0.099751
+indice 1
+population[i][0] 41.954638
+population[j][0] 34.847034
+translation_index[j] 3
+Forces[i][0] 0.288572
+i: 1; j: 7; translation_index[j]:5; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 1; j: 7
+R: 25.593660
+local_population[i][0]: 43.077721; global_population[j][0]: 41.346839
+Different elements
+
+i: 2; j: 1; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 42.298768
+Different elements
+
+i: 2; j: 2; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 42.588670
+Different elements
+
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 41.954638
+Different elements
+
+i: 2; j: 4; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 43.077721
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 58.592812
+Different elements
+
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 34.847034
+Different elements
+
+i: 2; j: 7; translation_index[j]:5; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 67.004155
+Different elements
+
+i: 2; j: 8; translation_index[j]:9; translation_index[i]: 7
+local_population[i][0]: 43.077721; global_population[j][0]: 66.831302
+Different elements
+
+M[j]: 0.088449
+indice 1
+population[i][0] 41.954638
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] 0.256357
+i: 1; j: 8; translation_index[j]:9; translation_index[i]: 8
+local_population[i][0]: 41.954638; global_population[j][0]: 66.831302
+Different elements
+
+
+i: 1; j: 8
+R: 24.879322
+M[j]: 0.084319
+indice 1
+population[i][0] 41.954638
+population[j][0] 66.831302
+translation_index[j] 9
+Forces[i][0] 0.353612
+i: 2; j: 0; translation_index[j]:2; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 41.346839
+i: 2; j: 1; translation_index[j]:8; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 2; j: 1
+R: 1.716368
+M[j]: 0.125219
+indice 2
+population[i][0] 41.346839
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.000000
+i: 2; j: 2; translation_index[j]:7; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 42.588670
+Different elements
+
+
+i: 2; j: 2
+R: 1.999805
+M[j]: 0.124728
+indice 2
+population[i][0] 41.346839
+population[j][0] 42.588670
+translation_index[j] 7
+Forces[i][0] 0.080616
+i: 2; j: 3; translation_index[j]:1; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 41.954638
+Different elements
+
+
+i: 2; j: 3
+R: 3.617174
+M[j]: 0.123579
+indice 2
+population[i][0] 41.346839
+population[j][0] 41.954638
+translation_index[j] 1
+Forces[i][0] 0.170525
+i: 2; j: 4; translation_index[j]:6; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 43.077721
+Different elements
+
+
+i: 2; j: 4
+R: 3.859951
+M[j]: 0.122296
+indice 2
+population[i][0] 41.346839
+population[j][0] 43.077721
+translation_index[j] 6
+Forces[i][0] 0.194629
+i: 2; j: 5; translation_index[j]:4; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 2; j: 5
+R: 17.334405
+M[j]: 0.103971
+indice 2
+population[i][0] 41.346839
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.258288
+i: 2; j: 6; translation_index[j]:3; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 34.847034
+Different elements
+
+
+i: 2; j: 6
+R: 28.011551
+M[j]: 0.099751
+indice 2
+population[i][0] 41.346839
+population[j][0] 34.847034
+translation_index[j] 3
+Forces[i][0] 0.378363
+i: 2; j: 7; translation_index[j]:5; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 2; j: 7
+R: 25.712505
+M[j]: 0.088449
+indice 2
+population[i][0] 41.346839
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] 0.351494
+i: 2; j: 8; translation_index[j]:9; translation_index[i]: 7
+local_population[i][0]: 41.346839; global_population[j][0]: 66.831302
+Different elements
+
+
+i: 2; j: 8
+R: 25.684840
+M[j]: 0.084319
+indice 2
+population[i][0] 41.346839
+population[j][0] 66.831302
+translation_index[j] 9
+Forces[i][0] 0.453947
+i: 3; j: 0; translation_index[j]:2; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 41.346839
+Different elements
+
+
+i: 3; j: 0
+R: 28.011551
+M[j]: 0.127689
+indice 3
+population[i][0] 34.847034
+population[j][0] 41.346839
+translation_index[j] 2
+Forces[i][0] 0.000000
+i: 3; j: 1; translation_index[j]:8; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 42.298768
+Different elements
+
+
+i: 3; j: 1
+R: 26.872651
+M[j]: 0.125219
+indice 3
+population[i][0] 34.847034
+population[j][0] 42.298768
+translation_index[j] 8
+Forces[i][0] 0.026868
+i: 3; j: 2; translation_index[j]:7; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 42.588670
+Different elements
+
+
+i: 3; j: 2
+R: 26.821071
+M[j]: 0.124728
+indice 3
+population[i][0] 34.847034
+population[j][0] 42.588670
+translation_index[j] 7
+Forces[i][0] 0.058356
+i: 3; j: 3; translation_index[j]:1; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 41.954638
+Different elements
+
+
+i: 3; j: 3
+R: 24.724894
+M[j]: 0.123579
+indice 3
+population[i][0] 34.847034
+population[j][0] 41.954638
+translation_index[j] 1
+Forces[i][0] 0.091003
+i: 3; j: 4; translation_index[j]:6; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 43.077721
+Different elements
+
+
+i: 3; j: 4
+R: 25.180083
+M[j]: 0.122296
+indice 3
+population[i][0] 34.847034
+population[j][0] 43.077721
+translation_index[j] 6
+Forces[i][0] 0.123218
+i: 3; j: 5; translation_index[j]:4; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 58.592812
+Different elements
+
+
+i: 3; j: 5
+R: 37.478182
+M[j]: 0.103971
+indice 3
+population[i][0] 34.847034
+population[j][0] 58.592812
+translation_index[j] 4
+Forces[i][0] 0.159468
+i: 3; j: 6; translation_index[j]:3; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 34.847034
+i: 3; j: 7; translation_index[j]:5; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 67.004155
+Different elements
+
+
+i: 3; j: 7
+R: 43.255856
+M[j]: 0.088449
+indice 3
+population[i][0] 34.847034
+population[j][0] 67.004155
+translation_index[j] 5
+Forces[i][0] 0.219205
+i: 3; j: 8; translation_index[j]:9; translation_index[i]: 1
+local_population[i][0]: 34.847034; global_population[j][0]: 66.831302
+Different elements
+
+
+i: 3; j: 8
+R: 40.014415
+M[j]: 0.084319
+indice 3
+population[i][0] 34.847034
+population[j][0] 66.831302
+translation_index[j] 9
+Forces[i][0] 0.278833
+my_rank: 0; Forces[0][0]: 0.000000
+my_rank: 0; Forces[1][0]: 0.448330
+my_rank: 0; Forces[2][0]: 0.551061
+my_rank: 0; Forces[3][0]: 0.339951
+
+my_rank: 0; accelerations[0][0]: 0.000000
+my_rank: 0; accelerations[1][0]: 3.627882
+my_rank: 0; accelerations[2][0]: 4.315651
+my_rank: 0; accelerations[3][0]: 3.408005
+
+my_rank: 0; before_updating: local_velocity[0][0]: 0.000000
+my_rank: 0; before_updating: local_velocity[1][0]: 3.752252
+my_rank: 0; before_updating: local_velocity[2][0]: 7.664321
+my_rank: 0; before_updating: local_velocity[3][0]: 8.404202
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 5.504008
+my_rank: 0; local_velocity[2][0]: 8.147811
+my_rank: 0; local_velocity[3][0]: 7.610106
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 47.458646
+my_rank: 0; local_population[2][0]: 49.494650
+my_rank: 0; local_population[3][0]: 42.457140
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 3738.443529
+my_rank: 0; local_fitness[2]: 3738.558330
+my_rank: 0; local_fitness[3]: 5135.296271
+
+my_rank: 0; local_population[0][0]: -99.984347
+my_rank: 0; local_population[1][0]: 47.458646
+my_rank: 0; local_population[2][0]: 49.494650
+my_rank: 0; local_population[3][0]: 42.457140
+
+my_rank: 0; local_fitness[0]: 11360.282764
+my_rank: 0; local_fitness[1]: 3738.443529
+my_rank: 0; local_fitness[2]: 3738.558330
+my_rank: 0; local_fitness[3]: 5135.296271
+
+my_rank: 0; local_velocity[0][0]: 0.000000
+my_rank: 0; local_velocity[1][0]: 5.504008
+my_rank: 0; local_velocity[2][0]: 8.147811
+my_rank: 0; local_velocity[3][0]: 7.610106
+
+---------- DONE ----------
+my_rank: 0; global_population[0][0]: 45.136674053339846   global_population[0][1]: 35.788089966434164 
+my_rank: 0; global_population[1][0]: 48.003205789686895   global_population[1][1]: 34.618027607312555 
+my_rank: 0; global_population[2][0]: 47.606457266567553   global_population[2][1]: 37.156165748090508 
+my_rank: 0; global_population[3][0]: 47.458646024397176   global_population[3][1]: 38.550232771239372 
+my_rank: 0; global_population[4][0]: 49.494649970785694   global_population[4][1]: 35.900389337499071 
+my_rank: 0; global_population[5][0]: 58.592811673224347   global_population[5][1]: 35.297811541834221 
+my_rank: 0; global_population[6][0]: 42.457140164991117   global_population[6][1]: 57.729433736637901 
+my_rank: 0; global_population[7][0]: 66.831301509789796   global_population[7][1]: 33.684475037122375 
+my_rank: 0; global_population[8][0]: 67.004154979718919   global_population[8][1]: 34.252968436645276 
+my_rank: 0; global_population[9][0]: -99.984347261481147   global_population[9][1]: -36.924423713667522 
+my_rank: 0; global_fitness[0]: 3318.106728043028397
+my_rank: 0; global_fitness[1]: 3502.715601507683914
+my_rank: 0; global_fitness[2]: 3646.955426573096702
+my_rank: 0; global_fitness[3]: 3738.443529185768057
+my_rank: 0; global_fitness[4]: 3738.558330314613613
+my_rank: 0; global_fitness[5]: 4679.053079416780747
+my_rank: 0; global_fitness[6]: 5135.296270542567981
+my_rank: 0; global_fitness[7]: 5601.066720018952765
+my_rank: 0; global_fitness[8]: 5662.822631268008990
+my_rank: 0; global_fitness[9]: 11360.282763890905699
+Configuration: dim = 2, pop_size = 10, n_iter = 10
+
+----------------------------------------
+Parallel GCA
+----------------------------------------
+Best agent: 6.962429 -0.652387 
+Best value: 48.901029
+Time measured: 0.005 seconds.
+
+
+----------------------------------------

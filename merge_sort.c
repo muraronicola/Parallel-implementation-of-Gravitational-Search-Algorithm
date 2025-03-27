@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 
-void merge_serial(double *fitness, double **velocity, double **population, double *M, int pop_size, int dim, int left, int mid, int right) {
+void merge_serial(double *fitness, double **velocity, double **population, int pop_size, int dim, int left, int mid, int right) {
     int i, j, k, d;
     int n1 = mid - left + 1;
     int n2 = right - mid;
@@ -18,13 +18,9 @@ void merge_serial(double *fitness, double **velocity, double **population, doubl
     double** leftArr_population = allocate_matrix_double(n1, dim);
     double** rightArr_population = allocate_matrix_double(n2, dim);
 
-    double* leftArr_M = allocate_vector_double(n1);
-    double* rightArr_M = allocate_vector_double(n2);
-
     // Copy data to temporary arrays
     for (i = 0; i < n1; i++){
         leftArr_fitness[i] = fitness[left + i];
-        leftArr_M[i] = M[left + i];
         for (j = 0; j < dim; j++){
             leftArr_velocity[i][j] = velocity[left + i][j];
             leftArr_population[i][j] = population[left + i][j];
@@ -33,7 +29,6 @@ void merge_serial(double *fitness, double **velocity, double **population, doubl
 
     for (j = 0; j < n2; j++){
         rightArr_fitness[j] = fitness[mid + 1 + j];
-        rightArr_M[j] = M[mid + 1 + j];
         for (i = 0; i < dim; i++){
             rightArr_velocity[j][i] = velocity[mid + 1 + j][i];
             rightArr_population[j][i] = population[mid + 1 + j][i];
@@ -47,7 +42,6 @@ void merge_serial(double *fitness, double **velocity, double **population, doubl
     while (i < n1 && j < n2) {
         if (leftArr_fitness[i] <= rightArr_fitness[j]) {
             fitness[k] = leftArr_fitness[i];
-            M[k] = leftArr_M[i];
             for (d = 0; d < dim; d++){
                 velocity[k][d] = leftArr_velocity[i][d];
                 population[k][d] = leftArr_population[i][d];
@@ -56,7 +50,6 @@ void merge_serial(double *fitness, double **velocity, double **population, doubl
         }
         else {
             fitness[k] = rightArr_fitness[j];
-            M[k] = rightArr_M[j];
             for (d = 0; d < dim; d++){
                 velocity[k][d] = rightArr_velocity[j][d];
                 population[k][d] = rightArr_population[j][d];
@@ -69,7 +62,6 @@ void merge_serial(double *fitness, double **velocity, double **population, doubl
     // Copy the remaining elements of leftArr[], if any
     while (i < n1) {
         fitness[k] = leftArr_fitness[i];
-        M[k] = leftArr_M[i];
         for (d = 0; d < dim; d++){
             velocity[k][d] = leftArr_velocity[i][d];
             population[k][d] = leftArr_population[i][d];
@@ -81,7 +73,6 @@ void merge_serial(double *fitness, double **velocity, double **population, doubl
     // Copy the remaining elements of rightArr[], if any
     while (j < n2) {
         fitness[k] = rightArr_fitness[j];
-        M[k] = rightArr_M[j];
         for (d = 0; d < dim; d++){
             velocity[k][d] = rightArr_velocity[j][d];
             population[k][d] = rightArr_population[j][d];
@@ -95,31 +86,29 @@ void merge_serial(double *fitness, double **velocity, double **population, doubl
     free(rightArr_velocity);
     free(leftArr_population);
     free(rightArr_population);
-    free(leftArr_M);
-    free(rightArr_M);
 }
 
 // The subarray to be sorted is in the index range [left-right]
-void mergeSort_serial(double *fitness, double **velocity, double **population, double *M, int pop_size, int dim, int left, int right) {
+void mergeSort_serial(double *fitness, double **velocity, double **population, int pop_size, int dim, int left, int right) {
     if (left < right) {
         
         // Calculate the midpoint
         int mid = left + (right - left) / 2;
 
         // Sort first and second halves
-        mergeSort_serial(fitness, velocity, population, M, pop_size, dim, left, mid);
-        mergeSort_serial(fitness, velocity, population, M, pop_size, dim, mid + 1, right);
+        mergeSort_serial(fitness, velocity, population, pop_size, dim, left, mid);
+        mergeSort_serial(fitness, velocity, population, pop_size, dim, mid + 1, right);
 
         // Merge the sorted halves
-        merge_serial(fitness, velocity, population, M, pop_size, dim, left, mid, right);
+        merge_serial(fitness, velocity, population, pop_size, dim, left, mid, right);
     }
 }
 
 
-void merge_sort_serial(double *fitness, double **velocity, double **population, double *M, int pop_size, int dim) {
+void merge_sort_serial(double *fitness, double **velocity, double **population, int pop_size, int dim) {
     //mergeSort(arr, 0, size - 1);
     //return arr;
-    mergeSort_serial(fitness, velocity, population, M, pop_size, dim, 0, pop_size - 1);
+    mergeSort_serial(fitness, velocity, population, pop_size, dim, 0, pop_size - 1);
 }
 
 
