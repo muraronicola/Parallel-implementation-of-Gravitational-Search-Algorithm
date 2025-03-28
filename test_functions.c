@@ -28,7 +28,8 @@ double f3(double* x, int dim) {
 double f5(double* x, int n) {
     double sum = 0.0;
     double term1, term2;
-    for (int i = 0; i < n - 1; i++) {
+    int i;
+    for (i = 0; i < n - 1; i++) {
         term1 = 100 * pow((x[i + 1] - x[i] * x[i]), 2);
         term2 = pow((x[i] - 1), 2);
         sum += term1 + term2;
