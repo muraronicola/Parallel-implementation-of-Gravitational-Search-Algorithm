@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l select=2:ncpus=64:mem=2gb -l place=scatter:excl
+#PBS -l select=2:ncpus=64:mem=2gb:excl
 # set max execution time
 #PBS -l walltime=0:10:00
 # set the queue
