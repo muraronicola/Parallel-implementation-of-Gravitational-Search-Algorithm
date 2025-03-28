@@ -13,3 +13,4 @@ mpirun.actual -n 128 /home/nicola.muraro/project_hpc/GSA/gca 2 8000 100 0
 mpirun.actual -n 128 /home/nicola.muraro/project_hpc/GSA/gca 2 16000 100 0
 mpirun.actual -n 128 /home/nicola.muraro/project_hpc/GSA/gca 2 32000 100 0
 mpirun.actual -n 128 /home/nicola.muraro/project_hpc/GSA/gca 2 64000 100 0
+mpirun.actual -n 128 /home/nicola.muraro/project_hpc/GSA/gca 2 128000 100 0
