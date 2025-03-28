@@ -4,6 +4,7 @@
         "parallel_gca.h": "c",
         "utility.h": "c",
         "stdbool.h": "c",
-        "time.h": "c"
+        "time.h": "c",
+        "math.h": "c"
     }
 }

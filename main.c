@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
         printf("\n");
 
         t1 = MPI_Wtime();
-        best_agent = serial_gca(sphere, -100, 100, dim, pop_size, n_iter, debug);
+        best_agent = serial_gca(sphere, -1000, 1000, dim, pop_size, n_iter, debug);
         t2 = MPI_Wtime();
         final_time = t2 - t1;
 
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
         printf("Serial GCA\n");
         printf("----------------------------------------\n");
         print_results(best_agent, sphere, dim);
-        printf("Time measured: %.3f seconds.\n", final_time);
+        printf("Time measured: %.15f seconds.\n", final_time);
         printf("\n\n----------------------------------------\n");
     }
     else
@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
             pop_per_proc++;
         }
 
-        best_agent = gca(sphere, -100, 100, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
+        best_agent = gca(sphere, -1000, 1000, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
         t2 = MPI_Wtime();
         final_time = t2 - t1;
 
@@ -134,7 +134,7 @@ int main(int argc, char *argv[])
             printf("Parallel GCA\n");
             printf("----------------------------------------\n");
             print_results(best_agent, sphere, dim);
-            printf("Time measured: %.3f seconds.\n", final_time);
+            printf("Time measured: %.15f seconds.\n", final_time);
             printf("\n\n----------------------------------------\n");
         }
     }

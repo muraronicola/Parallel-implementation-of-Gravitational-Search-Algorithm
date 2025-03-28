@@ -82,9 +82,14 @@ double *clip_position_agent(double *agent, double lb, double ub, int dim)
     return agent;
 }
 
-double get_G(double G0, int t, double n_iter)
+double get_G(double G0, int t, int n_iter)
 {
-    return G0 * (1 - t / (n_iter + 1)); // the +1 is needed in order to avoid G0 equal to 0 (at the last iteration)
+    double t_double = (double)t;
+    double n_iter_double = (double)n_iter;
+    double result = G0 * exp(-20 * (t_double / n_iter_double));
+    //printf("G: %f\n", result);
+    return result;
+    // return G0 * (1 - t / (n_iter + 1)); // the +1 is needed in order to avoid G0 equal to 0 (at the last iteration)
 }
 
 double get_best(double *fitness, int pop_size)
@@ -292,9 +297,15 @@ void final_sort(double *source_fitness, double **source_population, int *unsorte
     exit(0);*/
 }
 
-double getk_best(int pop_size, int t, double n_iter)
+double getk_best(int pop_size, int t, int n_iter)
 {
-    return pop_size * (0.1 + (0.9 * (t / n_iter)));
+    // return pop_size * (0.1 + (0.9 * (t / n_iter)));
+    double t_double = (double)t;
+    double n_iter_double = (double)n_iter;
+    double result = pop_size * ((n_iter_double - t_double) / n_iter_double);
+    result = ceil(result);
+    //printf("result: %f\n", result);
+    return result;
 }
 
 bool check_different_element(double *individual1, double *individual2, int dim)
@@ -343,7 +354,7 @@ double **update_accelerations(double *global_M, double *local_M, double **global
                 R = 0;
                 for (d = 0; d < dim; d++)
                 {
-                    R += (local_population[i][d] - global_population[j][d]) * (local_population[i][d] - global_population[j][d]);
+                    R += pow(local_population[i][d] - global_population[j][d], 2);
                 }
                 R = sqrt(R);
 
@@ -361,12 +372,21 @@ double **update_accelerations(double *global_M, double *local_M, double **global
                 for (d = 0; d < dim; d++)
                 {
                     // random = random_double(0, 1);
-                    random = 0.5;
+                    //random = 0.5;
                     // printf("random: %f\n", random);
-                    Forces[i][d] = Forces[i][d] + random * (G * ((global_M[translation_index[j]] * local_M[i]) / (R + 1e-20)) * (global_population[j][d] - local_population[i][d]));
+                    //Forces[i][d] = Forces[i][d] + random * (G * ((global_M[translation_index[j]] * local_M[i]) / (R + 1e-20)) * (global_population[j][d] - local_population[i][d]));
+                    Forces[i][d] = Forces[i][d] + (((global_M[translation_index[j]]) / (R + 1e-20)) * (global_population[j][d] - local_population[i][d]));
+                    
                 }
                 // printf("Forces[i][0] %f\n", Forces[i][0]);
             }
+        }
+
+        for (d = 0; d < dim; d++)
+        {
+            //random = random_double(0, 1);
+            random = 1;
+            Forces[i][d] = random * Forces[i][d] * G;
         }
     }
 
@@ -382,14 +402,15 @@ double **update_accelerations(double *global_M, double *local_M, double **global
     {
         for (d = 0; d < dim; d++)
         {
-            if (Forces[i][d] > 0)
+            accelerations[i][d] = Forces[i][d];
+            /*if (Forces[i][d] > 0)
             {
                 accelerations[i][d] = Forces[i][d] / local_M[i];
             }
             else
             {
                 accelerations[i][d] = 0;
-            }
+            }*/
         }
     }
     /*printf("my_rank: %d; local_M[0]: %f\n", rank, local_M[0]);
@@ -413,8 +434,8 @@ double **update_velocity(double **velocity, double **accelerations, int dim, int
         // printf("\nmy_rank: %d; updating_velocity_i: %d\n", rank, i);
         for (d = 0; d < dim; d++)
         {
-            // random = random_double(0, 1);
-            random = 0.5;
+            random = random_double(0, 1);
+            random = 1;
             // printf("my_rank: %d; velocity[i][d]: %f\n", rank, velocity[i][d]);
             // printf("my_rank: %d; accelerations[i][d]: %f\n", rank, accelerations[i][d]);
 
