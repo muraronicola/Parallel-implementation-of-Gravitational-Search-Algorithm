@@ -6,10 +6,10 @@
 #PBS -q short_cpuQ
 
 module load mpich-3.2
-mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 2 1000 100 0
-mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 2 2000 100 0
-mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 2 4000 100 0
-mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 2 8000 100 0
-mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 2 16000 100 0
-mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 2 32000 100 0
-mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 2 64000 100 0
+mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 30 50 1000 0
+mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 30 100 1000 0
+mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 30 200 1000 0
+mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 30 400 1000 0
+mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 30 800 1000 0
+mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 30 1000 1000 0
+mpirun.actual -n 64 /home/nicola.muraro/project_hpc/GSA/gca 30 2000 1000 0
