@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
     MPI_Comm_size(MPI_COMM_WORLD, &comm_sz);
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
 
-    // srand(time(NULL));
-    srand(10); // Fix the seed for reproducibility (debug only)
+    srand(time(NULL));
+    //srand(10); // Fix the seed for reproducibility (debug only)
 
     if (argc != 5)
     {
@@ -72,8 +72,6 @@ int main(int argc, char *argv[])
     }
     else
     {
-        srand(10);
-
         t1 = MPI_Wtime();
         int *displacement = (int *)malloc(comm_sz * sizeof(int));
         int *counts = (int *)malloc(comm_sz * sizeof(int));

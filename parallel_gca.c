@@ -385,7 +385,7 @@ double **update_accelerations(double *global_M, double *local_M, double **global
         for (d = 0; d < dim; d++)
         {
             random = random_double(0, 1);
-            random = 0.5;
+            //random = 0.5;
             Forces[i][d] = random * Forces[i][d] * G;
         }
     }
@@ -435,7 +435,7 @@ double **update_velocity(double **velocity, double **accelerations, int dim, int
         for (d = 0; d < dim; d++)
         {
             random = random_double(0, 1);
-            random = 0.5;
+            //random = 0.5;
             // printf("my_rank: %d; velocity[i][d]: %f\n", rank, velocity[i][d]);
             // printf("my_rank: %d; accelerations[i][d]: %f\n", rank, accelerations[i][d]);
 

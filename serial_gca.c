@@ -194,7 +194,7 @@ double **serial_update_accelearations(double *M, double **population, double **a
         for (d = 0; d < dim; d++)
         {
             random = random_double(0, 1);
-            random = 0.5;
+            ///random = 0.5;
             Forces[i][d] = random * Forces[i][d] * G;
         }
     }
@@ -256,7 +256,7 @@ double **serial_update_velocity(double **velocity, double **accelerations, int d
         for (d = 0; d < dim; d++)
         {
             random = random_double(0, 1);
-            random = 0.5;
+            //random = 0.5;
             // random = 0.5;
             //  printf("velocity[i][d]: %f\n", velocity[i][d]);
             //  printf("accelerations[i][d]: %f\n", accelerations[i][d]);
