@@ -37,19 +37,6 @@ int main(int argc, char *argv[])
     int pop_per_proc = floor(pop_size / comm_sz);
     int remainder = pop_size % comm_sz;
 
-    
-
-    /*printf("my_rank: %d;  pop_per_proc: %d\n", my_rank, pop_per_proc);
-    printf("my_rank: %d;  remainder: %d\n", my_rank, remainder);
-    //exit(0);
-    printf("my_rank: %d; displacement: %d\n", my_rank, displacement[my_rank]);
-    printf("my_rank: %d; counts: %d\n", my_rank, counts[my_rank]);
-    printf("my_rank: %d; dispacement_matrix: %d\n", my_rank, dispacement_matrix[my_rank]);
-    printf("my_rank: %d; count_matrix: %d\n", my_rank, count_matrix[my_rank]);
-
-    printf("----------------------------------------\n");
-    */
-
     double *best_agent;
     double t1, t2, final_time;
 

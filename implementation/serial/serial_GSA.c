@@ -335,7 +335,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
         fitness = round_to_2_decimals_vector(fitness, pop_size);
         M = round_to_2_decimals_vector(M, pop_size);*/
 
-        for (i = 0; i < pop_size; i++)
+        /*for (i = 0; i < pop_size; i++)
         {
             population[i] = serial_clip_position_agent(population[i], lb, ub, dim);
             fitness[i] = target_function(population[i], dim);
@@ -352,7 +352,7 @@ double *serial_gca(double (*target_function)(double *, int), double lb, double u
                     best_agent[j] = population[i][j];
                 }
             }
-        }
+        }*/
         // return population[0];
         if (debug)
         {
