@@ -6,6 +6,7 @@
 #include <stdbool.h>
 #include <float.h>
 #include "merge_sort.h"
+#include "common.h"
 
 void sort_agents(double *fitness, double **population, double *M, int pop_size, int dim, int *translation_index)
 {
@@ -46,79 +47,6 @@ void sort_agents(double *fitness, double **population, double *M, int pop_size, 
             }
         }
     }
-}
-
-double **initialize_population(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size)
-{
-    double **population = allocate_matrix_double(pop_size, dim);
-    int i = 0;
-    int j = 0;
-    for (i = 0; i < pop_size; i++)
-    {
-        for (j = 0; j < dim; j++)
-        {
-            population[i][j] = random_double(lb, ub);
-        }
-    }
-
-    return population;
-}
-
-double *clip_position_agent(double *agent, double lb, double ub, int dim)
-{ // Needed in order to constraint the search space (in the bound of the test function)
-    int i = 0;
-    for (i = 0; i < dim; i++)
-    {
-        if (agent[i] < lb)
-        {
-            agent[i] = lb;
-        }
-
-        if (agent[i] > ub)
-        {
-            agent[i] = ub;
-        }
-    }
-    return agent;
-}
-
-double get_G(double G0, int t, int n_iter)
-{
-    double t_double = (double)t;
-    double n_iter_double = (double)n_iter;
-    double result = G0 * exp(-20 * (t_double / n_iter_double));
-    //printf("G: %f\n", result);
-    return result;
-    // return G0 * (1 - t / (n_iter + 1)); // the +1 is needed in order to avoid G0 equal to 0 (at the last iteration)
-}
-
-double get_best(double *fitness, int pop_size)
-{
-    /*
-    double best = 1e20;
-    for (int i = 0; i < pop_size; i++)
-    {
-        if (fitness[i] < best)
-        {
-            best = fitness[i];
-        }
-    }
-    return best;*/
-    return fitness[0];
-}
-
-double get_worst(double *fitness, int pop_size)
-{
-    /*double worst = 0;
-    for (int i = 0; i < pop_size; i++)
-    {
-        if (fitness[i] > worst)
-        {
-            worst = fitness[i];
-        }
-    }
-    return worst;*/
-    return fitness[pop_size - 1];
 }
 
 void initial_sort(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int *local_translation_index)
@@ -297,17 +225,6 @@ void final_sort(double *source_fitness, double **source_population, int *unsorte
     exit(0);*/
 }
 
-double getk_best(int pop_size, int t, int n_iter)
-{
-    // return pop_size * (0.1 + (0.9 * (t / n_iter)));
-    double t_double = (double)t;
-    double n_iter_double = (double)n_iter;
-    double result = pop_size * ((n_iter_double - t_double) / n_iter_double);
-    result = ceil(result);
-    //printf("result: %f\n", result);
-    return result;
-}
-
 bool check_different_element(double *individual1, double *individual2, int dim)
 {
     int i = 0;
@@ -424,42 +341,6 @@ double **update_accelerations(double *global_M, double *local_M, double **global
     return accelerations;
 }
 
-double **update_velocity(double **velocity, double **accelerations, int dim, int pop_size, int rank)
-{
-    double random;
-    int i = 0;
-    int d = 0;
-    for (i = 0; i < pop_size; i++)
-    {
-        // printf("\nmy_rank: %d; updating_velocity_i: %d\n", rank, i);
-        for (d = 0; d < dim; d++)
-        {
-            random = random_double(0, 1);
-            //random = 0.5;
-            // printf("my_rank: %d; velocity[i][d]: %f\n", rank, velocity[i][d]);
-            // printf("my_rank: %d; accelerations[i][d]: %f\n", rank, accelerations[i][d]);
-
-            velocity[i][d] = random * velocity[i][d] + accelerations[i][d];
-            // printf("my_rank: %d; updated_velocity[i][d]: %f\n", rank, velocity[i][d]);
-        }
-    }
-    return velocity;
-}
-
-double **update_position(double **population, double **velocity, int dim, int pop_size)
-{
-    int i = 0;
-    int d = 0;
-    for (i = 0; i < pop_size; i++)
-    {
-        for (d = 0; d < dim; d++)
-        {
-            population[i][d] = population[i][d] + velocity[i][d];
-        }
-    }
-    return population;
-}
-
 double **get_local_population(double **local_population, double **global_population, int sub_pop_start_index, int local_pop_size, int global_pop_size, int dim)
 {
     int i = 0;
@@ -518,7 +399,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
 
     if (my_rank == 0)
     {
-        global_population = initialize_population(target_function, lb, ub, dim, global_pop_size);
+        global_population = initialize_population(dim, global_pop_size, lb, ub);
     }
     else
     {
@@ -755,7 +636,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
                 printf("my_rank: %d; before_updating: local_velocity[%d][0]: %f\n", my_rank, i, local_velocity[i][0]);
             }
         }
-        local_velocity = update_velocity(local_velocity, accelerations, dim, local_pop_size, my_rank);
+        local_velocity = update_velocity(local_velocity, accelerations, dim, local_pop_size);
 
         if (my_rank == 0 && debug)
         {
