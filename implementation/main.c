@@ -1,7 +1,7 @@
 #include <mpi.h>
 #include <stdio.h>
 #include <math.h>
-//#include "parallel_gca.h"
+#include "parallel_gca.h"
 #include "serial_GSA.h"
 #include "test_functions.h"
 #include "utility.h"
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
         printf("Time measured: %.15f seconds.\n", final_time);
         printf("\n\n----------------------------------------\n");
     }
-    /*else
+    else
     {
         t1 = MPI_Wtime();
         int *displacement = (int *)malloc(comm_sz * sizeof(int));
@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
             printf("Time measured: %.15f seconds.\n", final_time);
             printf("\n\n----------------------------------------\n");
         }
-    }*/
+    }
 
     MPI_Finalize();
     return 0;
@@ -134,9 +134,9 @@ void print_results(double *best_agent, double (*target_function)(double *, int),
     int i = 0;
     for (i = 0; i < dim; i++)
     {
-        printf("%f ", best_agent[i]);
+        printf("%f.15 ", best_agent[i]);
     }
     printf("\n");
 
-    printf("Best value: %f\n", target_function(best_agent, dim));
+    printf("Best value: %f.15\n", target_function(best_agent, dim));
 }

@@ -134,25 +134,25 @@ double *calculate_M(double *m, double *M, int pop_size, double sum_m)
     return M;
 }
 
-double *get_best_agent(double **population, double (*target_function)(double *, int), double *fitness, int dim, int pop_size, double lb, double ub)
+double *get_best_agent(double **population, double * fitness, int pop_size, int dim)
 {
     double *best_agent = allocate_vector_double(dim);
     double best_score = 1e20;
     int i = 0;
-    int j = 0;
+    int indice = 0;
 
     for (i = 0; i < pop_size; i++)
     {
-        population[i] = clip_position_agent(population[i], lb, ub, dim);
-        fitness[i] = target_function(population[i], dim);
         if (fitness[i] < best_score)
         {
             best_score = fitness[i];
-            for (j = 0; j < dim; j++)
-            {
-                best_agent[j] = population[i][j];
-            }
+            indice = i;
         }
+    }
+
+    for (i = 0; i < dim; i++)
+    {
+        best_agent[i] = population[indice][i];
     }
 
     return best_agent;

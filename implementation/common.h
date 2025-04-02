@@ -13,7 +13,7 @@ double **update_velocity(double **velocity, double **accelerations, int dim, int
 double **update_position(double **population, double **velocity, int dim, int pop_size);
 double *calculate_m(double *fitness, double *m, int pop_size, double best, double worst, double* sum_m);
 double *calculate_M(double *m, double *M, int pop_size, double sum_m);
-double *get_best_agent(double **population, double (*target_function)(double *, int), double *fitness, int dim, int pop_size, double lb, double ub);
+double *get_best_agent(double **population, double * fitness, int pop_size, int dim);
 
 
 #endif // __COMMON_H__
