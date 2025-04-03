@@ -186,7 +186,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
         
         // Share local_sum with all the processes
         MPI_Allreduce(&local_sum, &sum_m, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
-        local_M = calculate_M(m, local_M, global_pop_size, sum_m);
+        local_M = calculate_M(m, local_M, local_pop_size, sum_m);
         MPI_Allgatherv(local_M, local_pop_size, MPI_DOUBLE, global_M, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD); // Vorrei poter mandare solo i topk...
 
         accelerations = update_accelerations(global_M, local_M, global_population, local_population, accelerations, dim, local_pop_size, k_best, sub_pop_start_index, my_rank, global_translation_index, G, debug);

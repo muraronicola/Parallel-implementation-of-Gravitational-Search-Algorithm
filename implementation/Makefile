@@ -3,11 +3,11 @@ CC = mpicc #era: gcc
 CFLAGS = -Wall -g -lm
 
 # Target predefinito
-all: gca
+all: gsa
 
 # Regole per la compilazione
-gca: main.o parallel_gca.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
-	$(CC) $(CFLAGS) -o gca main.o parallel_gca.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
+gsa: main.o parallel_gca.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
+	$(CC) $(CFLAGS) -o gsa main.o parallel_gca.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
 
 # Regole per compilare i file oggetto
 main.o: main.c parallel_gca.h serial_GSA.h utility.h test_functions.h merge_sort.h common.h
@@ -34,4 +34,4 @@ common.o: common.c common.h
 
 # Pulizia dei file generati
 clean:
-	rm -f gca *.o
+	rm -f gsa *.o
