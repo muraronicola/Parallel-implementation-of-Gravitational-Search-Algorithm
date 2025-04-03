@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
     int pop_per_proc = floor(pop_size / comm_sz);
     int remainder = pop_size % comm_sz;
 
-    long int seed;
+    unsigned int seed;
 
     double *best_agent;
     double t1, t2, final_time, best_value;
@@ -139,7 +139,7 @@ int main(int argc, char *argv[])
     if (my_rank == 0)
     {
         best_value = sphere(best_agent, dim);
-        printf("%d;%d;%d;%d;%ld;%.15f;%.15f\n", comm_sz, dim, pop_size, n_iter, seed, final_time, best_value);
+        printf("%d;%d;%d;%d;%u;%.15f;%.15f\n", comm_sz, dim, pop_size, n_iter, seed, final_time, best_value);
     }
 
     MPI_Finalize();
