@@ -145,7 +145,8 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
 
     double **unsorted_global_population = allocate_matrix_double(global_pop_size, dim);
     double **global_population = NULL;
-    if (my_rank == 0)
+
+    /*if (my_rank == 0)
     {
         global_population = initialize_population(dim, global_pop_size, lb, ub);
     }
@@ -153,9 +154,13 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     {
         global_population = allocate_matrix_double(global_pop_size, dim);
     }
-    MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);*/
+    
+    srand(10 + my_rank); // Seed the random number generator with a different value for each process
+    local_population = initialize_population(dim, local_pop_size, lb, ub);
+    global_population = allocate_matrix_double(global_pop_size, dim); // Each process calculates for its own subpopulation
 
-
+    //printf("Rank %d: local population initialized\n", my_rank);
     for (l = 0; l < n_iter; l++)
     {
         // Calculate the fitness of the local population
