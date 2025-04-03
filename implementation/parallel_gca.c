@@ -156,7 +156,7 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     }
     MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);*/
     
-    srand(10 + my_rank); // Seed the random number generator with a different value for each process
+     // Seed the random number generator with a different value for each process
     local_population = initialize_population(dim, local_pop_size, lb, ub);
     global_population = allocate_matrix_double(global_pop_size, dim); // Each process calculates for its own subpopulation
 
