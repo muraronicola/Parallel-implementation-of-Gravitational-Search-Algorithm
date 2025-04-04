@@ -1,23 +1,22 @@
-# Variabili
-CC = mpicc #era: gcc
+CC = mpicc 
 CFLAGS = -Wall -g -lm
 
-# Target predefinito
-all: gca
+# Target 
+all: gsa
 
-# Regole per la compilazione
-gca: main.o parallel_gca.o serial_gca.o utility.o test_functions.o merge_sort.o
-	$(CC) $(CFLAGS) -o gca main.o parallel_gca.o serial_gca.o utility.o test_functions.o merge_sort.o
+# Rule for building the executable
+gsa: main.o parallel_GSA.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
+	$(CC) $(CFLAGS) -o gsa main.o parallel_GSA.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
 
-# Regole per compilare i file oggetto
-main.o: main.c parallel_gca.h serial_gca.h
+# Rule for compiling object files
+main.o: main.c parallel_GSA.h serial_GSA.h utility.h test_functions.h merge_sort.h common.h
 	$(CC) $(CFLAGS) -c main.c
 
-parallel_gca.o: parallel_gca.c parallel_gca.h
-	$(CC) $(CFLAGS) -c parallel_gca.c
+parallel_GSA.o: parallel_GSA.c parallel_GSA.h
+	$(CC) $(CFLAGS) -c parallel_GSA.c
 
-serial_gca.o: serial_gca.c serial_gca.h
-	$(CC) $(CFLAGS) -c serial_gca.c
+serial_GSA.o: serial_GSA.c serial_GSA.h
+	$(CC) $(CFLAGS) -c serial_GSA.c
 
 utility.o: utility.c utility.h
 	$(CC) $(CFLAGS) -c utility.c
@@ -28,6 +27,9 @@ test_functions.o: test_functions.c test_functions.h
 merge_sort.o: merge_sort.c merge_sort.h
 	$(CC) $(CFLAGS) -c merge_sort.c
 
-# Pulizia dei file generati
+common.o: common.c common.h
+	$(CC) $(CFLAGS) -c common.c
+
+# Clean target
 clean:
-	rm -f gca *.o
+	rm -f gsa *.o

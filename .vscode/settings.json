@@ -6,6 +6,7 @@
         "stdbool.h": "c",
         "time.h": "c",
         "math.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "common.h": "c"
     }
 }
