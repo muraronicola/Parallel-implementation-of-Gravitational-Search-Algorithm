@@ -1,8 +1,14 @@
 #include "merge_sort.h"
-#include "utility.h"
-#include <stdio.h>
 
 
+/*-------------------------------------------------*/
+
+/*PORTION OF THE CODE USED BY THE SERIAL VERSION*/
+
+/*-------------------------------------------------*/
+
+
+// Merge function for serial sorting
 void merge_serial(double *fitness, double **velocity, double **population, int pop_size, int dim, int left, int mid, int right) {
     int i, j, k, d;
     int n1 = mid - left + 1;
@@ -88,7 +94,7 @@ void merge_serial(double *fitness, double **velocity, double **population, int p
     free(rightArr_population);
 }
 
-// The subarray to be sorted is in the index range [left-right]
+// The subarray to be sorted is in the index range [left-right], for the serial version
 void mergeSort_serial(double *fitness, double **velocity, double **population, int pop_size, int dim, int left, int right) {
     if (left < right) {
         
@@ -105,17 +111,23 @@ void mergeSort_serial(double *fitness, double **velocity, double **population, i
 }
 
 
+// The main function for serial merge sort
 void merge_sort_serial(double *fitness, double **velocity, double **population, int pop_size, int dim) {
-    //mergeSort(arr, 0, size - 1);
-    //return arr;
     mergeSort_serial(fitness, velocity, population, pop_size, dim, 0, pop_size - 1);
 }
 
 
 
-//PARALLEL
 
 
+/*-------------------------------------------------*/
+
+/*PORTION OF THE CODE USED BY THE PARALLEL VERSION*/
+
+/*-------------------------------------------------*/
+
+
+// Merge function for parallel sorting (the translation index is also present)
 void merge_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int *local_translation_index, int left, int mid, int right) {
     int i, j, k, d;
     int n1 = mid - left + 1;
@@ -202,7 +214,7 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
 }
 
 
-// The subarray to be sorted is in the index range [left-right]
+// The subarray to be sorted is in the index range [left-right] for the parallel version
 void mergeSort_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int *local_translation_index, int left, int right) {
     if (left < right) {
         
@@ -218,6 +230,7 @@ void mergeSort_parallel(double *fitness, double **population, double *local_fitn
     }
 }
 
+// The main function for parallel merge sort
 void merge_sort_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int *local_translation_index){
     int i, j;
     for (i = 0; i < pop_size; i++){

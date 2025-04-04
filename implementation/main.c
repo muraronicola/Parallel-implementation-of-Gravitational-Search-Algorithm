@@ -1,10 +1,10 @@
+#include "serial_GSA.h"
+#include "parallel_GSA.h"
+#include "utility.h"
+#include "test_functions.h"
 #include <mpi.h>
 #include <stdio.h>
 #include <math.h>
-#include "parallel_gca.h"
-#include "serial_GSA.h"
-#include "test_functions.h"
-#include "utility.h"
 #include <stdlib.h>
 #include <time.h>
 #include <sys/time.h>
@@ -12,6 +12,7 @@
 #include <unistd.h>
 
 void print_results(double *best_agent, double (*target_function)(double *, int), int dim);
+
 
 int main(int argc, char *argv[])
 {
@@ -46,7 +47,7 @@ int main(int argc, char *argv[])
         srand(seed);
 
         t1 = MPI_Wtime();
-        best_agent = serial_gca(sphere, -1000, 1000, dim, pop_size, n_iter, debug);
+        best_agent = serial_gsa(sphere, -1000, 1000, dim, pop_size, n_iter, debug);
         t2 = MPI_Wtime();
         final_time = t2 - t1;
 
@@ -68,54 +69,18 @@ int main(int argc, char *argv[])
         srand(seed);
 
         t1 = MPI_Wtime();
+
         int *displacement = (int *)malloc(comm_sz * sizeof(int));
         int *counts = (int *)malloc(comm_sz * sizeof(int));
         int *dispacement_matrix = (int *)malloc(comm_sz * sizeof(int));
         int *count_matrix = (int *)malloc(comm_sz * sizeof(int));
-        int i;
 
-        int this_displacement = 0;
-        int counter_displacement = 0;
+        get_displacements_and_counts(displacement, counts, dispacement_matrix, count_matrix, comm_sz, my_rank, pop_per_proc, remainder, dim);
 
-        displacement[0] = 0;
-        dispacement_matrix[0] = 0;
-        counts[0] = pop_per_proc;
-        count_matrix[0] = pop_per_proc;
-
-        if (remainder > 0)
-        {
-            counts[0]++;
-            count_matrix[0]++;
-        }
-        counter_displacement = counts[0];
-
-        count_matrix[0] *= dim;
-
-        for (i = 1; i < comm_sz; i++)
-        {
-            this_displacement = pop_per_proc;
-            counts[i] = pop_per_proc;
-            count_matrix[i] = pop_per_proc;
-
-            if (i < remainder)
-            {
-                counts[i]++;
-                this_displacement++;
-                count_matrix[i]++;
-            }
-            displacement[i] = counter_displacement;
-            count_matrix[i] *= dim;
-            dispacement_matrix[i] = displacement[i] * dim;
-            counter_displacement += counts[i];
-        }
-
-        if (my_rank < remainder)
-        {
-            pop_per_proc++;
-        }
-
-        best_agent = gca(sphere, -1000, 1000, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
+        best_agent = parallel_gsa(sphere, -1000, 1000, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
+        
         t2 = MPI_Wtime();
+        
         final_time = t2 - t1;
 
         if (my_rank == 0)
@@ -134,10 +99,11 @@ int main(int argc, char *argv[])
         }
     }
 
-    //comm_sz;dim;pop_size;n_iter;seed;time;best_value
-
-    if (my_rank == 0)
+    if (my_rank == 0) //Only one process should print the results
     {
+        // Output format:
+        // comm_sz;dim;pop_size;n_iter;seed;time;best_value
+
         best_value = sphere(best_agent, dim);
         printf("%d;%d;%d;%d;%u;%.15f;%.15f\n", comm_sz, dim, pop_size, n_iter, seed, final_time, best_value);
     }

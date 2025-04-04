@@ -6,16 +6,15 @@ CFLAGS = -Wall -g -lm
 all: gsa
 
 # Regole per la compilazione
-gsa: main.o parallel_gca.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
-	$(CC) $(CFLAGS) -o gsa main.o parallel_gca.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
+gsa: main.o parallel_GSA.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
+	$(CC) $(CFLAGS) -o gsa main.o parallel_GSA.o serial_GSA.o utility.o test_functions.o merge_sort.o common.o
 
 # Regole per compilare i file oggetto
-main.o: main.c parallel_gca.h serial_GSA.h utility.h test_functions.h merge_sort.h common.h
+main.o: main.c parallel_GSA.h serial_GSA.h utility.h test_functions.h merge_sort.h common.h
 	$(CC) $(CFLAGS) -c main.c
 
-
-parallel_gca.o: parallel_gca.c parallel_gca.h
-	$(CC) $(CFLAGS) -c parallel_gca.c
+parallel_GSA.o: parallel_GSA.c parallel_GSA.h
+	$(CC) $(CFLAGS) -c parallel_GSA.c
 
 serial_GSA.o: serial_GSA.c serial_GSA.h
 	$(CC) $(CFLAGS) -c serial_GSA.c

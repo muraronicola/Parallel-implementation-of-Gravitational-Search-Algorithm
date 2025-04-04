@@ -1,14 +1,6 @@
-#include <mpi.h>
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-#include "utility.h"
-#include <stdbool.h>
-#include <float.h>
-#include "merge_sort.h"
-#include "common.h"
+#include "parallel_GSA.h"
 
-/*Sort all the population based on the fitness (each process has already sorted it's own population, we only need to combine that results)*/
+//Sort all the population based on the fitness (each process has already sorted it's own population, we only need to combine that results)
 void final_sort(double *source_fitness, double **source_population, int *unsorted_translation_index, double *dest_fitness, double **dest_population, int *dest_translation_index, int global_pop_size, int local_pop_size, int dim, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
 {
     int *index_agent = allocate_vector_int(n_agents);
@@ -62,7 +54,7 @@ void final_sort(double *source_fitness, double **source_population, int *unsorte
 }
 
 
-/*Update the accelerations of the agents*/
+//Update the accelerations of the agents
 double **update_accelerations(double *global_M, double *local_M, double **global_population, double **local_population, double **accelerations, int dim, int pop_size, int k_best, int sub_pop_start_index, int rank, int *translation_index, double G, bool debug)
 {
     int i = 0, j = 0, d = 0;
@@ -108,8 +100,8 @@ double **update_accelerations(double *global_M, double *local_M, double **global
 }
 
 
-/*Gravitational Search Aglorith, parallel implementation*/
-double *gca(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
+//Gravitational Search Aglorith, parallel implementation
+double *parallel_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
 {
     // Returns the best agent found by the algorithm
 
@@ -140,27 +132,12 @@ double *gca(double (*target_function)(double *, int), double lb, double ub, int 
     double *unsorted_global_fitness = allocate_vector_double(global_pop_size);
 
     //Population allocation
-    double **local_population = allocate_matrix_double(local_pop_size, dim);
+    double **local_population = initialize_population(dim, local_pop_size, lb, ub);
     double **local_population_sorted = allocate_matrix_double(local_pop_size, dim); // Each process calculates for its own subpopulation
 
     double **unsorted_global_population = allocate_matrix_double(global_pop_size, dim);
-    double **global_population = NULL;
+    double **global_population =  allocate_matrix_double(global_pop_size, dim);
 
-    /*if (my_rank == 0)
-    {
-        global_population = initialize_population(dim, global_pop_size, lb, ub);
-    }
-    else
-    {
-        global_population = allocate_matrix_double(global_pop_size, dim);
-    }
-    MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);*/
-    
-     // Seed the random number generator with a different value for each process
-    local_population = initialize_population(dim, local_pop_size, lb, ub);
-    global_population = allocate_matrix_double(global_pop_size, dim); // Each process calculates for its own subpopulation
-
-    //printf("Rank %d: local population initialized\n", my_rank);
     for (l = 0; l < n_iter; l++)
     {
         // Calculate the fitness of the local population

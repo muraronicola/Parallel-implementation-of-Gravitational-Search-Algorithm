@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+#include "utility.h"
 
+//Check if the memory allocation was successful
 void check_allocation(void *ptr)
 {
     if (ptr == NULL)
@@ -11,6 +10,7 @@ void check_allocation(void *ptr)
     }
 }
 
+//Allocate memory for a vector of doubles
 double *allocate_vector_double(int n)
 {
     double *ptr = (double *)malloc(sizeof(double) * n);
@@ -19,6 +19,7 @@ double *allocate_vector_double(int n)
     return ptr;
 }
 
+//Allocate memory for a vector of integers
 int *allocate_vector_int(int n)
 {
     int *ptr = (int *)malloc(sizeof(int) * n);
@@ -27,6 +28,7 @@ int *allocate_vector_int(int n)
     return ptr;
 }
 
+//Allocate memory for a matrix of floats
 double **allocate_matrix_double(int rows, int columns)
 {
     double *continuos_chunk = (double *)malloc(rows * columns * sizeof(double));
@@ -44,37 +46,50 @@ double **allocate_matrix_double(int rows, int columns)
     return mat;
 }
 
+//Return a random double between lb and ub
 double random_double(int lb, int ub)
 {
     double val = (((double)rand()) / ((double)RAND_MAX)) * (ub - lb) + lb;
     return val;
 }
 
-double round_to_2_decimals(double number)
+//Gets the number of agents and displacements for each process
+void get_displacements_and_counts(int *displacement, int *counts, int *dispacement_matrix, int *count_matrix, int comm_sz, int my_rank, int pop_per_proc, int remainder, int dim)
 {
-    return roundf(number * 10000) / 10000;
-}
+    int i = 0, counter_displacement = 0;
 
-double *round_to_2_decimals_vector(double *vector, int dim)
-{
-    int i = 0;
-    for (i = 0; i < dim; i++)
+    displacement[0] = 0;
+    dispacement_matrix[0] = 0;
+    counts[0] = pop_per_proc;
+    count_matrix[0] = pop_per_proc;
+
+    if (remainder > 0)
     {
-        vector[i] = round_to_2_decimals(vector[i]);
+        counts[0]++;
+        count_matrix[0]++;
     }
-    return vector;
-}
+    counter_displacement = counts[0];
 
-double **round_to_2_decimals_matrix(double **matrix, int rows, int columns)
-{
-    int i = 0;
-    int j = 0;
-    for (i = 0; i < rows; i++)
+    count_matrix[0] *= dim;
+
+    for (i = 1; i < comm_sz; i++)
     {
-        for (j = 0; j < columns; j++)
+        counts[i] = pop_per_proc;
+        count_matrix[i] = pop_per_proc;
+
+        if (i < remainder)
         {
-            matrix[i][j] = round_to_2_decimals(matrix[i][j]);
+            counts[i]++;
+            count_matrix[i]++;
         }
+        displacement[i] = counter_displacement;
+        count_matrix[i] *= dim;
+        dispacement_matrix[i] = displacement[i] * dim;
+        counter_displacement += counts[i];
     }
-    return matrix;
+
+    if (my_rank < remainder)
+    {
+        pop_per_proc++;
+    }
 }

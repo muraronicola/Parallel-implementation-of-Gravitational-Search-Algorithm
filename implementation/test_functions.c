@@ -1,6 +1,7 @@
-#include <math.h>
+#include "test_functions.h"
 
-double sphere(double *x, int dim) // Sphere function, tested as f1 in the original GSA paper
+// Sphere function, tested as f1 in the original GSA paper
+double sphere(double *x, int dim) 
 { 
     double sum = 0;
     int i = 0;
@@ -11,7 +12,8 @@ double sphere(double *x, int dim) // Sphere function, tested as f1 in the origin
     return sum;
 }
 
-double f3(double *x, int dim) // Tested as f3 in the original GSA paper
+// Tested as f3 in the original GSA paper
+double f3(double *x, int dim) 
 { 
     double sum = 0;
     double total = 0;
@@ -29,7 +31,8 @@ double f3(double *x, int dim) // Tested as f3 in the original GSA paper
     return total;
 }
 
-double Rosenbrock(double *x, int n) // Rosenbrock function, tested as f5 in the original GSA paper
+// Rosenbrock function, tested as f5 in the original GSA paper
+double Rosenbrock(double *x, int n) 
 { 
     double sum = 0.0;
     double term1, term2;

@@ -1,13 +1,7 @@
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-#include "utility.h"
-#include <stdbool.h>
-#include "merge_sort.h"
-#include "common.h"
+#include "serial_GSA.h"
 
 
-/*Update the accelerations of the agents*/
+//Update the accelerations of the agents
 double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, double G, bool debug)
 {
     int i = 0, j = 0, d = 0;
@@ -53,8 +47,8 @@ double **serial_update_accelearations(double *M, double **population, double **a
 }
 
 
-/*Gravitational Search Aglorith, serial implementation*/
-double *serial_gca(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size, int n_iter, bool debug)
+//Gravitational Search Aglorith, serial implementation
+double *serial_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size, int n_iter, bool debug)
 {
     // Returns the best agent found by the algorithm
 

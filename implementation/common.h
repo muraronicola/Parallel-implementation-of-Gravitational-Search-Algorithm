@@ -1,6 +1,9 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
+#include "utility.h"
+#include "math.h"
+#include "stdio.h"
 
 double **initialize_population(int dim, int pop_size, double lb, double ub);
 void calculate_fitness(double **population, double (*target_function)(double *, int), double *fitness, int dim, int pop_size, double lb, double up);
@@ -16,4 +19,4 @@ double *calculate_M(double *m, double *M, int pop_size, double sum_m);
 double *get_best_agent(double **population, double * fitness, int pop_size, int dim);
 
 
-#endif // __COMMON_H__
+#endif
