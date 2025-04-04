@@ -37,5 +37,5 @@ qsub <script_name>
 We can submit the job to the queue. The script will take care of loading the required modules and running the programm with the default arguments.
 
 
-## results
+## Results
 The folder `results` contains the results of the tests performed on the cluster. There are two python notebook that has been used to average the results and obtain the tables and plots.
