@@ -1,7 +1,7 @@
 #include "parallel_GSA.h"
 
 // Sort all the population based on the fitness (each process has already sorted it's own population, we only need to combine that results)
-void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int local_pop_size, int dim, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
+void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *dispacement, int *counts)
 {
     int *index_agent = allocate_vector_int(n_agents);
 
@@ -41,7 +41,7 @@ void final_sort(double *source_fitness, double **source_population, double *dest
 }
 
 // Update the accelerations of the agents
-double **update_accelerations(double *global_M, double **global_population, double **local_population, double **accelerations, int dim, int pop_size, int k_best, int sub_pop_start_index, int rank, double G, bool debug)
+double **update_accelerations(double *M, double **global_population, double **local_population, double **accelerations, int dim, int pop_size, int k_best, double G)
 {
     int i = 0, j = 0, d = 0;
     double R, random;
@@ -64,8 +64,7 @@ double **update_accelerations(double *global_M, double **global_population, doub
                 for (d = 0; d < dim; d++)
                 {
                     random = random_double(0, 1);
-                    //random = 0.5; //If we want to debug the algorithm
-                    Forces[i][d] = Forces[i][d] + random * G * (((global_M[j]) / (R + 1e-20)) * (global_population[j][d] - local_population[i][d])); // Use newton's law of gravitation
+                    Forces[i][d] = Forces[i][d] + random * G * (((M[j]) / (R + 1e-20)) * (global_population[j][d] - local_population[i][d])); // Use newton's law of gravitation
                 }
             }
         }
@@ -105,11 +104,6 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     double *global_M = allocate_vector_double(global_pop_size); // Each process calculates for its own subpopulation
     double *m = allocate_vector_double(local_pop_size);
 
-    // Translation index allocation
-    int *local_translation_index = allocate_vector_int(local_pop_size);     // Each process calculates for its own subpopulation
-    int *global_translation_index = allocate_vector_int(global_pop_size);   // Each process calculates for its own subpopulation
-    int *unsorted_translation_index = allocate_vector_int(global_pop_size); // Each process calculates for its own subpopulation
-
     // Fitness allocation
     double *local_fitness = allocate_vector_double(local_pop_size);
     double *local_fitness_sorted = allocate_vector_double(local_pop_size); // Each process calculates for its own subpopulation
@@ -117,114 +111,26 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     double *unsorted_global_fitness = allocate_vector_double(global_pop_size);
 
     // Population allocation
-
-    /*
-    double **local_population = allocate_matrix_double(local_pop_size, dim); //initialize_population(dim, local_pop_size, lb, ub);
-    double **local_population_sorted = allocate_matrix_double(local_pop_size, dim); // Each process calculates for its own subpopulation
-
-    double **unsorted_global_population = allocate_matrix_double(global_pop_size, dim);
-    double **global_population; // = allocate_matrix_double(global_pop_size, dim);
-
-    if (my_rank == 0)
-    {
-        global_population = initialize_population(dim, global_pop_size, lb, ub);
-        //int l = 0;
-        //for (l = 0; l < n_agents; l++)
-        //{
-        //    printf("displacement[%d]: %d\n", l, dispacement[l]);
-        //    printf("counts[%d]: %d\n", l, counts[l]);
-        //    printf("dispacement_matrix[%d]: %d\n", l, dispacement_matrix[l]);
-        //    printf("count_matrix[%d]: %d\n", l, count_matrix[l]);
-        //    printf("\n");
-        //}
-    }
-    else
-    {
-        global_population = allocate_matrix_double(global_pop_size, dim);
-    }
-    //printf("\n\n\nmy_rank: %d; global_population_size: %d, local_population_size: %d\n", my_rank, global_pop_size, local_pop_size);
-
-    MPI_Scatterv(&(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, &(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, 0, MPI_COMM_WORLD);
-    */
-    
     double **local_population = initialize_population(dim, local_pop_size, lb, ub);
     double **local_population_sorted = allocate_matrix_double(local_pop_size, dim); // Each process calculates for its own subpopulation
 
     double **unsorted_global_population = allocate_matrix_double(global_pop_size, dim);
     double **global_population = allocate_matrix_double(global_pop_size, dim);
 
+
     int i = 0, j = 0, k = 0;
     for (l = 0; l < n_iter; l++)
     {
         // Calculate the fitness of the local population
-        if (my_rank == 0 && debug)
-        {
-            printf("\n\n\nIteration: %d; my_rank: %d\n", l, my_rank);
-        }
-        calculate_fitness(local_population, target_function, local_fitness, dim, local_pop_size, lb, ub);                         // Calculate the fitness of the local population
+        calculate_fitness(local_population, target_function, local_fitness, dim, local_pop_size, lb, ub); // Calculate the fitness of the local population
         merge_sort_parallel(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim); // this is v2
 
         // Share the fitness and the population with all the processes
         MPI_Allgatherv(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD); // this is v2
         MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
-        // MPI_Allgatherv(local_translation_index, local_pop_size, MPI_INT, unsorted_translation_index, counts, dispacement, MPI_INT, MPI_COMM_WORLD);                                            // this is v2
 
-        /*if (my_rank == 0 && debug)
-        {
-            printf("\n local sort done \n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; local_fitness_sorted[%d]: %f\n", my_rank, i, local_fitness_sorted[i]);
-            }
-
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; local_translation_index[%d]: %f\n", my_rank, i, local_translation_index[i]);
-            }
-
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; unsorted_translation_index[%d]: %f\n", my_rank, i, unsorted_translation_index[i]);
-            }
-
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; local_fitness[%d]: %f\n", my_rank, i, local_fitness[i]);
-            }
-
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; local_velocity[%d][0]: %f\n", my_rank, i, local_velocity[i][0]);
-            }
-        }*/
         // Sort all the population
-        final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, local_pop_size, dim, n_agents, dispacement, counts, dispacement_matrix, count_matrix); // this is v2
-
-        /*if (my_rank == 0 && debug)
-        {
-            printf("SORT DONE:\n");
-            printf("\n");
-            for (i = 0; i < global_pop_size; i++)
-            {
-                printf("my_rank: %d; global_fitness[%d]: %.15f\n", my_rank, i, global_fitness[i]);
-            }
-
-            printf("\n");
-            for (i = 0; i < global_pop_size; i++)
-            {
-                printf("my_rank: %d; global_population[%d][0]: %.15f\n", my_rank, i, global_population[i][0]);
-            }
-
-            printf("\n");
-            for (i = 0; i < global_pop_size; i++)
-            {
-                printf("my_rank: %d; global_translation_index[%d]: %d\n", my_rank, i, global_translation_index[i]);
-            }
-        }*/
+        final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
 
         // Update the G constant
         G = get_G(G0, l, n_iter);
@@ -237,62 +143,13 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
 
         // Share local_sum with all the processes
         MPI_Allreduce(&local_sum, &sum_m, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
-        /*if (debug && my_rank == 0)
-        {
-            printf("Rank %d: m[0] = %f\n", my_rank, m[0]);
-            printf("Rank %d: m[0] = %f\n", my_rank, m[1]);
-            printf("Rank %d: m[0] = %f\n", my_rank, m[2]);
-            printf("Rank %d: m[0] = %f\n", my_rank, m[3]);
-
-            printf("it: %d,  sum_m: %.15f\n", l, sum_m);
-        }*/
 
         local_M = calculate_M(m, local_M, local_pop_size, sum_m);
         MPI_Allgatherv(local_M, local_pop_size, MPI_DOUBLE, global_M, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD); // Vorrei poter mandare solo i topk...
 
-        /*if (my_rank == 0 && debug)
-        {
-            printf("\n");
-            for (i = 0; i < global_pop_size; i++)
-            {
-                printf("my_rank: %d; global_M[%d]: %f\n", my_rank, i, global_M[i]);
-            }
-
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; local_M[%d]: %f\n", my_rank, i, local_M[i]);
-            }
-        }*/
-
-        accelerations = update_accelerations(global_M, global_population, local_population, accelerations, dim, local_pop_size, k_best, sub_pop_start_index, my_rank, G, debug);
-
-        /*if (my_rank == 0 && debug)
-        {
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; accelerations[%d][0]: %f\n", my_rank, i, accelerations[i][0]);
-            }
-        }*/
+        accelerations = update_accelerations(global_M, global_population, local_population, accelerations, dim, local_pop_size, k_best, G);
         local_velocity = update_velocity(local_velocity, accelerations, dim, local_pop_size);
-        /*if (my_rank == 0 && debug)
-        {
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; before_updating: local_velocity[%d][0]: %f\n", my_rank, i, local_velocity[i][0]);
-            }
-        }*/
         local_population = update_position(local_population, local_velocity, dim, local_pop_size);
-        /*if (my_rank == 0 && debug)
-        {
-            printf("\n");
-            for (i = 0; i < local_pop_size; i++)
-            {
-                printf("my_rank: %d; local_velocity[%d][0]: %f\n", my_rank, i, local_velocity[i][0]);
-            }
-        }*/
     }
 
     // We need to obtain the best agent for each process
@@ -307,19 +164,5 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     {
         best_agent = get_best_agent(global_population, global_fitness, global_pop_size, dim);
     }
-
-    /*if (my_rank == 0 && debug)
-    {
-        printf("\n---------- DONE ----------\n");
-        for (i = 0; i < global_pop_size; i++)
-        {
-            printf("my_rank: %d; global_population[%d][0]: %.15f   global_population[%d][1]: %.15f \n", my_rank, i, global_population[i][0], i, global_population[i][1]);
-        }
-        for (i = 0; i < global_pop_size; i++)
-        {
-            printf("my_rank: %d; global_fitness[%d]: %.15f\n", my_rank, i, global_fitness[i]);
-        }
-    }*/
-
     return best_agent;
 }

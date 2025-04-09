@@ -90,7 +90,6 @@ double **update_velocity(double **velocity, double **accelerations, int dim, int
         for (d = 0; d < dim; d++)
         {
             random = random_double(0, 1);
-            //random = 0.5; //If we want to debug the algorithm
             velocity[i][d] = random * velocity[i][d] + accelerations[i][d];
         }
     }
