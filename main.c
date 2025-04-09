@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
         srand(seed);
 
         t1 = MPI_Wtime();
-        best_agent = serial_gsa(sphere, -1000, 1000, dim, pop_size, n_iter, debug);
+        best_agent = serial_gsa(sphere, -1000, 1000, dim, pop_size, n_iter);
         t2 = MPI_Wtime();
         final_time = t2 - t1;
 
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 
         get_displacements_and_counts(displacement, counts, dispacement_matrix, count_matrix, comm_sz, my_rank, &pop_per_proc, remainder, dim);
 
-        best_agent = parallel_gsa(sphere, -1000, 1000, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
+        best_agent = parallel_gsa(sphere, -1000, 1000, dim, pop_size, n_iter, my_rank, pop_per_proc, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
 
         t2 = MPI_Wtime();
 

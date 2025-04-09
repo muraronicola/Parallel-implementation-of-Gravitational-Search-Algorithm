@@ -85,7 +85,7 @@ double **update_accelerations(double *M, double **global_population, double **lo
 }
 
 // Gravitational Search Aglorith, parallel implementation
-double *parallel_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
+double *parallel_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
 {
     // Returns the best agent found by the algorithm
 

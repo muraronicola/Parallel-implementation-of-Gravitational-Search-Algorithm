@@ -2,7 +2,7 @@
 
 
 //Update the accelerations of the agents
-double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, double G, bool debug)
+double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, double G)
 {
     int i = 0, j = 0, d = 0;
     double R, random;
@@ -47,7 +47,7 @@ double **serial_update_accelearations(double *M, double **population, double **a
 
 
 //Gravitational Search Aglorith, serial implementation
-double *serial_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size, int n_iter, bool debug)
+double *serial_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size, int n_iter)
 {
     // Returns the best agent found by the algorithm
 
@@ -77,7 +77,7 @@ double *serial_gsa(double (*target_function)(double *, int), double lb, double u
         m = calculate_m(fitness, m, 0, pop_size, best, worst, &sum_m);
         M = calculate_M(m, M, pop_size, sum_m);
 
-        accelerations = serial_update_accelearations(M, population, accelerations, dim, pop_size, k_best, G, debug);
+        accelerations = serial_update_accelearations(M, population, accelerations, dim, pop_size, k_best, G);
         velocity = update_velocity(velocity, accelerations, dim, pop_size);
         population = update_position(population, velocity, dim, pop_size);
     }
