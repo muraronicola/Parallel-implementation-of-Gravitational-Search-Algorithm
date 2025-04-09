@@ -19,7 +19,7 @@ double **initialize_population(int dim, int pop_size, double lb, double ub)
 }
 
 //Calculate the fitness of each agent in the population
-void calculate_fitness(double **population, double (*target_function)(double *, int), double *fitness, int dim, int pop_size, double lb, double up)
+void evaluate_fitness(double **population, double (*target_function)(double *, int), double *fitness, int dim, int pop_size, double lb, double up)
 {
     int i = 0;
     for (i = 0; i < pop_size; i++)

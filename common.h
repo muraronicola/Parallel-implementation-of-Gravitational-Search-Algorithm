@@ -6,7 +6,7 @@
 #include "stdio.h"
 
 double **initialize_population(int dim, int pop_size, double lb, double ub);
-void calculate_fitness(double **population, double (*target_function)(double *, int), double *fitness, int dim, int pop_size, double lb, double up);
+void evaluate_fitness(double **population, double (*target_function)(double *, int), double *fitness, int dim, int pop_size, double lb, double up);
 double *clip_position_agent(double *agent, double lb, double ub, int dim);
 double get_G(double G0, int t, int n_iter);
 double get_best(double *fitness, int pop_size);

@@ -1,19 +1,22 @@
 #include "serial_GSA.h"
 
-
-//Update the accelerations of the agents
+// Update the accelerations of the agents
 double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, double G)
 {
     int i = 0, j = 0, d = 0;
     double R, random;
 
-    double **Forces = allocate_matrix_double(pop_size, dim);
-
-    for (i = 0; i < pop_size; i++) //Update each agent's
+    for (i = 0; i < pop_size; i++) // Update each agent's
     {
-        for (j = 0; j < k_best; j++) //Considering only the k_best agents
+
+        for (d = 0; d < dim; d++)
         {
-            if (i != j) //We don't want to calculate the force of the agent on itself
+            accelerations[i][d] = 0; // Reset the acceleartions
+        }
+
+        for (j = 0; j < k_best; j++) // Considering only the k_best agents
+        {
+            if (i != j) // We don't want to calculate the force of the agent on itself
             {
                 R = 0;
                 for (d = 0; d < dim; d++)
@@ -22,31 +25,19 @@ double **serial_update_accelearations(double *M, double **population, double **a
                 }
                 R = sqrt(R);
 
-                for (d = 0; d < dim; d++) //Distance between the two agents
+                for (d = 0; d < dim; d++) // Distance between the two agents
                 {
                     random = random_double(0, 1);
-                    Forces[i][d] = Forces[i][d] + random*G*(((M[j]) / (R + 1e-20)) * (population[j][d] - population[i][d])); //Use newton's law of gravitation
+                    accelerations[i][d] = accelerations[i][d] + random * G * (((M[j]) / (R + 1e-20)) * (population[j][d] - population[i][d])); // Use newton's law of gravitation
                 }
             }
         }
     }
 
-    for (i = 0; i < pop_size; i++)
-    {
-        for (d = 0; d < dim; d++)
-        {
-            accelerations[i][d] = Forces[i][d];  //No operations needed
-            // We didn't multiply by the mass of the agent in the formula above (otherwise, we would have to divide by the mass of the agent, which is can be 0 since the masses are normalized)
-            // if the M[i] is 0, the acceleration would be infinite
-        }
-    }
-
-    free(Forces); // Free the memory allocated for the forces
     return accelerations;
 }
 
-
-//Gravitational Search Aglorith, serial implementation
+// Gravitational Search Aglorith, serial implementation
 double *serial_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int pop_size, int n_iter)
 {
     // Returns the best agent found by the algorithm
@@ -64,7 +55,7 @@ double *serial_gsa(double (*target_function)(double *, int), double lb, double u
     for (l = 0; l < n_iter; l++)
     {
         // Calculate the fitness of the population
-        calculate_fitness(population, target_function, fitness, dim, pop_size, lb, ub);
+        evaluate_fitness(population, target_function, fitness, dim, pop_size, lb, ub);
         merge_sort_serial(fitness, velocity, population, pop_size, dim); // Sort the agents based on their fitness
 
         // Update the G constant
@@ -82,8 +73,8 @@ double *serial_gsa(double (*target_function)(double *, int), double lb, double u
         population = update_position(population, velocity, dim, pop_size);
     }
 
-    calculate_fitness(population, target_function, fitness, dim, pop_size, lb, ub);
-    
+    evaluate_fitness(population, target_function, fitness, dim, pop_size, lb, ub);
+
     double *best_agent = NULL;
     best_agent = get_best_agent(population, fitness, pop_size, dim); // Get the best agent found by the algorithm
 
