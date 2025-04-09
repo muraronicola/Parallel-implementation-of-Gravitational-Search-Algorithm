@@ -117,8 +117,6 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     double **unsorted_global_population = allocate_matrix_double(global_pop_size, dim);
     double **global_population = allocate_matrix_double(global_pop_size, dim);
 
-
-    int i = 0, j = 0, k = 0;
     for (l = 0; l < n_iter; l++)
     {
         // Calculate the fitness of the local population
