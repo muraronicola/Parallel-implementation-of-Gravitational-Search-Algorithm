@@ -46,10 +46,14 @@ double **update_accelerations(double *M, double **global_population, double **lo
     int i = 0, j = 0, d = 0;
     double R, random;
 
-    double **Forces = allocate_matrix_double(pop_size, dim);
-
     for (i = 0; i < pop_size; i++) // Update each agent's
     {
+
+        for (d = 0; d < dim; d++)
+        {
+            accelerations[i][d] = 0; // Initialize the acceleartions
+        }
+
         for (j = 0; j < k_best; j++) // Considering only the k_best agents
         {
             if (check_different_agents(local_population[i], global_population[j], dim)) // We don't want to calculate the force of the agent on itself
@@ -64,28 +68,17 @@ double **update_accelerations(double *M, double **global_population, double **lo
                 for (d = 0; d < dim; d++)
                 {
                     random = random_double(0, 1);
-                    Forces[i][d] = Forces[i][d] + random * G * (((M[j]) / (R + 1e-20)) * (global_population[j][d] - local_population[i][d])); // Use newton's law of gravitation
+                    accelerations[i][d] = accelerations[i][d] + random * G * (((M[j]) / (R + 1e-20)) * (global_population[j][d] - local_population[i][d])); // Use newton's law of gravitation
                 }
             }
         }
     }
 
-    for (i = 0; i < pop_size; i++)
-    {
-        for (d = 0; d < dim; d++)
-        {
-            accelerations[i][d] = Forces[i][d]; // No operations needed
-            // We didn't multiply by the mass of the agent in the formula above (otherwise, we would have to divide by the mass of the agent, which is can be 0 since the masses are normalized)
-            // if the M[i] is 0, the acceleration would be infinite
-        }
-    }
-
-    free(Forces); // Free the memory allocated for the forces
     return accelerations;
 }
 
 // Gravitational Search Aglorith, parallel implementation
-double *parallel_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, bool debug, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
+double *parallel_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
 {
     // Returns the best agent found by the algorithm
 
@@ -120,7 +113,7 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     for (l = 0; l < n_iter; l++)
     {
         // Calculate the fitness of the local population
-        calculate_fitness(local_population, target_function, local_fitness, dim, local_pop_size, lb, ub); // Calculate the fitness of the local population
+        evaluate_fitness(local_population, target_function, local_fitness, dim, local_pop_size, lb, ub); // Calculate the fitness of the local population
         merge_sort_parallel(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim); // this is v2
 
         // Share the fitness and the population with all the processes
@@ -151,7 +144,7 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     }
 
     // We need to obtain the best agent for each process
-    calculate_fitness(local_population, target_function, local_fitness, dim, local_pop_size, lb, ub); // Calculate the fitness of the local population
+    evaluate_fitness(local_population, target_function, local_fitness, dim, local_pop_size, lb, ub); // Calculate the fitness of the local population
 
     // Only the process 0 will receive the best agent
     MPI_Gatherv(local_fitness, local_pop_size, MPI_DOUBLE, global_fitness, counts, dispacement, MPI_DOUBLE, 0, MPI_COMM_WORLD);

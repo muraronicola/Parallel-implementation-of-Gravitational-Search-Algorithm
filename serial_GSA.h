@@ -9,7 +9,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-double* serial_gsa(double (*target_function)(double*, int), double lb, double ub, int dim, int pop_size, int n_iter, bool debug);
-double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, double G, bool debug);
+double* serial_gsa(double (*target_function)(double*, int), double lb, double ub, int dim, int pop_size, int n_iter);
+double **serial_update_accelearations(double *M, double **population, double **accelerations, int dim, int pop_size, int k_best, double G);
 
 #endif
