@@ -53,15 +53,28 @@ double random_double(int lb, int ub)
     return val;
 }
 
+bool check_different_agents(double *agent_a, double* agent_b, int dim)
+{
+    int i = 0;
+    for (i = 0; i < dim; i++)
+    {
+        if (agent_a[i] != agent_b[i])
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 //Gets the number of agents and displacements for each process
-void get_displacements_and_counts(int *displacement, int *counts, int *dispacement_matrix, int *count_matrix, int comm_sz, int my_rank, int pop_per_proc, int remainder, int dim)
+void get_displacements_and_counts(int *displacement, int *counts, int *dispacement_matrix, int *count_matrix, int comm_sz, int my_rank, int* pop_per_proc, int remainder, int dim)
 {
     int i = 0, counter_displacement = 0;
 
     displacement[0] = 0;
     dispacement_matrix[0] = 0;
-    counts[0] = pop_per_proc;
-    count_matrix[0] = pop_per_proc;
+    counts[0] = (*pop_per_proc);
+    count_matrix[0] = (*pop_per_proc);
 
     if (remainder > 0)
     {
@@ -74,8 +87,8 @@ void get_displacements_and_counts(int *displacement, int *counts, int *dispaceme
 
     for (i = 1; i < comm_sz; i++)
     {
-        counts[i] = pop_per_proc;
-        count_matrix[i] = pop_per_proc;
+        counts[i] = (*pop_per_proc);
+        count_matrix[i] = (*pop_per_proc);
 
         if (i < remainder)
         {
@@ -90,6 +103,6 @@ void get_displacements_and_counts(int *displacement, int *counts, int *dispaceme
 
     if (my_rank < remainder)
     {
-        pop_per_proc++;
+        (*pop_per_proc)++;
     }
 }

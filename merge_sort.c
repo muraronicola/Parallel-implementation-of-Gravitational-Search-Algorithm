@@ -128,7 +128,7 @@ void merge_sort_serial(double *fitness, double **velocity, double **population, 
 
 
 // Merge function for parallel sorting (the translation index is also present)
-void merge_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int *local_translation_index, int left, int mid, int right) {
+void merge_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int left, int mid, int right) {
     int i, j, k, d;
     int n1 = mid - left + 1;
     int n2 = right - mid;
@@ -146,7 +146,6 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
     // Copy data to temporary arrays
     for (i = 0; i < n1; i++){
         leftArr_fitness[i] = local_fitness_sorted[left + i];
-        leftArr_translation_index[i] = local_translation_index[left + i];
         for (j = 0; j < dim; j++){
             leftArr_population[i][j] = local_population_sorted[left + i][j];
         }
@@ -154,7 +153,6 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
 
     for (j = 0; j < n2; j++){
         rightArr_fitness[j] = local_fitness_sorted[mid + 1 + j];
-        rightArr_translation_index[j] = local_translation_index[mid + 1 + j];
         for (i = 0; i < dim; i++){
             rightArr_population[j][i] = local_population_sorted[mid + 1 + j][i];
         }
@@ -167,7 +165,6 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
     while (i < n1 && j < n2) {
         if (leftArr_fitness[i] <= rightArr_fitness[j]) {
             local_fitness_sorted[k] = leftArr_fitness[i];
-            local_translation_index[k] = leftArr_translation_index[i];
             for (d = 0; d < dim; d++){
                 local_population_sorted[k][d] = leftArr_population[i][d];
             }
@@ -175,7 +172,6 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
         }
         else {
             local_fitness_sorted[k] = rightArr_fitness[j];
-            local_translation_index[k] = rightArr_translation_index[j];
             for (d = 0; d < dim; d++){
                 local_population_sorted[k][d] = rightArr_population[j][d];
             }
@@ -187,7 +183,6 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
     // Copy the remaining elements of leftArr[], if any
     while (i < n1) {
         local_fitness_sorted[k] = leftArr_fitness[i];
-        local_translation_index[k] = leftArr_translation_index[i];
         for (d = 0; d < dim; d++){
             local_population_sorted[k][d] = leftArr_population[i][d];
         }
@@ -198,7 +193,6 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
     // Copy the remaining elements of rightArr[], if any
     while (j < n2) {
         local_fitness_sorted[k] = rightArr_fitness[j];
-        local_translation_index[k] = rightArr_translation_index[j];
         for (d = 0; d < dim; d++){
             local_population_sorted[k][d] = rightArr_population[j][d];
         }
@@ -215,30 +209,29 @@ void merge_parallel(double *fitness, double **population, double *local_fitness_
 
 
 // The subarray to be sorted is in the index range [left-right] for the parallel version
-void mergeSort_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int *local_translation_index, int left, int right) {
+void mergeSort_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int left, int right) {
     if (left < right) {
         
         // Calculate the midpoint
         int mid = left + (right - left) / 2;
 
         // Sort first and second halves
-        mergeSort_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, local_translation_index, left, mid);
-        mergeSort_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, local_translation_index, mid + 1, right);
+        mergeSort_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, left, mid);
+        mergeSort_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, mid + 1, right);
 
         // Merge the sorted halves
-        merge_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, local_translation_index, left, mid, right);
+        merge_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, left, mid, right);
     }
 }
 
 // The main function for parallel merge sort
-void merge_sort_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim, int *local_translation_index){
+void merge_sort_parallel(double *fitness, double **population, double *local_fitness_sorted, double **local_population_sorted, int pop_size, int dim){
     int i, j;
     for (i = 0; i < pop_size; i++){
-        local_translation_index[i] = i;
         local_fitness_sorted[i] = fitness[i];
         for (j = 0; j < dim; j++){
             local_population_sorted[i][j] = population[i][j];
         }
     }
-    mergeSort_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, local_translation_index, 0, pop_size - 1);
+    mergeSort_parallel(fitness, population, local_fitness_sorted, local_population_sorted, pop_size, dim, 0, pop_size - 1);
 }

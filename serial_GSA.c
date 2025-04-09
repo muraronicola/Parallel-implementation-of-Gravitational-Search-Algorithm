@@ -62,11 +62,50 @@ double *serial_gsa(double (*target_function)(double *, int), double lb, double u
     double **population = initialize_population(dim, pop_size, lb, ub); // Initialize the population
 
     int l = 0;
+    int k = 0, i = 0, j = 0;
     for (l = 0; l < n_iter; l++)
     {
+        /*if (debug)
+        {
+            printf("\n\n\nIteration: %d\n", l);
+        }*/
         // Calculate the fitness of the population
         calculate_fitness(population, target_function, fitness, dim, pop_size, lb, ub);
+
+        /*if (debug)
+        {
+            printf("\n\n");
+            for (k = 0; k < pop_size; k++)
+            {
+                printf("population[%d][0]: %f\n", k, population[k][0]);
+            }
+
+            for (k = 0; k < pop_size; k++)
+            {
+                printf("fitness[%d]: %f\n", k, fitness[k]);
+            }
+
+            for (k = 0; k < pop_size; k++)
+            {
+                printf("valocity[%d][0]: %f\n", k, velocity[k][0]);
+            }
+        }*/
+
         merge_sort_serial(fitness, velocity, population, pop_size, dim); // Sort the agents based on their fitness
+
+        /*if (debug)
+        {
+            printf("\nSOORTT:\n");
+            for (k = 0; k < pop_size; k++)
+            {
+                printf("population[%d][0]: %.15f\n", k, population[k][0]);
+            }
+
+            for (k = 0; k < pop_size; k++)
+            {
+                printf("fitness[%d]: %.15f\n", k, fitness[k]);
+            }
+        }*/
 
         // Update the G constant
         G = get_G(G0, l, n_iter);
@@ -75,17 +114,62 @@ double *serial_gsa(double (*target_function)(double *, int), double lb, double u
         k_best = getk_best(pop_size, l, n_iter);
 
         // Update the M and m vectors
-        m = calculate_m(fitness, m, pop_size, best, worst, &sum_m);
+        m = calculate_m(fitness, m, 0, pop_size, best, worst, &sum_m);
+        /*if (debug)
+            printf("it: %d,  sum_m: %.15f\n", l, sum_m);*/
         M = calculate_M(m, M, pop_size, sum_m);
+        /*if (debug)
+        {
+            printf("\n");
+            for (i = 0; i < pop_size; i++)
+            {
+                printf("M[%d]: %f\n", i, M[i]);
+            }
+        }*/
 
         accelerations = serial_update_accelearations(M, population, accelerations, dim, pop_size, k_best, G, debug);
+        /*if (debug)
+        {
+            printf("\n");
+            for (i = 0; i < pop_size; i++)
+            {
+                printf("accelerations[%d][0]: %f\n", i, accelerations[i][0]);
+            }
+        }*/
         velocity = update_velocity(velocity, accelerations, dim, pop_size);
+        /*if (debug)
+        {
+            printf("\n");
+            for (i = 0; i < pop_size; i++)
+            {
+                printf("velocity[%d][0]: %f\n", i, velocity[i][0]);
+            }
+        }*/
         population = update_position(population, velocity, dim, pop_size);
+        /*if (debug)
+        {
+            printf("\n");
+            for (i = 0; i < pop_size; i++)
+            {
+                printf("population[%d][0]: %f\n", i, population[i][0]);
+            }
+        }*/
     }
 
     calculate_fitness(population, target_function, fitness, dim, pop_size, lb, ub);
     double *best_agent = NULL;
     best_agent = get_best_agent(population, fitness, pop_size, dim); // Get the best agent found by the algorithm
 
+    /*if (debug)
+    {
+        for (i = 0; i < pop_size; i++)
+        {
+            printf("population[%d][0]: %.15f  population[%d][1]: %.15f \n", i, population[i][0], i, population[i][1]);
+        }
+        for (i = 0; i < pop_size; i++)
+        {
+            printf("fitness[%d]: %.15f\n", i, fitness[i]);
+        }
+    }*/
     return best_agent;
 }

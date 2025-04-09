@@ -113,14 +113,14 @@ double **update_position(double **population, double **velocity, int dim, int po
 }
 
 //Calculate the m value for each agent in the population. This value is used to calculate the M value
-double *calculate_m(double *fitness, double *m, int pop_size, double best, double worst, double* sum_m)
+double *calculate_m(double *fitness, double *m, int starting_index, int pop_size, double best, double worst, double* sum_m)
 {
     (*sum_m) = 0;
-    int i = 0;
-    for (i = 0; i < pop_size; i++)
+    int i;
+    for (i = 0; i <pop_size; i++)
     {
 
-        m[i] = (fitness[i] - worst) / (best - worst);
+        m[i] = (fitness[i + starting_index] - worst) / (best - worst);
         if (m[i] <= 0)
         { 
             m[i] = 0;

@@ -13,7 +13,6 @@
 
 void print_results(double *best_agent, double (*target_function)(double *, int), int dim);
 
-
 int main(int argc, char *argv[])
 {
     MPI_Init(NULL, NULL);
@@ -44,6 +43,7 @@ int main(int argc, char *argv[])
     if (comm_sz == 1)
     {
         seed = time(NULL);
+        //seed = 10;
         srand(seed);
 
         t1 = MPI_Wtime();
@@ -66,6 +66,7 @@ int main(int argc, char *argv[])
     else
     {
         seed = time(NULL) * (my_rank + 1) * getpid();
+        //seed = 10;
         srand(seed);
 
         t1 = MPI_Wtime();
@@ -75,12 +76,25 @@ int main(int argc, char *argv[])
         int *dispacement_matrix = (int *)malloc(comm_sz * sizeof(int));
         int *count_matrix = (int *)malloc(comm_sz * sizeof(int));
 
-        get_displacements_and_counts(displacement, counts, dispacement_matrix, count_matrix, comm_sz, my_rank, pop_per_proc, remainder, dim);
+        get_displacements_and_counts(displacement, counts, dispacement_matrix, count_matrix, comm_sz, my_rank, &pop_per_proc, remainder, dim);
+
+        /*if (my_rank == 0 && debug)
+        {
+            int l = 0;
+            for (l = 0; l < comm_sz; l++)
+            {
+                printf("displacement[%d]: %d\n", l, displacement[l]);
+                printf("counts[%d]: %d\n", l, counts[l]);
+                printf("dispacement_matrix[%d]: %d\n", l, dispacement_matrix[l]);
+                printf("count_matrix[%d]: %d\n", l, count_matrix[l]);
+                printf("\n");
+            }
+        }*/
 
         best_agent = parallel_gsa(sphere, -1000, 1000, dim, pop_size, n_iter, my_rank, pop_per_proc, debug, comm_sz, displacement, counts, dispacement_matrix, count_matrix);
-        
+
         t2 = MPI_Wtime();
-        
+
         final_time = t2 - t1;
 
         if (my_rank == 0)
@@ -99,7 +113,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    if (my_rank == 0) //Only one process should print the results
+    if (my_rank == 0) // Only one process should print the results
     {
         // Output format:
         // comm_sz;dim;pop_size;n_iter;seed;time;best_value

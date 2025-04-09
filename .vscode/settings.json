@@ -7,6 +7,7 @@
         "time.h": "c",
         "math.h": "c",
         "stdio.h": "c",
-        "common.h": "c"
+        "common.h": "c",
+        "parallel_gsa.h": "c"
     }
 }
