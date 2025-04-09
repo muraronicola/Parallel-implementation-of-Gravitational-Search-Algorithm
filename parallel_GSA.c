@@ -1,5 +1,6 @@
 #include "parallel_GSA.h"
 
+
 // Sort all the population based on the fitness (each process has already sorted it's own population, we only need to combine that results)
 void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *dispacement, int *counts)
 {
