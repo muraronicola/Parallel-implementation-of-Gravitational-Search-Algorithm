@@ -1,6 +1,82 @@
 #include "parallel_GSA.h"
 
+#include <stdio.h>
+#include <stdlib.h>
 
+// Structure for heap node
+typedef struct {
+    double value;   // Element value
+    double *array;  // Pointer to the source array
+    int index;   // Index within the array
+    int size;
+} HeapNode;
+
+// Min-heap comparison function
+int compare(const void *a, const void *b) {
+    return ((HeapNode*)a)->value - ((HeapNode*)b)->value;
+}
+
+// Function to merge k sorted arrays
+//int* kWayMerge(int *array, int *sizes, int k, int *result_size, int *displacement)
+
+void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *displacement, int *counts){
+    HeapNode *minHeap = (HeapNode*)malloc(n_agents * sizeof(HeapNode));
+    int heapSize = 0;
+    
+    // Insert first element of each array
+    for (int i = 0; i < n_agents; i++) {
+        if (counts[i] > 0) {
+            minHeap[heapSize].value = source_fitness[displacement[i]];
+            minHeap[heapSize].array = &source_fitness[displacement[i]];
+            minHeap[heapSize].index = 0;
+            minHeap[heapSize].size = counts[i];
+            heapSize++;
+            printf("Inserted %d from array %d into heap\n", minHeap[heapSize - 1].value, i);
+        }
+    }
+    
+    // Convert array into min-heap
+    qsort(minHeap, heapSize, sizeof(HeapNode), compare);
+    
+    int resIndex = 0;
+    
+    // Merge process
+    while (heapSize > 0) {
+        HeapNode min = minHeap[0];
+        dest_fitness[resIndex] = min.value;
+
+        for (int d = 0; d < dim; d++)
+            dest_population[resIndex][d] = source_population[min.index][d];
+
+        resIndex++;
+
+        //printf("\nExtracted %d from heap\n", min.value);
+        
+        // Move to next element in the same array
+        if (min.index + 1 < min.size) {
+            //printf("min.index:  %d\n", min.index);
+            //printf(" min.size:  %d\n", min.size);
+            
+            minHeap[0].value = min.array[min.index + 1];
+            minHeap[0].index = min.index + 1;
+
+            
+            /*minHeap[0].value = min.array[min.index + 1];
+            minHeap[0].index = min.index + 1;*/
+        } else {
+            // Replace with last element in heap and reduce heap size
+            minHeap[0] = minHeap[--heapSize];
+        }
+        
+        // Reorder heap
+        qsort(minHeap, heapSize, sizeof(HeapNode), compare);
+    }
+    
+    free(minHeap);
+}
+
+
+/*
 // Sort all the population based on the fitness (each process has already sorted it's own population, we only need to combine that results)
 void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *dispacement, int *counts)
 {
@@ -39,7 +115,7 @@ void final_sort(double *source_fitness, double **source_population, double *dest
         // Update the index of the agent
         index_agent[index_lowest_fitness]++;
     }
-}
+}*/
 
 // Update the accelerations of the agents
 double **update_accelerations(double *M, double **global_population, double **local_population, double **accelerations, int dim, int pop_size, int k_best, double G)
@@ -122,7 +198,48 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
         MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
 
         // Sort all the population
+        if (my_rank == 0)
+        {
+            int i; 
+            for (i = 0; i < global_pop_size; i++)
+            {
+                printf("unsorted_global_fitness: %f\n", unsorted_global_fitness[i]);
+            }
+            printf("\n");
+            for (i = 0; i < global_pop_size; i++)
+            {
+                printf("unsorted_global_population: ");
+                for (int j = 0; j < dim; j++)
+                {
+                    printf("%f ", unsorted_global_population[i][j]);
+                }
+                printf("\n");
+            }
+        }
+
         final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
+
+        if (my_rank == 0)
+        {
+            int i; 
+            printf("\n\nSORTTTED\n");
+            for (i = 0; i < global_pop_size; i++)
+            {
+                printf("Fitness: %f\n", global_fitness[i]);
+            }
+            printf("\n");
+            for (i = 0; i < global_pop_size; i++)
+            {
+                printf("Population: ");
+                for (int j = 0; j < dim; j++)
+                {
+                    printf("%f ", global_population[i][j]);
+                }
+                printf("\n");
+            }
+        }
+        exit(0);
+
 
         // Update the G constant
         G = get_G(G0, l, n_iter);
