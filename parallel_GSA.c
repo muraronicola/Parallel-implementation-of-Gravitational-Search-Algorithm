@@ -2,43 +2,44 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "min_heap.h"
 
 void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *dispacement, int *counts)
 {
-    int *index_agent = allocate_vector_int(n_agents);
+    double *initial_fitness = allocate_vector_double(n_agents);
 
-    int i = 0, j = 0, k = 0;
-    for (i = 0; i < n_agents; i++)
+    int i = 0, k = 0;
+    for (int i = 0; i < n_agents; i++)
     {
-        index_agent[i] = dispacement[i]; // The starting index in the array of each agent
+        initial_fitness[i] = source_fitness[dispacement[i]];
     }
 
-    double lowest_fitness;
-    int index_lowest_fitness;
+    minHeap heap = initMinHeap(n_agents);
+    buildMinHeap(&heap, initial_fitness, dispacement, counts, n_agents); // Build the min heap with the initial fitness of the agents
+
+    int index_lowest_fitness, max_index_fitness;
     for (i = 0; i < global_pop_size; i++) // Sort the population
     {
-        lowest_fitness = DBL_MAX;
-        for (j = 0; j < n_agents; j++) // Find the lowest fitness of the agents
-        {
-            if (index_agent[j] < counts[j] + dispacement[j])
-            {
-                if (source_fitness[index_agent[j]] < lowest_fitness)
-                {
-                    lowest_fitness = source_fitness[index_agent[j]];
-                    index_lowest_fitness = j;
-                }
-            }
-        }
-
+        // lowest_fitness = heap.elem[0].data; // The lowest fitness of the agents
+        index_lowest_fitness = heap.elem[0].index; // The index of the agent with the lowest fitness
+        max_index_fitness = heap.elem[0].max_index; // The index of the agent with the lowest fitness
+        
         // Move all the data of the agent in the destination
-        dest_fitness[i] = lowest_fitness;
+        dest_fitness[i] = source_fitness[index_lowest_fitness];
         for (k = 0; k < dim; k++)
         {
-            dest_population[i][k] = source_population[index_agent[index_lowest_fitness]][k];
+            dest_population[i][k] = source_population[index_lowest_fitness][k];
         }
 
         // Update the index of the agent
-        index_agent[index_lowest_fitness]++;
+        index_lowest_fitness++;
+
+        // Insert the new agent in the heap
+        if (index_lowest_fitness < max_index_fitness)
+        {
+            insertNode(&heap, source_fitness[index_lowest_fitness], index_lowest_fitness, heap.elem[0].max_index); // Insert the new agent in the heap
+        }
+        deleteNode(&heap);
     }
 }
 
@@ -78,7 +79,6 @@ double **update_accelerations(double *M, double **global_population, double **lo
 
     return accelerations;
 }
-
 
 // Gravitational Search Aglorith, parallel implementation
 double *parallel_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
@@ -120,12 +120,54 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
         merge_sort_parallel(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim); // this is v2
 
         // Share the fitness and the population with all the processes
-        MPI_Allgatherv(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD); // this is v2
-        MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
+        MPI_Allgatherv(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD); // this is v2
+        MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
 
         // Sort all the population
-        //final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
+        /*if (my_rank == 0)
+        {
+            printf("Global fitness: ");
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("unsorted_global_fitness[%d]: %f\n", i, unsorted_global_fitness[i]);
+            }
 
+            printf("\n");
+            printf("Global population:\n");
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("unsorted_global_population[%d]: ", i);
+                for (int j = 0; j < dim; j++)
+                {
+                    printf(" %f ", unsorted_global_population[i][j]);
+                }
+                printf("\n");
+            }
+        }*/
+
+        final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
+        /*if (my_rank == 0)
+        {
+
+            printf("SORT DONE\n");
+            printf("Global fitness: ");
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("global_fitness[%d]: %f\n", i, global_fitness[i]);
+            }
+
+            printf("\n");
+            printf("Global population: ");
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("global_population[%d]: ", i);
+                for (int j = 0; j < dim; j++)
+                {
+                    printf(" %f ", global_population[i][j]);
+                }
+                printf("\n");
+            }
+        }*/
         // Update the G constant
         G = get_G(G0, l, n_iter);
         best = get_best(global_fitness, global_pop_size);
