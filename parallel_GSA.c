@@ -6,64 +6,6 @@
 // Structure for heap node
 
 
-// Min-heap comparison function
-int compare(const void *a, const void *b)
-{
-    return ((HeapNode *)a)->value - ((HeapNode *)b)->value;
-}
-
-// Function to merge k sorted arrays
-// int* kWayMerge(int *array, int *sizes, int k, int *result_size, int *displacement)
-
-void final_sort(HeapNode *minHeap, double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *displacement, int *counts)
-{
-    int heapSize = 0, i = 0, d = 0;
-
-    // Insert first element of each array
-    for (i = 0; i < n_agents; i++) {
-        if (counts[i] > 0)
-        {
-            minHeap[heapSize].value = source_fitness[displacement[i]];
-            minHeap[heapSize].array = &source_fitness[0];
-            minHeap[heapSize].index = displacement[i];
-            minHeap[heapSize].size = displacement[i] + counts[i];
-            heapSize++;
-        }
-    }
-
-    // Convert array into min-heap
-    qsort(minHeap, heapSize, sizeof(HeapNode), compare);
-
-    int resIndex = 0;
-
-    // Merge process
-    while (heapSize > 0)
-    {
-        HeapNode min = minHeap[0];
-        dest_fitness[resIndex] = source_fitness[min.index];
-
-        for (d = 0; d < dim; d++)
-            dest_population[resIndex][d] = source_population[min.index][d];
-
-        resIndex++;
-
-        if (min.index + 1 < min.size)
-        {
-            minHeap[0].value = min.array[min.index + 1];
-            minHeap[0].index = min.index + 1;
-        }
-        else
-        {
-            // Replace with last element in heap and reduce heap size
-            minHeap[0] = minHeap[--heapSize];
-        }
-
-        // Reorder heap
-        //qsort(minHeap, heapSize, sizeof(HeapNode), compare);
-
-    }
-}
-
 // Update the accelerations of the agents
 double **update_accelerations(double *M, double **global_population, double **local_population, double **accelerations, int dim, int pop_size, int k_best, double G)
 {
@@ -100,6 +42,7 @@ double **update_accelerations(double *M, double **global_population, double **lo
 
     return accelerations;
 }
+
 
 // Gravitational Search Aglorith, parallel implementation
 double *parallel_gsa(double (*target_function)(double *, int), double lb, double ub, int dim, int global_pop_size, int n_iter, int my_rank, int local_pop_size, int n_agents, int *dispacement, int *counts, int *dispacement_matrix, int *count_matrix)
@@ -139,14 +82,53 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     {
         // Calculate the fitness of the local population
         evaluate_fitness(local_population, target_function, local_fitness, dim, local_pop_size, lb, ub);                          // Calculate the fitness of the local population
-        //merge_sort_parallel(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim); // this is v2
+        merge_sort_parallel(local_fitness, local_population, local_fitness_sorted, local_population_sorted, local_pop_size, dim); // this is v2
 
         // Share the fitness and the population with all the processes
-        MPI_Allgatherv(&(local_population[0][0]), local_pop_size * dim, MPI_DOUBLE, &(global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD); // this is v2
-        MPI_Allgatherv(local_fitness, local_pop_size, MPI_DOUBLE, global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
+        MPI_Allgatherv(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD); // this is v2
+        MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
 
         // Sort all the population
-        //final_sort(minHeap, unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
+        final_sort(minHeap, unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
+
+        if (my_rank == 0)
+        {
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("unsorted_global_fitness[%d]: %f\n", i, unsorted_global_fitness[i]);
+            }
+            printf("\n");
+
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("unsorted_global_population[%d]: ", i);
+                for (int j = 0; j < dim; j++)
+                {
+                    printf("%f ", unsorted_global_population[i][j]);
+                }
+                printf("\n");
+            }
+        }
+
+        if (my_rank == 0)
+        {
+            merge_k_sorted_arrays(unsorted_global_fitness, global_fitness, unsorted_global_population, global_population, counts, dispacement, n_agents, global_pop_size, dim); // this is v2
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("global_fitness[%d]: %f\n", i, global_fitness[i]);
+            }
+            printf("\n");
+
+            for (int i = 0; i < global_pop_size; i++)
+            {
+                printf("global_population[%d]: ", i);
+                for (int j = 0; j < dim; j++)
+                {
+                    printf("%f ", global_population[i][j]);
+                }
+                printf("\n");
+            }
+        }
 
         // Update the G constant
         G = get_G(G0, l, n_iter);

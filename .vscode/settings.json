@@ -9,6 +9,7 @@
         "stdio.h": "c",
         "common.h": "c",
         "parallel_gsa.h": "c",
-        "ratio": "c"
+        "ratio": "c",
+        "__locale": "c"
     }
 }
