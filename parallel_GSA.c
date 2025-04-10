@@ -6,24 +6,25 @@
 
 void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *dispacement, int *counts)
 {
-    double *initial_fitness = allocate_vector_double(n_agents);
-
     int i = 0, k = 0;
-    for (i = 0; i < n_agents; i++)
+    int heap_size = (n_agents < global_pop_size) ? n_agents : global_pop_size;
+
+    double *initial_fitness = allocate_vector_double(heap_size);
+    for (i = 0; i < heap_size; i++)
     {
         initial_fitness[i] = source_fitness[dispacement[i]];
     }
 
-    minHeap heap = initMinHeap(n_agents);
-    buildMinHeap(&heap, initial_fitness, dispacement, counts, n_agents); // Build the min heap with the initial fitness of the agents
+    minHeap heap = initMinHeap(heap_size);
+    buildMinHeap(&heap, initial_fitness, dispacement, counts, heap_size); // Build the min heap with the initial fitness of the agents
 
     int index_lowest_fitness, max_index_fitness;
     for (i = 0; i < global_pop_size; i++) // Sort the population
     {
         // lowest_fitness = heap.elem[0].data; // The lowest fitness of the agents
-        index_lowest_fitness = heap.elem[0].index; // The index of the agent with the lowest fitness
+        index_lowest_fitness = heap.elem[0].index;  // The index of the agent with the lowest fitness
         max_index_fitness = heap.elem[0].max_index; // The index of the agent with the lowest fitness
-        
+
         // Move all the data of the agent in the destination
         dest_fitness[i] = source_fitness[index_lowest_fitness];
         for (k = 0; k < dim; k++)
@@ -41,6 +42,9 @@ void final_sort(double *source_fitness, double **source_population, double *dest
         }
         deleteNode(&heap);
     }
+
+    free(initial_fitness);
+    deleteMinHeap(&heap);
 }
 
 // Update the accelerations of the agents
@@ -123,51 +127,8 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
         MPI_Allgatherv(&(local_population_sorted[0][0]), local_pop_size * dim, MPI_DOUBLE, &(unsorted_global_population[0][0]), count_matrix, dispacement_matrix, MPI_DOUBLE, MPI_COMM_WORLD); // this is v2
         MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
 
-        // Sort all the population
-        /*if (my_rank == 0)
-        {
-            printf("Global fitness: ");
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("unsorted_global_fitness[%d]: %f\n", i, unsorted_global_fitness[i]);
-            }
-
-            printf("\n");
-            printf("Global population:\n");
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("unsorted_global_population[%d]: ", i);
-                for (int j = 0; j < dim; j++)
-                {
-                    printf(" %f ", unsorted_global_population[i][j]);
-                }
-                printf("\n");
-            }
-        }*/
-
         final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
-        /*if (my_rank == 0)
-        {
-
-            printf("SORT DONE\n");
-            printf("Global fitness: ");
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("global_fitness[%d]: %f\n", i, global_fitness[i]);
-            }
-
-            printf("\n");
-            printf("Global population: ");
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("global_population[%d]: ", i);
-                for (int j = 0; j < dim; j++)
-                {
-                    printf(" %f ", global_population[i][j]);
-                }
-                printf("\n");
-            }
-        }*/
+        
         // Update the G constant
         G = get_G(G0, l, n_iter);
         best = get_best(global_fitness, global_pop_size);
