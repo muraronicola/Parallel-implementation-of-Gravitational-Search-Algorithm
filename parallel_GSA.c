@@ -3,8 +3,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Structure for heap node
+void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *dispacement, int *counts)
+{
+    int *index_agent = allocate_vector_int(n_agents);
 
+    int i = 0, j = 0, k = 0;
+    for (i = 0; i < n_agents; i++)
+    {
+        index_agent[i] = dispacement[i]; // The starting index in the array of each agent
+    }
+
+    double lowest_fitness;
+    int index_lowest_fitness;
+    for (i = 0; i < global_pop_size; i++) // Sort the population
+    {
+        lowest_fitness = DBL_MAX;
+        for (j = 0; j < n_agents; j++) // Find the lowest fitness of the agents
+        {
+            if (index_agent[j] < counts[j] + dispacement[j])
+            {
+                if (source_fitness[index_agent[j]] < lowest_fitness)
+                {
+                    lowest_fitness = source_fitness[index_agent[j]];
+                    index_lowest_fitness = j;
+                }
+            }
+        }
+
+        // Move all the data of the agent in the destination
+        dest_fitness[i] = lowest_fitness;
+        for (k = 0; k < dim; k++)
+        {
+            dest_population[i][k] = source_population[index_agent[index_lowest_fitness]][k];
+        }
+
+        // Update the index of the agent
+        index_agent[index_lowest_fitness]++;
+    }
+}
 
 // Update the accelerations of the agents
 double **update_accelerations(double *M, double **global_population, double **local_population, double **accelerations, int dim, int pop_size, int k_best, double G)
@@ -52,7 +88,6 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     // Initialize the various variables
     double G0 = 100, G, best, worst, sum_m = 0, local_sum = 0, k_best;
     int l = 0, sub_pop_start_index = dispacement[my_rank];
-    HeapNode *minHeap = (HeapNode *)malloc(n_agents * sizeof(HeapNode));
 
     // Velocity allocation
     double **local_velocity = allocate_matrix_double(local_pop_size, dim); // Each process calculates for its own subpopulation
@@ -89,46 +124,7 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
         MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
 
         // Sort all the population
-        final_sort(minHeap, unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
-
-        if (my_rank == 0)
-        {
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("unsorted_global_fitness[%d]: %f\n", i, unsorted_global_fitness[i]);
-            }
-            printf("\n");
-
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("unsorted_global_population[%d]: ", i);
-                for (int j = 0; j < dim; j++)
-                {
-                    printf("%f ", unsorted_global_population[i][j]);
-                }
-                printf("\n");
-            }
-        }
-
-        if (my_rank == 0)
-        {
-            merge_k_sorted_arrays(unsorted_global_fitness, global_fitness, unsorted_global_population, global_population, counts, dispacement, n_agents, global_pop_size, dim); // this is v2
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("global_fitness[%d]: %f\n", i, global_fitness[i]);
-            }
-            printf("\n");
-
-            for (int i = 0; i < global_pop_size; i++)
-            {
-                printf("global_population[%d]: ", i);
-                for (int j = 0; j < dim; j++)
-                {
-                    printf("%f ", global_population[i][j]);
-                }
-                printf("\n");
-            }
-        }
+        final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
 
         // Update the G constant
         G = get_G(G0, l, n_iter);
