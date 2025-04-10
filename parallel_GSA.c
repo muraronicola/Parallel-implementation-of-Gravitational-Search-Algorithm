@@ -4,13 +4,7 @@
 #include <stdlib.h>
 
 // Structure for heap node
-typedef struct
-{
-    double value;  // Element value
-    double *array; // Pointer to the source array
-    int index;     // Index within the array
-    int size;
-} HeapNode;
+
 
 // Min-heap comparison function
 int compare(const void *a, const void *b)
@@ -21,9 +15,8 @@ int compare(const void *a, const void *b)
 // Function to merge k sorted arrays
 // int* kWayMerge(int *array, int *sizes, int k, int *result_size, int *displacement)
 
-void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *displacement, int *counts)
+void final_sort(HeapNode *minHeap, double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *displacement, int *counts)
 {
-    HeapNode *minHeap = (HeapNode *)malloc(n_agents * sizeof(HeapNode));
     int heapSize = 0, i = 0, d = 0;
 
     // Insert first element of each array
@@ -68,8 +61,6 @@ void final_sort(double *source_fitness, double **source_population, double *dest
         // Reorder heap
         qsort(minHeap, heapSize, sizeof(HeapNode), compare);
     }
-    
-    free(minHeap);
 }
 
 // Update the accelerations of the agents
@@ -117,6 +108,7 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
     // Initialize the various variables
     double G0 = 100, G, best, worst, sum_m = 0, local_sum = 0, k_best;
     int l = 0, sub_pop_start_index = dispacement[my_rank];
+    HeapNode *minHeap = (HeapNode *)malloc(n_agents * sizeof(HeapNode));
 
     // Velocity allocation
     double **local_velocity = allocate_matrix_double(local_pop_size, dim); // Each process calculates for its own subpopulation
@@ -153,7 +145,7 @@ double *parallel_gsa(double (*target_function)(double *, int), double lb, double
         MPI_Allgatherv(local_fitness_sorted, local_pop_size, MPI_DOUBLE, unsorted_global_fitness, counts, dispacement, MPI_DOUBLE, MPI_COMM_WORLD);                                            // this is v2
 
         // Sort all the population
-        final_sort(unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
+        final_sort(minHeap, unsorted_global_fitness, unsorted_global_population, global_fitness, global_population, global_pop_size, dim, n_agents, dispacement, counts); // this is v2
 
 
         // Update the G constant
