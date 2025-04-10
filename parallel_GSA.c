@@ -9,7 +9,7 @@ void final_sort(double *source_fitness, double **source_population, double *dest
     double *initial_fitness = allocate_vector_double(n_agents);
 
     int i = 0, k = 0;
-    for (int i = 0; i < n_agents; i++)
+    for (i = 0; i < n_agents; i++)
     {
         initial_fitness[i] = source_fitness[dispacement[i]];
     }
