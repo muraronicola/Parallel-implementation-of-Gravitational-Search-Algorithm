@@ -24,10 +24,10 @@ int compare(const void *a, const void *b)
 void final_sort(double *source_fitness, double **source_population, double *dest_fitness, double **dest_population, int global_pop_size, int dim, int n_agents, int *displacement, int *counts)
 {
     HeapNode *minHeap = (HeapNode *)malloc(n_agents * sizeof(HeapNode));
-    int heapSize = 0;
+    int heapSize = 0, i = 0;
 
     // Insert first element of each array
-    for (int i = 0; i < n_agents; i++) {
+    for (i = 0; i < n_agents; i++) {
         if (counts[i] > 0)
         {
             minHeap[heapSize].value = source_fitness[displacement[i]];
