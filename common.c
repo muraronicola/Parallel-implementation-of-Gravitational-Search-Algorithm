@@ -75,7 +75,6 @@ double getk_best(int pop_size, int t, int n_iter)
     double t_double = (double)t;
     double n_iter_double = (double)n_iter;
     double result = pop_size * ((n_iter_double - t_double) / n_iter_double);
-    result = 10;
     result = ceil(result);
     return result;
 }
