@@ -12,3 +12,8 @@ raw_data_fix_kbest_no_sort -> risutltati con k_best fisso a 10 e finalsort disat
 
 Commenti.. i sort, in questo caso, contano un botto.
 Da 0.71 a 0.37
+
+
+
+
+raw_data_3 -> usa la heap
