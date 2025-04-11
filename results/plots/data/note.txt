@@ -17,3 +17,7 @@ Da 0.71 a 0.37
 
 
 raw_data_3 -> usa la heap
+
+
+
+raw_data_4 -> come il 3, ma tutti i test 1 sono nuovi (hanno il seed diverso)
