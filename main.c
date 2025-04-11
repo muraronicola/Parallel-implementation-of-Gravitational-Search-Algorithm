@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
     if (comm_sz == 1)
     {
-        seed = time(NULL);
+        seed = time(NULL) * getpid();
         srand(seed);
 
         t1 = MPI_Wtime();
