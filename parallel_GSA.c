@@ -29,7 +29,7 @@ void final_sort(double *source_fitness, double **source_population, double *dest
         dest_fitness[i] = source_fitness[index_lowest_fitness];
         for (k = 0; k < dim; k++)
         {
-            dest_po pulation[i][k] = source_population[index_lowest_fitness][k];
+            dest_population[i][k] = source_population[index_lowest_fitness][k];
         }
 
         // Update the index of the agent
