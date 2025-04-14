@@ -1,22 +1,26 @@
 # GSA parallel implementation
 
 ## Compiling the code
-In the principal folder, we can see all the files used in the implementation of the GSA algorithm.
+In the principal folder, there are tree folders:
+- `src`: contains the source code of the GSA algorithm.
+- `PBS_scripts`: contains the scripts used to run the code on the cluster.
+- `results`: contains the results of the tests performed on the cluster.
 
 In the case of compliling the code on the cluster, first we need to load the required modules:
 ```bash
 module load mpich-3.2
 ```
 
-There is a Makefile that can be used to compile the code, by simply running the command:
+Inside the `src` folder, there are the source code files and a Makefile.
+The Makefile can be used to compile the code, by simply entering the directory `src` and running the command:
 ```bash
 make
 ```
-This will create the executable file `gsa` in the current directory.
+This will create the executable file `gsa` in the `src` directory.
 
 
 ## Running the code
-To run the code, we can use the following command:
+To run the code, from the `src` directory, we can use the following command:
 ```bash
 mpiexec -n <number_of_processes> ./gsa <dimentions> <population_size> <iterations> <debug>
 ```
@@ -29,13 +33,14 @@ Where:
 
 
 ## PBS script
-In order to run the code on the cluster, we can use the scripts present in the folder `scripts`.
-By simply running the command:
+In order to run the code on the cluster, we can use the scripts present in the folder `PBS_scripts`.
+Is necessary to change the path of the executable file from `/home/nicola.muraro/project_hpc/GSA/src/gsa` to the path of the executable file in your system.
+Then, by simply running the command:
 ```bash
 qsub <script_name>
 ```
-We can submit the job to the queue. The script will take care of loading the required modules and running the programm with the default arguments.
+we can submit the job to the queue. The script will take care of loading the required modules and running the programm with the default arguments.
 
 
 ## Results
-The folder `results` contains the results of the tests performed on the cluster. There are two python notebook that has been used to average the results and obtain the tables and plots.
+The folder `results` contains the results of the tests performed on the cluster. There is a python notebook that has been used to average the results and obtain the tables and plots.

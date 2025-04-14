@@ -10,6 +10,9 @@
         "common.h": "c",
         "parallel_gsa.h": "c",
         "ratio": "c",
-        "__locale": "c"
+        "__locale": "c",
+        "test_functions.h": "c",
+        "merge_sort.h": "c",
+        "float.h": "c"
     }
 }

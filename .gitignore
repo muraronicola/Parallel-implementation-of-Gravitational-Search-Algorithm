@@ -1,2 +1,2 @@
 *.o
-gsa
+./src/gsa
