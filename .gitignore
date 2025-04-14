@@ -1,3 +1,4 @@
 *.o
 ./src/gsa
 .vscode/
+.DS_Store
