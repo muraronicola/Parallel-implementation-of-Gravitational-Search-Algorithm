@@ -116,7 +116,7 @@ double *calculate_m(double *fitness, double *m, int starting_index, int pop_size
 {
     (*sum_m) = 0;
     int i;
-    for (i = 0; i <pop_size; i++)
+    for (i = 0; i < pop_size; i++)
     {
 
         m[i] = (fitness[i + starting_index] - worst) / (best - worst);
