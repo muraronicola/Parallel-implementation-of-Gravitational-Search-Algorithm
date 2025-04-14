@@ -29,7 +29,7 @@ Where:
 - `<dimentions>`: Number of dimensions of the problem.
 - `<population_size>`: Size of the population.
 - `<iterations>`: Number of iterations to be performed.
-- `<debug>`: Debug mode. If set to 1, the code will print additional information, like the best solution at the end.
+- `<debug>`: Debug mode. If set to 1, the code will print additional information, like the best solution at the end. Otherwise, if set to 0, the code will print the results in a .csv style file.
 
 
 ## PBS script
