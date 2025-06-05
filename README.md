@@ -6,7 +6,7 @@ In the principal folder, there are tree folders:
 - `PBS_scripts`: contains the scripts used to run the code on the cluster.
 - `results`: contains the results of the tests performed on the cluster.
 
-In the case of compliling the code on the cluster, first we need to load the required modules:
+In the case of compiling the code on the cluster, first we need to load the required modules:
 ```bash
 module load mpich-3.2
 ```
