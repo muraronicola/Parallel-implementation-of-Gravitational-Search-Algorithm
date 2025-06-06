@@ -57,7 +57,7 @@ To run the code on the cluster, use the scripts located in the `PBS_scripts` fol
 **Important:** Update the path to the executable file in the script from:
 
 ```bash
-/home/nicola.muraro/project_hpc/GSA/src/gsa
+/home/nicola.muraro/project_hpc/Parallel-implementation-of-Gravitational-Search-Algorithm/src/gsa
 ```
 
 to the appropriate path on your system.
