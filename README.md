@@ -1,56 +1,79 @@
-# GSA parallel implementation
+# GSA Parallel Implementation
 
+## Folder Structure
 
-## Folder structure
-In the principal folder, there are tree folders:
-- `src`: contains the source code of the GSA algorithm.
-- `PBS_scripts`: contains the scripts used to run the code on the cluster.
-- `results`: contains the results of the tests performed on the cluster.
+The main directory contains three folders:
 
-<br>
+- `src`: Contains the source code of the GSA algorithm.
+- `PBS_scripts`: Contains scripts used to run the code on the cluster.
+- `results`: Contains the results of tests performed on the cluster.
 
+---
 
-## Compiling the code
-For compiling the code on the cluster, first we need to load the required modules:
+## Compiling the Code
+
+To compile the code on the cluster, first load the required modules:
+
 ```bash
 module load mpich-3.2
 ```
 
-Inside the `src` folder, there are the source code files and a Makefile.
-The Makefile can be used to compile the code, by simply entering the directory `src` and running the command:
+Inside the `src` folder, you will find the source code files and a `Makefile`.
+
+To compile the code, navigate to the `src` directory and run:
+
 ```bash
 make
 ```
+
 This will create the executable file `gsa` in the `src` directory.
 
-<br>
+---
 
+## Running the Code
 
-## Running the code
-To run the code, from the `src` directory, we can use the following command:
+From the `src` directory, the code can be executed using the following command:
+
 ```bash
 mpiexec -n <number_of_processes> ./gsa <dimensions> <population_size> <iterations> <debug>
 ```
-Where:
-- `<number_of_processes>`: Number of processes to be used in the parallel implementation.
-- `<dimensions>`: Number of dimensions of the problem.
+
+**Arguments:**
+
+- `<number_of_processes>`: Number of processes to use in the parallel implementation.
+- `<dimensions>`: Number of problem dimensions.
 - `<population_size>`: Size of the population.
-- `<iterations>`: Number of iterations to be performed.
-- `<debug>`: Debug mode. If set to 1, the code will print additional information, like the best solution at the end. Otherwise, if set to 0, the code will print the results in a .csv style file.
+- `<iterations>`: Number of iterations to perform.
+- `<debug>`: Debug mode:
+  - `1`: Prints additional information (e.g., best solution found).
+  - `0`: Prints results in CSV format.
+
+---
+
+## PBS Script
+
+To run the code on the cluster, use the scripts located in the `PBS_scripts` folder.
+
+**Important:** Update the path to the executable file in the script from:
+
+```bash
+/home/nicola.muraro/project_hpc/GSA/src/gsa
+```
+
+to the appropriate path on your system.
 
 <br>
+Then, submit the job to the queue with:
 
-
-## PBS script
-In order to run the code on the cluster, we can use the scripts present in the folder `PBS_scripts`.
-Is necessary to change the path of the executable file from `/home/nicola.muraro/project_hpc/GSA/src/gsa` to the path of the executable file in your system.
-Then, by simply running the command:
 ```bash
 qsub <script_name>
 ```
-we can submit the job to the queue. The script will take care of loading the required modules and running the programm with the default arguments.
 
-<br>
+The script will load the necessary modules and run the program with default arguments.
+
+---
 
 ## Results
-The folder `results` contains the results of the tests performed on the cluster. There is a python notebook that has been used to average the results and obtain the tables and plots.
+
+The `results` folder contains the outputs of the tests performed on the cluster.  
+It includes a Python notebook used to average the results and generate tables and plots for analysis.
