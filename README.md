@@ -1,5 +1,5 @@
 # GSA parallel implementation
-<br>
+
 
 ## Folder structure
 In the principal folder, there are tree folders:
