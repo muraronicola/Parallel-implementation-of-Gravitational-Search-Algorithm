@@ -22,11 +22,11 @@ This will create the executable file `gsa` in the `src` directory.
 ## Running the code
 To run the code, from the `src` directory, we can use the following command:
 ```bash
-mpiexec -n <number_of_processes> ./gsa <dimentions> <population_size> <iterations> <debug>
+mpiexec -n <number_of_processes> ./gsa <dimensions> <population_size> <iterations> <debug>
 ```
 Where:
 - `<number_of_processes>`: Number of processes to be used in the parallel implementation.
-- `<dimentions>`: Number of dimensions of the problem.
+- `<dimensions>`: Number of dimensions of the problem.
 - `<population_size>`: Size of the population.
 - `<iterations>`: Number of iterations to be performed.
 - `<debug>`: Debug mode. If set to 1, the code will print additional information, like the best solution at the end. Otherwise, if set to 0, the code will print the results in a .csv style file.
